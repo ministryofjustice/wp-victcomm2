@@ -1,7 +1,7 @@
 {
   "name": "ministryofjustice/wp-victcomm2",
   "type": "project",
-  "description": "Project files for the Victims' Commissioner website based on wp-template (https://github.com/ministryofjustice/wp-template)"
+  "description": "Project files for the Victims' Commissioner website based on wp-template (https://github.com/ministryofjustice/wp-template)",
   "config": {
     "preferred-install": "dist"
   },
