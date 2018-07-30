@@ -58,6 +58,13 @@ let webpackConfig = {
         ],
       },
       {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+          presets: [ "babel-preset-es2015" ].map(require.resolve)
+        },
+      },
+      {
         test: /\.css$/,
         include: config.paths.assets,
         use: ExtractTextPlugin.extract({
