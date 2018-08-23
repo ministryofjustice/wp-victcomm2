@@ -4,8 +4,10 @@ web/app/plugins/*
 web/app/mu-plugins/*/
 web/app/upgrade
 web/app/languages
+web/app/themes/victcomm2/meta/
 web/app/uploads/*
 !web/app/uploads/.gitkeep
+**/*.sql
 
 # WordPress
 web/wp

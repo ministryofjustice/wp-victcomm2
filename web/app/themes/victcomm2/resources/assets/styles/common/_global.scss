@@ -1,3 +1,17 @@
+
 body {
+  background-color: theme-color('base');
+  position: relative;
+}
+
+h1 {
+  font-family: serif;
+}
+
+.btn {
+  padding: 1em 2em;
+}
+
+.site-container {
   background-color: theme-color('base');
 }

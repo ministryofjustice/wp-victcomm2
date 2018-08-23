@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/app/themes/sage",
+  "publicPath": "/app/themes/victcomm2",
   "devUrl": "http://victcomm2.docker",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",

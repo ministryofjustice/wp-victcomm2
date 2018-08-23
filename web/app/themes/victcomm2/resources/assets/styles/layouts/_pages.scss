@@ -1,0 +1,26 @@
+.content {
+  font-size: 24px;
+  font-family: $font-sans-serif;
+
+  a {
+    text-decoration: underline;
+  }
+
+  h1,
+  h2 {
+    font-family: $font-serif;
+    margin-top: 1.5em;
+  }
+}
+
+.main {
+  //padding-bottom: 1rem;
+  //padding-top: 1rem;
+}
+
+.main blockquote {
+  color: theme-color('medium');
+  font-size: 2rem;
+  font-family: $font-sans-serif;
+  font-style: italic;
+}

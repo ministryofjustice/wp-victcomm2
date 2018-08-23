@@ -3,5 +3,14 @@
 
 $theme-colors: (
   base: #fff,
-  primary: #525ddc
+  dark: #111,
+  light: #ccc,
+  medium: #666,
+  primary: rgb(76, 76, 76),
+  transparent_light: rgba(0, 0, 0, 0.3),
 );
+
+$font-serif: Merriweather, serif;
+$font-sans-serif: Barlow, sans-serif;
+
+$mobile-nav-width: 30rem;

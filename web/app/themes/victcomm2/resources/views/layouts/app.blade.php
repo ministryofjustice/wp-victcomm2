@@ -2,22 +2,21 @@
 <html @php language_attributes() @endphp>
   @include('partials.head')
   <body @php body_class() @endphp>
-    @php do_action('get_header') @endphp
-    @include('partials.header')
-    <div class="wrap container" role="document">
-      <div class="content">
-        <main class="main">
-          @yield('content')
-        </main>
-        @if (App\display_sidebar())
-          <aside class="sidebar">
-            @include('partials.sidebar')
-          </aside>
-        @endif
-      </div>
+    <div class="site-container">
+      @php do_action('get_header') @endphp
+      @include('partials.header')
+
+      @yield('content')
+
+      @php do_action('get_footer') @endphp
+      @include('partials.footer')
+      @php wp_footer() @endphp
+      <div class="mobile-nav-menu-overlay"></div>
     </div>
-    @php do_action('get_footer') @endphp
-    @include('partials.footer')
-    @php wp_footer() @endphp
+    <nav class="nav-primary nav-primary--mobile">
+      @if (has_nav_menu('primary_navigation'))
+        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+      @endif
+    </nav>
   </body>
 </html>

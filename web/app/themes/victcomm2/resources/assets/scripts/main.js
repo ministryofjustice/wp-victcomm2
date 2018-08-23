@@ -9,6 +9,7 @@ import Router from './util/Router';
 import common from './routes/common';
 import home from './routes/home';
 import aboutUs from './routes/about';
+import MobileNavMenu from './mobile-nav-menu';
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({
@@ -21,4 +22,8 @@ const routes = new Router({
 });
 
 // Load Events
-jQuery(document).ready(() => routes.loadEvents());
+jQuery(document).ready(() => {
+  routes.loadEvents();
+
+  new MobileNavMenu();
+});

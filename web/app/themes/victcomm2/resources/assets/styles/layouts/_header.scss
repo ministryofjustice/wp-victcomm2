@@ -1,7 +1,147 @@
-.banner .nav li {
-  @extend .nav-item;
+
+.banner {
+  background-color: theme-color('dark');
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    li {
+      @extend .nav-item;
+
+      position: relative; // necessary for the submenu dropdown
+    }
+
+    a {
+      @extend .nav-link;
+
+      color: theme-color('base');
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .sub-menu {
+      $shadow-depth: 0.25rem;
+
+      background-color: theme-color('base');
+      box-shadow: 0 $shadow-depth $shadow-depth 0 rgba(0, 0, 0, 0.3);
+      display: none;
+      padding-left: 0;
+      position: absolute;
+      right: 0;
+      transition: opacity 0.5s;
+      width: 15em;
+      z-index: 1;
+
+      li {
+        border-left: solid 0.5rem theme-color('light');
+        list-style: none;
+        margin-top: 0.25rem;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        a {
+          color: theme-color('dark');
+        }
+
+        &:hover {
+          border-left-color: theme-color('dark');
+        }
+      }
+    }
+  }
+
+  .nav li:hover .sub-menu {
+    display: block;
+  }
+
+  .nav-primary {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .menu-main-menu-container {
+      height: 100%;
+
+      & > ul {
+        height: 100%;
+      }
+    }
+  }
 }
 
-.banner .nav a {
-  @extend .nav-link;
+.brand {
+  color: theme-color('base');
+  display: flex;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    color: theme-color('base');
+    text-decoration: none;
+  }
+
+  &__image {
+    margin-right: 1rem;
+  }
+
+  &__text {
+    font-family: Merriweather, serif;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+}
+
+.page-header {
+  $vertical-spacing: 3em 0 2em;
+
+  margin: $vertical-spacing;
+
+  h1 {
+    font-family: Merriweather, serif;
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  &--front-page {
+    background-color: theme-color('primary');
+    color: theme-color('base');
+    margin: 0;
+    padding: $vertical-spacing;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mobile-nav-menu-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+.mobile-nav-menu-button {
+  background-color: inherit;
+  border: none;
+  color: theme-color('base');
+  font-size: 1.5rem;
+  padding: 0.5em;
+  text-transform: uppercase;
 }
