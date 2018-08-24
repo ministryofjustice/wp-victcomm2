@@ -79,12 +79,13 @@ Premium and custom plugins used by MOJ are available in the private composer rep
 Wpackagist plugins are named by their slug on the WordPress plugin repository, prefixed with the vendor `wpackagist-plugin`.
 
 Some examples:
-
+```
 | Plugin name | WordPress plugin URL                         | URL slug      | package name                      |
 | ----------- | -------------------------------------------- | ------------- | --------------------------------- |
-| Akismet     | https://wordpress.org/plugins/akismet/       | akismet       | `wpackagist-plugin/akismet`       |
-| Hello Dolly | https://wordpress.org/plugins/hello-dolly/   | hello-dolly   | `wpackagist-plugin/hello-dolly`   |
-| Yoast SEO   | https://wordpress.org/plugins/wordpress-seo/ | wordpress-seo | `wpackagist-plugin/wordpress-seo` |
+| Akismet     | https://wordpress.org/plugins/akismet/       | akismet       | wpackagist-plugin/akismet         |
+| Hello Dolly | https://wordpress.org/plugins/hello-dolly/   | hello-dolly   | wpackagist-plugin/hello-dolly     |
+| Yoast SEO   | https://wordpress.org/plugins/wordpress-seo/ | wordpress-seo | wpackagist-plugin/wordpress-seo   |
+```
 
 #### Example: Installing Akismet plugin
 
@@ -152,7 +153,7 @@ This will load a webmail-like interface and display all emails that WordPress ha
 ## Make commands
 
 There are several `make` commands configured in the `Makefile`. These are mostly just convenience wrappers for longer or more complicated commands.
-
+```
 | Command      | Descrption                                                                                                                                                                                           |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `make build` | Run the build script to install application dependencies and build theme assets. This will typically involve installing composer packages and compiling SASS stylesheets.                            |
@@ -160,7 +161,7 @@ There are several `make` commands configured in the `Makefile`. These are mostly
 | `make run`   | Alias of `docker-compose up`. Launch the application locally using `docker-compose`.                                                                                                                 |
 | `make bash`  | Open a bash shell on the WordPress docker container. The [WP-CLI](https://wp-cli.org/) is accessible as `wp`. The application must already be running (e.g. via `make run`) before this can be used. |
 | `make test`  | Run tests on the application. Out of the box this will run PHP CodeSniffer (code linter).                                                                                                            |
-
+```
 ## Bedrock
 
 This project is based on Bedrock. Therefore, much of the Bedrock documentation will be applicable.

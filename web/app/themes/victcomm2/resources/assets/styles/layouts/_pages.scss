@@ -1,5 +1,4 @@
 .content {
-  font-size: 24px;
   font-family: $font-sans-serif;
 
   a {
@@ -8,22 +7,52 @@
 
   blockquote {
     color: theme-color('medium');
-    font-size: 2rem;
+    font-size: 18px;
     font-family: $font-serif;
     font-style: italic;
-  }
 
-  h1,
-  h2 {
-    font-family: $font-serif;
-    margin-top: 1.5em;
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+    }
   }
 
   h1 {
+    font-family: $font-serif;
     font-size: 24px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 36px;
+    }
+  }
+
+  h2 {
+    font-family: $font-serif;
+    font-size: 18px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+  }
+
+  h3 {
+    font-family: $font-sans-serif;
+    text-transform: uppercase;
   }
 
   p {
     font-weight: 300;
+    font-size: 16px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+  }
+
+  .row {
+    margin-bottom: 3rem;
+  }
+
+  strong {
+    font-weight: 600;
   }
 }

@@ -3,6 +3,9 @@
 
 $common-transition-duration: 0.3s;
 
+$font-serif: Merriweather, serif;
+$font-sans-serif: Barlow, sans-serif;
+
 $theme-colors: (
   base: #fff,
   dark: #111,
@@ -11,8 +14,5 @@ $theme-colors: (
   primary: rgb(76, 76, 76),
   transparent_light: rgba(0, 0, 0, 0.3),
 );
-
-$font-serif: Merriweather, serif;
-$font-sans-serif: Barlow, sans-serif;
 
 $mobile-nav-width: 30rem;
