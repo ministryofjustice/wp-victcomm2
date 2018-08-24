@@ -1,3 +1,6 @@
+html {
+  background-color: theme-color('dark');
+}
 
 body {
   background-color: theme-color('base');
@@ -15,5 +18,9 @@ h1 {
 }
 
 .site-container {
+  background-color: theme-color('dark');
+}
+
+.page-container {
   background-color: theme-color('base');
 }

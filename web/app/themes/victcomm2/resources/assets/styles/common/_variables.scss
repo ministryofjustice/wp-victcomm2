@@ -1,6 +1,8 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
+$common-transition-duration: 0.3s;
+
 $theme-colors: (
   base: #fff,
   dark: #111,
