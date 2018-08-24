@@ -1,7 +1,6 @@
 <footer class="banner">
 
   <div class="container">
-    FOOTER
     @php dynamic_sidebar('sidebar-footer') @endphp
     <nav class="nav-footer">
       @if (has_nav_menu('footer_navigation'))
