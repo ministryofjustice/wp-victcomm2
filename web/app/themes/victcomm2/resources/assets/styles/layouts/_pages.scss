@@ -6,21 +6,24 @@
     text-decoration: underline;
   }
 
+  blockquote {
+    color: theme-color('medium');
+    font-size: 2rem;
+    font-family: $font-serif;
+    font-style: italic;
+  }
+
   h1,
   h2 {
     font-family: $font-serif;
     margin-top: 1.5em;
   }
-}
 
-.main {
-  //padding-bottom: 1rem;
-  //padding-top: 1rem;
-}
+  h1 {
+    font-size: 24px;
+  }
 
-.main blockquote {
-  color: theme-color('medium');
-  font-size: 2rem;
-  font-family: $font-sans-serif;
-  font-style: italic;
+  p {
+    font-weight: 300;
+  }
 }
