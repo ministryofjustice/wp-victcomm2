@@ -95,29 +95,39 @@
   }
 
   &__image {
+    height: 2rem;
     margin-right: 1rem;
   }
 
   &__text {
     font-family: Merriweather, serif;
-    font-size: 1.5rem;
+    font-size: 16px;
     line-height: 1;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
   }
 }
 
 .page-header {
-  $vertical-spacing: 3em 0 2em;
+  $vertical-spacing-mobile: 1.5rem 0 1rem;
+  $vertical-spacing-landscape: 3em 0 2em;
 
-  margin: $vertical-spacing;
+  margin: $vertical-spacing-mobile;
+
+  @include media-breakpoint-up(lg) {
+    margin: $vertical-spacing-landscape;
+  }
 
   h1 {
     font-family: Merriweather, serif;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 900;
     line-height: 1;
 
     @include media-breakpoint-up(lg) {
-      font-size: 4rem;
+      font-size: 64px;
     }
   }
 
@@ -125,7 +135,11 @@
     background-color: theme-color('primary');
     color: theme-color('base');
     margin: 0 0 2rem;
-    padding: $vertical-spacing;
+    padding: $vertical-spacing-mobile;
+
+    @include media-breakpoint-up(lg) {
+      padding: $vertical-spacing-landscape;
+    }
 
     h1 {
       margin-bottom: 0;
@@ -147,7 +161,11 @@
   background-color: inherit;
   border: none;
   color: theme-color('base');
-  font-size: 1.5rem;
+  font-size: 16px;
   padding: 0.5em;
   text-transform: uppercase;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5rem;
+  }
 }
