@@ -97,7 +97,6 @@
 
         <div class="row">
           <div class="col-md-5">
-            <hr/>
             <p>Sign up to our newsletter</p>
             <form action="/">
               <div class="form-group" style="position: relative;"><input id="email" class="form-control" type="text" placeholder="enter your email" /><i class="text-input-button">sign up</i></div>
