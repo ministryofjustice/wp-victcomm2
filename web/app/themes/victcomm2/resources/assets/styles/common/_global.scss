@@ -5,6 +5,7 @@ html {
 
 body {
   background-color: theme-color('base');
+  font-family: $font-sans-serif;
   position: relative;
 }
 
@@ -24,13 +25,18 @@ h6,
 .h4,
 .h5,
 .h6 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+}
+
+input[type=text] {
+  border-radius: 2rem;
 }
 
 .btn {
   border-radius: 2em;
   font-size: 1em;
   padding: 0.5em 1em;
+  text-decoration: none;
   text-transform: uppercase;
   width: 100%;
 }

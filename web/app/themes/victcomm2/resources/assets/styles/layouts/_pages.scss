@@ -1,8 +1,13 @@
 .content {
   font-family: $font-sans-serif;
+  font-weight: 300;
 
   a {
     text-decoration: underline;
+  }
+
+  a.btn {
+    text-decoration: none;
   }
 
   h1 {
@@ -17,6 +22,7 @@
   h2 {
     font-family: $font-serif;
     font-size: 18px;
+    font-weight: 600;
 
     @include media-breakpoint-up(lg) {
       font-size: 24px;
@@ -25,11 +31,18 @@
 
   h3 {
     font-family: $font-sans-serif;
+    font-size: 16px;
     text-transform: uppercase;
   }
 
+  h4 {
+    font-family: $font-sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
   p {
-    font-weight: 300;
+    font-family: $font-sans-serif;
     font-size: 16px;
 
     @include media-breakpoint-up(lg) {
@@ -63,5 +76,34 @@
 
   ul {
     padding-left: 18px;
+  }
+}
+
+.highlighted {
+  background-color: #eee;
+  margin-bottom: -2rem;
+  padding: 2rem 0;
+}
+
+.news-thumbnail {
+  border: solid 1px theme-color('medium_light');
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.tweet {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+
+  .fa {
+    border-top: 2px solid theme-color('medium');
+    display: block;
+    height: 0.5rem;
+
+    &::before {
+      top: -10px;
+      position: relative;
+      background: #eee;
+    }
   }
 }
