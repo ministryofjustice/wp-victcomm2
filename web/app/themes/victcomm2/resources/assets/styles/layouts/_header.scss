@@ -134,10 +134,11 @@
   &--front-page {
     background-color: theme-color('primary');
     color: theme-color('base');
-    margin: 0 0 2rem;
+    margin: 0 0 1.5rem;
     padding: $vertical-spacing-mobile;
 
     @include media-breakpoint-up(lg) {
+      margin: 0 0 2rem;
       padding: $vertical-spacing-landscape;
     }
 
