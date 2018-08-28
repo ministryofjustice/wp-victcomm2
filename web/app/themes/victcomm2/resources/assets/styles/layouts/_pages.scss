@@ -107,3 +107,20 @@
     }
   }
 }
+
+.search-icon {
+  $size: 38px;
+
+  align-items: center;
+  background-color: theme-color('primary');
+  border-radius: 3em;
+  color: theme-color('base');
+  display: flex;
+  font-size: 24px;
+  height: $size;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: $size;
+}
