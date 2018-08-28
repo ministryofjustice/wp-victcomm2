@@ -38,11 +38,15 @@ body {
       color: theme-color('base');
       display: block;
       font-family: $font-sans-serif;
-      font-size: 22px;
+      font-size: 18px;
       padding: 1em 2em;
       text-decoration: none;
       text-transform: uppercase;
       transition: all $common-transition-duration;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 22px;
+      }
     }
 
     .menu-item.current_page_item > a {
