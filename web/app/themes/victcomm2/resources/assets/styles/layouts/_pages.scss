@@ -6,7 +6,7 @@
     text-decoration: underline;
   }
 
-  a.btn {
+  .btn {
     text-decoration: none;
   }
 
@@ -80,7 +80,7 @@
 }
 
 .highlighted {
-  background-color: #eee;
+  background-color: theme-color('light');
   margin-bottom: -2rem;
   padding: 2rem 0;
 }
@@ -101,9 +101,10 @@
     height: 0.5rem;
 
     &::before {
-      top: -10px;
+      background-color: theme-color('light');
+      color: theme-color('twitter_blue');
       position: relative;
-      background: #eee;
+      top: -10px;
     }
   }
 }
@@ -112,7 +113,7 @@ i.text-input-button {
   $size: 38px;
 
   align-items: center;
-  background-color: theme-color('primary');
+  background-color: theme-color('secondary');
   border-radius: 3em;
   color: theme-color('base');
   display: flex;
@@ -127,8 +128,9 @@ i.text-input-button {
   top: 0;
 
   &--circle {
-    font-size: 24px;
+    font-size: 20px;
     padding: 0;
     width: $size;
   }
 }
+
