@@ -9,9 +9,9 @@
         </div>
       </a>
 
-      <nav class="nav-primary">
+      <nav class="nav-primary nav navbar-inverse">
         @if (has_nav_menu('primary_navigation'))
-          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav', 'walker' => new App\Custom_Walker_Nav_Menu()]) !!}
         @endif
       </nav>
 
