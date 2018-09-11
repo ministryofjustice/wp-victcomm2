@@ -11,6 +11,10 @@
   .nav {
     li {
       @extend .nav-item;
+
+      &.current-menu-ancestor {
+        font-weight: 700;
+      }
     }
 
     a {
