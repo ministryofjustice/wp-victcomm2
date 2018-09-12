@@ -61,6 +61,24 @@
     }
 
     .dropdown.menu-item-has-children:hover {
+      &::after {
+        $size: 10px;
+
+        background-color: transparent;
+        border-bottom-color: theme-color('base');
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-style: solid;
+        border-top: none;
+        border-width: $size;
+        content: '';
+        display: block;
+        height: 2 * $size;
+        margin: auto;
+        transform: translateY(-2 * $size);
+        width: 2 * $size;
+      }
+
       .dropdown-menu {
         display: block;
       }
