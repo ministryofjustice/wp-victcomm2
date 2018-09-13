@@ -90,10 +90,6 @@
       display: none;
     }
 
-    .dropdown-header {
-      padding: 0;
-    }
-
     .nav-link {
       font-size: 16px;
     }
@@ -123,6 +119,10 @@
       }
     }
   }
+}
+
+.dropdown-header {
+  padding: 0;
 }
 
 .brand {
