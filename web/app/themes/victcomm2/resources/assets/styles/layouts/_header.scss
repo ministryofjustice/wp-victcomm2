@@ -43,6 +43,7 @@
         border-left: solid 0.5rem theme-color('light');
         list-style: none;
         margin-top: 2px;
+        transition: border-left-color $common-transition-duration;
 
         &:first-child {
           margin-top: 0;
