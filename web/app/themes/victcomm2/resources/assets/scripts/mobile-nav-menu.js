@@ -29,4 +29,12 @@ export default function() {
   self.initializeReturnToCurrentPage();
   document.querySelector('.mobile-nav-menu-overlay').addEventListener('click', ()=>{ self.closeMenu(); });
   document.querySelector('.mobile-nav-menu-button').addEventListener('click', this.openMenu);
+
+  const mq = window.matchMedia('all and (max-width: 768px)');
+
+  mq.addListener(function(changed) {
+    if(!changed.matches) {
+      self.closeMenu();
+    }
+  });
 }
