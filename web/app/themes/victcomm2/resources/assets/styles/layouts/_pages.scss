@@ -1,6 +1,15 @@
 .content {
   font-family: $font-sans-serif;
+  font-size: 16px;
   font-weight: 300;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 18px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 24px;
+  }
 
   a {
     text-decoration: underline;
@@ -43,11 +52,6 @@
 
   p {
     font-family: $font-sans-serif;
-    font-size: 16px;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 24px;
-    }
   }
 
   blockquote p {
