@@ -1,4 +1,6 @@
 body {
+  $max-mobile-width: 400px;
+
   overflow-x: hidden;
 
   .site-container {
@@ -30,6 +32,10 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      width: $max-mobile-width;
+    }
 
     .nav {
       display: block;
@@ -90,7 +96,7 @@ body {
       transform: translate3d(-100%, 0, 0);
 
       @include media-breakpoint-up(sm) {
-        transform: translate3d(-400px, 0, 0);
+        transform: translate3d(-$max-mobile-width, 0, 0);
       }
 
       .page-container {
