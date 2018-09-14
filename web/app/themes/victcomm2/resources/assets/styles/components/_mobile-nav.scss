@@ -37,6 +37,10 @@ body {
       width: $max-mobile-width;
     }
 
+    li {
+      list-style: none;
+    }
+
     .nav {
       display: block;
     }
