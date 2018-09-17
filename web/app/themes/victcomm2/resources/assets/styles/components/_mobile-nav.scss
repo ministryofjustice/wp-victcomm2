@@ -41,6 +41,10 @@ body {
       list-style: none;
     }
 
+    ul {
+      padding-left: 0;
+    }
+
     .nav {
       display: block;
     }
@@ -49,6 +53,7 @@ body {
       border-bottom: 1px solid theme-color('medium');
       color: theme-color('base');
       display: block;
+      fill: theme-color('base');
       font-family: $font-sans-serif;
       font-size: 18px;
       padding: 1em 2em;
@@ -61,25 +66,51 @@ body {
       }
     }
 
+    .nav-primary__close-button {
+      background-color: transparent;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      fill: inherit;
+      line-height: 1;
+      padding: 0;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .nav-primary__close-button-image {
+      $size: 20px;
+
+      background-color: transparent;
+      fill: inherit;
+      height: $size;
+      width: $size;
+    }
+
     .menu-item.current_page_item > a {
       background-color: theme-color('base');
       color: theme-color('dark');
-    }
-
-    .menu-item.current_page_ancestor > a {
-      background-color: theme-color('dark');
-      color: theme-color('base');
+      fill: theme-color('dark');
     }
 
     .menu-item > a:hover {
       background-color: theme-color('base');
       color: theme-color('dark');
+      fill: theme-color('dark');
+    }
+
+    .menu-item.current_page_ancestor > a {
+      background-color: theme-color('dark');
+      color: theme-color('base');
+      fill: theme-color('base');
     }
 
     .menu-item > a[href='#']:hover {
       background-color: theme-color('dark');
       color: theme-color('base');
       cursor: inherit;
+      fill: theme-color('base');
     }
 
     .sub-menu {

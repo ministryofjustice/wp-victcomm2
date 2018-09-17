@@ -11,30 +11,38 @@ export default function() {
     self.body.classList.remove('mobile-nav-menu-open');
   };
 
-  this.initializeReturnToCurrentPage = () => {
-    const currentPageItems = document.querySelectorAll('.nav-primary--mobile .current_page_item:not(.current_page_ancestor)');
-    if (currentPageItems.length > 0) {
-      currentPageItems[0].addEventListener('click', ()=>{ self.returnToCurrentPage(event); });
-    }
-  };
-
-  this.returnToCurrentPage = (event) => {
+  this.closeMenuOnClick = (event) => {
     self.closeMenu();
     event.preventDefault();
     event.stopPropagation();
     return false;
   };
 
-  // Initialize mobile menu
-  self.initializeReturnToCurrentPage();
-  document.querySelector('.mobile-nav-menu-overlay').addEventListener('click', ()=>{ self.closeMenu(); });
-  document.querySelector('.mobile-nav-menu-button').addEventListener('click', this.openMenu);
-
-  const mq = window.matchMedia('all and (max-width: 768px)');
-
-  mq.addListener(function(changed) {
-    if(!changed.matches) {
-      self.closeMenu();
+  this.addCurrentPageItemClickHandler = () => {
+    const currentPageItems = document.querySelectorAll('.nav-primary--mobile .current_page_item:not(.current_page_ancestor)');
+    if (currentPageItems.length > 0) {
+      currentPageItems[0].addEventListener('click', ()=>{ self.closeMenuOnClick(event); });
     }
-  });
+  };
+
+  this.addCloseMenuButtonClickHandler = () => {
+    document.querySelector('.nav-primary__close-button').addEventListener('click', ()=>{ self.closeMenuOnClick(event); });
+  };
+
+  this.init = () => {
+    self.addCurrentPageItemClickHandler();
+    document.querySelector('.mobile-nav-menu-overlay').addEventListener('click', ()=>{ self.closeMenu(); });
+    document.querySelector('.mobile-nav-menu-button').addEventListener('click', this.openMenu);
+
+    const mq = window.matchMedia('all and (max-width: 768px)');
+
+    self.addCloseMenuButtonClickHandler();
+
+    // Close mobile menu for portrait width and above
+    mq.addListener(function(changed) {
+      if(!changed.matches) {
+        self.closeMenu();
+      }
+    });
+  }
 }

@@ -25,5 +25,7 @@ const routes = new Router({
 jQuery(document).ready(() => {
   routes.loadEvents();
 
-  new MobileNavMenu();
+  const mobileNavMenu = new MobileNavMenu();
+  mobileNavMenu.init();
+
 });
