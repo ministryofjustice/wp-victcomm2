@@ -28,27 +28,10 @@
 
   <div class="highlighted">
     <div class="wrap container">
-      <div class="content">
 
         <div class="row">
           <div class="col-md-7">
-            <h2>Latest news</h2>
-
-            <div>Aug 23</div>
-            <h4>VC launches review into criminal injuries compensation</h4>
-            {{--<img src="https://via.placeholder.com/480x270" class="news-thumbnail" />--}}
-            <hr/>
-
-            <div>Aug 23</div>
-            <h4>The Victims’ Commissioner responds to the call for evidence by the Commission on Justice in Wales</h4>
-            {{--<img src="https://via.placeholder.com/480x270" class="news-thumbnail" />--}}
-            <hr/>
-
-            <div>Aug 23</div>
-            <h4>VC launches report on victims of Mentally Disordered Offenders</h4>
-            {{--<img src="https://via.placeholder.com/480x270" class="news-thumbnail" />--}}
-            <hr/>
-
+            @include('partials.latest-news')
           </div>
           <div class="col-md-6"></div>
         </div>
@@ -81,7 +64,6 @@
                 Pleased that @mhclg have listened to those in the know @womensaid @RefugeCharity https://victimscommissioner.org.uk/vc-makes-14-…
               </a>
             </div>
-
           </div>
         </div>
 
@@ -104,7 +86,6 @@
           </div>
         </div>
 
-      </div>
     </div>
   </div>
 
