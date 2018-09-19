@@ -1,0 +1,8 @@
+.latest-tweets {
+  &__title {
+    color: theme-color('primary');
+    font-family: $font-serif;
+    font-size: 22px;
+    font-weight: 900;
+  }
+}
