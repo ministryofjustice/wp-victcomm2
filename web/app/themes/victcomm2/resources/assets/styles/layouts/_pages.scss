@@ -56,10 +56,11 @@
 
   blockquote p {
     color: theme-color('medium_light');
-    font-size: 20px;
+    font-size: 24px;
     font-family: $font-serif;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 900;
+    line-height: 1.2;
 
     @include media-breakpoint-up(lg) {
       font-size: 36px;
