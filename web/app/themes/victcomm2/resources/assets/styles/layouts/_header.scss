@@ -53,6 +53,8 @@
         a:active {
           color: theme-color('dark');
           background-color: theme-color('base');
+          font-weight: 500;
+          text-transform: none;
         }
 
         &.current-menu-item,
