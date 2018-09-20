@@ -11,13 +11,16 @@
   }
 
   &__list-item {
+    border-bottom: 1px solid theme-color('transparent_very_light');
     list-style-type: none;
+    margin-bottom: 1rem;
   }
 
   &__list-item-title {
     color: theme-color('dark');
     font-size: 20px;
     font-weight: 700;
+    margin-bottom: 1rem;
   }
 
   &__date {

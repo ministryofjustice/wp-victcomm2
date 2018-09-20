@@ -14,8 +14,6 @@
         ><h3 class="latest-news__list-item-title">{{ $post->post_title }}</h3></a>
       </li>
 
-      <hr />
-
       @php wp_reset_postdata(); @endphp
     @endforeach
   </ul>
