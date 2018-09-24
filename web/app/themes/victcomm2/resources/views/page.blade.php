@@ -1,9 +1,11 @@
 @extends('layouts.app')
 
-@section('content')
+@section('page-header')
   @include('partials.page-header')
+@endsection
 
-  <div class="wrap container" role="document">
+@section('content')
+  <div class="wrap container">
     <div class="content">
       <main class="main">
         @if (!have_posts())
@@ -17,14 +19,14 @@
         @include('partials.content-'.get_post_type())
         @endwhile
       </main>
-
-      @if (App\display_sidebar())
-        <aside class="sidebar">
-          @include('partials.sidebar')
-        </aside>
-      @endif
     </div>
   </div>
+
+  @if (App\display_sidebar())
+    <aside class="sidebar">
+      @include('partials.sidebar')
+    </aside>
+  @endif
 
   {!! get_the_posts_navigation() !!}
 @endsection

@@ -1,9 +1,12 @@
 @extends('layouts.app')
 
-@section('content')
+@section('page-header')
   @include('partials.page-header--front-page')
+@endsection
 
-  <div class="wrap container" role="document">
+@section('content')
+
+  <div class="wrap container">
     <div class="content">
       <main class="main">
         @if (!have_posts())
@@ -64,4 +67,5 @@
   </div>
 
   {!! get_the_posts_navigation() !!}
+
 @endsection

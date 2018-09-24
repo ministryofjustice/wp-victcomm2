@@ -3,15 +3,18 @@
   @include('partials.head')
   <body @php body_class() @endphp>
     <div class="site-container">
-      <div class="page-container">
+      <div class="page-container" role="document">
         @php do_action('get_header') @endphp
         @include('partials.header')
+
+        @yield('page-header')
 
         @yield('content')
 
         @php do_action('get_footer') @endphp
         @include('partials.footer')
         @php wp_footer() @endphp
+
         <div class="mobile-nav-menu-overlay"></div>
       </div>
       <nav class="nav-primary nav-primary--mobile">
