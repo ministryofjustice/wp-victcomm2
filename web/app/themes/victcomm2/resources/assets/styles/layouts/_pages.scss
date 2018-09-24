@@ -96,6 +96,12 @@
   width: 100%;
 }
 
+.make-a-complaint {
+  &__link {
+    text-decoration: underline;
+  }
+}
+
 .tweet {
   margin-bottom: 1.5rem;
   margin-top: 1rem;

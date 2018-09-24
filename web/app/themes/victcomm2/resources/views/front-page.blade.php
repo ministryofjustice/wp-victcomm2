@@ -44,12 +44,15 @@
       <div class="row">
         <div class="col-md-5">
           <hr/>
-          <h2>Make a complaint</h2>
-          Contact a criminal justice agency directly if you want to <a href="/make-a-complaint/">make a complaint</a>.
-        </div>
-        <div class="col-md-7">
+          <div class="make-a-complaint">
+            <h2>Make a complaint</h2>
 
+            <a href="/make-a-complaint/"
+               class="make-a-complaint__link"
+            >Complain about a victim's service</a>
+          </div>
         </div>
+        <div class="col-md-7"></div>
       </div>
 
       <hr/>
