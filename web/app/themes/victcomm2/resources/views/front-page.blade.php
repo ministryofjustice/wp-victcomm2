@@ -45,11 +45,9 @@
         <div class="col-md-5">
           <hr/>
           <div class="make-a-complaint">
-            <h2>Make a complaint</h2>
-
             <a href="/make-a-complaint/"
                class="make-a-complaint__link"
-            >Complain about a victim's service</a>
+            >Complain about a victims' service</a>
           </div>
         </div>
         <div class="col-md-7"></div>
