@@ -11,6 +11,8 @@
 
         @yield('content')
 
+        @yield('highlighted')
+
         @php do_action('get_footer') @endphp
         @include('partials.footer')
         @php wp_footer() @endphp

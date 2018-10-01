@@ -28,7 +28,9 @@
       @endif
     </div>
   </div>
+@endsection
 
+@section('highlighted')
   <div class="highlighted">
     <div class="wrap container">
 
