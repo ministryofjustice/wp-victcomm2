@@ -8,12 +8,12 @@ $font-sans-serif: Barlow, sans-serif;
 
 $theme-colors: (
   base: #fff,
-  dark: #111,//rgb(15, 2, 40),
+  dark: rgb(15, 2, 40),
   light: rgb(246, 245, 247),
   medium: #666,
   medium_light: rgb(124, 117, 136),
-  primary: #555, // converted to grayscale rgb(166, 15, 81),
-  secondary: #333, // rgb(64, 54, 82),
+  primary: rgb(166, 15, 81),
+  secondary: rgb(64, 54, 82),
   transparent_dark: rgba(0, 0, 0, 0.8),
   transparent_light: rgba(0, 0, 0, 0.3),
   transparent_very_light: rgba(0, 0, 0, 0.1),
