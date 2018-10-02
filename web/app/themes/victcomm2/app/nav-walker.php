@@ -192,7 +192,7 @@ namespace App\Walker {
                 $item_output .= self::linkmod_element_open( $linkmod_type, $attributes );
             } else {
                 // With no link mod type set this must be a standard <a> tag.
-                $item_output .= '<a' . $attributes . '>';
+                $item_output .= '<a' . $attributes . '><span>';
             }
             /**
              * Initiate empty icon var, then if we have a string containing any
@@ -238,7 +238,7 @@ namespace App\Walker {
                 $item_output .= self::linkmod_element_close( $linkmod_type, $attributes );
             } else {
                 // With no link mod type set this must be a standard <a> tag.
-                $item_output .= '</a>';
+                $item_output .= '</span></a>';
             }
             $item_output .= isset( $args->after ) ? $args->after : '';
             /**

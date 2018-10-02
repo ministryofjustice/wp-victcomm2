@@ -9,11 +9,15 @@
   }
 
   .nav {
-    li {
+    > li {
       @extend .nav-item;
 
-      &.current-menu-ancestor {
-        font-weight: 700;
+      &.active {
+        > a > span {
+          border-bottom: 2px solid theme-color('white');
+          position: relative;
+          top: 1px;
+        }
       }
     }
 
