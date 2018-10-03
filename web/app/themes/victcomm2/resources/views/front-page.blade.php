@@ -35,10 +35,10 @@
     <div class="wrap container">
 
       <div class="row">
-        <div class="col-md-7 col-md-push-7">
+        <div class="col-md-7 order-md-12">
           @include('partials.latest-news')
         </div>
-        <div class="col-md-5 col-md-pull-5">
+        <div class="col-md-5 order-md-1">
           @include('partials.latest-tweets')
         </div>
       </div>
@@ -69,6 +69,6 @@
     </div>
   </div>
 
-  {!! get_the_posts_navigation() !!}
+  {{--{!! get_the_posts_navigation() !!}--}}
 
 @endsection
