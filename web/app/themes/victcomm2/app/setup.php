@@ -73,6 +73,60 @@ add_action('after_setup_theme', function () {
 }, 20);
 
 /**
+ * Display admin bar at the bottom of the page on the front end.
+ */
+add_action( 'wp_head', function () { ?>
+    <style type="text/css">
+        body.admin-bar #wphead {
+            padding-top: 0;
+        }
+        #wpadminbar {
+            top: auto !important;
+            bottom: 0;
+            position: fixed;
+        }
+        #wpadminbar .quicklinks .menupop ul {
+            position: absolute;
+            bottom: 32px;
+            background-color: #23282d;
+        }
+        #wpadminbar .quicklinks .menupop ul + ul {
+            bottom: 70px;
+        }
+        #wpadminbar .quicklinks .menupop ul ul {
+            transform: translateY(62px);
+            -webkit-transform: translateY(62px);
+            -ms-transform: translateY(62px);
+        }
+        #wpadminbar .quicklinks .menupop ul.ab-sub-secondary {
+            bottom: 64px;
+            position: absolute;
+        }
+        @media screen and (max-width: 782px) {
+            #wpadminbar .quicklinks .menupop ul {
+                bottom: 46px;
+            }
+            #wpadminbar .quicklinks .menupop ul + ul,
+            #wpadminbar .quicklinks .menupop ul.ab-sub-secondary {
+                bottom: 86px;
+            }
+            #wpadminbar .quicklinks .menupop ul ul {
+                transform: translateY(92px);
+                -webkit-transform: translateY(92px);
+                -ms-transform: translateY(92px);
+            }
+        }
+    </style>
+<?php });
+
+/**
+ * Remove the default admin bar styling.
+ */
+add_action('admin_bar_init', function() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+});
+
+/**
  * Register sidebars
  */
 add_action('widgets_init', function () {
@@ -130,3 +184,4 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
