@@ -31,6 +31,10 @@
       text-transform: uppercase;
     }
 
+    a[href="#"] {
+      cursor: default;
+    }
+
     .dropdown-menu {
       $shadow-depth: 5px;
 
