@@ -71,7 +71,6 @@ namespace App\Walker {
          * @param int      $id     Current item ID.
          */
         public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
-            error_log('Custom_Walker_Nav_Menu start_el');
             if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
                 $t = '';
                 $n = '';
@@ -516,7 +515,6 @@ namespace App\Walker {
          */
         public function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0)
         {
-            error_log('Mobile_Walker start_el');
             if (isset($args->item_spacing) && 'discard' === $args->item_spacing) {
                 $t = '';
                 $n = '';
@@ -625,7 +623,6 @@ namespace App\Walker {
             $item_output .= $args->link_before . $title . $args->link_after;
 
             if ($this->firstListItem) {
-                error_log('FIRST LIST ITEM: ' . $this->firstListItem);//' . $output);
                 $this->firstListItem = false;
                 $path = get_template_directory() . "/assets/images/svg/close.svg";
                 $svg = "" . file_get_contents($path);
@@ -634,8 +631,6 @@ namespace App\Walker {
                 $item_output .= '<button class="nav-primary__close-button">';
                 $item_output .= $svg;
                 $item_output .= '</button>';
-                //error_log('FIRST LIST ITEM: ');//' . $output);
-                //error_log(print_r($args, true));
             }
 
             $item_output .= '</a>';
