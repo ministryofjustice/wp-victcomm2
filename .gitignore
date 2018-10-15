@@ -2,6 +2,7 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
+!web/app/mu-plugins/acf-json/
 web/app/upgrade
 web/app/languages
 web/app/themes/victcomm2/meta/

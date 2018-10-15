@@ -185,3 +185,23 @@ add_action('after_setup_theme', function () {
     });
 });
 
+/**
+ * Define image sizes for thumbnails.
+ */
+add_action('init', function() {
+    add_image_size( 'report', 200);
+});
+
+/**
+ * Define where ACF settings file is located
+ *
+ * https://www.advancedcustomfields.com/resources/local-json/
+ */
+function acf_json_save_point( $path )
+{
+    // update path
+    $path = WPMU_PLUGIN_DIR .  '/acf-json';
+
+    return $path;
+}
+add_filter('acf/settings/save_json', __NAMESPACE__ . '\\acf_json_save_point');

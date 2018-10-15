@@ -54,6 +54,10 @@
     font-family: $font-sans-serif;
   }
 
+  .summary {
+    font-weight: $font-weight-bold;
+  }
+
   blockquote p {
     color: theme-color('medium_light');
     font-size: 24px;

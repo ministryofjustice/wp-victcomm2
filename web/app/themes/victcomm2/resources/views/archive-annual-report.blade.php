@@ -1,13 +1,14 @@
 @extends('layouts.app')
 
 @section('page-header')
-  @include('partials.page-header')
+  @include('partials.page-header--archive-annual-report')
 @endsection
 
 @section('content')
   <div class="wrap container">
     <div class="content">
       <main class="main">
+
         @if (!have_posts())
           <div class="alert alert-warning">
             {{ __('Sorry, no results were found.', 'sage') }}
@@ -15,18 +16,13 @@
           {!! get_search_form(false) !!}
         @endif
 
-        @while (have_posts()) @php the_post() @endphp
-          @include('partials.content-single-'.get_post_type())
+        @while(have_posts()) @php the_post() @endphp
+        @include('partials.content-archive-annual-report-result')
         @endwhile
+
+        {!! get_the_posts_navigation() !!}
       </main>
     </div>
   </div>
 
-  @if (App\display_sidebar())
-    <aside class="sidebar">
-      @include('partials.sidebar')
-    </aside>
-  @endif
-
-  {!! get_the_posts_navigation() !!}
 @endsection
