@@ -8,6 +8,8 @@
   <div class="wrap container">
     <div class="content">
       <main class="main">
+        <h1>archive-annual-report.blade.php</h1>
+        @php echo print_r(Imagick::getVersion(), true) @endphp
 
         @if (!have_posts())
           <div class="alert alert-warning">
