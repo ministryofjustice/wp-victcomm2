@@ -5,6 +5,7 @@
 
   $file_size = \App\convertByteSizeToHumanReadable($reportFile['filesize']);
   $image = new Imagick();
+  $imagickVersion = print_r(Imagick::getVersion(), true);
   $image->pingImage(get_attached_file($reportFile['id']));
   $numberOfPages = $image->getNumberImages();
   $fileType = $reportFile['subtype'];
@@ -29,6 +30,7 @@
         ({{ $file_size }}, {{ $numberOfPages }} pages)<br/>
       </a>
       {{$publishedDate->format('F Y')}}
+      <p>IMagick version: {{ $imagickVersion }}</p>
     </div>
     <p class="summary">@php echo $summary @endphp</p>
     @php the_content() @endphp
