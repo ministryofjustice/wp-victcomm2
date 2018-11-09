@@ -17,3 +17,17 @@
   margin: 0 auto;
   max-width: 740px;
   padding: 2rem; }
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+/**
+ * Editor styles for the admin
+ */
+.ab-block-accordion {
+  margin-bottom: 0; }
+
+.editor-block-list__layout [data-type="atomic-blocks/ab-accordion"] {
+  margin-bottom: 1.2em; }
