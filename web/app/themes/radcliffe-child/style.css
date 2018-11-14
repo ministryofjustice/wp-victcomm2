@@ -139,6 +139,11 @@ body .content a:hover {
 
 /* drop-down menu */
 
+.header .main-menu > .has-children > a::after,
+.header .main-menu > .menu-item-has-children > a::after {
+  border-top-color: #fff;
+}
+
 /* deep down */
 
 
