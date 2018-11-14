@@ -126,9 +126,13 @@ body .content a:hover {
 
 .header .main-menu ul a:hover { color: #ccc; }
 
+.header .menu-item {
+  border-bottom: 1px solid #0f0228;
+}
+
 .header .main-menu .current-menu-parent,
 .main-menu > .menu-item:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom-color: #fff;
 }
 
 /* search toggle */
