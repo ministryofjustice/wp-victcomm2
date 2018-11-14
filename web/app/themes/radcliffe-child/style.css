@@ -199,6 +199,11 @@ body .content a:hover {
   /*font-size: 1.25em;*/
 }
 
+.content .post-content h1, .content .post-content h2, .content .post-content h3, .content .post-content h4, .content .post-content h5, .content .post-content h6 {
+  font-family: Merriweather, serif;
+  color: #a60f51;
+}
+
 /* Post media --------------------------------------- */
 
 /* GUTENBERG CLASSES */
