@@ -350,9 +350,15 @@ body .content a:hover {
   }
 
   /* mobile menu */
+  .mobile-menu-container .mobile-menu { background-color: #fff; }
+
   .mobile-menu-container .mobile-menu a:hover {
-    background-color: #a60f51;
+    background-color: #0f0228
   }
+
+  .mobile-menu .menu-item { text-transform: uppercase; }
+
+  .mobile-menu .sub-menu .menu-item {  text-transform: none; }
 
   /* mobile search form */
 
