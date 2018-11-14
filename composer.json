@@ -30,7 +30,8 @@
     "ministryofjustice/wp-rewrite-media-to-s3": "*",
     "acf/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/gutenberg": "*",
-    "wpackagist-plugin/atomic-blocks": "*"
+    "wpackagist-plugin/atomic-blocks": "*",
+    "wpackagist-theme/radcliffe": "^1.24"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
