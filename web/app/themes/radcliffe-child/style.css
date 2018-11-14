@@ -331,6 +331,10 @@ body .content a:hover {
     background: #a60f51;
   }
 
+  .header .nav-toggle .bar {
+    background-color: #fff;
+  }
+
   /* mobile menu */
   .mobile-menu-container .mobile-menu a:hover {
     background-color: #a60f51;
