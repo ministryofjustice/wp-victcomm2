@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+/*
+ Theme Name:   Radcliffe Child
+ Description:  Radcilffe Child Theme created for the Victims' Commissioner
+ Template:     Radcliffe
+*/
+
+/*-----------------------------------------------------------------------------------
+
+	0.	CSS Reset
+	1.	Document Setup
+	2.  Structure
+	3.	Header
+	4.	Navigation
+	5.	Main Content
+	6.  Single Post
+	7.	Post Content
+	8.	Comments
+	9.	Pagination
+	10.	Page & Page Templates
+	11.	Footer
+	12.	Credits
+	13. Media Queries
+
+----------------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------- */
+/*	0. CSS Reset
+/* -------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	1. Document Setup
+/* -------------------------------------------------------------------------------- */
+
+body .content a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+body .content a:hover {
+  color: #a60f51;
+}
+
+/* Transitions --------------------------------------- */
+
+/* Screen Reader Text --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	2.	Structure
+/* -------------------------------------------------------------------------------- */
+
+.content .section {
+  margin-bottom: 3em;
+  padding: 3em 0;
+}
+
+.header .section-inner {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* grid */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	3. Header
+/* -------------------------------------------------------------------------------- */
+
+.header.section {
+  background-color: #0f0228;
+  padding: 28px 0;
+}
+
+.header .blog-title {
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.header .blog-title a {
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 83px;
+  text-transform: capitalize;
+  width: 9em;
+}
+
+.header .blog-title::before {
+  background-image: url('/app/themes/radcliffe-child/images/logo-white.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 46px;
+  position: absolute;
+  width: 73px;
+}
+
+.header .blog-title a:hover { color: #eee; }
+
+.header .main-menu > li:hover > a {
+  color: #eee;
+  background: initial;
+}
+
+/* header search block */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	4. Navigation
+/* -------------------------------------------------------------------------------- */
+
+/* .header .main-menu a { background-color: #a60f51; } */
+
+.header .main-menu a { color: #fff; }
+
+.header .main-menu ul a:hover,
+.header .main-menu ul a {
+  background: #222;
+}
+
+.header .main-menu ul a:hover { color: #ccc; }
+
+.header .main-menu .current-menu-parent,
+.main-menu > .menu-item:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/* search toggle */
+
+/* drop-down menu */
+
+/* deep down */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	5. Main Content
+/* -------------------------------------------------------------------------------- */
+
+/* featured media */
+
+/* post header */
+
+/* wp-block-media-text */
+.media-text-homepage {
+  align-items: flex-start;
+  grid-template-columns: 33% 67%;
+}
+
+.media-text-homepage img {
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	6. Single Post
+/* -------------------------------------------------------------------------------- */
+
+.content .single .post-header { background-color: #a60f51; }
+
+.content .single .post-title {
+  color: #fff;
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  text-align: left;
+  text-transform: initial;
+}
+
+/* page links */
+
+/* Post meta */
+
+/* author links */
+
+/* post cat tags */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	7. Post Content
+/* -------------------------------------------------------------------------------- */
+
+.content .post-content {
+  font-family: Barlow, sans-serif;
+  /*font-size: 1.25em;*/
+}
+
+/* Post media --------------------------------------- */
+
+/* GUTENBERG CLASSES */
+
+/* Tables --------------------------------------- */
+
+/* Forms --------------------------------------- */
+
+/* Gutenberg Accent Colors --------------------------------------- */
+
+/* Gutenberg Font Sizes --------------------------------------- */
+
+/* Block: Image --------------------------------------- */
+
+/* Block: Button --------------------------------------- */
+
+/* Block: File --------------------------------------- */
+
+/* Block: Quote --------------------------------------- */
+
+/* Block: Pullquote --------------------------------------- */
+
+/* Block: Gallery --------------------------------------- */
+
+/* Block: Cover Image --------------------------------------- */
+
+/* Block: Column --------------------------------------- */
+
+/* Block: Audio --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	8. Comments
+/* -------------------------------------------------------------------------------- */
+
+/* Comment header --------------------------------------- */
+
+/* Comment content --------------------------------------- */
+
+/* Comment actions --------------------------------------- */
+
+/* Comment navigation --------------------------------------- */
+
+/* Respond --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	9. Pagination
+/* -------------------------------------------------------------------------------- */
+
+/* Archive navigation --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	10. Page & Page Templates
+/* -------------------------------------------------------------------------------- */
+
+/* Archives template --------------------------------------- */
+
+/* Single attachment --------------------------------------- */
+
+/* Error 404 --------------------------------------- */
+
+/* Search --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	11. Footer
+/* -------------------------------------------------------------------------------- */
+
+.page .footer {
+  background-color: #0f0228;
+}
+
+/* Widget nav menu --------------------------------------- */
+.footer .widget_nav_menu a {
+  color: #fff;
+  font-family: Barlow, sans-serif;
+  text-transform: uppercase;
+}
+
+.footer .widget_nav_menu li:before {
+  content: '';
+}
+
+/* Widget tag cloud --------------------------------------- */
+
+/* Widget calendar --------------------------------------- */
+
+/* Widget search form --------------------------------------- */
+
+/* Widget RSS --------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------- */
+/*	12. Credits
+/* -------------------------------------------------------------------------------- */
+.credits {
+  display: none;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/*	13. Media Queries
+/* -------------------------------------------------------------------------------- */
+
+@media (min-height: 1100px) {
+
+}
+
+
+@media (max-width: 1200px) {
+
+}
+
+
+@media ( max-width: 1040px ) {
+
+}
+
+
+@media (max-width: 1020px) {
+
+}
+
+
+@media (max-width: 1000px) {
+
+  /* header */
+
+  /* nav-toggle */
+
+  .header .nav-toggle p {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .header .nav-toggle.active {
+    background: #a60f51;
+  }
+
+  /* mobile menu */
+  .mobile-menu-container .mobile-menu a:hover {
+    background-color: #a60f51;
+  }
+
+  /* mobile search form */
+
+}
+
+
+@media (max-width: 900px) {
+
+  /* main content */
+
+  /* paginations */
+
+  /* footer */
+
+}
+
+
+@media ( max-width: 600px ) {
+
+  /* structure */
+
+  /* header */
+
+  /* navigation */
+
+  /* main content */
+
+  /* single post */
+
+  /* post-content */
+
+  /* comments */
+
+  /* respond */
+
+  /* pagination */
+
+  /* page & page templates */
+
+  /* footer */
+
+  /* credits */
+
+}
+
+
+@media (max-width: 500px) {
+
+  /* main content */
+
+  /* comments */
+
+  /* pagination */
+
+}
+
+
+@media (max-width: 350px) {
+
+  /* header */
+
+  /* single post */
+
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+  /* 2X images */
+
+}
