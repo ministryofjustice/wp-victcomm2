@@ -117,7 +117,10 @@ body .content a:hover {
 
 /* .header .main-menu a { background-color: #a60f51; } */
 
-.header .main-menu a { color: #fff; }
+.header .main-menu a {
+  color: #fff;
+  font-family: Barlow, sans-serif;
+}
 
 .header .main-menu ul a:hover,
 .header .main-menu ul a {
