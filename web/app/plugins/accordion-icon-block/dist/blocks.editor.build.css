@@ -31,3 +31,6 @@
 
 .editor-block-list__layout [data-type="atomic-blocks/ab-accordion"] {
   margin-bottom: 1.2em; }
+
+.vc-accordion-summary .vc-accordion-icon {
+  cursor: pointer; }

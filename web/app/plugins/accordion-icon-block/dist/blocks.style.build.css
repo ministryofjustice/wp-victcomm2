@@ -60,22 +60,78 @@
 .ab-block-accordion + .ab-block-accordion {
   margin-top: -.6em; }
 
-.vc-accordion-summary .vc-accordion-icon {
-  display: block;
-  width: 80px;
-  height: 80px;
-  border: 3px solid #BBB6C4;
-  border-radius: 50%; }
+.vc-accordion-summary-it-works {
+  border: 1px solid #BBB6C4;
+  border-radius: 25px;
+  margin-left: 40px;
+  padding-left: 50px;
+  height: 50px;
+  position: relative; }
+  .vc-accordion-summary-it-works .vc-accordion-icon {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #BBB6C4;
+    border-radius: 50%; }
+  .vc-accordion-summary-it-works .vc-accordion-icon-button {
+    background: #f2f2f2;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #bbb;
+    border-radius: 50%;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .vc-accordion-summary-it-works .vc-accordion-icon,
+  .vc-accordion-summary-it-works .vc-accordion-icon-button {
+    position: absolute;
+    left: -40px;
+    top: -15px; }
+  .vc-accordion-summary-it-works .vc-accordion-title {
+    background: orangered;
+    height: 48px;
+    line-height: 48px; }
 
-.vc-accordion-summary .vc-accordion-icon-button {
-  background: #f2f2f2;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80px;
-  height: 80px;
-  border: 3px solid #bbb;
-  border-radius: 50%;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
+.vc-accordion-summary {
+  border: 1px solid #BBB6C4;
+  border-radius: 25px;
+  margin-left: 40px;
+  padding: 6px 50px;
+  position: relative;
+  -webkit-box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.1); }
+  .vc-accordion-summary .vc-accordion-icon,
+  .vc-accordion-summary .vc-accordion-icon-button {
+    position: absolute;
+    left: -40px;
+    margin-top: -40px;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #bbb;
+    border-radius: 50%; }
+  .vc-accordion-summary .vc-accordion-icon {
+    display: block;
+    background: #fff; }
+  .vc-accordion-summary .vc-accordion-icon-button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    background: #f2f2f2; }
+  .vc-accordion-summary .vc-accordion-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    opacity: 0.5; }
+
+.vc-accordion-text {
+  border-left: 3px solid #bbb;
+  margin: -18px 0 0 40px;
+  padding: 18px 0 1px 40px; }
