@@ -56,11 +56,15 @@ const blockAttributes = {
 	},
 	iconAlt: {
 		type: 'string',
-		// attribute: 'alt',
+		source: 'attribute',
+		selector: '.vc-accordion-icon',
+		attribute: 'alt',
 	},
 	iconUrl: {
 		type: 'string',
-		// attribute: 'src',
+		source: 'attribute',
+		selector: '.vc-accordion-icon',
+		attribute: 'src',
 	},
 };
 
@@ -99,10 +103,11 @@ class AccordionIconBlock extends Component {
 			</BlockControls>,
 			// Show the block controls on focus
 			<Inspector
+				key="inspector"
 				{ ...this.props }
 			/>,
 			// Show the button markup in the editor
-			<Accordion { ...this.props }>
+			<Accordion key="accordion" { ...this.props }>
 				<div className="vc-accordion-summary">
 					<MediaUpload
 						onSelect={ media => { setAttributes({ iconAlt: media.alt, iconUrl: media.url }); } }
@@ -125,7 +130,7 @@ class AccordionIconBlock extends Component {
 					/>
 				</div>
 
-				<div class="vc-accordion-text">
+				<div className="vc-accordion-text">
 					<InnerBlocks />
 				</div>
 			</Accordion>
@@ -153,20 +158,37 @@ registerBlockType( 'vc/accordion-icon', {
 	save: function( props ) {
 
 		// Setup the attributes
-		const { accordionTitle, accordionText, accordionOpen } = props.attributes;
+		const { accordionTitle, accordionText, accordionOpen, iconAlt, iconUrl } = props.attributes;
+
+		const displayIcon = () => {
+			if (iconUrl) {
+				return (
+					<img
+						src={ iconUrl }
+						alt={ iconAlt }
+						className="vc-accordion-icon"
+					/>
+				);
+			}
+			else {
+				return null;
+			}
+		};
 
 		// Save the block markup for the front end
 		return (
 			<Accordion { ...props }>
 				<details open={accordionOpen}>
 					<summary className="vc-accordion-summary">
-						<h2>
+						{ displayIcon() }
+
+						<h2 className="vc-accordion-title">
 							<RichText.Content
 								value={ accordionTitle }
 							/>
 						</h2>
 					</summary>
-					<div class="vc-accordion-text">
+					<div className="vc-accordion-text">
 						<InnerBlocks.Content />
 					</div>
 				</details>

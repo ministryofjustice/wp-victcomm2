@@ -20,7 +20,7 @@ export default class Accordion extends Component {
 	render() {
 
 		// Setup the attributes
-		const { accordionTitle, accordionText, accordionAlignment, accordionFontSize } = this.props.attributes;
+		const { accordionTitle, accordionText } = this.props.attributes;
 
 		return (	
 			<div
@@ -29,9 +29,7 @@ export default class Accordion extends Component {
 				} }
 				className={ classnames(
 					this.props.className,
-					accordionAlignment,
-					'ab-block-accordion',
-					'ab-font-size-' + accordionFontSize,
+					'vc-block-accordion',
 				) }
 			>
 				{ this.props.children }

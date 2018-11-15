@@ -10,7 +10,6 @@ const { Component } = wp.element;
 const {
   InspectorControls,
   BlockDescription,
-  MediaPlaceholder,
 } = wp.editor;
 
 // Import Inspector components
@@ -19,7 +18,6 @@ const {
 	Button,
 	PanelBody,
 	PanelRow,
-	RangeControl,
 	ToggleControl,
 } = wp.components;
 
@@ -35,34 +33,15 @@ export default class Inspector extends Component {
 	render() {
 
 		// Setup the attributes
-		const { accordionTitle, accordionText, accordionFontSize, accordionOpen } = this.props.attributes;
+		const { accordionTitle, accordionText, accordionOpen } = this.props.attributes;
 
 		return (
 		<InspectorControls key="inspector">
 			<PanelBody>
-				<RangeControl
-					label={ __( 'Font Size' ) }
-					value={ accordionFontSize }
-					onChange={ ( value ) => this.props.setAttributes( { accordionFontSize: value } ) }
-					min={ 14 }
-					max={ 24 }
-					step={ 1 }
-				/>
-
 				<ToggleControl
 					label={ __( 'Open by default' ) }
 					checked={ accordionOpen }
 					onChange={ () => this.props.setAttributes( { accordionOpen: ! accordionOpen } ) }
-				/>
-
-				<MediaPlaceholder
-					icon="format-image"
-					labels={ {
-						title: __( 'Icon' ),
-					} }
-					onSelect={ (media) => console.log('Received media', media) }
-					accept="image/*"
-					allowedTypes="image"
 				/>
 			</PanelBody>
 		</InspectorControls>

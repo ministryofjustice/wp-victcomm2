@@ -63,3 +63,4 @@ function vc_blocks_cgb_editor_assets() {
 
 // Hook: Editor assets.
 add_action( 'enqueue_block_editor_assets', 'vc_blocks_cgb_editor_assets' );
+
