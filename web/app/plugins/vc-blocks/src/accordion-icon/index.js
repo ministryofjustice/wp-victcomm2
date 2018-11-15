@@ -187,6 +187,11 @@ registerBlockType( 'vc/accordion-icon', {
 								value={ accordionTitle }
 							/>
 						</h2>
+
+						<Dashicon
+							icon="arrow-down-alt2"
+							className="vc-accordion-toggle"
+						/>
 					</summary>
 					<div className="vc-accordion-text">
 						<InnerBlocks.Content />
