@@ -2,17 +2,25 @@
  * Editor styles for the admin
  */
 
-.ab-block-accordion {
+/*.ab-block-accordion {
     margin-bottom: 0;
 }
 
 .editor-block-list__layout [data-type="atomic-blocks/ab-accordion"] {
     margin-bottom: 1.2em;
-}
+}*/
 
-
-.vc-accordion-summary {
+.vc-block-accordion {
   .vc-accordion-icon {
 	cursor: pointer;
+  }
+
+  .vc-accordion-toggle {
+	opacity: 0.5;
+  }
+
+  .vc-accordion-text {
+	margin-top: -18px;
+	padding-top: 18px;
   }
 }
