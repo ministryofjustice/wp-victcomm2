@@ -1,0 +1,30 @@
+/**
+ * Accordion styles
+ * Loads on front end and back end
+ */
+
+.wp-block-vc-accordion-icon-group {
+  padding: 1px 0;
+  margin: 20px 0;
+  position: relative;
+
+  &:before {
+	content: '';
+	display: block;
+	border-left: $accordion-border-width solid #bbb;
+	margin-left: $accordion-border-width/-2;
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	left: 40px;
+	width: 0;
+  }
+
+  .wp-block-vc-accordion-icon:first-child {
+	margin-top: 0;
+  }
+
+  .wp-block-vc-accordion-icon:last-child {
+	margin-bottom: 0;
+  }
+}

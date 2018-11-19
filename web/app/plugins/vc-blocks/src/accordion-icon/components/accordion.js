@@ -21,7 +21,7 @@ export default class Accordion extends Component {
 
 		return (	
 			<div
-				className={ this.props.className + ' vc-block-accordion' }
+				className={ this.props.className }
 			>
 				{ this.props.children }
 			</div>
