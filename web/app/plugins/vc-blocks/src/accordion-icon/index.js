@@ -1,11 +1,10 @@
 /**
- * BLOCK: Atomic Blocks Accordion Block
+ * BLOCK: Accordion Section
  */
 
 // Import block dependencies and components
 import Inspector from './components/inspector';
 import Accordion from './components/accordion';
-import omit from 'lodash/omit';
 
 // Import CSS
 import './styles/style.scss';
@@ -140,8 +139,8 @@ class AccordionIconBlock extends Component {
 
 // Register the block
 registerBlockType( 'vc/accordion-icon', {
-	title: __( 'Accordion & Icon' ),
-	description: __( 'Add accordion block with an icon, a title and text.' ),
+	title: __( 'Accordion Section' ),
+	description: __( 'An accordion section with an icon, a heading and text.' ),
 	icon: 'editor-ul',
 	category: 'common',
 	keywords: [
@@ -150,6 +149,7 @@ registerBlockType( 'vc/accordion-icon', {
 		__( 'icon' ),
 	],
 	attributes: blockAttributes,
+	parent: ['vc/accordion-icon-group'],
 
 	// Render the block components
 	edit: AccordionIconBlock,

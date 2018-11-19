@@ -10,3 +10,4 @@
  */
 
 import './accordion-icon/index.js';
+import './accordion-icon-group/index.js';

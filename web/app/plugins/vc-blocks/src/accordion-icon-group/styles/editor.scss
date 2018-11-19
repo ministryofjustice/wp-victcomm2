@@ -1,0 +1,10 @@
+/**
+ * Editor styles for the admin
+ */
+
+.wp-block-vc-accordion-icon-group {
+  &:before {
+	top: 25px;
+	bottom: 70px;
+  }
+}

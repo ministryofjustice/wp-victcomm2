@@ -2,15 +2,7 @@
  * Editor styles for the admin
  */
 
-/*.ab-block-accordion {
-    margin-bottom: 0;
-}
-
-.editor-block-list__layout [data-type="atomic-blocks/ab-accordion"] {
-    margin-bottom: 1.2em;
-}*/
-
-.vc-block-accordion {
+.wp-block-vc-accordion-icon {
   .vc-accordion-icon {
 	cursor: pointer;
   }
@@ -24,3 +16,4 @@
 	padding-top: 18px;
   }
 }
+
