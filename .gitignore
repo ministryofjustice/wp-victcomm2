@@ -1,7 +1,6 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
-!web/app/plugins/accordion-icon-block/
 !web/app/plugins/vc-blocks/
 web/app/mu-plugins/*/
 !web/app/mu-plugins/acf-json/
