@@ -15,5 +15,14 @@ cd web/app/themes/victcomm2
 composer install
 npm install
 npm run-script build:production
+rm -rf node_modules
+
+cd ../../../../
+
+# Build plugin `vc-blocks`
+cd web/app/plugins/vc-blocks
+npm install
+npm run build
+rm -rf node_modules
 
 cd ../../../../
