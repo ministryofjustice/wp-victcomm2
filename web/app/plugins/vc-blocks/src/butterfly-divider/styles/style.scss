@@ -1,0 +1,16 @@
+/**
+ * Accordion styles
+ * Loads on front end and back end
+ */
+
+.wp-block-vc-butterfly-divider {
+  > hr {
+	display: none;
+  }
+
+  > svg {
+	fill: $vc-pink;
+	display: block;
+	margin: 0 auto;
+  }
+}

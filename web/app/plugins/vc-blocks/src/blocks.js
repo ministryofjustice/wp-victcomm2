@@ -11,3 +11,4 @@
 
 import './accordion-icon/index.js';
 import './accordion-icon-group/index.js';
+import './butterfly-divider/index.js';
