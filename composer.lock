@@ -218,16 +218,16 @@
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "1.0.0.2",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "7941acd71725710a789daabe0557429da63e7ac6"
+                "reference": "fd12f5cfe27223b92b0f4bbc097059eb23cc56c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/7941acd71725710a789daabe0557429da63e7ac6",
-                "reference": "7941acd71725710a789daabe0557429da63e7ac6",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/fd12f5cfe27223b92b0f4bbc097059eb23cc56c4",
+                "reference": "fd12f5cfe27223b92b0f4bbc097059eb23cc56c4",
                 "shasum": ""
             },
             "require": {
@@ -251,7 +251,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -263,7 +263,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2018-01-29T14:49:29+00:00"
+            "time": "2018-11-09T20:10:38+00:00"
         },
         {
             "name": "koodimonni-language/core-en_gb",
@@ -511,15 +511,15 @@
         },
         {
             "name": "wpackagist-plugin/atomic-blocks",
-            "version": "1.3.6",
+            "version": "1.4.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/atomic-blocks/",
-                "reference": "tags/1.3.6"
+                "reference": "tags/1.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.1.3.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.1.4.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -531,15 +531,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "4.2.0",
+            "version": "4.6.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/4.2.0"
+                "reference": "tags/4.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.4.2.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.4.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -551,15 +551,15 @@
         },
         {
             "name": "wpackagist-theme/radcliffe",
-            "version": "1.24",
+            "version": "1.25",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/radcliffe/",
-                "reference": "1.24"
+                "reference": "1.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/radcliffe.1.24.zip",
+                "url": "https://downloads.wordpress.org/theme/radcliffe.1.25.zip",
                 "reference": null,
                 "shasum": null
             },

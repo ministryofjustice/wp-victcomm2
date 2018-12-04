@@ -103,12 +103,20 @@ body .content a:hover {
 
 .header .blog-title a:hover { color: #eee; }
 
-.header .main-menu > li:hover > a {
+.main-menu > li:hover > a {
   color: #eee;
   background: initial;
 }
 
 /* header search block */
+.header-search-block {
+  padding: 28px 0;
+}
+
+.header-search-block #s {
+  font-family: Barlow, sans-serif;
+  font-size: 24px;
+}
 
 
 /* -------------------------------------------------------------------------------- */
@@ -117,33 +125,48 @@ body .content a:hover {
 
 /* .header .main-menu a { background-color: #a60f51; } */
 
-.header .main-menu a {
+.main-menu {
+  background-color: #0f0228;
+}
+
+.main-menu a {
   color: #fff;
   font-family: Barlow, sans-serif;
 }
 
-.header .main-menu ul a:hover,
-.header .main-menu ul a {
+.main-menu ul a:hover,
+.main-menu ul a {
   background: #222;
 }
 
-.header .main-menu ul a:hover { color: #ccc; }
+.main-menu ul a:hover { color: #ccc; }
 
-.header .menu-item {
+.menu-item {
   border-bottom: 1px solid #0f0228;
 }
 
-.header .main-menu .current-menu-parent,
+.main-menu .current-menu-parent,
 .main-menu > .menu-item:hover {
   border-bottom-color: #fff;
 }
 
 /* search toggle */
+.main-menu a.search-toggle {
+  background-image: url(images/Search.svg);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 1.5em;
+
+}
+
+.main-menu a.search-toggle:hover {
+  background-image: url(images/Search.svg);
+}
 
 /* drop-down menu */
 
-.header .main-menu > .has-children > a::after,
-.header .main-menu > .menu-item-has-children > a::after {
+.main-menu > .has-children > a::after,
+.main-menu > .menu-item-has-children > a::after {
   border-top-color: #fff;
 }
 
@@ -174,14 +197,20 @@ body .content a:hover {
 /*	6. Single Post
 /* -------------------------------------------------------------------------------- */
 
-.content .single .post-header { background-color: #a60f51; }
+.content .single .post-header {  background-color: rgb(246, 245, 247) }
 
-.content .single .post-title {
-  color: #fff;
+.home .single .post-header {  background-color: #a60f51;  }
+
+.post-title {
+  color: #a60f51;
   font-family: Merriweather, serif;
   font-weight: bold;
   text-align: left;
   text-transform: initial;
+}
+
+.home .post-title {
+  color: #fff;
 }
 
 /* page links */
@@ -271,7 +300,9 @@ body .content a:hover {
 /* Error 404 --------------------------------------- */
 
 /* Search --------------------------------------- */
-
+.search-form .search-button {
+  background: url(images/Search.svg) no-repeat center;
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	11. Footer
@@ -353,9 +384,14 @@ body .content a:hover {
   }
 
   /* mobile menu */
-  .mobile-menu-container .mobile-menu { background-color: #fff; }
+  .mobile-menu-container .mobile-menu { background-color: #0f0228; }
+
+  .mobile-menu-container .mobile-menu a {
+    color: #eee;
+  }
 
   .mobile-menu-container .mobile-menu a:hover {
+    color: #fff;
     background-color: #0f0228
   }
 
