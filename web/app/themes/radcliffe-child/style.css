@@ -180,6 +180,10 @@ body .content a:hover {
 /* featured media */
 
 /* post header */
+.post-summary {
+  font-size: 1.5em;
+  margin-top: 28px;
+}
 
 /* wp-block-media-text */
 .media-text-homepage {
