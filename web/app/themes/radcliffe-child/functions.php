@@ -8,3 +8,13 @@ function my_theme_enqueue_styles() {
 }
 
 
+/**
+ * Filter the except length to 30 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );

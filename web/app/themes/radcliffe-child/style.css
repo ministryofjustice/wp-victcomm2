@@ -34,7 +34,7 @@
 /*	1. Document Setup
 /* -------------------------------------------------------------------------------- */
 
-body .content a {
+.content a {
   color: inherit;
   text-decoration: underline;
 }
@@ -148,6 +148,7 @@ body .content a:hover {
 }
 
 /* deep down */
+
 
 
 /* -------------------------------------------------------------------------------- */
@@ -271,7 +272,136 @@ body .content a:hover {
 /* Error 404 --------------------------------------- */
 
 /* Search --------------------------------------- */
+.search-results .content .section {
+  margin-bottom: 0;
+}
 
+.search-results-list > * {
+  margin-top: 20px;
+}
+
+.search-results-list > *:first-child {
+  margin-top: 0;
+}
+
+.search-result {
+
+}
+
+.search-result__title {
+  color: #a60f51;
+  font-family: Barlow, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: left;
+  text-transform: none;
+}
+
+.search-result__title > a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.search-result__title > a:hover {
+  text-decoration: underline;
+}
+
+.search-result__excerpt > p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+/* --- mobile search form -- copied from parent theme, needed for screens greater than 1000px */
+.mobile-search-form {
+  background: #eee;
+  border-top: 1px solid #ddd;
+  position: relative;
+}
+
+.mobile-search-form #s {
+  display: block;
+  width: 100%;
+  max-width: 84%;
+  margin: 0 auto;
+  background: none;
+  border: none;
+  padding: 25px 60px 25px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #666;
+}
+
+.mobile-search-form #s:focus { outline: none; }
+
+.mobile-search-form .search-button {
+  width: 40px;
+  height: 40px;
+  background: url(images/icons/2x/spyglass-d.png) no-repeat center;
+  background-size: 20px auto;
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  margin-top: -20px;
+  -webkit-appearance: none;
+  padding: 0;
+  border: none;
+  text-indent: -9999px;
+  opacity: 0.5;
+}
+/* --- */
+
+.search-results-page-form .search-button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.search-results-page-form #s {
+  background-color: #fff;
+  max-width: 100%;
+  padding: 25px 0;
+}
+
+.search-results-page-form .search-button {
+  right: 0;
+}
+
+.search-results .archive-nav {
+  background-color: #fff;
+}
+
+.search-results .archive-nav a {
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.search-results .archive-nav a:hover {
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.search-results a.post-nav-older {
+  float: right;
+}
+
+.search-results a.post-nav-newer {
+  float: left;
+}
+
+.search-results .post-nav-older,
+.search-results .post-nav-newer {
+  font-family: Barlow, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.search-results .search-toggle-menu-item {
+  display: none;
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	11. Footer
@@ -364,7 +494,7 @@ body .content a:hover {
   .mobile-menu .sub-menu .menu-item {  text-transform: none; }
 
   /* mobile search form */
-
+  .search-results .mobile-menu-container .mobile-search-form { display: none; }
 }
 
 
