@@ -26,6 +26,23 @@
 /* -------------------------------------------------------------------------------- */
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
+  font-family: Barlow, sans-serif;
+  font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #a60f51;
+  font-family: Merriweather, serif;
+  font-weight: 600;
+  margin-bottom: .5em;
+}
+
+p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
 
 
 /* -------------------------------------------------------------------------------- */
@@ -45,7 +62,6 @@ body .content a:hover {
 
 /* Screen Reader Text --------------------------------------- */
 
-
 /* -------------------------------------------------------------------------------- */
 /*	2.	Structure
 /* -------------------------------------------------------------------------------- */
@@ -62,7 +78,6 @@ body .content a:hover {
 }
 
 /* grid */
-
 
 /* -------------------------------------------------------------------------------- */
 /*	3. Header
@@ -106,8 +121,11 @@ body .content a:hover {
   background: initial;
 }
 
-/* header search block */
+.header .nav-toggle p {
+  margin-bottom: 0;
+}
 
+/* header search block */
 
 /* -------------------------------------------------------------------------------- */
 /*	4. Navigation
@@ -173,17 +191,25 @@ body .content a:hover {
 /*	6. Single Post
 /* -------------------------------------------------------------------------------- */
 
-.content .single .post-header { background-color: #a60f51; }
+.single .post-header { background-color: #f6f5f7; }
 
-.content .single .post-title {
-  color: #fff;
+.home .single .post-header { background-color: #a60f51; }
+
+.single .post-title {
+  color: #a60f51;
   font-family: Merriweather, serif;
+  font-size: 52px;
   font-weight: bold;
+  margin-bottom: 0;
   text-align: left;
   text-transform: initial;
 }
 
-/* page links */
+.home .single .post-title {
+  color: #fff;
+}
+
+  /* page links */
 
 /* Post meta */
 
@@ -401,12 +427,67 @@ body .content a:hover {
   display: none;
 }
 
+/* Report --------------------------------------- */
+.report {
+  display: flex;
+  flex-direction: row;
+
+  /*@include media-breakpoint-up(sm) {
+    flex-direction: row;
+  }*/
+
+}
+
+.report__title {
+ font-size: 32px;
+}
+
+.report__meta p {
+  line-height: 1.2;
+
+  /*@include media-breakpoint-up(sm) {
+    margin-left: 0;
+  }*/
+}
+
+
+
+.report__icon-section {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+
+  /*@include media-breakpoint-up(sm) {
+    flex-direction: column;
+  }*/
+}
+
+.report__icon {
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px 0 #eee;
+  display: block;
+  margin-bottom: 16px;
+  width: 200px
+  /*@include media-breakpoint-up(md) {
+    margin-bottom: 32px;
+  }*/
+}
+
+.report__icon img {
+  width: 100%;
+}
+
+.report__text {
+  margin-left: 32px;
+}
+
 /* -------------------------------------------------------------------------------- */
 /*	11. Footer
 /* -------------------------------------------------------------------------------- */
 
-.page .footer {
+.footer {
   background-color: #0f0228;
+  margin-top: 40px;
 }
 
 /* Widget nav menu --------------------------------------- */
@@ -493,6 +574,7 @@ body .content a:hover {
 
   /* mobile search form */
   .search-results .mobile-menu-container .mobile-search-form { display: none; }
+
 }
 
 
@@ -503,7 +585,6 @@ body .content a:hover {
   /* paginations */
 
   /* footer */
-
 }
 
 
@@ -533,23 +614,47 @@ body .content a:hover {
 
   /* credits */
 
+  /* reports */
+  .report {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .report__icon-section {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .report__icon {
+    margin-bottom: 32px;
+  }
+
+  .report__meta {
+    margin-left: 32px;
+    width: 50%;
+  }
+
+  .report__text {
+    /*margin-left: 16px;*/
+    margin-left: 0;
+  }
+
 }
 
 
 @media (max-width: 500px) {
 
   /* main content */
-
   /* comments */
-
   /* pagination */
 
 }
 
 
+
 @media (max-width: 350px) {
 
-  /* header */
+    /* header */
 
   /* single post */
 

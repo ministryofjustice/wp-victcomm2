@@ -18,3 +18,30 @@ function custom_excerpt_length( $length ) {
     return 30;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+/**
+ * Convert byte size to human readable
+ *
+ * @param $bytes
+ *
+ * @return string
+ */
+function convertByteSizeToHumanReadable($bytes) {
+    error_log('convertByteSizeToHumanReadable');
+    if ($bytes > 0)
+    {
+        $unit = intval(log($bytes, 1024));
+        $units = array('B', 'KB', 'MB', 'GB');
+
+        if (array_key_exists($unit, $units) === true)
+        {
+            return sprintf('%d %s', $bytes / pow(1024, $unit), $units[$unit]);
+        }
+    }
+
+    return $bytes;
+}
+
+add_action('init', function() {
+    add_image_size( 'report', 200);
+});
