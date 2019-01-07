@@ -45,3 +45,20 @@ function convertByteSizeToHumanReadable($bytes) {
 add_action('init', function() {
     add_image_size( 'report', 200);
 });
+
+function template($data, $slug, $name = '') {
+    global $vc_template_data;
+    $vc_template_data = $data;
+
+    ob_start();
+    get_template_part($slug, $name);
+    $output = ob_get_contents();
+    ob_end_clean();
+
+    $vc_template_data = null;
+    return $output;
+}
+
+function partial($data, $slug, $name = '') {
+    return template($data, 'partials/' . $slug, $name);
+}
