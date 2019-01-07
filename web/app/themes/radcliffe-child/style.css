@@ -469,12 +469,11 @@ body {
   }*/
 }
 
-
-
 .report__icon-section {
    align-items: center;
    display: flex;
    flex-direction: column;
+   max-width: 200px;
 
   /*@include media-breakpoint-up(sm) {
     flex-direction: column;
@@ -642,6 +641,7 @@ body {
   .report__icon-section {
     align-items: flex-start;
     flex-direction: row;
+    max-width: 100%;
   }
 
   .report__icon {
