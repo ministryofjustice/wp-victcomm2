@@ -290,6 +290,16 @@ body .content a:hover {
 /* -------------------------------------------------------------------------------- */
 
 /* Archives template --------------------------------------- */
+.archive__list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.archive__list-element {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
 
 /* Single attachment --------------------------------------- */
 
