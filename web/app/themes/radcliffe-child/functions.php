@@ -47,18 +47,37 @@ add_action('init', function() {
 });
 
 function template($data, $slug, $name = '') {
-    global $vc_template_data;
-    $vc_template_data = $data;
+    global $vcTemplateData;
+    $vcTemplateData = $data;
 
     ob_start();
     get_template_part($slug, $name);
     $output = ob_get_contents();
     ob_end_clean();
 
-    $vc_template_data = null;
+    $vcTemplateData = null;
     return $output;
 }
 
 function partial($data, $slug, $name = '') {
     return template($data, 'partials/' . $slug, $name);
+}
+
+/**
+ * Create ACF setting page under report menus
+ *
+ * @since 1.0.0
+ */
+if ( function_exists( 'acf_add_options_sub_page' ) ){
+    acf_add_options_sub_page(array(
+        'title'      => 'Annual Report Settings',
+        'parent'     => 'edit.php?post_type=annual-report',
+        'capability' => 'manage_options'
+    ));
+
+    acf_add_options_sub_page(array(
+        'title'      => 'Special Report Settings',
+        'parent'     => 'edit.php?post_type=special-report',
+        'capability' => 'manage_options'
+    ));
 }

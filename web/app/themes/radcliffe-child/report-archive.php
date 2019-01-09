@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+
+get_header();
+
+global $vcTemplateData;
+
+$td = $vcTemplateData;
+
+?>
 
     <div class="content">
 
@@ -14,19 +22,21 @@
 
             </div>
 
-        </div>
+            <div class="section-inner archive">
 
-        <div class="section-inner archive">
+                <div class="archive__content"><?= $td['archive-text'] ?></div>
 
-            <ul class="archive__list">
+                <ul class="archive__list">
 
-                <?php while ( have_posts() ) : the_post(); ?>
+                    <?php while ( have_posts() ) : the_post(); ?>
 
-                    <li class="archive__list-element"><a href="<?= the_permalink() ?>"><?php the_title(); ?></a></li>
+                        <li class="archive__list-element"><a href="<?= the_permalink() ?>"><?php the_title(); ?></a></li>
 
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
 
-            </ul>
+                </ul>
+
+            </div>
 
         </div>
 

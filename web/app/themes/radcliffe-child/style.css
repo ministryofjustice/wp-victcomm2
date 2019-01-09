@@ -310,6 +310,11 @@ body {
   margin-bottom: 1em;
 }
 
+.archive__content h1 { font-size: 200%; }
+.archive__content h2 { font-size: 180%; }
+.archive__content h3 { font-size: 160%; }
+.archive__content h4 { font-size: 140%; }
+
 /* Single attachment --------------------------------------- */
 
 /* Error 404 --------------------------------------- */
