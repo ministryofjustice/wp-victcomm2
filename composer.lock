@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92db37361ecd8d4b625d315c48471d48",
+    "content-hash": "1a550f06fcf9e72d0fd5ffb783f74180",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -548,26 +548,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/gutenberg/"
-        },
-        {
-            "name": "wpackagist-theme/radcliffe",
-            "version": "1.28",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/radcliffe/",
-                "reference": "1.28"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/radcliffe.1.28.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/radcliffe/"
         }
     ],
     "packages-dev": [
