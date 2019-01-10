@@ -9,33 +9,33 @@
 if ( ! function_exists( 'radcliffe_setup' ) ) {
 
 	function radcliffe_setup() {
-		
+
 		// Automatic feed
 		add_theme_support( 'automatic-feed-links' );
-		
+
 		// Post thumbnails
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'post-image', 1440, 9999 );
-		
+
 		// Add nav menu
 		register_nav_menu( 'primary', __( 'Primary Menu', 'radcliffe' ) );
-		
+
 		// Add title tag support
 		add_theme_support( 'title-tag' );
-		
+
 		// Make the theme translation ready
 		load_theme_textdomain( 'radcliffe', get_template_directory() . '/languages' );
 
 		// Set content width
 		global $content_width;
 		if ( ! isset( $content_width ) ) $content_width = 740;
-		
+
 		$locale = get_locale();
 		$locale_file = get_template_directory() . "/languages/$locale.php";
 		if ( is_readable( $locale_file ) ) {
 			require_once( $locale_file );
 		}
-		
+
 	}
 	add_action( 'after_setup_theme', 'radcliffe_setup' );
 
@@ -55,7 +55,7 @@ if ( ! function_exists( 'radcliffe_load_javascript_files' ) ) {
 			wp_enqueue_script( 'radcliffe_global', get_template_directory_uri() . '/js/global.js', array( 'jquery' ), '', true );
 			if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 		}
-		
+
 	}
 	add_action( 'wp_enqueue_scripts', 'radcliffe_load_javascript_files' );
 
@@ -90,8 +90,10 @@ if ( ! function_exists( 'radcliffe_load_style' ) ) {
 			}
 
 			wp_enqueue_style( 'radcliffe_style', get_template_directory_uri() . '/style.css', $dependencies );
+
+            wp_enqueue_style( 'radcliffe_child_style', get_stylesheet_directory_uri() . '/child-style.css', array( 'radcliffe_style' ) );
 		}
-		
+
 	}
 	add_action( 'wp_print_styles', 'radcliffe_load_style' );
 
@@ -166,7 +168,7 @@ if ( ! function_exists( 'radcliffe_widget_areas_registration' ) ) {
 		) );
 
 	}
-	add_action( 'widgets_init', 'radcliffe_widget_areas_registration' ); 
+	add_action( 'widgets_init', 'radcliffe_widget_areas_registration' );
 
 }
 
@@ -263,11 +265,11 @@ if ( ! function_exists( 'radcliffe_comment' ) ) {
 			case 'pingback' :
 			case 'trackback' :
 		?>
-		
+
 		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-		
+
 			<?php __( 'Pingback:', 'radcliffe' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( '(Edit)', 'radcliffe' ), '<span class="edit-link">', '</span>' ); ?>
-			
+
 		</li>
 		<?php
 				break;
@@ -275,52 +277,52 @@ if ( ! function_exists( 'radcliffe_comment' ) ) {
 			global $post;
 		?>
 		<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
-		
+
 			<div id="comment-<?php comment_ID(); ?>" class="comment">
-			
-				<?php 
+
+				<?php
 				echo get_avatar( $comment, 150 );
-				
-				if ( $comment->user_id === $post->post_author ) { 
+
+				if ( $comment->user_id === $post->post_author ) {
 					echo '<a href="' . esc_url( get_comment_link( $comment->comment_ID ) ) . '" title="' . __( 'Comment by post author','radcliffe' ) . '" class="by-post-author"> ' . __( '(Post author)', 'radcliffe' ) . '</a>';
-				} 
-				
+				}
+
 				?>
-				
+
 				<div class="comment-inner">
-				
+
 					<div class="comment-header">
-												
+
 						<cite><?php echo get_comment_author_link(); ?></cite>
-						
+
 						<span><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><?php echo get_comment_date() . ' &mdash; ' . get_comment_time(); ?></a></span>
-					
+
 					</div>
-		
+
 					<div class="comment-content">
-					
+
 						<?php if ( '0' == $comment->comment_approved ) : ?>
-						
+
 							<p class="comment-awaiting-moderation"><?php __( 'Your comment is awaiting moderation.', 'radcliffe' ); ?></p>
-							
+
 						<?php endif; ?>
-					
+
 						<?php comment_text(); ?>
-						
+
 					</div><!-- .comment-content -->
-					
+
 					<div class="comment-actions">
-					
+
 						<?php edit_comment_link( __( 'Edit', 'radcliffe' ), '', '' ); ?>
-						
+
 						<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply', 'radcliffe' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-										
+
 					</div><!-- .comment-actions -->
-				
+
 				</div><!-- .comment-inner -->
-				
+
 			</div><!-- .comment-## -->
-					
+
 		<?php
 			break;
 		endswitch;
@@ -337,68 +339,68 @@ if ( ! function_exists( 'radcliffe_comment' ) ) {
 class Radcliffe_Customize {
 
    public static function radcliffe_register( $wp_customize ) {
-   
+
       //1. Define a new section (if desired) to the Theme Customizer
-      $wp_customize->add_section( 'radcliffe_options', 
+      $wp_customize->add_section( 'radcliffe_options',
          array(
-            'title' 			=> __( 'Radcliffe Options', 'radcliffe' ), 
-            'priority' 			=> 35, 
-            'capability' 		=> 'edit_theme_options', 
-            'description' 		=> __( 'Allows you to customize theme settings for Radcliffe.', 'radcliffe'), 
-         ) 
+            'title' 			=> __( 'Radcliffe Options', 'radcliffe' ),
+            'priority' 			=> 35,
+            'capability' 		=> 'edit_theme_options',
+            'description' 		=> __( 'Allows you to customize theme settings for Radcliffe.', 'radcliffe'),
+         )
       );
-      
+
       $wp_customize->add_section( 'radcliffe_logo_section' , array(
 		    'title'       => __( 'Logo', 'radcliffe' ),
 		    'priority'    => 40,
 		    'description' => __('Upload a logo to replace the default site name and description in the header','radcliffe'),
 		) );
-      
+
       //2. Register new settings to the WP database...
-      $wp_customize->add_setting( 'accent_color', 
+      $wp_customize->add_setting( 'accent_color',
          array(
-            'default' 			=> '#ca2017', 
-            'type' 				=> 'theme_mod', 
-            'capability' 		=> 'edit_theme_options', 
-            'transport' 		=> 'postMessage', 
+            'default' 			=> '#ca2017',
+            'type' 				=> 'theme_mod',
+            'capability' 		=> 'edit_theme_options',
+            'transport' 		=> 'postMessage',
             'sanitize_callback' => 'sanitize_hex_color'
-         ) 
+         )
       );
-      
-      $wp_customize->add_setting( 'radcliffe_logo', 
-      	array( 
+
+      $wp_customize->add_setting( 'radcliffe_logo',
+      	array(
       		'sanitize_callback' => 'esc_url_raw'
-      	) 
+      	)
       );
-                  
+
       //3. Finally, we define the control itself (which links a setting to a section and renders the HTML controls)...
-      $wp_customize->add_control( new WP_Customize_Color_Control( 
-         $wp_customize, 
-         'radcliffe_accent_color', 
+      $wp_customize->add_control( new WP_Customize_Color_Control(
+         $wp_customize,
+         'radcliffe_accent_color',
          array(
-            'label' 		=> __( 'Accent Color', 'radcliffe' ), 
-            'section' 		=> 'colors', 
-            'settings' 		=> 'accent_color', 
-            'priority' 		=> 10, 
-         ) 
+            'label' 		=> __( 'Accent Color', 'radcliffe' ),
+            'section' 		=> 'colors',
+            'settings' 		=> 'accent_color',
+            'priority' 		=> 10,
+         )
       ) );
-      
+
       $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'radcliffe_logo', array(
 		    'label'    => __( 'Logo', 'radcliffe' ),
 		    'section'  => 'radcliffe_logo_section',
 		    'settings' => 'radcliffe_logo',
 		) ) );
-      
+
       //4. We can also change built-in settings by modifying properties. For instance, let's make some stuff use live preview JS...
       $wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
       $wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
    }
 
    public static function radcliffe_header_output() {
-      
+
 		echo '<!-- Customizer CSS --> ';
 		echo '<style type="text/css">';
-	
+
 			self::radcliffe_generate_css('body a', 'color', 'accent_color');
 			self::radcliffe_generate_css('body a:hover', 'color', 'accent_color');
 			self::radcliffe_generate_css('.blog-title a:hover', 'color', 'accent_color');
@@ -416,7 +418,7 @@ class Radcliffe_Customize {
 
 			self::radcliffe_generate_css( '.post-content .has-accent-color', 'color', 'accent_color' );
 			self::radcliffe_generate_css( '.post-content .has-accent-background-color', 'background-color', 'accent_color' );
-			   
+
 			self::radcliffe_generate_css('.post-meta a:hover', 'color', 'accent_color');
 			self::radcliffe_generate_css('.post-author-inner h3 a:hover', 'color', 'accent_color');
 			self::radcliffe_generate_css('.author-links a:hover', 'background-color', 'accent_color');
@@ -450,11 +452,11 @@ class Radcliffe_Customize {
 
 			self::radcliffe_generate_css('body#tinymce.wp-editor a', 'color', 'accent_color');
 			self::radcliffe_generate_css('body#tinymce.wp-editor a:hover', 'color', 'accent_color');
-			   
+
 		echo '</style>';
 		echo '<!--/Customizer CSS-->';
    }
-   
+
    public static function radcliffe_live_preview() {
       wp_enqueue_script( 'radcliffe-themecustomizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'jquery', 'customize-preview' ), '', true );
    }
@@ -606,5 +608,81 @@ if ( ! function_exists( 'radcliffe_block_editor_styles' ) ) :
 
 endif;
 
+
+/* ---------------------------------------------------------------------------------------------
+   CUSTOM THEME MODIFICATIONS
+   --------------------------------------------------------------------------------------------- */
+
+/**
+ * Filter the except length to 30 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+/**
+ * Convert byte size to human readable
+ *
+ * @param $bytes
+ *
+ * @return string
+ */
+function convertByteSizeToHumanReadable($bytes) {
+    error_log('convertByteSizeToHumanReadable');
+    if ($bytes > 0)
+    {
+        $unit = intval(log($bytes, 1024));
+        $units = array('B', 'KB', 'MB', 'GB');
+
+        if (array_key_exists($unit, $units) === true)
+        {
+            return sprintf('%d %s', $bytes / pow(1024, $unit), $units[$unit]);
+        }
+    }
+
+    return $bytes;
+}
+
+add_action('init', function() {
+    add_image_size( 'report', 200);
+});
+
+function template($data, $slug, $name = '') {
+    global $vcTemplateData;
+    $vcTemplateData = $data;
+
+    ob_start();
+    get_template_part($slug, $name);
+    $output = ob_get_contents();
+    ob_end_clean();
+
+    $vcTemplateData = null;
+    return $output;
+}
+
+function partial($data, $slug, $name = '') {
+    return template($data, 'partials/' . $slug, $name);
+}
+
+/**
+ * Create ACF setting page under report menus
+ */
+if ( function_exists( 'acf_add_options_sub_page' ) ){
+    acf_add_options_sub_page(array(
+        'title'      => 'Annual Report Settings',
+        'parent'     => 'edit.php?post_type=annual-report',
+        'capability' => 'manage_options'
+    ));
+
+    acf_add_options_sub_page(array(
+        'title'      => 'Special Report Settings',
+        'parent'     => 'edit.php?post_type=special-report',
+        'capability' => 'manage_options'
+    ));
+}
 
 ?>
