@@ -26,7 +26,7 @@
 /* -------------------------------------------------------------------------------- */
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
+/*h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
   font-family: Barlow, sans-serif;
   font-weight: 300;
 }
@@ -42,21 +42,21 @@ p {
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 1em;
-}
+}*/
 
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Document Setup
 /* -------------------------------------------------------------------------------- */
 
-.content a {
+/*.content a {
   color: inherit;
   text-decoration: underline;
-}
+}*/
 
-body .content a:hover {
+/*body .content a:hover {
   color: #a60f51;
-}
+}*/
 
 /* Transitions --------------------------------------- */
 
