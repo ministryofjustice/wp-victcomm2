@@ -116,11 +116,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-body a {
-  color: inherit;
-  text-decoration: underline;
-}
-
 body a:hover {
   color: #a60f51;
 }
@@ -375,7 +370,6 @@ body {
 /*	4. Navigation
 /* -------------------------------------------------------------------------------- */
 
-
 .main-menu { margin-top: 2px; }
 
 .main-menu li {
@@ -387,13 +381,16 @@ body {
 .main-menu > li:last-child { margin-right: 0; }
 
 .main-menu a {
+  color: #fff;
 	display: block;
-	padding: 13px 15px;
+  font-family: Barlow, sans-serif;
 	font-size: 0.775em;
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: 1px;
+  padding: 13px 15px;
+  text-decoration: none;
+  text-decoration-left: none;
 	text-transform: uppercase;
-	color: #222;
 }
 
 .main-menu > li > a { border-radius: 3px; }
@@ -414,14 +411,24 @@ body {
 	margin-top: -2px;
 }
 
-.main-menu > li:hover > a {
-  color: #eee;
-  background: initial;
-}
+.menu-item { border-bottom: 1px solid #0f0228; }
+
+.menu-item:last-child { border-bottom: none; }
+
+.main-menu > li:hover > a {  color: #eee; }
+.main-menu ul a:hover { color: #ddd; }
 
 .main-menu > .has-children:hover > a::after,
 .main-menu > .menu-item-has-children:hover > a::after { border-top-color: #fff; }
 
+.main-menu .current-menu-parent,
+.main-menu > .menu-item:hover {
+  border-bottom-color: #fff;
+}
+.main-menu > .has-children > a::after,
+.main-menu > .menu-item-has-children > a::after {
+  border-top-color: #fff;
+}
 
 /* search toggle */
 
@@ -494,10 +501,10 @@ body {
 	text-transform: none;
 }
 
-.main-menu ul a:hover {
+/*.main-menu ul a:hover {
 	color: #FFF;
 	background: #CA2017;
-}
+}*/
 
 .main-menu ul > li:first-child > a { border-radius: 6px 6px 0 0; }
 .main-menu ul > li:last-child > a { border-radius: 0 0 6px 6px; }
@@ -533,6 +540,10 @@ body {
 /*	5. Main Content
 /* -------------------------------------------------------------------------------- */
 
+.content a {
+  color: inherit;
+  text-decoration: underline;
+}
 
 .post {
 	position: relative;
@@ -2353,16 +2364,16 @@ li.comment {
 
 	/* mobile menu */
 
-
 	.main-menu { display: none; }
 
 	.mobile-menu { background: #EEE; }
 
 	.mobile-menu a {
-		display: block;
-		padding: 25px 8%;
-		font-weight: 600;
-		color: #666;
+    color: #666;
+    display: block;
+    font-weight: 600;
+    padding: 25px 8%;
+    text-decoration: none;
 	}
 
 	.mobile-menu a:hover {
