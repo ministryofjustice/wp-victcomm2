@@ -191,7 +191,7 @@ body {
 /* post header */
 
 /* wp-block-media-text */
-.media-text-homepage {
+/*.media-text-homepage {
   align-items: flex-start;
   grid-template-columns: 33% 67%;
 }
@@ -199,7 +199,7 @@ body {
 .media-text-homepage img {
   border-radius: 50%;
   margin-top: 40px;
-}
+}*/
 
 
 /* -------------------------------------------------------------------------------- */
