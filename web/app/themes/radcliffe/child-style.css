@@ -65,7 +65,7 @@ p {
 /* -------------------------------------------------------------------------------- */
 /*	2.	Structure
 /* -------------------------------------------------------------------------------- */
-html {
+/*html {
   height: 100%;
 }
 
@@ -73,18 +73,18 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-}
+}*/
 
-.content .section {
+/*.content .section {
   margin-bottom: 3em;
   padding: 3em 0;
-}
+}*/
 
-.header .section-inner {
+/*.header .section-inner {
   align-items: center;
   display: flex;
   justify-content: flex-end;
-}
+}*/
 
 /* grid */
 
@@ -92,27 +92,27 @@ body {
 /*	3. Header
 /* -------------------------------------------------------------------------------- */
 
-.header.section {
+/*.header.section {
   background-color: #0f0228;
   padding: 28px 0;
-}
+}*/
 
-.header .blog-title {
+/*.header .blog-title {
   font-family: Merriweather, serif;
   font-weight: bold;
   margin-right: auto;
-}
+}*/
 
-.header .blog-title a {
+/*.header .blog-title a {
   color: #fff;
   display: inline-block;
   font-size: 24px;
   margin-left: 83px;
   text-transform: capitalize;
   width: 9em;
-}
+}*/
 
-.header .blog-title::before {
+/*.header .blog-title::before {
   background-image: url('/app/themes/radcliffe-child/images/logo-white.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -121,18 +121,20 @@ body {
   height: 46px;
   position: absolute;
   width: 73px;
-}
+}*/
 
+/*
 .header .blog-title a:hover { color: #eee; }
+*/
 
-.header .main-menu > li:hover > a {
+/*.header .main-menu > li:hover > a {
   color: #eee;
   background: initial;
-}
+}*/
 
-.header .nav-toggle p {
+/*.header .nav-toggle p {
   margin-bottom: 0;
-}
+}*/
 
 /* header search block */
 

@@ -222,9 +222,22 @@ body a,
 /* -------------------------------------------------------------------------------- */
 /*	2.	Structure
 /* -------------------------------------------------------------------------------- */
+html {
+  height: 100%;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 
 .section { padding: 100px 0; }
+
+.content .section {
+  margin-bottom: 3em;
+  padding: 3em 0;
+}
 
 .medium-padding { padding: 80px 0; }
 .light-padding { padding: 50px 0; }
@@ -245,7 +258,6 @@ body a,
 
 /* grid */
 
-
 .one-fourth { width: 21.5%; margin-left: 5%; float: left; }
 .one-third { width: 30%; margin-left: 5%; float: left; }
 .one-half { width: 47.5%; margin-left: 5%; float: left; }
@@ -263,8 +275,13 @@ body a,
 
 
 .header {
-	padding: 40px 0;
+  background-color: #0f0228;
 	border-top: 4px solid #222;
+  padding: 28px 0;
+}
+
+.header a {
+  text-decoration: none;
 }
 
 .single.no-featured-image .header,
@@ -273,18 +290,45 @@ body a,
 
 .header-inner { position: relative; }
 
-.blog-title {
-	float: left;
-	font-family: 'Abril Fatface', serif;
-	font-size: 2em;
-	line-height: 1;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	margin-top: 7px;
+.header .section-inner {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.blog-title a { color: #222; }
-.blog-title a:hover { color: #ca2017; }
+.blog-title {
+	float: left;
+  font-family: Merriweather, serif;
+	font-size: 2em;
+  font-weight: bold;
+	line-height: 1;
+	text-transform: uppercase;
+	/*letter-spacing: 1px;*/
+  margin-right: auto;
+  margin-bottom: 0;
+	margin-top: 0;
+}
+
+.blog-title::before {
+  background-image: url('/app/themes/radcliffe/images/logo-white.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 46px;
+  position: absolute;
+  width: 73px;
+}
+
+.blog-title a {
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 83px;
+  text-transform: capitalize;
+  width: 9em;
+}
+.blog-title a:hover { color: #eee; }
 
 .blog-logo {
 	display: block;
@@ -302,6 +346,7 @@ body a,
 
 .nav-toggle { display: none; }
 
+.nav-toggle p { margin-bottom: 0; }
 
 /* header search block */
 
@@ -370,8 +415,8 @@ body a,
 }
 
 .main-menu > li:hover > a {
-	color: #FFF;
-	background: #CA2017;
+  color: #eee;
+  background: initial;
 }
 
 .main-menu > .has-children:hover > a::after,
@@ -2217,8 +2262,8 @@ li.comment {
 
 	.blog-title {
 		font-size: 32px;
-		margin-top: 5px;
-		margin-right: 105px;
+/*		margin-top: 5px;
+		margin-right: 105px;*/
 	}
 
 	.blog-logo {
