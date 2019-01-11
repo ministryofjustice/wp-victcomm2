@@ -241,15 +241,15 @@ body {
 /*	7. Post Content
 /* -------------------------------------------------------------------------------- */
 
-.content .post-content {
+/*.content .post-content {
   font-family: Barlow, sans-serif;
-  /*font-size: 1.25em;*/
-}
+  !*font-size: 1.25em;*!
+}*/
 
-.content .post-content h1, .content .post-content h2, .content .post-content h3, .content .post-content h4, .content .post-content h5, .content .post-content h6 {
+/*.content .post-content h1, .content .post-content h2, .content .post-content h3, .content .post-content h4, .content .post-content h5, .content .post-content h6 {
   font-family: Merriweather, serif;
   color: #a60f51;
-}
+}*/
 
 /* Post media --------------------------------------- */
 
@@ -309,6 +309,7 @@ body {
 /* -------------------------------------------------------------------------------- */
 
 /* Archives template --------------------------------------- */
+/*
 .archive__list {
   display: flex;
   flex-direction: column-reverse;
@@ -324,6 +325,7 @@ body {
 .archive__content h2 { font-size: 180%; }
 .archive__content h3 { font-size: 160%; }
 .archive__content h4 { font-size: 140%; }
+*/
 
 /* Single attachment --------------------------------------- */
 

@@ -883,7 +883,7 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 
 
 .post-content {
-	font-family: 'Crimson Text', 'Times New Roman', Times, serif;
+  font-family: Barlow, sans-serif;
 	font-size: 1.25em;
 }
 
@@ -940,6 +940,8 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 .post-content h5+h1, .post-content h5+h2, .post-content h5+h3, .post-content h5+h4, .post-content h5+h5, .post-content h5+h6,
 .post-content h6+h1, .post-content h6+h2, .post-content h6+h3, .post-content h6+h4, .post-content h6+h5, .post-content h6+h6 {
 	margin-top: 25px;
+  font-family: Merriweather, serif;
+  color: #a60f51;
 }
 
 .post-content blockquote p {
@@ -1958,6 +1960,22 @@ li.comment {
 }
 
 .archive-container a:hover { background-color: #fcfcfc; color: #ca2017; }
+
+.archive__list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.archive__list-element {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.archive__content h1 { font-size: 200%; }
+.archive__content h2 { font-size: 180%; }
+.archive__content h3 { font-size: 160%; }
+.archive__content h4 { font-size: 140%; }
 
 
 /* Single attachment --------------------------------------- */
