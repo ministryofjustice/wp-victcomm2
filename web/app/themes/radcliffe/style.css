@@ -703,8 +703,10 @@ a.post-header .post-title {
 
 .single .post-header {
 	position: static;
-	background: none;
+  background-color: #f6f5f7;
 }
+
+.home .single .post-header { background-color: #a60f51; }
 
 .single .post-meta-top,
 .single .post-meta-top a {
@@ -712,6 +714,20 @@ a.post-header .post-title {
 }
 
 .single .post-meta-top a:hover { color: #CA2017; }
+
+.single .post-title {
+  color: #a60f51;
+  font-family: Merriweather, serif;
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: left;
+  text-transform: initial;
+}
+
+.home .single .post-title {
+  color: #fff;
+}
 
 .single .post-title,
 .single .post-meta-top { text-shadow: none; }

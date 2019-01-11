@@ -206,11 +206,15 @@ body {
 /*	6. Single Post
 /* -------------------------------------------------------------------------------- */
 
+/*
 .single .post-header { background-color: #f6f5f7; }
+*/
 
+/*
 .home .single .post-header { background-color: #a60f51; }
+*/
 
-.single .post-title {
+/*.single .post-title {
   color: #a60f51;
   font-family: Merriweather, serif;
   font-size: 52px;
@@ -218,11 +222,11 @@ body {
   margin-bottom: 0;
   text-align: left;
   text-transform: initial;
-}
+}*/
 
-.home .single .post-title {
+/*.home .single .post-title {
   color: #fff;
-}
+}*/
 
   /* page links */
 
