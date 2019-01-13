@@ -660,7 +660,7 @@ body {
   /* credits */
 
   /* reports */
-  .report {
+/*  .report {
     display: flex;
     flex-direction: column;
   }
@@ -681,9 +681,9 @@ body {
   }
 
   .report__text {
-    /*margin-left: 16px;*/
+    !*margin-left: 16px;*!
     margin-left: 0;
-  }
+  }*/
 
 }
 

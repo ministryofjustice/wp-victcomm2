@@ -2908,6 +2908,30 @@ li.comment {
 
 	.credits span { display: none; }
 
+  /* reports */
+  .report {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .report__icon-section {
+    align-items: flex-start;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .report__icon {
+    margin-bottom: 32px;
+  }
+
+  .report__meta {
+    margin-left: 32px;
+    width: 50%;
+  }
+
+  .report__text {
+    margin-left: 0;
+  }
 }
 
 
