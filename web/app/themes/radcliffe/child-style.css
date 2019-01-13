@@ -554,9 +554,9 @@ body {
 /* -------------------------------------------------------------------------------- */
 /*	12. Credits
 /* -------------------------------------------------------------------------------- */
-.credits {
+/*.credits {
   display: none;
-}
+}*/
 
 
 /* -------------------------------------------------------------------------------- */
@@ -589,32 +589,36 @@ body {
 
   /* nav-toggle */
 
-  .header .nav-toggle p {
+/*  .header .nav-toggle p {
     color: #fff;
     font-size: 18px;
-  }
+  }*/
 
-  .header .nav-toggle.active {
+/*  .header .nav-toggle.active {
     background: #a60f51;
   }
 
   .header .nav-toggle .bar {
     background-color: #fff;
-  }
+  }*/
 
   /* mobile menu */
+  /*
   .mobile-menu-container .mobile-menu { background-color: #fff; }
+  */
 
-  .mobile-menu-container .mobile-menu a:hover {
+/*  .mobile-menu-container .mobile-menu a:hover {
     background-color: #0f0228
-  }
+  }*/
 
-  .mobile-menu .menu-item { text-transform: uppercase; }
+/*  .mobile-menu .menu-item { text-transform: uppercase; }
 
-  .mobile-menu .sub-menu .menu-item {  text-transform: none; }
+  .mobile-menu .sub-menu .menu-item {  text-transform: none; }*/
 
-  /* mobile search form */
+  /*
+  !* mobile search form *!
   .search-results .mobile-menu-container .mobile-search-form { display: none; }
+  */
 
 }
 

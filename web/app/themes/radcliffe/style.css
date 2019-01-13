@@ -2528,6 +2528,10 @@ li.comment {
 		right: 0;
 	}
 
+  .header .nav-toggle.active {
+    background: #a60f51;
+  }
+
 	.nav-toggle .bars {
 		height: 10px;
 		width: 15px;
@@ -2539,7 +2543,7 @@ li.comment {
 	.nav-toggle .bar {
 		width: 15px;
 		height: 2px;
-		background: #767676;
+    background-color: #fff;
 		border-radius: 2px;
 		position: absolute;
 		left: 0;
@@ -2550,15 +2554,15 @@ li.comment {
 	.nav-toggle .bar:nth-child(3) { top: 8px; }
 
 	.nav-toggle p {
-		font-size: 14px;
+    color: #fff;
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
 		line-height: 10px;
-		font-weight: 700;
+    margin-right: 8px;
+    position: relative;
+    text-align: right;
 		text-transform: uppercase;
-		text-align: right;
-		color: #767676;
-		float: left;
-		margin-right: 8px;
-		position: relative;
 		top: -1px;
 	}
 
@@ -2589,7 +2593,7 @@ li.comment {
 
 	.main-menu { display: none; }
 
-	.mobile-menu { background: #EEE; }
+	.mobile-menu { background: #fff; }
 
 	.mobile-menu a {
     color: #666;
@@ -2600,9 +2604,13 @@ li.comment {
 	}
 
 	.mobile-menu a:hover {
-		background: #CA2017;
-		color: #fff;
+		background: #eee;
+    color: #666;
 	}
+
+  .mobile-menu .menu-item { text-transform: uppercase; }
+
+  .mobile-menu .sub-menu .menu-item {  text-transform: none; }
 
 	.mobile-menu ul a { padding-left: 12%; }
 	.mobile-menu ul ul a { padding-left: 16%; }
@@ -2610,6 +2618,8 @@ li.comment {
 	.mobile-menu ul ul ul ul a { padding-left: 24%; }
 	.mobile-menu ul ul ul ul ul a { padding-left: 28%; }
 
+  /* mobile search form */
+  .search-results .mobile-menu-container .search-form { display: none; }
 }
 
 
