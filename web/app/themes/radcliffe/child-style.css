@@ -332,6 +332,7 @@ body {
 /* Error 404 --------------------------------------- */
 
 /* Search --------------------------------------- */
+/*
 .search-results .content .section {
   margin-bottom: 0;
 }
@@ -373,9 +374,10 @@ body {
   line-height: 26px;
   margin-top: 20px;
 }
+*/
 
 /* --- mobile search form -- copied from parent theme, needed for screens greater than 1000px */
-.mobile-search-form {
+/*.mobile-search-form {
   background: #eee;
   border-top: 1px solid #ddd;
   position: relative;
@@ -412,14 +414,16 @@ body {
   text-indent: -9999px;
   opacity: 0.5;
 }
-/* --- */
+
 
 .search-results-page-form .search-button:hover {
   cursor: pointer;
   opacity: 1;
 }
+*/
+/* --- */
 
-.search-results-page-form #s {
+/*.search-results-page-form #s {
   background-color: #fff;
   max-width: 100%;
   padding: 25px 0;
@@ -461,7 +465,7 @@ body {
 
 .search-results .search-toggle-menu-item {
   display: none;
-}
+}*/
 
 /* Report --------------------------------------- */
 .report {

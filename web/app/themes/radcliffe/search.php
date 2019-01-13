@@ -2,7 +2,7 @@
 
     <div class="content">
 
-        <form method="get" class="search-results-page-form mobile-search-form section-inner" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <form method="get" class="search-results-page-form search-form section-inner" action="<?php echo esc_url( home_url( '/' ) ); ?>">
             <input type="search" placeholder="<?php _e( 'Search form', 'radcliffe' ); ?>" name="s" id="s" />
             <input type="submit" value="<?php _e( 'Search', 'radcliffe' ); ?>" class="search-button">
         </form>
