@@ -91,7 +91,6 @@ if ( ! function_exists( 'radcliffe_load_style' ) ) {
 
 			wp_enqueue_style( 'radcliffe_style', get_template_directory_uri() . '/style.css', $dependencies );
 
-            wp_enqueue_style( 'radcliffe_child_style', get_stylesheet_directory_uri() . '/child-style.css', array( 'radcliffe_style' ) );
 		}
 
 	}
