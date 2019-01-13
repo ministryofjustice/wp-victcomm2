@@ -526,12 +526,12 @@ body {
 /*	11. Footer
 /* -------------------------------------------------------------------------------- */
 
-.footer {
+/*.footer {
   background-color: #0f0228;
-  margin-top: auto; /*40px;*/
+  margin-top: auto; !*40px;*!
 }
 
-/* Widget nav menu --------------------------------------- */
+!* Widget nav menu --------------------------------------- *!
 .footer .widget_nav_menu a {
   color: #fff;
   font-family: Barlow, sans-serif;
@@ -540,7 +540,7 @@ body {
 
 .footer .widget_nav_menu li:before {
   content: '';
-}
+}*/
 
 /* Widget tag cloud --------------------------------------- */
 
