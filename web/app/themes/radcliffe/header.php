@@ -13,7 +13,7 @@
 
 	<body <?php body_class(); ?>>
 
-		<div class="header-search-block section light-padding hidden">
+		<div class="header-search-block section hidden">
 
 			<div class="section-inner">
 
