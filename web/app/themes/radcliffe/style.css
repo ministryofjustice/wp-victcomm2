@@ -437,12 +437,12 @@ body {
 	padding: 0;
 	height: 40px;
 	width: 40px;
-	background: url(images/icons/1x/spyglass-d.png) no-repeat center;
+	background: url(images/icons/1x/spyglass-white.png) no-repeat center;
 	background-size: 20px auto;
 }
 
 .main-menu a.search-toggle:hover {
-	background: url(images/icons/1x/spyglass-d.png) no-repeat center;
+	background: url(images/icons/1x/spyglass-white.png) no-repeat center;
 	background-size: 20px auto;
 }
 
@@ -3008,7 +3008,7 @@ li.comment {
 	.search-toggle-menu-item a.search-toggle,
 	.search-toggle-menu-item a.search-toggle:hover,
 	.search-form .search-button,
-	.search-form .search-button { background-image: url(images/icons/2x/spyglass-d.png); }
+	.search-form .search-button { background-image: url(images/icons/2x/spyglass-white.png); }
 
 	p.post-categories { background-image: url(images/icons/2x/folder-g.png); }
 	p.post-tags { background-image: url(images/icons/2x/tag-g.png); }
