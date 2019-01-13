@@ -396,7 +396,10 @@ body {
 .main-menu > li > a { border-radius: 3px; }
 
 .main-menu > .has-children > a,
-.main-menu > .menu-item-has-children > a { padding-right: 33px; position: relative; }
+.main-menu > .menu-item-has-children > a {
+  padding-right: 33px;
+  position: relative;
+}
 
 .main-menu > .has-children > a::after,
 .main-menu > .menu-item-has-children > a::after {
@@ -410,8 +413,6 @@ body {
 	top: 50%;
 	margin-top: -2px;
 }
-
-.menu-item { border-bottom: 1px solid #0f0228; }
 
 .menu-item:last-child { border-bottom: none; }
 
@@ -432,7 +433,6 @@ body {
 
 /* search toggle */
 
-
 .main-menu a.search-toggle {
 	padding: 0;
 	height: 40px;
@@ -448,7 +448,6 @@ body {
 
 
 /* drop-down menu */
-
 
 .main-menu ul {
 	position: absolute;
@@ -2609,6 +2608,12 @@ li.comment {
 		background: #eee;
     color: #666;
 	}
+
+  .mobile-menu a[href="#"] {
+    cursor: initial;
+    background: initial;
+    pointer-events: none;
+  }
 
   .mobile-menu .menu-item { text-transform: uppercase; }
 
