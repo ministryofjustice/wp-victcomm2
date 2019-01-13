@@ -467,14 +467,15 @@ body {
   display: none;
 }*/
 
-/* Report --------------------------------------- */
+/*
+!* Report --------------------------------------- *!
 .report {
   display: flex;
   flex-direction: row;
 
-  /*@include media-breakpoint-up(sm) {
+  !*@include media-breakpoint-up(sm) {
     flex-direction: row;
-  }*/
+  }*!
 
 }
 
@@ -485,9 +486,9 @@ body {
 .report__meta p {
   line-height: 1.2;
 
-  /*@include media-breakpoint-up(sm) {
+  !*@include media-breakpoint-up(sm) {
     margin-left: 0;
-  }*/
+  }*!
 }
 
 .report__icon-section {
@@ -496,9 +497,9 @@ body {
    flex-direction: column;
    max-width: 200px;
 
-  /*@include media-breakpoint-up(sm) {
+  !*@include media-breakpoint-up(sm) {
     flex-direction: column;
-  }*/
+  }*!
 }
 
 .report__icon {
@@ -507,9 +508,9 @@ body {
   display: block;
   margin-bottom: 16px;
   width: 200px
-  /*@include media-breakpoint-up(md) {
+  !*@include media-breakpoint-up(md) {
     margin-bottom: 32px;
-  }*/
+  }*!
 }
 
 .report__icon img {
@@ -519,6 +520,7 @@ body {
 .report__text {
   margin-left: 32px;
 }
+*/
 
 /* -------------------------------------------------------------------------------- */
 /*	11. Footer

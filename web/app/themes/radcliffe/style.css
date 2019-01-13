@@ -2161,6 +2161,43 @@ li.comment {
   opacity: 1;
 }
 
+/* Report --------------------------------------- */
+.report {
+  display: flex;
+  flex-direction: row;
+}
+
+.report__title {
+  font-size: 32px;
+}
+
+.report__meta p {
+  line-height: 1.2;
+}
+
+.report__icon-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+.report__icon {
+  border: 1px solid #eee;
+  box-shadow: 0 0 5px 0 #eee;
+  display: block;
+  margin-bottom: 16px;
+  width: 200px
+}
+
+.report__icon img {
+  width: 100%;
+}
+
+.report__text {
+  margin-left: 32px;
+}
+
 /* -------------------------------------------------------------------------------- */
 /*	11. Footer
 /* -------------------------------------------------------------------------------- */
