@@ -2420,7 +2420,6 @@ li.comment {
 /*	12. Credits
 /* -------------------------------------------------------------------------------- */
 
-
 .footer + .credits { border-top: 1px solid #ddd; }
 
 .credits,
@@ -2434,6 +2433,9 @@ li.comment {
 	text-transform: uppercase;
 }
 
+.credits {
+  display: none;
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	13. Media Queries
