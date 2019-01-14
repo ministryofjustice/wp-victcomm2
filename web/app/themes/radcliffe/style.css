@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 24px;
+  font-size: 1em;
   line-height: 1.5;
   margin-bottom: 1em;
 }
@@ -1052,7 +1053,7 @@ abbr, acronym { cursor: help; }
 }
 
 .post-content li {
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
 
 .post-content ol > li:last-child,
@@ -2506,7 +2507,8 @@ li.comment {
 
 @media (max-width: 1000px) {
 
-  p { font-size: 18px; }
+  /*p { font-size: 18px; }*/
+  .content { font-size: 18px }
 
 	/* header */
 
@@ -2694,7 +2696,7 @@ li.comment {
 
 @media ( max-width: 600px ) {
 
-	body, p { font-size: 16px; }
+	body, .content { font-size: 16px; }
 
 	/* structure */
 
