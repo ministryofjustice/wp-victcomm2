@@ -2984,7 +2984,10 @@ li.comment {
 
 	.post-meta-top { font-size: 0.8em; }
 
-	.post-title { font-size: 2em; }
+	.single .post-title {
+    font-size: 26px;
+    letter-spacing: 0;
+  }
 
 	.cat-tags div {
 		width: 100%;
