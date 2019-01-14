@@ -2519,6 +2519,11 @@ li.comment {
 		width: auto;
 	}
 
+  .single .post-title {
+    font-size: 32px;
+    letter-spacing: 0;
+  }
+
 
 	/* nav-toggle */
 
@@ -2667,7 +2672,7 @@ li.comment {
 
 @media ( max-width: 600px ) {
 
-	body { font-size: 16px; }
+	body, p { font-size: 16px; }
 
 	/* structure */
 
