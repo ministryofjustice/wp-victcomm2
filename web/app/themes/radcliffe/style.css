@@ -900,8 +900,7 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 .post-content dl,
 .post-content .wp-caption,
 .post-content pre {
-	line-height: 160%;
-	margin-bottom: 1.3em;
+  margin-bottom: 1.3em;
 }
 
 .post-content > *:first-child { margin-top: 0; }
