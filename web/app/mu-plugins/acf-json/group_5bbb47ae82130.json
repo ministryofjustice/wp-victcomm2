@@ -3,7 +3,7 @@
     "title": "Page settings",
     "fields": [
         {
-            "key": "field_5bbb47b46a8ee",
+            "key": "field_5bbb47b46a8ee__trashed",
             "label": "Summary",
             "name": "summary",
             "type": "text",
@@ -63,5 +63,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1539599638
+    "modified": 1548073906
 }

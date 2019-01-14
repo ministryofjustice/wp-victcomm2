@@ -674,6 +674,13 @@ a.post-header .post-meta-top .sep {
 	word-break: break-word;
 }
 
+.post-summary {
+  font-size: 22.5px;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: .5em;
+}
+
 a.post-header .post-title {
 	max-width: 90%;
 	margin-left: auto;
@@ -904,6 +911,10 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 .post-content .wp-caption,
 .post-content pre {
   margin-bottom: 1.3em;
+}
+
+.post-content li {
+  line-height: 1.5em;
 }
 
 .post-content > *:first-child { margin-top: 0; }
