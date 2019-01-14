@@ -2493,6 +2493,8 @@ li.comment {
 
 @media (max-width: 1000px) {
 
+  p { font-size: 18px; }
+
 	/* header */
 
 	.header { padding: 30px 0; }
