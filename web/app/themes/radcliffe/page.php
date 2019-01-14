@@ -51,7 +51,7 @@ $pageSummary = get_field('summary');
 
 				</div><!-- .post-header section -->
 
-				<div class="post-content section-inner thin">
+				<div class="post-content section-inner medium">
 
 					<?php the_content(); ?>
 

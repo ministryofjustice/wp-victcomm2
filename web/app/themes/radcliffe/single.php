@@ -64,7 +64,7 @@ $pageSummary = get_field('summary');
 
 				</div><!-- .post-header section -->
 
-				<div class="post-content section-inner thin">
+				<div class="post-content section-inner medium">
 
 					<?php the_content(); ?>
 
@@ -74,7 +74,7 @@ $pageSummary = get_field('summary');
 
 				</div>
 
-				<div class="post-meta section-inner thin">
+				<div class="post-meta section-inner medium">
 
 					<div class="meta-block post-author">
 
