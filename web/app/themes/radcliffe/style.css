@@ -2093,6 +2093,8 @@ li.comment {
 
 .search-results .archive-nav {
   background-color: #fff;
+  margin: auto;
+  max-width: 84%;
 }
 
 .search-results .archive-nav a {
@@ -2107,10 +2109,14 @@ li.comment {
 
 .search-results a.post-nav-older {
   float: right;
+  padding-right: 0;
+  text-align: right;
 }
 
 .search-results a.post-nav-newer {
   float: left;
+  padding-left: 0;
+  text-align: left;
 }
 
 .search-results .post-nav-older,
