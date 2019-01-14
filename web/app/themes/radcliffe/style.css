@@ -436,15 +436,17 @@ body {
 
 /* search toggle */
 
-.main-menu a.search-toggle {
-	padding: 0;
-	height: 40px;
+a.search-toggle {
+  display: block;
+  background: url(images/icons/1x/spyglass-white.png) no-repeat center;
+  background-size: 20px auto;
+  height: 39px;
+  padding: 0;
+  padding-left: 5px;
 	width: 40px;
-	background: url(images/icons/1x/spyglass-white.png) no-repeat center;
-	background-size: 20px auto;
 }
 
-.main-menu a.search-toggle:hover {
+a.search-toggle:hover {
 	background: url(images/icons/1x/spyglass-white.png) no-repeat center;
 	background-size: 20px auto;
 }
@@ -2075,7 +2077,11 @@ li.comment {
   margin-top: 20px;
 }
 
-.search-results-page-form .search-button {
+.search-results-page-form.search-form {
+  background: #fff;
+}
+
+.search-results-page-form.search-form .search-button {
   right: 0;
 }
 
@@ -2109,7 +2115,7 @@ li.comment {
   text-transform: none;
 }
 
-.search-results .search-toggle-menu-item {
+.search-results a.search-toggle {
   display: none;
 }
 
@@ -2136,8 +2142,10 @@ li.comment {
 
   background-color: #fff;
   max-width: 100%;
-  padding: 25px 0;
+  padding: 25px 8%;
 }
+
+.search .search-form #s { padding: 25px 0; }
 
 .search-form #s:focus { outline: none; }
 
@@ -2519,6 +2527,8 @@ li.comment {
 		width: auto;
 	}
 
+  a.search-toggle { display: none; }
+
   .single .post-title {
     font-size: 32px;
     letter-spacing: 0;
@@ -2634,8 +2644,15 @@ li.comment {
 	.mobile-menu ul ul ul ul a { padding-left: 24%; }
 	.mobile-menu ul ul ul ul ul a { padding-left: 28%; }
 
+  .search-results-page-form.search-form {
+    max-width: 100%;
+    padding: 0 8%;
+  }
+
   /* mobile search form */
   .search-results .mobile-menu-container .search-form { display: none; }
+
+  .search-results-page-form.search-form .search-button { right: 8%; }
 }
 
 
@@ -2702,11 +2719,6 @@ li.comment {
 	.mobile-menu ul ul ul a { padding-left: 21%; }
 	.mobile-menu ul ul ul ul a { padding-left: 26%; }
 	.mobile-menu ul ul ul ul ul a { padding-left: 31%; }
-
-	.search-form #s {
-		padding: 20px 60px 20px 0;
-		max-width: 88%;
-	}
 
 	/* main content */
 
@@ -3023,8 +3035,8 @@ li.comment {
 
 	/* 2X images */
 
-	.search-toggle-menu-item a.search-toggle,
-	.search-toggle-menu-item a.search-toggle:hover,
+	a.search-toggle,
+	a.search-toggle:hover,
 	.search-form .search-button,
 	.search-form .search-button { background-image: url(images/icons/2x/spyglass-white.png); }
 

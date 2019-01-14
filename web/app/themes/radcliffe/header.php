@@ -82,9 +82,11 @@
 
 					} ?>
 
-					<li class="search-toggle-menu-item"><a href="#" class="search-toggle" title="<?php _e( 'Show the search field', 'radcliffe' ); ?>"></a></li>
+
 
 				 </ul>
+
+                <a href="#" class="search-toggle" title="<?php _e( 'Show the search field', 'radcliffe' ); ?>"></a>
 
 				<div class="clear"></div>
 
