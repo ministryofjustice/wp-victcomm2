@@ -1,30 +1,11 @@
 {
-    "key": "group_5bb75d3d4448f",
-    "title": "Report",
+    "key": "group_5c068b96ca584",
+    "title": "Standard page options",
     "fields": [
         {
-            "key": "field_5bb75d42d397b",
-            "label": "Report file",
-            "name": "report_file",
-            "type": "file",
-            "instructions": "",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "uploadedTo",
-            "min_size": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5c2ddd637ed40",
-            "label": "User friendly file name",
-            "name": "user_friendly_file_name",
+            "key": "field_5c068ba41d554",
+            "label": "Page summary",
+            "name": "page_summary",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -42,6 +23,20 @@
         }
     ],
     "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
         [
             {
                 "param": "post_type",
@@ -65,5 +60,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1547470785
+    "modified": 1547470808
 }
