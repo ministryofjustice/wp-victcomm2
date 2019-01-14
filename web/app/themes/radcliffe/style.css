@@ -2981,6 +2981,8 @@ li.comment {
     margin-left: 70px;
   }
 
+  .nav-toggle p { font-size: 16px; }
+
 	/* main content */
 
 	.posts .post {
