@@ -2085,6 +2085,11 @@ li.comment {
   right: 0;
 }
 
+.search-results-page-form__label {
+  /*text-transform: capitalize;*/
+  text-align: center;
+}
+
 .search-results .archive-nav {
   background-color: #fff;
 }

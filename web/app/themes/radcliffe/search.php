@@ -13,14 +13,14 @@
 
                 <div class="section-inner">
 
-                    <h4>
+                    <p class="search-results-page-form__label">
                         <?php
                         if ( is_search() ) {
-                            printf( __( 'Search results: "%s"', 'radcliffe' ), get_search_query() );
+                            printf( __( 'Search results for: "%s"', 'radcliffe' ), get_search_query() );
                         }
                         ?>
 
-                    </h4>
+                    </p>
 
                 </div><!-- .section-inner -->
 
