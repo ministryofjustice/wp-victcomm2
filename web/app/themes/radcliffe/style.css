@@ -2955,9 +2955,14 @@ li.comment {
 
 	body { font-size: 15px; }
 
-  .blog-title::before {  }
+  .blog-title::before {
+    height: 35px;
+  }
 
-  .blog-title a { font-size: 18px; }
+  .blog-title a {
+    font-size: 18px;
+    margin-left: 70px;
+  }
 
 	/* main content */
 
