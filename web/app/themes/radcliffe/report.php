@@ -16,6 +16,12 @@ global $td;
 
                 <?php the_title( '<h2 class="post-title">', '</h2>' ); ?>
 
+                <?php if($td['pageSummary']) : ?>
+
+                    <p class="post-summary"><?= $td['pageSummary'] ?></p>
+
+                <?php endif; ?>
+
             </div>
 
         </div>

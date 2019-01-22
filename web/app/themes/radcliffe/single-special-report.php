@@ -1,33 +1,40 @@
 <?php
 get_header();
+
 global $post;
 setup_postdata($post);
 
-$td = [];
+$image = new Imagick();
+
+$pageSummary = get_field('summary');
 
 $reportFile = get_field('report_file');
 
-if ($fileName = get_field('user_friendly_file_name')) {
-    $td['userFriendlyFileName'] = $fileName;
-} else {
-    $td['userFriendlyFileName'] = $reportFile['filename'];
-}
+$postTypeName = $post->post_type;
 
-$td['downloadUrl'] = $reportFile['url'];
+// template data
+$td = [
 
-$td['fileSize'] = convertByteSizeToHumanReadable($reportFile['filesize']);
+    'pageSummary' => $pageSummary,
 
-$image = new Imagick();
-$td['image'] = $image->pingImage(get_attached_file($reportFile['id']));
+    'userFriendlyFileName' => ($fileName = get_field('user_friendly_file_name')) ? $fileName : $reportFile['filename'],
 
-$td['numberOfPages'] = $image->getNumberImages();
+    'downloadUrl' => $reportFile['url'],
 
-$td['fileType'] = strtoupper($reportFile['subtype']);
+    'fileSize' => convertByteSizeToHumanReadable($reportFile['filesize']),
 
-$td['attachmentImage'] = wp_get_attachment_image($reportFile['id'], 'report');
+    'image' => $image->pingImage(get_attached_file($reportFile['id'])),
 
-$td['postTypeName'] = $post->post_type;
-$td['postType'] = get_post_type_object($td['postTypeName']);
+    'numberOfPages' => $image->getNumberImages(),
+
+    'fileType' => strtoupper($reportFile['subtype']),
+
+    'attachmentImage' => wp_get_attachment_image($reportFile['id'], 'report'),
+
+    'postTypeName' => $postTypeName,
+
+    'postType' => get_post_type_object($postTypeName),
+];
 
 echo template($td, 'report');
 
