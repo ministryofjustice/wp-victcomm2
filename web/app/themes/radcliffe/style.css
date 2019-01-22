@@ -1447,8 +1447,10 @@ input[type="button"] {
 .post-content blockquote,
 .post-content .wp-block-quote.is-large,
 .post-content .wp-block-quote.is-style-large {
+  margin: auto;
 	margin-bottom: 1.25em;
 	padding: 0;
+  width: 75%;
 }
 
 .post-content blockquote p:last-child {
