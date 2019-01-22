@@ -638,7 +638,7 @@ a.post-header:hover {
 .post.no-featured-image a.post-header { position: static; }
 .post.no-featured-image a.post-header:hover { background: #333; }
 
-a.post-header:hover .post-title { color: #CA2017; }
+a.post-header:hover .post-title {color: #a60f51; }
 
 .post-meta-top {
 	text-transform: uppercase;
@@ -666,8 +666,8 @@ a.post-header .post-meta-top .sep {
 .sticky .post-meta-top { display: block; }
 
 .post-title {
-	font-family: 'Abril Fatface', serif;
-	font-size: 3em;
+  font-family: Merriweather, serif;
+  font-size: 3em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
@@ -725,7 +725,7 @@ a.post-header .post-title {
 	color: #666;
 }
 
-.single .post-meta-top a:hover { color: #CA2017; }
+.single .post-meta-top a:hover { color: #a60f51; }
 
 .single .post-title {
   color: #a60f51;
@@ -745,7 +745,7 @@ a.post-header .post-title {
 .single .post-meta-top { text-shadow: none; }
 
 .single .post-title a { color: #222; }
-.single .post-title a:hover { color: #CA2017; }
+.single .post-title a:hover { color: #a60f51; }
 
 
 /* page links */
@@ -824,7 +824,10 @@ a.post-header .post-title {
 }
 
 .post-author-inner h3 a { color: #333; }
-.post-author-inner h3 a:hover { color: #CA2017; text-decoration: none; }
+.post-author-inner h3 a:hover {
+  color: #a60f51;
+  text-decoration: none;
+}
 
 .post-author p {
 	margin-top: 8px;
@@ -856,7 +859,9 @@ a.post-header .post-title {
 .author-links a.author-link-posts { background-image: url(images/icons/1x/archive-w.png); }
 .author-links a.author-link-website { background-image: url(images/icons/1x/home-w.png); }
 
-.author-links a:hover { background-color: #ca2017; }
+.author-links a:hover {
+  background-color: #a60f51;
+}
 
 
 /* post cat tags */
@@ -1242,7 +1247,7 @@ figure {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 10px 12px;
-	background: #ca2017;
+	background:  #a60f51;
 	color: #fff;
 }
 
@@ -1318,7 +1323,7 @@ input[type="button"] {
 .post-content input[type="reset"]:hover,
 .post-content input[type="button"]:hover {
 	cursor: pointer;
-	background: #ca2017;
+	background: #a60f51;
 	color: #fff;
 }
 
@@ -1332,8 +1337,8 @@ input[type="button"] {
 
 .post-content .has-background { background-color: #222; }
 
-.post-content .has-accent-color { color: #ca2017; }
-.post-content .has-accent-background-color { background-color: #ca2017; }
+.post-content .has-accent-color { color: #a60f51; }
+.post-content .has-accent-background-color { background-color: #a60f51; }
 
 .post-content .has-black-color { color: #222; }
 .post-content .has-black-background-color { background-color: #222; }
@@ -1554,7 +1559,7 @@ li.comment {
 	width: 32px;
 	height: 32px;
 	border-radius: 99px;
-	background: #ca2017 url(images/icons/1x/author-w.png) no-repeat center 7px;
+	background: #a60f51 url(images/icons/1x/author-w.png) no-repeat center 7px;
 	background-size: 16px auto;
 	text-indent: -9999px;
 	position: absolute;
@@ -1590,7 +1595,7 @@ li.comment {
 .comment-header cite { font-weight: 700; }
 
 .comment-header cite a { color: #333; }
-.comment-header cite a:hover { color: #CA2017; }
+.comment-header cite a:hover { color: #a60f51; }
 
 .comment-header span {
 	font-size: 0.7em;
@@ -1601,7 +1606,7 @@ li.comment {
 }
 
 .comment-header span a { color: #999; }
-.comment-header span a:hover { color: #CA2017; }
+.comment-header span a:hover { color: #a60f51; }
 
 
 /* Comment content --------------------------------------- */
@@ -1730,7 +1735,7 @@ li.comment {
 	color: #666;
 }
 
-.comments-nav-below a:hover { color: #CA2017; }
+.comments-nav-below a:hover { color: #a60f51; }
 
 
 /* Respond --------------------------------------- */
@@ -1860,7 +1865,7 @@ li.comment {
 
 .comment-respond #submit:hover {
 	cursor: pointer;
-	background-color: #CA2017;
+	background-color: #a60f51;
 }
 
 
@@ -1913,7 +1918,7 @@ li.comment {
 }
 
 .archive-nav a:hover {
-	background: #CA2017;
+	background: #a60f51;
 	color: #FFF;
 }
 
@@ -1974,7 +1979,7 @@ li.comment {
 	color: #999;
 }
 
-.archive-container a:hover { background-color: #fcfcfc; color: #ca2017; }
+.archive-container a:hover { background-color: #fcfcfc; color: #a60f51; }
 
 .archive__list {
   display: flex;
@@ -2345,8 +2350,8 @@ li.comment {
 	margin-top: -2px;
 }
 
-.tagcloud a:hover { background-color: #ca2017; color: #fff; text-decoration: none; }
-.tagcloud a:hover:before { border-right-color: #ca2017; }
+.tagcloud a:hover { background-color: #a60f51; color: #fff; text-decoration: none; }
+.tagcloud a:hover:before { border-right-color: #a60f51; }
 
 
 /* Widget calendar --------------------------------------- */
@@ -2402,7 +2407,7 @@ li.comment {
 
 #wp-calendar tfoot a:hover {
 	text-decoration: none;
-	color: #ca2017;
+	color: #a60f51;
 }
 
 

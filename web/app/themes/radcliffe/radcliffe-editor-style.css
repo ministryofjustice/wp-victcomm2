@@ -4,7 +4,7 @@
 
 ---------------------------------------------------------------------------------*/
 
-body#tinymce.wp-editor { 
+body#tinymce.wp-editor {
 	font-family: 'Crimson Text', 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #222;
@@ -13,31 +13,31 @@ body#tinymce.wp-editor {
 
 body#tinymce.wp-editor p { line-height: 150%; }
 
-body#tinymce.wp-editor a { color: #ca2017; }
-body#tinymce.wp-editor a:hover { color: #ca2017; text-decoration: underline; }
+body#tinymce.wp-editor a { color: #a60f51; }
+body#tinymce.wp-editor a:hover { color: #a60f51; text-decoration: underline; }
 
 
 /* Headlines --------------------------------------- */
 
 
-body#tinymce.wp-editor h1, 
-body#tinymce.wp-editor h2, 
-body#tinymce.wp-editor h3, 
-body#tinymce.wp-editor h4, 
-body#tinymce.wp-editor h5, 
+body#tinymce.wp-editor h1,
+body#tinymce.wp-editor h2,
+body#tinymce.wp-editor h3,
+body#tinymce.wp-editor h4,
+body#tinymce.wp-editor h5,
 body#tinymce.wp-editor h6 {
 	margin: 40px 0 20px;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 120%;
 }
 
-body#tinymce.wp-editor h1 { 
-	font-size: 1.6em; 
+body#tinymce.wp-editor h1 {
+	font-size: 1.6em;
 	font-weight: 700;
 }
 
-body#tinymce.wp-editor h2 { 
-	font-size: 1.4em; 
+body#tinymce.wp-editor h2 {
+	font-size: 1.4em;
 	font-weight: 700;
 }
 
@@ -72,7 +72,7 @@ body#tinymce.wp-editor blockquote:after {
 	margin: 40px auto;
 }
 
-body#tinymce.wp-editor blockquote p { 
+body#tinymce.wp-editor blockquote p {
 	font-size: 1.2em;
 	line-height: 160%;
 	text-align: center;
@@ -181,7 +181,7 @@ body#tinymce.wp-editor table tbody > tr:nth-child(odd) > td { background: #f9f9f
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	padding: 10px 12px;
-	background: #ca2017;
+	background: #a60f51;
 	color: #fff;
 }
 
@@ -192,8 +192,8 @@ body#tinymce.wp-editor table tbody > tr:nth-child(odd) > td { background: #f9f9f
 }
 
 .post-content input,
-.post-content textarea { 
-	font-family: 'Open Sans', sans-serif; 
+.post-content textarea {
+	font-family: 'Open Sans', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -217,8 +217,8 @@ body#tinymce.wp-editor table tbody > tr:nth-child(odd) > td { background: #f9f9f
 	-webkit-appearance: none;
 }
 
-.post-content textarea { 
-	height: 180px; 
+.post-content textarea {
+	height: 180px;
 	line-height: 140%;
 }
 
@@ -260,7 +260,7 @@ body#tinymce.wp-editor table tbody > tr:nth-child(odd) > td { background: #f9f9f
 .post-content input[type="reset"]:hover,
 .post-content input[type="button"]:hover {
 	cursor: pointer;
-	background: #ca2017;
+	background: #a60f51;
 	color: #fff;
 }
 

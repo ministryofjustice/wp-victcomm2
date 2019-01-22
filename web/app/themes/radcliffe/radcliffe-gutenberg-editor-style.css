@@ -20,7 +20,7 @@
 	font-family: inherit !important;
 }
 
-.editor-styles-wrapper .editor-default-block-appender, 
+.editor-styles-wrapper .editor-default-block-appender,
 .editor-styles-wrapper .editor-block-list__block,
 .editor-styles-wrapper .editor-post-title__block {
     max-width: 740px;
@@ -44,23 +44,22 @@
 /* Typography --------------------------------------------- */
 
 .editor-post-title__block .editor-post-title__input {
-	color: #222;
 	font-family: 'Abril Fatface', serif !important;
+	color: #a60f51;
 	font-size: 3em;
 	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1.2;
 	text-align: center;
-	text-transform: uppercase;
 }
 
 .editor-styles-wrapper a {
-	color: #ca2017;
+	color: #a60f51;
 	text-decoration: none;
 }
 
 .editor-styles-wrapper a:hover {
-	color: #ca2017;
+	color: #a60f51;
 	text-decoration: underline;
 }
 
@@ -68,7 +67,7 @@
 	font-size: inherit;
 }
 
-.editor-styles-wrapper .editor-block-list__block, 
+.editor-styles-wrapper .editor-block-list__block,
 .editor-styles-wrapper .editor-block-list__block p {
 	font-size: inherit;
 }
@@ -98,7 +97,7 @@
 .editor-styles-wrapper .wp-block-heading h4 { font-size: 1.1em; }
 .editor-styles-wrapper .wp-block-heading h5 { font-size: 1em; }
 
-.editor-styles-wrapper .wp-block-heading h6 { 
+.editor-styles-wrapper .wp-block-heading h6 {
 	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -113,9 +112,9 @@ p.has-drop-cap:not(:focus):first-letter {
 
 /* Monospace -------------------------------------- */
 
-.editor-styles-wrapper code, 
-.editor-styles-wrapper kbd, 
-.editor-styles-wrapper pre, 
+.editor-styles-wrapper code,
+.editor-styles-wrapper kbd,
+.editor-styles-wrapper pre,
 .editor-styles-wrapper samp {
 	font-family: Menlo, Monaco, monospace !important;
 }
@@ -248,7 +247,7 @@ hr.wp-block-separator {
 	background: #ddd;
 	height: 2px;
 	max-width: none;
-	width: 100px;	
+	width: 100px;
 }
 
 .wp-block-separator.is-style-wide {
@@ -351,9 +350,9 @@ cite,
 .wp-block-quote cite,
 .wp-block-quote footer,
 .wp-block-pullquote cite,
-.wp-block-quote.is-large cite, 
-.wp-block-quote.is-large footer, 
-.wp-block-quote.is-style-large cite, 
+.wp-block-quote.is-large cite,
+.wp-block-quote.is-large footer,
+.wp-block-quote.is-style-large cite,
 .wp-block-quote.is-style-large footer {
 	color: inherit;
 	font-family: 'Open Sans', sans-serif !important;
@@ -370,7 +369,7 @@ cite,
 .wp-block-pullquote__citation:before,
 cite:before { content: "— "; }
 
-.wp-block-quote.is-large p, 
+.wp-block-quote.is-large p,
 .wp-block-quote.is-style-large p {
 	font-size: 1.5em;
 	font-style: normal;
@@ -396,7 +395,7 @@ cite:before { content: "— "; }
 
 /* Block: Verse ------------------------------------------- */
 
-.wp-block-verse pre, 
+.wp-block-verse pre,
 pre.wp-block-verse {
 	font-size: 0.7em;
 }
