@@ -26,4 +26,17 @@ add_action( 'init', function() {
             'has_archive' => true,
         )
     );
+    // Register Special Report custom post type
+    register_post_type( 'news',
+        array(
+            'labels' => array(
+                'name' => __( 'News Posts' ),
+                'singular_name' => __( 'News Post' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => ['title', 'editor', 'thumbnail'],
+            'show_in_rest' => true,
+        )
+    );
 } );
