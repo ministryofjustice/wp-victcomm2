@@ -44,8 +44,8 @@
 /* Typography --------------------------------------------- */
 
 .editor-post-title__block .editor-post-title__input {
-	font-family: 'Abril Fatface', serif !important;
 	color: #a60f51;
+  font-family: Merriweather, serif !important;
 	font-size: 3em;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -79,7 +79,7 @@
 .editor-styles-wrapper .wp-block-heading h5,
 .editor-styles-wrapper .wp-block-heading h6 {
 	color: #222;
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: Barlow, sans-serif !important;
 	font-weight: 700;
 	line-height: 1.2 !important;
 	margin: 50px 0 25px;
@@ -171,7 +171,7 @@ figure {
 
 .editor-writing-flow figcaption {
 	color: #888;
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: Barlow, sans-serif !important;
 	font-size: 14px;
 	font-weight: 600;
 	margin: 0;
@@ -269,7 +269,7 @@ hr.wp-block-separator {
 }
 
 .wp-block-file .editor-rich-text__tinymce {
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: Barlow, sans-serif !important;
 }
 
 .wp-block-file__content-wrapper {
@@ -355,7 +355,7 @@ cite,
 .wp-block-quote.is-style-large cite,
 .wp-block-quote.is-style-large footer {
 	color: inherit;
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: Barlow, sans-serif !important;
 	font-size: 0.9rem;
 	font-style: normal;
 	font-weight: 800;
@@ -406,7 +406,7 @@ pre.wp-block-verse {
 .wp-block-button .wp-block-button__link,
 .wp-block-button .wp-block-button__link.mce-content-body {
 	border-radius: 4px;
-	font-family: 'Open Sans', sans-serif !important;
+	font-family: Barlow, sans-serif !important;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 1.1;

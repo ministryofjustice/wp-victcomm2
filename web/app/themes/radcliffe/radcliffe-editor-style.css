@@ -27,7 +27,7 @@ body#tinymce.wp-editor h4,
 body#tinymce.wp-editor h5,
 body#tinymce.wp-editor h6 {
 	margin: 40px 0 20px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: Barlow, sans-serif;
 	line-height: 120%;
 }
 
@@ -83,7 +83,7 @@ body#tinymce.wp-editor blockquote p:first-child { margin-top: 0; }
 body#tinymce.wp-editor blockquote p:last-child { margin-bottom: 0; }
 
 body#tinymce.wp-editor cite {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Barlow, sans-serif;
 	font-size: 0.9rem;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -174,7 +174,7 @@ body#tinymce.wp-editor table tbody > tr:nth-child(odd) > td { background: #f9f9f
 }
 
 .post-content fieldset legend {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Barlow, sans-serif;
 	font-size: 0.9rem;
 	line-height: 1;
 	font-weight: 700;
@@ -186,14 +186,14 @@ body#tinymce.wp-editor table tbody > tr:nth-child(odd) > td { background: #f9f9f
 }
 
 .post-content label {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Barlow, sans-serif;
 	font-size: 0.75em;
 	font-weight: 700;
 }
 
 .post-content input,
 .post-content textarea {
-	font-family: 'Open Sans', sans-serif;
+	font-family: Barlow, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 

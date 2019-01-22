@@ -84,7 +84,7 @@ if ( ! function_exists( 'radcliffe_load_style' ) ) {
 
 			if ( 'off' !== $google_fonts ) {
 
-				wp_enqueue_style( 'radcliffe_googlefonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700,700italic,800|Crimson+Text:400,400italic,700,700italic|Abril+Fatface:400' );
+                wp_enqueue_style('radcliffe_googlefonts', 'https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i|Merriweather:300,300i,400,400i,700,700i,900,900i', false, null);
 				$dependencies[] = 'radcliffe_googlefonts';
 
 			}
