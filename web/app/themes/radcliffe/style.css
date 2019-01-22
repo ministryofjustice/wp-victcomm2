@@ -545,6 +545,10 @@ a.search-toggle:hover {
 /*	5. Main Content
 /* -------------------------------------------------------------------------------- */
 
+.content {
+  padding-bottom: 3em;
+}
+
 .content a {
   color: inherit;
   text-decoration: underline;
