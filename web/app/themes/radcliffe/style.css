@@ -75,7 +75,7 @@ table {
 }
 
 ol, ul {
-	list-style:none;
+	list-style: none;
 }
 
 blockquote:before, blockquote:after {
@@ -950,7 +950,7 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 
 .post-content h2 {
 	font-size: 1.4em;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .post-content h3 { font-size: 1.25em; }
@@ -2218,8 +2218,8 @@ li.comment {
   flex-direction: row;
 }
 
-.report__title {
-  font-size: 32px;
+.report__text > *:first-child {
+  margin-top: 0;
 }
 
 .report__meta p {

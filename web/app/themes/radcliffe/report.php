@@ -28,7 +28,7 @@ global $td;
 
         <article class="section-inner report">
 
-            <div class="report report--annual">
+            <div class="post-content report report--annual">
 
                 <div class="report__icon-section">
                     <a href="<?= $td['downloadUrl'] ?>" class="report__icon"><?= $td['attachmentImage']; ?></a>
