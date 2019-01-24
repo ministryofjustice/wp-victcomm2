@@ -762,4 +762,16 @@ add_filter( 'fallback_intermediate_image_sizes', function( $fallback_sizes, $met
 
 }, 10, 2 );
 
+// Allow user to select only PDFs in the media library
+add_filter( 'post_mime_types', function ( $post_mime_types ) {
+
+    $post_mime_types['application/pdf'] = [
+        __( 'PDFs' ),
+        __( 'Manage PDFs' ),
+        _n_noop( 'PDF <span class="count">(%s)</span>', 'PDFs <span class="count">(%s)</span>' )
+    ];
+
+    return $post_mime_types;
+} );
+
 ?>
