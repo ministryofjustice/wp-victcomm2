@@ -7,13 +7,11 @@ global $vcTemplateData;
 
 $td = $vcTemplateData;
 
-$attachments = get_posts([
+$placeholders = get_posts([
     'category_name' => 'placeholder',
     'post_type' => 'attachment',
 ]);
-
-$placeholders = $attachments;
-$placeholderCounter = 0;
+$placeholderCounter = -1;
 
 function getThumbnail() {
     global$placeholders, $placeholderCounter;
@@ -22,17 +20,19 @@ function getThumbnail() {
 
     if ( $postType === 'annual-report' || $postType === 'special-report' ) {
         $reportFile = get_field('report_file', get_the_ID());
-
         return wp_get_attachment_image($reportFile['id'], [600, 337], true);
     }
 
     if ( has_post_thumbnail() ) {
-
         return get_the_post_thumbnail( get_the_ID(), 'archive-news' );
-
     }
 
-    return wp_get_attachment_image( $placeholders[$placeholderCounter++ % sizeof($placeholders)]->ID,'archive-news', true);
+    if ( is_array($placeholders) && sizeof($placeholders) > 0) {
+        $index = ++$placeholderCounter % sizeof($placeholders);
+        return wp_get_attachment_image( $placeholders[$index]->ID,'archive-news', true);
+    }
+
+    return '';
 }
 
 ?>
