@@ -741,7 +741,7 @@ add_action( 'pre_get_posts', function ( $query ) {
  * The following two hooks create a `Placeholder` category, which can be used by the user
  * to specify images that have been uploaded to the media library to act as these placeholder images.
  */
-add_action( 'admin-init' , function () {
+add_action( 'admin_init' , function () {
 
     wp_create_category('Placeholder');
 
