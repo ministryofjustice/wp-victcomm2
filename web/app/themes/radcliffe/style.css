@@ -1993,7 +1993,10 @@ li.comment {
 	color: #999;
 }
 
-.archive-container a:hover { background-color: #fcfcfc; color: #a60f51; }
+.archive-container a:hover {
+  background-color: #fcfcfc;
+  color: #a60f51;
+}
 
 .archive__list {
   display: flex;
@@ -2005,6 +2008,47 @@ li.comment {
   line-height: 1.5;
   margin-bottom: 1em;
 }
+
+.archive-news__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -1em;
+}
+
+.archive-news__item {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  padding-right: 1em;
+  max-width: 33%;
+}
+
+a.archive-news__item-button {
+  display: block;
+  text-decoration: none;
+}
+
+.archive-news__item-title {
+  color: #a60f51;
+  font-weight: bold;
+  font-family: Barlow, sans-serif;
+  text-decoration: none;
+}
+
+.archive-news__item-date {
+  color: #513e64;
+  font-size: .7em;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+.archive-news__item-summary {
+  font-size: .9em;
+}
+
 
 .archive__content h1 { font-size: 200%; }
 .archive__content h2 { font-size: 180%; }
@@ -2523,6 +2567,10 @@ li.comment {
 	}
 
 
+  .archive-news__item {
+    max-width: 50%;
+  }
+
 }
 
 
@@ -2711,7 +2759,16 @@ li.comment {
 
 	.post-title { font-size: 2.5em; }
 
-	/* paginations */
+  .archive-news__list {
+    display: block;
+  }
+
+  .archive-news__item {
+    margin: 0 auto 1em;
+    max-width: 600px;
+  }
+
+  /* paginations */
 
 	.archive-nav a {
 		padding: 50px;

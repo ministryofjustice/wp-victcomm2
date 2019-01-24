@@ -648,6 +648,7 @@ function convertByteSizeToHumanReadable($bytes) {
 
 add_action('init', function() {
     add_image_size( 'report', 200);
+    add_image_size( 'archive-news', 600, 337, array( 'left', 'top' ));
 });
 
 function template($data, $slug, $name = '') {
@@ -714,5 +715,51 @@ function acf_json_load_point( $paths ) {
     return $paths;
 }
 add_filter('acf/settings/load_json', 'acf_json_load_point');
+
+/**
+ * The following ensures that when viewing the archive of news posts,
+ * that the reports post types are also shown.
+ *
+ * A consequence of this is that the 'news archive' template will not be used
+ * because the archive is no longer just showing news posts.
+ * `archive.php` will be used instead.
+ */
+add_action( 'pre_get_posts', function ( $query ) {
+
+    if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'news' ) ) {
+
+        $query->set( 'post_type', ['news', 'special-report', 'annual-report']);
+        $query->set( 'order', 'DESC' );
+
+    }
+
+});
+
+/**
+ * The layout of the site requires that there are images present for all posts.
+ * If the user does not upload an accompanying image, a placeholder image will be used instead.
+ * The following two hooks create a `Placeholder` category, which can be used by the user
+ * to specify images that have been uploaded to the media library to act as these placeholder images.
+ */
+add_action( 'admin-init' , function () {
+
+    wp_create_category('Placeholder');
+
+});
+
+add_action( 'init' , function () {
+
+    register_taxonomy_for_object_type( 'category', 'attachment' );
+
+});
+
+// Ensure that the `archive-news` image size is available for PDF thumbnails as well
+add_filter( 'fallback_intermediate_image_sizes', function( $fallback_sizes, $metadata ) {
+
+    $fallback_sizes[] = 'archive-news';
+
+    return $fallback_sizes;
+
+}, 10, 2 );
 
 ?>
