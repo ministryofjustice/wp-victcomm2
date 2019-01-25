@@ -14,34 +14,9 @@ $pageSummary = get_field('summary');
 
 			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<?php if ( has_post_thumbnail() ) : ?>
-
-					<div class="featured-media" style="background-image: url( <?php the_post_thumbnail_url( $post->ID, 'post-image' ); ?> );">
-
-						<?php
-
-						the_post_thumbnail( 'post-image' );
-
-						$image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
-
-						if ( $image_caption ) :
-							?>
-
-							<div class="media-caption-container">
-
-								<p class="media-caption"><?php echo $image_caption; ?></p>
-
-							</div>
-
-						<?php endif; ?>
-
-					</div><!-- .featured-media -->
-
-				<?php endif; ?>
-
 				<div class="post-header section">
 
-					<div class="post-header-inner section-inner medium">
+					<div class="post-header-inner section-inner">
 
 						<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 
@@ -57,7 +32,34 @@ $pageSummary = get_field('summary');
 
 				</div><!-- .post-header section -->
 
-				<div class="post-content section-inner medium">
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <div class="featured-media-container">
+
+                        <div class="featured-media section-inner thin" style="background-image: url( <?php the_post_thumbnail_url( $post->ID, 'post-image' ); ?> );">
+
+                            <?php
+
+                            the_post_thumbnail( 'post-image' );
+
+                            $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
+
+                            if ( $image_caption ) :
+                                ?>
+
+                                <div class="media-caption-container">
+
+                                    <p class="media-caption"><?php echo $image_caption; ?></p>
+
+                                </div>
+
+                            <?php endif; ?>
+
+                        </div><!-- .featured-media -->
+
+                    </div>
+                <?php endif; ?>
+
+				<div class="post-content section-inner thin">
 
 					<?php the_content(); ?>
 
@@ -74,7 +76,6 @@ $pageSummary = get_field('summary');
 
 	endif; ?>
 
-	</div><!-- .post -->
 
 </div><!-- .content -->
 
