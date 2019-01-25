@@ -88,6 +88,18 @@ function getThumbnail() {
 
             </ul>
 
+            <?php if ( $wp_query->max_num_pages > 1 ) : ?>
+
+                <div class="archive-news__nav">
+
+                    <?php echo get_previous_posts_link( '&laquo; ' . __( 'Previous news items', 'radcliffe')  ); ?>
+
+                    <?php echo get_next_posts_link(  __( 'More news items', 'radcliffe' ) . ' &raquo;' ); ?>
+
+                </div>
+
+            <?php endif; ?>
+
         </div>
 
     </div>
