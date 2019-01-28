@@ -410,7 +410,7 @@ body {
 	border: 5px solid transparent;
 	border-top-color: #999;
 	position: absolute;
-	z-index: 1001;
+	z-index: 1;
 	right: 16px;
 	top: 50%;
 	margin-top: -2px;
