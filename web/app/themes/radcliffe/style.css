@@ -672,6 +672,7 @@ a.post-header .post-meta-top .sep {
 .post-title {
   font-family: Merriweather, serif;
   font-size: 2em;
+  line-height: 1.2
 	text-transform: uppercase;
 	text-align: center;
 	word-break: break-word;
