@@ -35,7 +35,7 @@ global $td;
                     <div class="report__meta">
                         <p><a href="<?= $td['downloadUrl'] ?>"><?= $td['userFriendlyFileName']; ?></a></p>
                         <p><?= $td['fileType'] ?>, <?= $td['fileSize'] ?>, <?= $td['numberOfPages'] ?> pages</p>
-                        <p><a href="/contact/">Contact us</a> if you need this in another publication format.</p>
+                        <p><a href="/contact/">Contact us</a> if you need this publication in another format.</p>
                     </div>
                 </div>
 
