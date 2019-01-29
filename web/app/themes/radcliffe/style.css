@@ -390,7 +390,10 @@ body {
 	text-transform: uppercase;
 }
 
-.main-menu > li > a { border-radius: 3px; }
+.main-menu > li > a {
+  border-radius: 3px;
+  border-bottom: 1px solid #0f0228;
+}
 
 .main-menu > .has-children > a,
 .main-menu > .menu-item-has-children > a {
@@ -419,10 +422,23 @@ body {
 .main-menu > .has-children:hover > a::after,
 .main-menu > .menu-item-has-children:hover > a::after { border-top-color: #fff; }
 
+.main-menu .current-menu-ancestor > a,
 .main-menu .current-menu-parent,
 .main-menu > .menu-item:hover {
   border-bottom-color: #fff;
+
 }
+.main-menu .current-menu-ancestor > a {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-radius: 0;
+}
+
+.main-menu .sub-menu .current-menu-item a {
+  text-decoration: underline;
+}
+
+
 .main-menu > .has-children > a::after,
 .main-menu > .menu-item-has-children > a::after {
   border-top-color: #fff;
@@ -475,7 +491,7 @@ a.search-toggle:hover {
 
 .main-menu > li:hover > ul {
 	opacity: 1;
-	top: 20px;
+	top: 28px;
 	left: 50%;
 }
 
