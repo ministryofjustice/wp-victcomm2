@@ -2013,7 +2013,7 @@ li.comment {
 
 .archive__list {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
 .archive__list-element {
