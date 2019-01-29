@@ -16,7 +16,7 @@ $pageSummary = get_field('summary');
 
 				<div class="post-header section">
 
-					<div class="post-header-inner section-inner">
+					<div class="post-header-inner section-inner thin">
 
 						<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 
@@ -35,7 +35,7 @@ $pageSummary = get_field('summary');
                 <?php if ( has_post_thumbnail() ) : ?>
                     <div class="featured-media-container">
 
-                        <div class="featured-media section-inner thin" style="background-image: url( <?php the_post_thumbnail_url( $post->ID, 'post-image' ); ?> );">
+                        <div class="featured-media section-inner medium" style="background-image: url( <?php the_post_thumbnail_url( $post->ID, 'post-image' ); ?> );">
 
                             <?php
 

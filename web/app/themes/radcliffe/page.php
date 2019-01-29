@@ -39,7 +39,7 @@ $pageSummary = get_field('summary');
 
 				<div class="post-header section">
 
-					<div class="post-header-inner section-inner">
+					<div class="post-header-inner section-inner thin">
 
 						<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 
@@ -51,7 +51,7 @@ $pageSummary = get_field('summary');
 
 				</div><!-- .post-header section -->
 
-				<div class="post-content section-inner medium">
+				<div class="post-content section-inner thin">
 
 					<?php the_content(); ?>
 
