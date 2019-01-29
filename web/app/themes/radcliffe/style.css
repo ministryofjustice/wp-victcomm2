@@ -2316,6 +2316,10 @@ a.archive-news__item-button {
   margin-left: 32px;
 }
 
+.report__find-more-link {
+  text-transform: lowercase;
+}
+
 /* -------------------------------------------------------------------------------- */
 /*	11. Footer
 /* -------------------------------------------------------------------------------- */
@@ -2773,7 +2777,7 @@ a.archive-news__item-button {
 @media (max-width: 900px) {
 
 	/* main content */
-  
+
 	.posts .post-header { padding: 50px 0; }
 
 	.post-meta-top { margin-bottom: 20px; }
