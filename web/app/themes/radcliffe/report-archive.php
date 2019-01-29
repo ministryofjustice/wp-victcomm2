@@ -18,7 +18,7 @@ $td = $vcTemplateData;
 
                     <h2 class="post-title"><?= post_type_archive_title() ?></h2>
 
-                    <?php if($td['summary']) : ?>
+                    <?php if(isset($td['summary'])) : ?>
 
                         <p class="post-summary"><?= $td['summary'] ?></p>
 
