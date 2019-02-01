@@ -941,10 +941,6 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
   margin-bottom: 1.3em;
 }
 
-.post-content li {
-  line-height: 1.5em;
-}
-
 .post-content > *:first-child { margin-top: 0; }
 .post-content *:last-child { margin-bottom: 0; }
 
