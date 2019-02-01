@@ -28,7 +28,7 @@ $td = $vcTemplateData;
 
             </div>
 
-            <div class="section-inner archive">
+            <div class="section-inner">
 
                 <div class="archive__content"><?= $td['archive-text'] ?></div>
 

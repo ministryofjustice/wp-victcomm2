@@ -113,7 +113,7 @@ body {
 	color: #222;
 	background: #FFF;
 	font-family: Barlow, sans-serif;
-	font-size: 1em;
+	font-size: 20px;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
 }
@@ -699,11 +699,10 @@ a.post-header .post-meta-top .sep {
 }
 
 .post-summary {
-  font-size: 22.5px;
+  font-size: 1.25em;
   font-weight: 600;
   margin-bottom: 0;
   margin-top: .5em;
-  max-width: 75%;
 }
 
 .post-date {
@@ -756,7 +755,6 @@ a.post-header .post-title {
 .single .post-title {
   color: #a60f51;
   font-family: Merriweather, serif;
-  font-size: 42px;
   font-weight: bold;
   margin-bottom: 0;
   text-align: left;
@@ -927,7 +925,6 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 
 .post-content {
   font-family: Barlow, sans-serif;
-	font-size: 1.25em;
 }
 
 .post-content a:hover { text-decoration: underline; }
@@ -2018,7 +2015,6 @@ li.comment {
 }
 
 .archive__list-element {
-  font-size: 24px;
   line-height: 1.5;
   margin-bottom: 1em;
 }
@@ -2070,9 +2066,6 @@ a.archive-news__item-button {
 
 .archive-news__nav .post-nav-older { float: right; }
 .archive-news__nav .post-nav-older { float: right; }
-
-
-
 
 .archive__content h1 { font-size: 200%; }
 .archive__content h2 { font-size: 180%; }
@@ -2343,7 +2336,6 @@ a.archive-news__item-button {
 
 .widget-content {
 	font-family: 'Crimson Text', 'Times New Roman', Times, serif;
-	font-size: 1.1em;
 	color: #444;
 }
 
@@ -2577,8 +2569,6 @@ a.archive-news__item-button {
 
 
 @media (max-width: 1200px) {
-
-	body { font-size: 18px; }
 
 }
 
