@@ -673,14 +673,14 @@ function partial($data, $slug, $name = '') {
  */
 if ( function_exists( 'acf_add_options_sub_page' ) ){
     acf_add_options_sub_page(array(
-        'title'      => 'Annual Report Settings',
-        'parent'     => 'edit.php?post_type=annual-report',
+        'title'      => 'Annual Reports Settings',
+        'parent'     => 'edit.php?post_type=annual-reports',
         'capability' => 'manage_options'
     ));
 
     acf_add_options_sub_page(array(
-        'title'      => 'Special Report Settings',
-        'parent'     => 'edit.php?post_type=special-report',
+        'title'      => 'Published Reviews Settings',
+        'parent'     => 'edit.php?post_type=published-reviews',
         'capability' => 'manage_options'
     ));
 }
@@ -728,7 +728,7 @@ add_action( 'pre_get_posts', function ( $query ) {
 
     if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'news' ) ) {
 
-        $query->set( 'post_type', ['news', 'special-report', 'annual-report']);
+        $query->set( 'post_type', ['news', 'published-reviews', 'annual-reports']);
         $query->set( 'posts_per_page', '12' );
         $query->set( 'order', 'DESC' );
 

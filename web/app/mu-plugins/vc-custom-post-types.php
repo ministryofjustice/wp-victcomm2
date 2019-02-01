@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name:  Register VC Custom Post Types
-Description:  This plugin registers the Annual Report and Special Report custom post types.
+Description:  This plugin registers the Annual Reports and Published Reviews custom post types.
 */
 add_action( 'init', function() {
     // Register Annual Report custom post type
-    register_post_type( 'annual-report',
+    register_post_type( 'annual-reports',
         array(
             'labels' => array(
                 'name' => __( 'Annual Reports' ),
@@ -13,14 +13,15 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
+            //'rewrite' => ['slug', 'annual-reports']
         )
     );
-    // Register Special Report custom post type
-    register_post_type( 'special-report',
+    // Register Published Reviews custom post type
+    register_post_type( 'published-reviews',
         array(
             'labels' => array(
-                'name' => __( 'Special Reports' ),
-                'singular_name' => __( 'Special Report' )
+                'name' => __( 'Published Reviews' ),
+                'singular_name' => __( 'Published Review' )
             ),
             'public' => true,
             'has_archive' => true,

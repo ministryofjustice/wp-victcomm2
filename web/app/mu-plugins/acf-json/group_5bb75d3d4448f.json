@@ -46,14 +46,14 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "annual-report"
+                "value": "annual-reports"
             }
         ],
         [
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "special-report"
+                "value": "published-reviews"
             }
         ]
     ],

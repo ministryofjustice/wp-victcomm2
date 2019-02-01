@@ -18,7 +18,7 @@ function getThumbnail() {
 
     $postType = get_post_type();
 
-    if ( $postType === 'annual-report' || $postType === 'special-report' ) {
+    if ( $postType === 'annual-reports' || $postType === 'published-reviews' ) {
         $reportFile = get_field('report_file', get_the_ID());
         return wp_get_attachment_image($reportFile['id'], [600, 337], true);
     }
