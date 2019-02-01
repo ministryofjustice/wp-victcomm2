@@ -8,8 +8,8 @@ add_action( 'init', function() {
     register_post_type( 'annual-reports',
         array(
             'labels' => array(
-                'name' => __( 'Annual Reports' ),
-                'singular_name' => __( 'Annual Report' )
+                'name' => __( 'Annual reports' ),
+                'singular_name' => __( 'Annual report' )
             ),
             'public' => true,
             'has_archive' => true,
@@ -20,8 +20,8 @@ add_action( 'init', function() {
     register_post_type( 'published-reviews',
         array(
             'labels' => array(
-                'name' => __( 'Published Reviews' ),
-                'singular_name' => __( 'Published Review' )
+                'name' => __( 'Published reviews' ),
+                'singular_name' => __( 'Published review' )
             ),
             'public' => true,
             'has_archive' => true,
@@ -31,8 +31,8 @@ add_action( 'init', function() {
     register_post_type( 'news',
         array(
             'labels' => array(
-                'name' => __( 'News Posts' ),
-                'singular_name' => __( 'News Post' )
+                'name' => __( 'News posts' ),
+                'singular_name' => __( 'News post' )
             ),
             'public' => true,
             'has_archive' => true,
