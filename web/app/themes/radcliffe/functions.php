@@ -631,7 +631,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
  * @return string
  */
 function convertByteSizeToHumanReadable($bytes) {
-    error_log('convertByteSizeToHumanReadable');
+
     if ($bytes > 0)
     {
         $unit = intval(log($bytes, 1024));
