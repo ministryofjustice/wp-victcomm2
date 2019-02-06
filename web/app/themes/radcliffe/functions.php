@@ -768,6 +768,12 @@ add_filter('acf/settings/load_json', 'acf_json_load_point');
  */
 add_action( 'pre_get_posts', function ( $query ) {
 
+    if( $query->is_main_query() && is_post_type_archive( ['annual-reports', 'published-reviews'] ) ) {
+
+        $query->set( 'posts_per_page', '-1' );
+        
+    }
+
     if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'news' ) ) {
 
         $query->set( 'post_type', ['news', 'published-reviews', 'annual-reports']);
