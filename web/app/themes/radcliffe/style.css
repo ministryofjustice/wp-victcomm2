@@ -369,7 +369,9 @@ body {
 /*	4. Navigation
 /* -------------------------------------------------------------------------------- */
 
-.main-menu { margin-top: 2px; }
+.main-menu {
+  margin-bottom: 0;
+}
 
 .main-menu li {
 	float: left;
@@ -515,11 +517,6 @@ a.search-toggle:hover {
 	line-height: 120%;
 	text-transform: none;
 }
-
-/*.main-menu ul a:hover {
-	color: #FFF;
-	background: #CA2017;
-}*/
 
 .main-menu ul > li:first-child > a { border-radius: 6px 6px 0 0; }
 .main-menu ul > li:last-child > a { border-radius: 0 0 6px 6px; }
@@ -2004,9 +2001,29 @@ ul.archive__list {
 }
 
 .archive__list-element {
+  border-top: 1px solid #999;
   line-height: 1.5;
-  margin-bottom: 1em;
   list-style: none;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+
+a.archive__list-element-link {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.archive__list-element-meta {
+  display: flex;
+  font-size: .8em;
+}
+
+.archive__list-element-meta > * {
+  margin-right: .5em;
+}
+
+.archive__list-element-type {
+  text-transform: uppercase;
 }
 
 .archive-news__list {
