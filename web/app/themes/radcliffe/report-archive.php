@@ -34,9 +34,32 @@ $td = $vcTemplateData;
 
                 <ul class="archive__list">
 
-                    <?php while ( have_posts() ) : the_post(); ?>
+                    <?php while ( have_posts() ) : the_post();
 
-                        <li class="archive__list-element"><a href="<?= the_permalink() ?>"><?php the_title(); ?></a></li>
+                        $postType = get_post_type_object(get_post_type());
+
+                        $postTypeName = $postType->labels->name;
+
+                    ?>
+
+                        <li class="archive__list-element">
+
+                            <div class="archive__list-element-meta">
+
+                                <div class="archive__list-element-type"><?= $postTypeName ?></div>
+
+                                <?php if (isset($td['date-format'])) : ?>
+
+                                    <div class="archive__list-element-divider">|</div>
+                                    <div class="archive__list-element-date"> <?= get_the_date($td['date-format']); ?></div>
+
+                                <?php endif; ?>
+                                
+                            </div>
+
+                            <a class="archive__list-element-link" href="<?= the_permalink() ?>"><?php the_title(); ?></a>
+
+                        </li>
 
                     <?php endwhile; ?>
 
