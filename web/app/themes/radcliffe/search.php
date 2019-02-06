@@ -39,7 +39,7 @@
 
             if ( $wp_query->max_num_pages > 1 ) : ?>
 
-                <div class="archive-nav">
+                <div class="archive-nav section-inner">
 
                     <?php echo get_previous_posts_link( '&laquo; ' . __( 'Previous results', 'radcliffe')  ); ?>
 

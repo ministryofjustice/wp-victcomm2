@@ -1918,10 +1918,8 @@ li.comment {
 
 /* Archive navigation --------------------------------------- */
 
-
 .archive-nav {
 	background: #EEE;
-	width: 100%;
 }
 
 .archive-nav a {
@@ -1931,16 +1929,10 @@ li.comment {
 	text-align: center;
 	padding: 75px 0;
 	background: #EEE;
-	font-size: 1.25em;
 	text-transform: uppercase;
 	font-weight: 800;
 	letter-spacing: 1px;
 	color: #666;
-}
-
-.archive-nav a:hover {
-	background: #a60f51;
-	color: #FFF;
 }
 
 .archive-nav a.post-nav-newer { float:right; }
