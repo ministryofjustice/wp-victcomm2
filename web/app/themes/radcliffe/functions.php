@@ -646,6 +646,48 @@ function convertByteSizeToHumanReadable($bytes) {
     return $bytes;
 }
 
+/**
+ * Function to determine if the post, with `$postId` is a report CPT;
+ * either an Annual Report or a Published Review.
+ *
+ * @param $postId
+ *
+ * @return bool
+ */
+function isReport($postId) {
+    $postType = get_post_type($postId);
+
+    return ( 'annual-reports' === $postType || 'published-reviews' === $postType );
+}
+
+add_action( 'save_post', function($postId, $post, $update) {
+
+    if (isReport($postId)) {
+
+        $image = new Imagick();
+
+        if( $reportFile = get_field('report_file', $postId) ) {
+
+            if ( $reportFilePath = get_attached_file($reportFile['id'])){
+
+                $image->pingImage($reportFilePath);
+
+                update_post_meta( $postId, 'report_file_size', convertByteSizeToHumanReadable($reportFile['filesize']));
+
+                $numberOfPages = $image->getNumberImages();
+
+                update_post_meta( $postId, 'report_file_number_of_pages', $numberOfPages );
+
+                update_post_meta( $postId, 'report_file_type', strtoupper($reportFile['subtype']));
+
+            }
+
+        }
+
+    }
+
+}, 10, 3);
+
 add_action('init', function() {
     add_image_size( 'report', 200);
     add_image_size( 'archive-news', 600, 337, array( 'left', 'top' ));

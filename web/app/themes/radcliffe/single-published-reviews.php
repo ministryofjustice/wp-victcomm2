@@ -4,8 +4,6 @@ get_header();
 global $post;
 setup_postdata($post);
 
-$image = new Imagick();
-
 $pageSummary = get_field('summary');
 
 $reportFile = get_field('report_file');
@@ -21,19 +19,18 @@ $td = [
 
     'downloadUrl' => $reportFile['url'],
 
-    'fileSize' => convertByteSizeToHumanReadable($reportFile['filesize']),
+    'fileSize' => get_post_meta($post->ID, 'report_file_size', true),
 
-    'image' => $image->pingImage(get_attached_file($reportFile['id'])),
+    'numberOfPages' => get_post_meta($post->ID, 'report_file_number_of_pages', true),
 
-    'numberOfPages' => $image->getNumberImages(),
-
-    'fileType' => strtoupper($reportFile['subtype']),
+    'fileType' => get_post_meta($post->ID, 'report_file_type', true),
 
     'attachmentImage' => wp_get_attachment_image($reportFile['id'], 'report'),
 
     'postTypeName' => $postTypeName,
 
     'postType' => get_post_type_object($postTypeName),
+
 ];
 
 echo template($td, 'report');
