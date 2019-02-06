@@ -823,4 +823,8 @@ add_filter( 'post_mime_types', function ( $post_mime_types ) {
     return $post_mime_types;
 } );
 
+function get_common_date_format() {
+    return "j F Y";
+}
+
 ?>
