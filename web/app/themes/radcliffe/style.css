@@ -2030,7 +2030,7 @@ a.archive__list-element-link {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: -1em;
+  margin: -.5em;
 }
 
 .archive-news__item {
@@ -2039,13 +2039,21 @@ a.archive__list-element-link {
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 1em;
-  padding-right: 1em;
   max-width: 33%;
+  transition: all .25s;
+}
+.archive-news__item:hover {
+  background-color: #eee;
 }
 
 a.archive-news__item-button {
   display: block;
+  padding: 0.5em;
   text-decoration: none;
+}
+
+a.archive-news__item-button:hover {
+  color: inherit;
 }
 
 .archive-news__item-title {
