@@ -40,7 +40,12 @@
 
             while ( have_posts() ) : the_post();
 
-                get_template_part( 'search_result', get_post_format() );
+                $templateData = [
+                    'post-type-name' => get_post_type_object(get_post_type())->labels->singular_name,
+                    'date-format' => get_common_date_format()
+                ];
+
+                echo partial( $templateData,'search-result' );
 
             endwhile;
 

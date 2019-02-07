@@ -38,23 +38,23 @@ $td = $vcTemplateData;
 
                         $postType = get_post_type_object(get_post_type());
 
-                        $postTypeName = $postType->labels->name;
+                        $postTypeName = $postType->labels->singular_name;
 
                     ?>
 
                         <li class="archive__list-element">
 
-                            <div class="archive__list-element-meta">
+                            <div class="list-item-meta">
 
-                                <div class="archive__list-element-type"><?= $postTypeName ?></div>
+                                <div class="list-item-meta__type"><?= $postTypeName ?></div>
 
                                 <?php if (isset($td['date-format'])) : ?>
 
-                                    <div class="archive__list-element-divider">|</div>
-                                    <div class="archive__list-element-date"> <?= get_the_date($td['date-format']); ?></div>
+                                    <div class="list-item-meta__divider">|</div>
+                                    <div class="list-item-meta__date"> <?= get_the_date($td['date-format']); ?></div>
 
                                 <?php endif; ?>
-                                
+
                             </div>
 
                             <a class="archive__list-element-link" href="<?= the_permalink() ?>"><?php the_title(); ?></a>

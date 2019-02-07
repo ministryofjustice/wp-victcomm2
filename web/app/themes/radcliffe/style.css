@@ -2013,16 +2013,16 @@ a.archive__list-element-link {
   text-decoration: none;
 }
 
-.archive__list-element-meta {
+.list-item-meta {
   display: flex;
   font-size: .8em;
 }
 
-.archive__list-element-meta > * {
+.list-item-meta > * {
   margin-right: .5em;
 }
 
-.archive__list-element-type {
+.list-item-meta__type {
   text-transform: uppercase;
 }
 
@@ -2142,12 +2142,17 @@ a.archive-news__item-button {
   margin-bottom: 0;
 }
 
-.search-results-list > * {
-  margin-top: 20px;
-}
-
 .search-results-list > *:first-child {
   margin-top: 0;
+}
+
+.search-result {
+  border-top: 1px solid #ddd;
+  padding: 1em 0;
+}
+
+.search-result > *:last-child {
+  margin-bottom: 0;
 }
 
 .search-result__title {
@@ -2156,6 +2161,7 @@ a.archive-news__item-button {
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
+  margin-top: .5em;
   text-align: left;
   text-transform: none;
 }
@@ -2169,11 +2175,10 @@ a.archive-news__item-button {
   text-decoration: underline;
 }
 
-.search-result__excerpt > p {
-  font-size: 18px;
+.search-result__excerpt {
+  font-size: .9em;
   font-weight: 300;
   line-height: 26px;
-  margin-top: 20px;
 }
 
 .search-results-page-form.search-form {
@@ -2185,7 +2190,7 @@ a.archive-news__item-button {
 }
 
 .search-results-page-form__label {
-  /*text-transform: capitalize;*/
+  margin-bottom: 0;
   text-align: center;
 }
 
