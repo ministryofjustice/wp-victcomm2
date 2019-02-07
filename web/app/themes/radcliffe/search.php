@@ -14,9 +14,16 @@
                 <div class="section-inner">
 
                     <p class="search-results-page-form__label">
+
                         <?php
                         if ( is_search() ) {
-                            printf( __( 'Search results for: "%s"', 'radcliffe' ), get_search_query() );
+
+                            $allResults = new WP_Query("s=$s&showposts=-1");
+
+                            $numberOfResults = $allResults->found_posts;
+
+                            printf( __( '%u search results for: "%s"', 'radcliffe' ), $numberOfResults, get_search_query());
+
                         }
                         ?>
 
