@@ -65,7 +65,7 @@ function getThumbnail() {
 
                             <?= getThumbnail() ?>
 
-                            <div class="archive-news__item-date"><?= get_the_date(); ?></div>
+                            <div class="archive-news__item-date"><?= get_the_date(get_common_date_format()); ?></div>
 
                             <h2 class="archive-news__item-title"><?php the_title(); ?></h2>
 
