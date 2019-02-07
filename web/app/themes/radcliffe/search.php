@@ -3,37 +3,33 @@
     <div class="content">
 
         <form method="get" class="search-results-page-form search-form section-inner" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-            <input type="search" placeholder="<?php _e( 'Search form', 'radcliffe' ); ?>" name="s" id="s" />
+            <input type="search" placeholder="<?php _e( 'Type and press enter', 'radcliffe' ); ?>" name="s" id="s" />
             <input type="submit" value="<?php _e( 'Search', 'radcliffe' ); ?>" class="search-button">
         </form>
 
-        <?php if ( have_posts() ) : ?>
+        <div class="page-title section light-padding">
 
-            <div class="page-title section light-padding">
+            <div class="section-inner">
 
-                <div class="section-inner">
+                <p class="search-results-page-form__label">
 
-                    <p class="search-results-page-form__label">
+                    <?php
+                    if ( is_search() ) {
 
-                        <?php
-                        if ( is_search() ) {
+                        $allResults = new WP_Query("s=$s&showposts=-1");
 
-                            $allResults = new WP_Query("s=$s&showposts=-1");
+                        $numberOfResults = $allResults->found_posts;
 
-                            $numberOfResults = $allResults->found_posts;
+                        printf( __( '%u search results for: "%s"', 'radcliffe' ), $numberOfResults, get_search_query() );
 
-                            printf( __( '%u search results for: "%s"', 'radcliffe' ), $numberOfResults, get_search_query());
+                    }
+                    ?>
 
-                        }
-                        ?>
+                </p>
 
-                    </p>
+            </div><!-- .section-inner -->
 
-                </div><!-- .section-inner -->
-
-            </div><!-- .page-title -->
-
-        <?php endif; ?>
+        </div><!-- .page-title -->
 
         <div class="search-results-list">
             <?php

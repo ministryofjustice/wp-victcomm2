@@ -1893,7 +1893,6 @@ li.comment {
 
 
 .page-title { border-top: 1px solid #ddd; }
-.search-no-results .page-title { border-bottom: 1px solid #ddd; }
 
 .page-title h4 {
 	font-size: 0.9em;
@@ -2100,8 +2099,12 @@ a.archive-news__item-button:hover {
 /* Error 404 --------------------------------------- */
 
 
-.error404 .search-form,
-.search-no-results .search-form { margin-top: 25px; }
+.error404 .search-form {
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  margin-top: 1em;
+}
 
 
 /* Search --------------------------------------- */
@@ -2246,7 +2249,7 @@ a.archive-news__item-button:hover {
 
 .search-form {
   background: #eee;
-  border-top: 1px solid #ddd;
+  margin-top: 0;
   position: relative;
 }
 
