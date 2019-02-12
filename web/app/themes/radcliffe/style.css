@@ -2241,7 +2241,7 @@ a.archive-news__item-button:hover {
   text-transform: none;
 }
 
-.search-results a.search-toggle {
+.search .header a.search-toggle {
   display: none;
 }
 
@@ -3261,7 +3261,9 @@ details[open] .accordion-item__title:after {
 	a.search-toggle,
 	a.search-toggle:hover,
 	.search-form .search-button,
-	.search-form .search-button { background-image: url(images/icons/2x/spyglass-white.png); }
+	.search-form .search-button { background-image: url(images/icons/2x/spyglass-d.png); }
+
+  .header a.search-toggle { background-image: url(images/icons/2x/spyglass-white.png); }
 
 	p.post-categories { background-image: url(images/icons/2x/folder-g.png); }
 	p.post-tags { background-image: url(images/icons/2x/tag-g.png); }
