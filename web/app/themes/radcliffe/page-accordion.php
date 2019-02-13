@@ -73,9 +73,9 @@ $accordionSectionQuery = urlencode($_GET['accordion-section']);
 
                         <?php foreach ($accordions as $accordion) :
 
-                        $encodedTitle = urlencode($accordion['title']);
+                            $encodedTitle = urlencode($accordion['title']);
 
-                        $open = ($accordionSectionQuery == $encodedTitle) ? 'open' : '';
+                            $open = ($accordionSectionQuery == $encodedTitle) ? 'open' : '';
 
                         ?>
 
