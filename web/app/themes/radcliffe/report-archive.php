@@ -14,7 +14,7 @@ $td = $vcTemplateData;
 
             <div class="post-header section">
 
-                <div class="post-header-inner section-inner">
+                <div class="post-header-inner section-inner thin">
 
                     <h2 class="post-title"><?= post_type_archive_title() ?></h2>
 
@@ -28,7 +28,7 @@ $td = $vcTemplateData;
 
             </div>
 
-            <div class="post-content section-inner">
+            <div class="post-content section-inner thin">
 
                 <div class="archive__content"><?= $td['archive-text'] ?></div>
 
