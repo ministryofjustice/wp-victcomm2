@@ -100,6 +100,13 @@ input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
 
+/* -------------------------------------------------------------------------------- */
+/*	0. Traits
+/* -------------------------------------------------------------------------------- */
+
+.alt-bg { background-color: #f6f5f7}
+
+.padding { padding: 2em; }
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Document Setup
@@ -693,6 +700,13 @@ a.post-header .post-meta-top .sep {
 	text-transform: uppercase;
 	text-align: center;
 	word-break: break-word;
+}
+
+.home .post-title {
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 900;
+  text-transform: none;
 }
 
 .post-summary {
@@ -1951,6 +1965,54 @@ li.comment {
 	font-size: 0.8em;
 }
 
+/* Home ---------------------------------------------------- */
+
+.home h2, .home h3, .home h4, .home h5, .home h6 {
+  font-family: Merriweather, serif;
+}
+
+.home h2:first-child, .home h3:first-child, .home h4:first-child, .home h5:first-child, .home h6:first-child {
+  margin-top: 0;
+}
+
+.home p:last-child {
+  margin-bottom: 0;
+}
+
+.home-hero img {
+  border-radius: 50%;
+}
+
+.home-hero figcaption {
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  line-height: 1.5;
+  margin-top: 1em;
+  padding: 1em 0;
+}
+
+.home-hero.wp-block-media-text {
+  grid-template-columns: 29% auto;
+}
+
+.panel-text-pair {
+  padding: 2em 0;
+}
+
+.panel-text-pair .wp-block-column:nth-child(2) {
+  border: 1px solid #ddd;
+  flex-shrink: 1;
+  margin: 2em 0;
+  max-width: 1px;
+  padding: 0;
+  width: 1px;
+}
+
+.panel-text-pair h2 {
+  margin-bottom: 1em;
+  margin-top: 0;
+}
 
 /* Archives template --------------------------------------- */
 
@@ -2938,6 +3000,14 @@ details[open] .accordion-with-icons__item-title:after {
 	.footer .one-third:first-child { margin-left: 0; }
 
 
+}
+
+@media ( max-width: 767px ) {
+  .home-hero img {
+    display: block;
+    margin: auto;
+    max-width: 400px;
+  }
 }
 
 
