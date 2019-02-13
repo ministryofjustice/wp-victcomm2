@@ -12,7 +12,7 @@ global $td;
 
         <div class="post-header section">
 
-            <div class="post-header-inner section-inner">
+            <div class="post-header-inner section-inner thin">
 
                 <?php the_title( '<h2 class="post-title">', '</h2>' ); ?>
 
@@ -26,7 +26,7 @@ global $td;
 
         </div>
 
-        <article class="section-inner report">
+        <article class="section-inner report thin">
 
             <div class="post-content report report--annual">
 
