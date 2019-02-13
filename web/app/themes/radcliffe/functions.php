@@ -17,6 +17,10 @@ if ( ! function_exists( 'radcliffe_setup' ) ) {
 		add_theme_support( 'post-thumbnails' );
 		add_image_size( 'post-image', 1440, 9999 );
 
+        add_image_size( 'accordion-icon', 102, 100);
+        add_image_size( 'accordion-icon-small', 51, 50);
+
+
 		// Add nav menu
 		register_nav_menu( 'primary', __( 'Primary Menu', 'radcliffe' ) );
 
@@ -827,4 +831,12 @@ function get_common_date_format() {
     return "j F Y";
 }
 
+add_shortcode( 'accordion-preview', function ( $atts ){
+
+    return partial([
+        'post-id' => $atts['post-id'],
+        'accordion-with-icon' => get_field ('icon_accordion', $atts['post-id'])
+    ], 'accordion-preview');
+
+});
 ?>

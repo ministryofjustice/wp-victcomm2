@@ -9,6 +9,8 @@ $pageSummary = get_field('summary');
 
 $accordions = get_field('icon_accordion');
 
+$accordionSectionQuery = urlencode($_GET['accordion-section']);
+
 ?>
 
     <div class="content">
@@ -67,27 +69,32 @@ $accordions = get_field('icon_accordion');
 
                     </div>
 
-                    <div class="accordion section-inner thin">
+                    <div class="accordion-with-icons section-inner thin">
 
-                        <?php foreach ($accordions as $accordion) : ?>
+                        <?php foreach ($accordions as $accordion) :
 
-                            <div class="accordion-item">
+                        $encodedTitle = urlencode($accordion['title']);
 
-                                    <details class="">
+                        $open = ($accordionSectionQuery == $encodedTitle) ? 'open' : '';
 
-                                        <summary class="accordion-item__summary">
+                        ?>
 
-                                            <div class="accordion-item__summary-container">
+                            <div class="accordion-with-icons__item">
+                                <details <?= $open ?>>
 
-                                                <div class="accordion-item__icon"><?= wp_get_attachment_image($accordion['icon']['id']) ?></div>
+                                    <summary id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary">
 
-                                                <h3 class="accordion-item__title"><?= $accordion['title'] ?></h3>
+                                        <div class="accordion-with-icons__item-summary-container">
 
-                                            </div>
+                                            <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon') ?></div>
 
-                                        </summary>
+                                            <h3 class="accordion-with-icons__item-title"><?= $accordion['title'] ?> <?= $open ?></h3>
 
-                                        <div class="accordion-item__content"><?= $accordion['content'] ?></div>
+                                        </div>
+
+                                    </summary>
+
+                                    <div class="accordion-with-icons__item-content"><?= $accordion['content'] ?></div>
 
                                 </details>
 
