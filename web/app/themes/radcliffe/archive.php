@@ -7,33 +7,7 @@ global $vcTemplateData;
 
 $td = $vcTemplateData;
 
-$placeholders = get_posts([
-    'category_name' => 'placeholder',
-    'post_type' => 'attachment',
-]);
-$placeholderCounter = -1;
-
-function getThumbnail() {
-    global$placeholders, $placeholderCounter;
-
-    $postType = get_post_type();
-
-    if ( $postType === 'annual-reports' || $postType === 'published-reviews' ) {
-        $reportFile = get_field('report_file', get_the_ID());
-        return wp_get_attachment_image($reportFile['id'], [600, 337], true);
-    }
-
-    if ( has_post_thumbnail() ) {
-        return get_the_post_thumbnail( get_the_ID(), 'archive-news' );
-    }
-
-    if ( is_array($placeholders) && sizeof($placeholders) > 0) {
-        $index = ++$placeholderCounter % sizeof($placeholders);
-        return wp_get_attachment_image( $placeholders[$index]->ID,'archive-news', true);
-    }
-
-    return '';
-}
+$placeholderCounter = 0;
 
 ?>
 
@@ -63,7 +37,7 @@ function getThumbnail() {
 
                         <a class="archive-news__item-button" href="<?= the_permalink() ?>">
 
-                            <?= getThumbnail() ?>
+                            <?= getThumbnail($placeholderCounter) ?>
 
                             <div class="archive-news__item-date"><?= get_the_date(get_common_date_format()); ?></div>
 

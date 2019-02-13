@@ -839,4 +839,69 @@ add_shortcode( 'accordion-preview', function ( $atts ){
     ], 'accordion-preview');
 
 });
+
+add_shortcode( 'latest_news', function ( $atts ) {
+
+    $output = '';
+    $postsPerPage = (isset($atts['amount'])) ? $atts['amount'] : 3;
+    $the_query = new WP_Query( [
+        'posts_per_page' => $postsPerPage,
+        'post_type' => ['news', 'published-reviews', 'annual-reports'],
+    ] );
+
+    if ( $the_query->have_posts() ) {
+
+        while ( $the_query->have_posts() ) {
+
+            $the_query->the_post();
+            $postType = get_post_type_object(get_post_type());
+            $postTypeName = $postType->labels->singular_name;
+
+            $output .= partial([
+
+                'date-format' => get_common_date_format(),
+                'post-type-name' => $postTypeName,
+
+            ], 'latest-news');
+        }
+
+        wp_reset_postdata();
+
+    } else {
+
+        $output = '<p>No news posts found</p>';
+
+    }
+
+    return $output;
+
+});
+
+$placeholders = get_posts([
+    'category_name' => 'placeholder',
+    'post_type' => 'attachment',
+]);
+
+function getThumbnail(&$placeholderCounter) {
+    global$placeholders;
+
+    $postType = get_post_type();
+
+    if ( $postType === 'annual-reports' || $postType === 'published-reviews' ) {
+        $reportFile = get_field('report_file', get_the_ID());
+        return wp_get_attachment_image($reportFile['id'], [600, 337], true);
+    }
+
+    if ( has_post_thumbnail() ) {
+        return get_the_post_thumbnail( get_the_ID(), 'archive-news' );
+    }
+
+    if ( is_array($placeholders) && sizeof($placeholders) > 0) {
+        $index = ++$placeholderCounter % sizeof($placeholders);
+        return wp_get_attachment_image( $placeholders[$index]->ID,'archive-news', true);
+    }
+
+    return '';
+}
+
 ?>
