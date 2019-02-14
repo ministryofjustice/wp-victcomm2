@@ -9,7 +9,7 @@ $pageSummary = get_field('summary');
 
 $accordions = get_field('icon_accordion');
 
-$accordionSectionQuery = urlencode($_GET['accordion-section']);
+$accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['accordion-section']) : null;
 
 ?>
 
