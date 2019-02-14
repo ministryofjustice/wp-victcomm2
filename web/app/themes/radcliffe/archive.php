@@ -66,9 +66,9 @@ $placeholderCounter = 0;
 
                 <div class="archive-news__nav">
 
-                    <?php echo get_previous_posts_link( '&laquo; ' . __( 'Previous news items', 'radcliffe')  ); ?>
+                    <?php echo get_previous_posts_link( '&laquo; ' . __( 'Previous news', 'radcliffe')  ); ?>
 
-                    <?php echo get_next_posts_link(  __( 'More news items', 'radcliffe' ) . ' &raquo;' ); ?>
+                    <?php echo get_next_posts_link(  __( 'More news', 'radcliffe' ) . ' &raquo;' ); ?>
 
                 </div>
 
