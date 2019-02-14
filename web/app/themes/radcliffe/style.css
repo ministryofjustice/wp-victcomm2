@@ -565,7 +565,7 @@ a.search-toggle:hover {
 /* -------------------------------------------------------------------------------- */
 
 .content {
-  padding-bottom: 2em;
+
 }
 
 .content a {
@@ -755,7 +755,9 @@ a.post-header .post-title {
 
 .single .post,
 .error404 .post,
-.page .single.post { padding-bottom: 100px; }
+.page .single.post {
+
+}
 
 .single .featured-media {
 	z-index: 101;
@@ -2563,7 +2565,8 @@ details[open] .accordion-with-icons__item-title:after {
 
 .footer {
   background-color: #0f0228;
-  margin-top: auto; /*40px;*/
+  margin-top: 3em;
+  padding: 3em;
 }
 
 .footer a { text-decoration: none; }
