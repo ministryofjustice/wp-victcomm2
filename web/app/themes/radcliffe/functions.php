@@ -782,7 +782,7 @@ add_action( 'pre_get_posts', function ( $query ) {
 
         $query->set( 'post_type', ['news', 'published-reviews', 'annual-reports']);
         $query->set( 'order', 'DESC' );
-        $query->set( 'posts_per_page', '12' );
+        $query->set( 'posts_per_page', '9' );
 
     }
 
