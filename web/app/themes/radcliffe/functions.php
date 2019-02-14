@@ -843,11 +843,15 @@ add_shortcode( 'accordion-preview', function ( $atts ){
 add_shortcode( 'latest_news', function ( $atts ) {
 
     $output = '';
+    $commonDateFormat = get_common_date_format();
     $postsPerPage = (isset($atts['amount'])) ? $atts['amount'] : 3;
     $the_query = new WP_Query( [
         'posts_per_page' => $postsPerPage,
         'post_type' => ['news', 'published-reviews', 'annual-reports'],
-    ] );
+    ]);
+
+
+
 
     if ( $the_query->have_posts() ) {
 
@@ -858,9 +862,11 @@ add_shortcode( 'latest_news', function ( $atts ) {
             $postTypeName = $postType->labels->singular_name;
 
             $output .= partial([
-
-                'date-format' => get_common_date_format(),
-                'post-type-name' => $postTypeName,
+                'permalink' => get_the_permalink(),
+                'title' => get_the_title(),
+                'date' => get_the_date($commonDateFormat),
+                'type-name' => $postTypeName,
+                'excerpt' => wp_trim_words(get_the_excerpt(), 10),
 
             ], 'latest-news');
         }
