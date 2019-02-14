@@ -27,7 +27,7 @@ add_action( 'init', function() {
             'has_archive' => true,
         )
     );
-    // Register Special Report custom post type
+    // Register News custom post type
     register_post_type( 'news',
         array(
             'labels' => array(

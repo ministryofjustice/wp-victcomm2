@@ -723,7 +723,7 @@ a.post-header .post-meta-top .sep {
 }
 
 .post-date {
-  margin-top: .5em;
+  margin: 0 0 .5em;
 }
 
 a.post-header .post-title {
