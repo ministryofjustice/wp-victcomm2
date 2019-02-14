@@ -4,16 +4,16 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a550f06fcf9e72d0fd5ffb783f74180",
+    "content-hash": "2198fee23dcbbc81761c58d8ad27ed58",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
-            "version": "5.7.10",
+            "version": "5.7.11",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.7.10.zip",
+                "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.7.11.zip",
                 "reference": null,
-                "shasum": "ee844bbfe638d15403a159af47c77dcc1df05ea3"
+                "shasum": "d01e265cd643da016688e6ee6b01d62b45728ec3"
             },
             "type": "wordpress-plugin"
         },
@@ -570,15 +570,15 @@
         },
         {
             "name": "wpackagist-plugin/atomic-blocks",
-            "version": "1.4.23",
+            "version": "1.5.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/atomic-blocks/",
-                "reference": "tags/1.4.23"
+                "reference": "tags/1.5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.1.4.23.zip",
+                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.1.5.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -607,6 +607,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/gutenberg/"
+        },
+        {
+            "name": "wpackagist-plugin/kadence-blocks",
+            "version": "1.2.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/kadence-blocks/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1549392777",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/kadence-blocks/"
         }
     ],
     "packages-dev": [
