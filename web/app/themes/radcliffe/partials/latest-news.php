@@ -27,7 +27,7 @@ $td = $vcTemplateData;
 
         </div>
 
-        <h2 class="latest-news-item__title"><a href="<?= $td['permalink']; ?>"><?= $td['title']; ?></a></h2>
+        <h3 class="latest-news-item__title"><a href="<?= $td['permalink']; ?>"><?= $td['title']; ?></a></h3>
 
         <?php if ($the_excerpt = $td['excerpt'] ) : ?>
 
