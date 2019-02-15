@@ -34,13 +34,6 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "page"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
                 "value": "annual-reports"
             }
         ],
@@ -57,6 +50,13 @@
                 "operator": "==",
                 "value": "news"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "newsletters"
+            }
         ]
     ],
     "menu_order": 0,
@@ -70,5 +70,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1548172621
+    "modified": 1550242802
 }
