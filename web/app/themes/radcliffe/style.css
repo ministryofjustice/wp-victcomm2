@@ -874,34 +874,6 @@ a.post-header .post-title {
 	color: #767676;
 }
 
-/* author links */
-
-
-.author-links { margin-top: 15px; }
-
-.author-links a {
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	background-color: #aaa;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 16px auto;
-	margin-left: 3px;
-	border-radius: 999px;
-	text-indent: -9999px;
-}
-
-.author-links a:first-child { margin-left: 0; }
-
-.author-links a.author-link-posts { background-image: url(images/icons/1x/archive-w.png); }
-.author-links a.author-link-website { background-image: url(images/icons/1x/home-w.png); }
-
-.author-links a:hover {
-  background-color: #a60f51;
-}
-
-
 /* post cat tags */
 
 
