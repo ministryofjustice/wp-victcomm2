@@ -40,4 +40,17 @@ add_action( 'init', function() {
             'show_in_rest' => true,
         )
     );
+    // Register news letter custom post type
+    register_post_type( 'newsletters',
+        array(
+            'labels' => array(
+                'name' => __( 'Newsletter' ),
+                'singular_name' => __( 'Newsletters' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => ['title', 'editor', 'thumbnail'],
+            'show_in_rest' => true,
+        )
+    );
 } );
