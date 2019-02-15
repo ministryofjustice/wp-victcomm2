@@ -73,6 +73,8 @@ $td = $vcTemplateData;
 
                 </ul>
 
+                <div class="archive__content"><?= $td['archive-outro-text'] ?></div>
+
             </div>
 
         </div>

@@ -3,8 +3,27 @@
     "title": "Annual Reports Archive Settings",
     "fields": [
         {
+            "key": "field_5c502ae11e63c",
+            "label": "Summary",
+            "name": "annual_reports_archive_summary",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5c36035a3d452",
-            "label": "Archive Text",
+            "label": "Intro text",
             "name": "annual_reports_archive_text",
             "type": "wysiwyg",
             "instructions": "",
@@ -22,10 +41,10 @@
             "delay": 0
         },
         {
-            "key": "field_5c502ae11e63c",
-            "label": "Archive Summary",
-            "name": "annual_reports_archive_summary",
-            "type": "text",
+            "key": "field_5c66deb758ee0",
+            "label": "Outro text",
+            "name": "annual_reports_archive_outro_text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -35,10 +54,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -58,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1548842243
+    "modified": 1550246217
 }
