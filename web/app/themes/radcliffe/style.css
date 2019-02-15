@@ -874,36 +874,6 @@ a.post-header .post-title {
 	color: #767676;
 }
 
-/* post cat tags */
-
-
-.post-cat-tags p {
-	line-height: 120%;
-	margin-top: 12px;
-	padding: 3px 0 4px 22px;
-	background: no-repeat left center;
-	background-size: 16px auto;
-}
-
-p.post-categories { background-image: url(images/icons/1x/folder-g.png); }
-p.post-tags { background-image: url(images/icons/1x/tag-g.png); }
-p.post-nav-prev { background-image: url(images/icons/1x/prev-g.png); }
-p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
-
-.post-cat-tags p:first-child { margin-top: 0; }
-
-.post-cat-tags a { color: #666; }
-
-.post-nav:before {
-	content: "";
-	display: block;
-	width: 32px;
-	height: 1px;
-	margin: 20px 0;
-	background: #ddd;
-}
-
-
 /* -------------------------------------------------------------------------------- */
 /*	7. Post Content
 /* -------------------------------------------------------------------------------- */
