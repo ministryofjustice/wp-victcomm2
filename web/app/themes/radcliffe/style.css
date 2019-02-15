@@ -874,43 +874,6 @@ a.post-header .post-title {
 	color: #767676;
 }
 
-.post-author-container {
-	position: relative;
-	min-height: 60px;
-}
-
-.post-author { width: 55%; float: left; }
-.post-cat-tags { width: 40%; float: right; }
-
-.post-author .avatar {
-	max-width: 60px;
-	height: auto;
-	border-radius: 999px;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-.post-author-inner { margin-left: 80px; }
-
-.post-author-inner h3 {
-	font-size: 1.1em;
-	font-weight: 700;
-}
-
-.post-author-inner h3 a { color: #333; }
-.post-author-inner h3 a:hover {
-  color: #a60f51;
-  text-decoration: none;
-}
-
-.post-author p {
-	margin-top: 8px;
-	line-height: 150%;
-	color: #444;
-}
-
-
 /* author links */
 
 
