@@ -19,7 +19,7 @@ $placeholderCounter = 0;
 
                 <div class="post-header-inner section-inner">
 
-                    <h2 class="post-title">News</h2>
+                    <h2 class="post-title">Latest news</h2>
 
                 </div>
 
