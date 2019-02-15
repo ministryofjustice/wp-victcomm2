@@ -142,7 +142,7 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #fff;
   border-radius: 2em;
   font-size: 1.1em;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -601,8 +601,8 @@ a.search-toggle:hover {
 }
 
 .content a {
-  color: inherit;
-  font-weight: bold;
+  color: #a60f51;
+  font-weight: 500;
 }
 
 .post {
@@ -2009,6 +2009,14 @@ li.comment {
 
 .home h2, .home h3, .home h4, .home h5, .home h6 {
   font-family: Merriweather, serif;
+}
+
+.home h2 {
+  color: #333;
+}
+
+.home .alt-bg h2 {
+  color: #a60f51;
 }
 
 .home h2:first-child, .home h3:first-child, .home h4:first-child, .home h5:first-child, .home h6:first-child {
