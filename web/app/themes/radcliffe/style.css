@@ -2068,9 +2068,13 @@ li.comment {
   margin-left: 1em;
 }
 
-h2.latest-news-item__title {
+.latest-news-item h3.latest-news-item__title {
+  margin: .65em 0 0;
+}
+
+h3.latest-news-item__title a {
   font-size: 1em;
-  margin: .25em 0 0;
+  font-weight: 600;
 }
 
 .latest-news-item img.attachment-archive-news {

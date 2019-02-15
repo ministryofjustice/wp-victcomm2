@@ -40,6 +40,8 @@ $td = $vcTemplateData;
 
                         $postTypeName = $postType->labels->singular_name;
 
+                        $excerpt = wp_trim_words(get_the_excerpt(), 10);
+
                     ?>
 
                         <li class="archive__list-element">
@@ -58,6 +60,12 @@ $td = $vcTemplateData;
                             </div>
 
                             <a class="archive__list-element-link" href="<?= the_permalink() ?>"><?php the_title(); ?></a>
+
+                            <?php if ($excerpt) : ?>
+
+                                <div class="archive__list-element-excerpt"><?= $excerpt?></div>
+
+                            <?php endif; ?>
 
                         </li>
 
