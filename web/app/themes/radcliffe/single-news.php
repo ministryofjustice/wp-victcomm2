@@ -68,6 +68,14 @@ $pageSummary = get_field('summary');
 
                 </div>
 
+                    <ul class="single-news__links">
+                        <li><a href="/news">More news</a></li>
+                        <li>|</li>
+                        <li><a href="/media-enquiries">Media enquiries</a></li>
+                    </ul>
+
+
+                </div>
 
             </div><!-- .post -->
 

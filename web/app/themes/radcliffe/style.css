@@ -2228,6 +2228,20 @@ a.archive-news__item-button:hover {
 }
 
 
+/* Single news --------------------------------------------- */
+
+ul.single-news__links {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+}
+
+.single-news__links li {
+  list-style-type: none;
+  padding: .5em;
+}
+
+
 /* Error 404 --------------------------------------- */
 
 
