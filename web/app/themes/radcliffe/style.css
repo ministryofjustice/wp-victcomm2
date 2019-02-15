@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: .5em;
+  margin-top: .5em;
 }
 
 p, ul, ol {
@@ -68,6 +69,15 @@ p, ul, ol {
   font-size: 1em;
   line-height: 1.5;
   margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+*:first-child {
+  margin-top: 0;
+}
+
+*:last-child {
+  margin-bottom: 0;
 }
 
 table {
@@ -403,6 +413,7 @@ body {
 /* -------------------------------------------------------------------------------- */
 
 .main-menu {
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -978,7 +989,7 @@ p.post-nav-next { background-image: url(images/icons/1x/next-g.png); }
 .post-content dl,
 .post-content .wp-caption,
 .post-content pre {
-  margin-bottom: 1.3em;
+  margin-bottom: 1em;
 }
 
 .post-content > *:first-child { margin-top: 0; }
@@ -1196,7 +1207,7 @@ figure {
 
 .post-content .alignnone,
 .post-content .aligncenter {
-	margin: 2em auto;
+	/*margin: 2em auto;*/
 }
 
 .post-content .aligncenter img,
@@ -2132,7 +2143,7 @@ ul.archive__list {
 
 .archive__list-element {
   border-top: 1px solid #999;
-  line-height: 1.5;
+  line-height: 1.3;
   list-style: none;
   margin-bottom: 1em;
   padding-top: 1em;
@@ -2602,9 +2613,13 @@ details[open] .accordion-with-icons__item-title:after {
 /*	11. Footer
 /* -------------------------------------------------------------------------------- */
 
+.footer-spacer {
+  margin-top: 3em;
+}
+
 .footer {
   background-color: #0f0228;
-  margin-top: 3em;
+  margin-top: auto;
   padding: 3em;
 }
 

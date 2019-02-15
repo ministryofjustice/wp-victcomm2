@@ -1,5 +1,7 @@
 <?php if ( is_active_sidebar( 'footer-a' ) || is_active_sidebar( 'footer-b') || is_active_sidebar( 'footer-c' ) ) : ?>
 
+    <div class="footer-spacer"></div>
+
 	<div class="footer section bg-graphite">
 
 		<div class="section-inner row">
