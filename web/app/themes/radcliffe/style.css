@@ -112,7 +112,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .alt-bg { background-color: #f6f5f7}
 
-.padding { padding: 2em; }
+.padding-horizontal {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.padding-vertical {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
 
 /* -------------------------------------------------------------------------------- */
 /*	1. Document Setup
