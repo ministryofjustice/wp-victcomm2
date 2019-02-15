@@ -122,6 +122,14 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-top: 2em;
 }
 
+.wp-block-button > a.wp-block-button__link {
+  background-color: #a60f51;
+  color: #fff;
+  border-radius: 2em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
 /* -------------------------------------------------------------------------------- */
 /*	1. Document Setup
 /* -------------------------------------------------------------------------------- */
