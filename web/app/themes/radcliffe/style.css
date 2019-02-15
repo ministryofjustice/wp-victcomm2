@@ -527,7 +527,7 @@ a.search-toggle:hover {
 
 .main-menu > li:hover > ul {
 	opacity: 1;
-	top: 28px;
+	top: 24px;
 	left: 50%;
 }
 
