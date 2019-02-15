@@ -39,7 +39,7 @@ $placeholderCounter = 0;
 
                                 <?= getThumbnail($placeholderCounter) ?>
 
-                                <div class="archive-news__item-date"><?= get_the_date(get_common_date_format()); ?></div>
+                                <div class="archive-news__item-date"><?= get_the_date( get_option('date_format') ); ?></div>
 
                                 <h2 class="archive-news__item-title"><?php the_title(); ?></h2>
 

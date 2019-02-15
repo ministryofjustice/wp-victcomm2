@@ -38,7 +38,7 @@
 
                 $templateData = [
                     'post-type-name' => get_post_type_object(get_post_type())->labels->singular_name,
-                    'date-format' => get_common_date_format()
+                    'date-format' => get_option('date-format'),
                 ];
 
                 echo partial( $templateData,'search-result' );

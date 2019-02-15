@@ -826,10 +826,6 @@ add_filter( 'post_mime_types', function ( $post_mime_types ) {
     return $post_mime_types;
 } );
 
-function get_common_date_format() {
-    return "j F Y";
-}
-
 add_shortcode( 'accordion-preview', function ( $atts ){
 
     return partial([
@@ -842,15 +838,12 @@ add_shortcode( 'accordion-preview', function ( $atts ){
 add_shortcode( 'latest_news', function ( $atts ) {
 
     $output = '';
-    $commonDateFormat = get_common_date_format();
+    $commonDateFormat = get_option( 'date_format' );
     $postsPerPage = (isset($atts['amount'])) ? $atts['amount'] : 3;
     $the_query = new WP_Query( [
         'posts_per_page' => $postsPerPage,
         'post_type' => ['news', 'published-reviews', 'annual-reports'],
     ]);
-
-
-
 
     if ( $the_query->have_posts() ) {
 
