@@ -3024,6 +3024,13 @@ details[open] .accordion-with-icons__item-title:after {
   }
 }
 
+@media ( max-width: 766px ) {
+  .home .kt-row-column-wrap.kt-mobile-layout-row.kt-m-colapse-right-to-left .wp-block-kadence-column:first-child h2:first-child {
+    margin-top: 2em;
+  }
+
+}
+
 
 @media ( max-width: 600px ) {
 
