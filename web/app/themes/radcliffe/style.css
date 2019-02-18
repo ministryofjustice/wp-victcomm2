@@ -643,32 +643,27 @@ a.featured-media:hover { opacity: 0.75; }
 
 .featured-media > img {
 	display: block;
-	visibility: hidden;
 	width: 100%;
 }
 
 .media-caption-container {
-	position: absolute;
-	bottom: 5%;
-	right: 5%;
-	left: 5%;
-	text-align: center;
+  border: 1px solid rgb(200,195,207);
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: .8em;
+  margin: 1em auto;
 }
 
 .media-caption {
-	display: inline-block;
-	padding: 9px 12px;
-	border-radius: 3px;
-	background: #444;
-	background: rgba(17,17,17,0.5);
-	font-size: 0.8em;
-	line-height: 120%;
-	font-weight: 400;
-	font-style: italic;
-	color: #fff;
+  padding: 0 0 .5em;
+  margin: 0;
+  text-align: center;
 }
 
-.media-caption:hover { background-color: rgba(17,17,17,0.75); }
+.media-caption:hover {
+
+}
 
 /* post header */
 

@@ -28,28 +28,29 @@ $pageSummary = get_field('summary');
                 </div><!-- .post-header section -->
 
                 <?php if ( has_post_thumbnail() ) : ?>
-                    <div class="featured-media-container">
+                    <div class="featured-media-container section-inner thin">
 
-                        <div class="featured-media section-inner thin" style="background-image: url( <?php the_post_thumbnail_url( $post->ID, 'post-image' ); ?> );">
+                        <figure class="featured-media">
 
                             <?php
 
                             the_post_thumbnail( 'post-image' );
 
-                            $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
+                            ?>
 
-                            if ( $image_caption ) :
-                                ?>
+                        </figure><!-- .featured-media -->
+                        <?php
+                        $image_caption = getImageCaption( get_the_id(), get_post_thumbnail_id() );
 
-                                <div class="media-caption-container">
+                        if ( $image_caption ) : ?>
 
-                                    <p class="media-caption"><?php echo $image_caption; ?></p>
+                        <figcaption class="media-caption-container">
 
-                                </div>
+                            <p class="media-caption"><?php echo $image_caption; ?></p>
 
-                            <?php endif; ?>
+                        </figcaption>
 
-                        </div><!-- .featured-media -->
+                        <?php endif; ?>
 
                     </div>
                 <?php endif; ?>
@@ -66,7 +67,6 @@ $pageSummary = get_field('summary');
 
                     <?php wp_link_pages('before=<p class="page-links">' . __( 'Pages:', 'radcliffe' ) . ' &after=</p>&separator=<span class="sep">/</span>'); ?>
 
-                </div>
 
                     <ul class="single-news__links">
                         <li><a href="/news">More news</a></li>

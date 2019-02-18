@@ -43,8 +43,7 @@ $pageSummary = get_field('summary');
 
                             $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
 
-                            if ( $image_caption ) :
-                                ?>
+                            if ( $image_caption ) : ?>
 
                                 <div class="media-caption-container">
 

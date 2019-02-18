@@ -902,4 +902,25 @@ function getThumbnail(&$placeholderCounter) {
     return '';
 }
 
+function getImageCaption($postId, $imageId) {
+    $caption = '';
+
+    switch (get_field('caption_text', $postId)) {
+
+        case 'Image default':
+            $caption = wp_get_attachment_caption($imageId);
+            break;
+
+        case 'Custom':
+            $caption = get_field('custom_caption_text', $postId);
+            break;
+
+        default:
+            $caption = '';
+            break;
+    }
+
+    return $caption;
+}
+
 ?>
