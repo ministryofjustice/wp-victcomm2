@@ -2455,6 +2455,7 @@ h3.accordion-with-icons__item-title {
   margin-top: 1em;
   margin-bottom: 1em;
   padding-left: 2em;
+  position: relative;
 }
 
 .accordion-with-icons__item-title:after {
@@ -2467,13 +2468,13 @@ h3.accordion-with-icons__item-title {
   position: absolute;
   width: 0;
   z-index: 1;
-  top: 2.2em;
+  top: 41%;
 }
 
 details[open] .accordion-with-icons__item-title:after {
   border-width: 0 13.5px 18px 13.5px;
   border-color: transparent transparent #a60f51 transparent;
-  top: 2.1em;
+  top: 34%;
 }
 
 .accordion-with-icons__item-content {
