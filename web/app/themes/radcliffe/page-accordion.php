@@ -66,41 +66,41 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
                         <div class="clear"></div>
 
                         <?php wp_link_pages('before=<p class="page-links">' . __( 'Pages:', 'radcliffe' ) . ' &after=</p>&seperator= <span class="sep">/</span> '); ?>
+    
+                        <div class="accordion-with-icons">
 
-                    </div>
+                            <?php foreach ($accordions as $accordion) :
 
-                    <div class="accordion-with-icons section-inner thin">
+                                $encodedTitle = urlencode($accordion['title']);
 
-                        <?php foreach ($accordions as $accordion) :
+                                $open = ($accordionSectionQuery == $encodedTitle) ? 'open' : '';
 
-                            $encodedTitle = urlencode($accordion['title']);
+                            ?>
 
-                            $open = ($accordionSectionQuery == $encodedTitle) ? 'open' : '';
+                                <div class="accordion-with-icons__item">
+                                    <details <?= $open ?>>
 
-                        ?>
+                                        <summary id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary">
 
-                            <div class="accordion-with-icons__item">
-                                <details <?= $open ?>>
+                                            <div class="accordion-with-icons__item-summary-container">
 
-                                    <summary id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary">
+                                                <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon') ?></div>
 
-                                        <div class="accordion-with-icons__item-summary-container">
+                                                <h3 class="accordion-with-icons__item-title"><?= $accordion['title'] ?> <?= $open ?></h3>
 
-                                            <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon') ?></div>
+                                            </div>
 
-                                            <h3 class="accordion-with-icons__item-title"><?= $accordion['title'] ?> <?= $open ?></h3>
+                                        </summary>
 
-                                        </div>
+                                        <div class="accordion-with-icons__item-content"><?= $accordion['content'] ?></div>
 
-                                    </summary>
+                                    </details>
 
-                                    <div class="accordion-with-icons__item-content"><?= $accordion['content'] ?></div>
+                                </div>
 
-                                </details>
+                            <?php endforeach; ?>
 
-                            </div>
-
-                        <?php endforeach; ?>
+                        </div>
 
                     </div>
 
