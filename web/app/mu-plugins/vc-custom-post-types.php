@@ -44,8 +44,8 @@ add_action( 'init', function() {
     register_post_type( 'newsletters',
         array(
             'labels' => array(
-                'name' => __( 'Newsletter' ),
-                'singular_name' => __( 'Newsletters' )
+                'name' => __( 'Newsletters' ),
+                'singular_name' => __( 'Newsletter' )
             ),
             'public' => true,
             'has_archive' => true,
