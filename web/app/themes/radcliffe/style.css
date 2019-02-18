@@ -1022,7 +1022,6 @@ abbr, acronym { cursor: help; }
 
 .post-content ul {
 	list-style: disc;
-	margin-left: 1.5em;
 }
 
 .post-content ul ul { list-style: circle; }
@@ -1030,7 +1029,10 @@ abbr, acronym { cursor: help; }
 
 .post-content ol {
 	list-style: decimal;
-	margin-left: 1.5em;
+}
+
+.post-content ol, .post-content ul {
+  margin-left: 2em;
 }
 
 .post-content ol ol { list-style: lower-alpha; }
