@@ -36,11 +36,9 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['title', 'editor', 'thumbnail'],
-            'show_in_rest' => true,
         )
     );
-    // Register news letter custom post type
+    // Register Newsletter custom post type
     register_post_type( 'newsletters',
         array(
             'labels' => array(
@@ -49,8 +47,6 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['title', 'editor', 'thumbnail'],
-            'show_in_rest' => true,
         )
     );
 } );

@@ -5,7 +5,12 @@ get_header();
 global $post;
 global $vcTemplateData;
 
-$td = $vcTemplateData;
+$td = [
+    'archive-text' => ($archiveText    = get_field('news_archive_text',    'option')) ?  $archiveText    : '',
+    'summary'      => ($archiveSummary = get_field('news_archive_summary', 'option')) ?  $archiveSummary : '',
+    'date-format'  =>  get_option( 'date_format' ),
+    'archive-outro-text' => ($archiveOutroText    = get_field('news_archive_outro_text',    'option')) ?  $archiveOutroText    : '',
+];
 
 $placeholderCounter = 0;
 
@@ -21,13 +26,27 @@ $placeholderCounter = 0;
 
                     <h2 class="post-title">Latest news</h2>
 
+                    <?php if(isset($td['summary'])) : ?>
+
+                        <p class="post-summary"><?= $td['summary'] ?></p>
+
+                    <?php endif; ?>
+
                 </div>
 
             </div>
 
-            <div class="section-inner archive-news">
+            <?php if(isset($td['archive-text'])) : ?>
 
-                <div class="archive__content"><?= $td['archive-text'] ?></div>
+                <div class="post-content section-inner">
+
+                    <div class="archive__content"><?= $td['archive-text'] ?></div>
+
+                </div>
+
+            <?php endif; ?>
+
+            <div class="section-inner archive-news">
 
                 <ul class="archive-news__list">
 
@@ -75,6 +94,16 @@ $placeholderCounter = 0;
                 <?php endif; ?>
 
             </div>
+
+            <?php if(isset($td['archive-outro-text'])) : ?>
+
+                <div class="post-content section-inner">
+
+                    <div class="archive__content"><?= $td['archive-outro-text'] ?></div>
+
+                </div>
+
+            <?php endif; ?>
 
         </div>
 
