@@ -127,6 +127,10 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 2em;
 }
 
+.padding-small {
+  padding: .5em;
+}
+
 .padding-horizontal {
   padding-left: 2em;
   padding-right: 2em;
@@ -1986,6 +1990,14 @@ h3.latest-news-item__title a {
 .latest-news-item img.attachment-archive-news {
   margin: 0;
   max-width: 200px;
+}
+
+
+/* Home - twitter -------------------------------------- */
+
+
+.wp-block-embed-twitter {
+  background: #f6f5f7;
 }
 
 
