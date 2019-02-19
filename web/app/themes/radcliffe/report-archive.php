@@ -40,7 +40,7 @@ $td = $vcTemplateData;
 
                         $postTypeName = $postType->labels->singular_name;
 
-                        $excerpt = wp_trim_words(get_the_excerpt(), 10);
+                        $excerpt = wp_trim_words(get_the_excerpt(), getCommonExcerptLength());
 
                     ?>
 

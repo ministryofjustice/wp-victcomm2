@@ -616,6 +616,10 @@ endif;
    CUSTOM THEME MODIFICATIONS
    --------------------------------------------------------------------------------------------- */
 
+function getCommonExcerptLength() {
+    return 30;
+}
+
 /**
  * Filter the except length to 30 words.
  *
@@ -623,7 +627,7 @@ endif;
  * @return int (Maybe) modified excerpt length.
  */
 function custom_excerpt_length( $length ) {
-    return 30;
+    return getCommonExcerptLength();
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
