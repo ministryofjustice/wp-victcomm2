@@ -661,7 +661,7 @@ function convertByteSizeToHumanReadable($bytes) {
 function isReport($postId) {
     $postType = get_post_type($postId);
 
-    return ( 'annual-reports' === $postType || 'published-reviews' === $postType );
+    return in_array($postType, ['annual-reports', 'published-reviews', 'newsletters', 'news']);
 }
 
 add_action( 'save_post', function($postId, $post, $update) {
