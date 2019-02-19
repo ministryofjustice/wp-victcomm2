@@ -62,6 +62,13 @@
                 "operator": "==",
                 "value": "newsletters"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "publications"
+            }
         ]
     ],
     "menu_order": 0,
@@ -72,5 +79,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1550503393
+    "modified": 1550569816
 }

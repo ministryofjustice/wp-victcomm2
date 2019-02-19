@@ -49,4 +49,16 @@ add_action( 'init', function() {
             'has_archive' => true,
         )
     );
+    // Publications custom post type
+    register_post_type( 'publications',
+        array(
+            'labels' => array(
+                'name' => __( 'Publications' ),
+                'singular_name' => __( 'Publication' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+        )
+    );
+
 } );

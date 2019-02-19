@@ -665,7 +665,7 @@ function convertByteSizeToHumanReadable($bytes) {
 function isReport($postId) {
     $postType = get_post_type($postId);
 
-    return in_array($postType, ['annual-reports', 'published-reviews', 'newsletters', 'news']);
+    return in_array($postType, ['annual-reports', 'published-reviews', 'newsletters', 'news', 'publications']);
 }
 
 add_action( 'save_post', function($postId, $post, $update) {
@@ -743,6 +743,12 @@ if ( function_exists( 'acf_add_options_sub_page' ) ){
     acf_add_options_sub_page(array(
         'title'      => 'Newletters Settings',
         'parent'     => 'edit.php?post_type=newsletters',
+        'capability' => 'manage_options'
+    ));
+
+    acf_add_options_sub_page(array(
+        'title'      => 'Publications Settings',
+        'parent'     => 'edit.php?post_type=publications',
         'capability' => 'manage_options'
     ));
 }
