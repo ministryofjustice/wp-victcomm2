@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, 
 	padding:0;
 	border:0;
   font-family: Barlow, sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-style:normal;
 	font-size:100%;
 	line-height:1.25;
@@ -94,9 +94,9 @@ blockquote:before, blockquote:after {
 /*a { outline:none; }*/
 
 a {
-  text-decoration: none;
+/*  text-decoration: none;
   text-decoration-line: none;
-  -moz-text-decoration-line: none;
+  -moz-text-decoration-line: none;*/
 }
 
 input,
@@ -155,7 +155,7 @@ body {
 	margin: 0;
 	padding: 0;
 	border: none;
-	color: #222;
+	color: #250e3d;
 	background: #FFF;
 	font-family: Barlow, sans-serif;
 	font-size: 20px;
@@ -164,7 +164,7 @@ body {
 }
 
 body a:hover {
-  color: #a60f51;
+  /*color: #a60f51;*/
 }
 
 * {
@@ -603,8 +603,8 @@ a.search-toggle:hover {
 }
 
 .content a {
-  color: #a60f51;
-  font-weight: 500;
+  color: #250e3d;
+  /*font-weight: 500;*/
 }
 
 .post {
@@ -880,7 +880,7 @@ a.post-header .post-title {
   font-family: Barlow, sans-serif;
 }
 
-.post-content a:hover { text-decoration: underline; }
+/*.post-content a:hover { text-decoration: underline; }*/
 
 .post-content p,
 .post-content blockquote,
@@ -1959,6 +1959,7 @@ li.comment {
 
 .latest-news-item * {
   font-weight: 400;
+  text-decoration: none;
 }
 
 .latest-news-item:hover * {
@@ -1985,6 +1986,13 @@ h3.latest-news-item__title a {
 .latest-news-item img.attachment-archive-news {
   margin: 0;
   max-width: 200px;
+}
+
+.latest-news-item__excerpt {
+  margin-top: .5em;
+  font-size: .9em;
+  /*font-weight: 300;*/
+  line-height: 26px;
 }
 
 
@@ -2057,7 +2065,7 @@ a.archive__list-element-link {
 }
 
 .archive__list-element-excerpt {
-  font-size: .8em;
+  font-size: .9em;
   margin-top: 1em;
 }
 
@@ -2416,6 +2424,7 @@ ul.single-news__links {
 .accordion-with-icons__item-summary-container {
   display: flex;
   flex-direction: row;
+  text-decoration: none;
 }
 
 .accordion-with-icons__item-summary::-webkit-details-marker {
@@ -3403,3 +3412,4 @@ details[open] .accordion-with-icons__item-title:after {
 
 
 }
+

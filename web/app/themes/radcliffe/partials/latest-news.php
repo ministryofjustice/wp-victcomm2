@@ -31,7 +31,7 @@ $td = $vcTemplateData;
 
         <?php if ($the_excerpt = $td['excerpt'] ) : ?>
 
-            <div class="search-result__excerpt"><?= $the_excerpt?></div>
+            <div class="latest-news-item__excerpt"><?= $the_excerpt ?></div>
 
         <?php endif; ?>
 
