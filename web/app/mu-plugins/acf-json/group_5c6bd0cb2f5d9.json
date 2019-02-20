@@ -63,9 +63,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "publications"
+                "value": "acf-options-publications-settings"
             }
         ]
     ],
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1550570096
+    "modified": 1550681136
 }
