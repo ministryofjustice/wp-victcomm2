@@ -46,7 +46,6 @@ h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, 
 	margin:0;
 	padding:0;
 	border:0;
-  font-family: Barlow, sans-serif;
 	font-weight: 400;
 	font-style:normal;
 	font-size:100%;
@@ -119,6 +118,8 @@ input[type="search"]::-webkit-search-results-decoration {
 /* -------------------------------------------------------------------------------- */
 
 .alt-bg { background-color: #f6f5f7}
+
+.font-serif { font-family: Merriweather, serif; }
 
 .margin-vertical {
   margin-bottom: 2em;
