@@ -1,5 +1,21 @@
 <?php
 
+/* ---------------------------------------------------------------------------------------------
+   THEME UTILITY FUNCTIONS
+   --------------------------------------------------------------------------------------------- */
+
+function getCommonExcerptLength() {
+    return 30;
+}
+
+function getCustomPostTypesArray() {
+    return ['annual-reports', 'published-reviews', 'newsletters', 'publications', 'news', 'meeting-notes'];
+}
+
+function getPublicationPostTypesArray() {
+    return ['annual-reports', 'published-reviews', 'newsletters', 'publications'];
+}
+
 
 /* ---------------------------------------------------------------------------------------------
    THEME SETUP
@@ -14,7 +30,7 @@ if ( ! function_exists( 'radcliffe_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 
 		// Post thumbnails
-		add_theme_support( 'post-thumbnails' );
+		//add_theme_support( 'post-thumbnails', ['post', 'news'] );
 		add_image_size( 'post-image', 1440, 9999 );
 
         add_image_size( 'accordion-icon', 102, 100);
@@ -616,10 +632,6 @@ endif;
    CUSTOM THEME MODIFICATIONS
    --------------------------------------------------------------------------------------------- */
 
-function getCommonExcerptLength() {
-    return 30;
-}
-
 /**
  * Filter the except length to 30 words.
  *
@@ -662,15 +674,15 @@ function convertByteSizeToHumanReadable($bytes) {
  *
  * @return bool
  */
-function isReport($postId) {
+function isPublication($postId) {
     $postType = get_post_type($postId);
 
-    return in_array($postType, ['annual-reports', 'published-reviews', 'newsletters', 'news', 'publications']);
+    return in_array($postType, getPublicationPostTypesArray());
 }
 
 add_action( 'save_post', function($postId, $post, $update) {
 
-    if (isReport($postId)) {
+    if (isPublication($postId)) {
 
         $image = new Imagick();
 
@@ -751,6 +763,12 @@ if ( function_exists( 'acf_add_options_sub_page' ) ){
         'parent'     => 'edit.php?post_type=publications',
         'capability' => 'manage_options'
     ));
+
+    acf_add_options_sub_page(array(
+        'title'      => 'Meeting Notes Settings',
+        'parent'     => 'edit.php?post_type=meeting-notes',
+        'capability' => 'manage_options'
+    ));
 }
 
 /**
@@ -794,7 +812,7 @@ add_filter('acf/settings/load_json', 'acf_json_load_point');
  */
 add_action( 'pre_get_posts', function ( $query ) {
 
-    if( $query->is_main_query() && is_post_type_archive( ['annual-reports', 'published-reviews'] ) ) {
+    if( $query->is_main_query() && is_post_type_archive( getPublicationPostTypesArray() ) ) {
 
         $query->set( 'posts_per_page', '-1' );
 
@@ -864,7 +882,7 @@ add_shortcode( 'latest_news', function ( $atts ) {
     $postsPerPage = (isset($atts['amount'])) ? $atts['amount'] : 3;
     $the_query = new WP_Query( [
         'posts_per_page' => $postsPerPage,
-        'post_type' => ['news', 'published-reviews', 'annual-reports'],
+        'post_type' => ['news'],
     ]);
 
     if ( $the_query->have_posts() ) {
@@ -907,7 +925,7 @@ function getThumbnail(&$placeholderCounter) {
 
     $postType = get_post_type();
 
-    if ( $postType === 'annual-reports' || $postType === 'published-reviews' ) {
+    if ( isPublication(get_the_ID()) ) {
         $reportFile = get_field('report_file', get_the_ID());
         return wp_get_attachment_image($reportFile['id'], [600, 337], true);
     }

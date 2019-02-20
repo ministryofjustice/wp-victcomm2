@@ -1,11 +1,11 @@
 {
-    "key": "group_5c6bd0cb2f5d9",
-    "title": "Publications Archive Settings",
+    "key": "group_5c6d7ddaaa187",
+    "title": "Meeting Notes Archive Settings",
     "fields": [
         {
-            "key": "field_5c6bd0d63a3ef",
+            "key": "field_5c6d7dedc5f38",
             "label": "Summary",
-            "name": "publications_archive_summary",
+            "name": "meeting_notes_summary",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,9 +22,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c6bd0fe3a3f0",
+            "key": "field_5c6d7e03c5f39",
             "label": "Intro text",
-            "name": "publications_archive_text",
+            "name": "meeting_notes_archive_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -41,9 +41,9 @@
             "delay": 0
         },
         {
-            "key": "field_5c6bd1153a3f1",
+            "key": "field_5c6d7e27c5f3a",
             "label": "Outro text",
-            "name": "publications_archive_outro_text",
+            "name": "meeting_notes_outro_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -53,10 +53,10 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
+            "default_value": "",
             "delay": 0
         }
     ],
@@ -65,7 +65,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-publications-settings"
+                "value": "acf-options-meeting-notes-settings"
             }
         ]
     ],
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1550681136
+    "modified": 1550680538
 }
