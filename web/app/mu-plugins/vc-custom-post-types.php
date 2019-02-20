@@ -14,7 +14,7 @@ add_action( 'init', function() {
             'public' => true,
             'has_archive' => true,
             //'rewrite' => ['slug', 'annual-reports']
-            'supports' => ['editor', 'custom-fields'],
+            'supports' => ['title', 'editor', 'custom-fields'],
         )
     );
     // Register Published Reviews custom post type
@@ -26,7 +26,7 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['editor', 'custom-fields'],
+            'supports' => ['title', 'editor', 'custom-fields'],
         )
     );
     // Register News custom post type
@@ -38,7 +38,7 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['thumbnail', 'editor'],
+            'supports' => ['title', 'thumbnail', 'editor'],
         )
     );
     // Register Newsletter custom post type
@@ -50,7 +50,7 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['editor', 'custom-fields'],
+            'supports' => ['title', 'editor', 'custom-fields'],
         )
     );
     // Publications custom post type
@@ -62,7 +62,7 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['editor', 'custom-fields'],
+            'supports' => ['title', 'editor', 'custom-fields'],
         )
     );
     // Meeting notes custom post type
@@ -74,7 +74,7 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['editor', 'custom-fields'],
+            'supports' => ['title', 'editor', 'custom-fields'],
         )
     );
 
