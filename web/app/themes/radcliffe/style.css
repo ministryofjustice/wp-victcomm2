@@ -140,12 +140,16 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-top: 2em;
 }
 
-.wp-block-button > a.wp-block-button__link {
+.wp-block-button > a.wp-block-button__link, .call-to-action {
   background-color: #a60f51;
   color: #fff;
+  cursor: pointer;
   border-radius: 2em;
   font-size: 1.1em;
   font-weight: 600;
+  padding: .8em 1.4em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -603,9 +607,8 @@ a.search-toggle:hover {
 
 }
 
-.content a {
+a {
   color: #250e3d;
-  /*font-weight: 500;*/
 }
 
 .post {
