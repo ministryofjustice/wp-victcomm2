@@ -18,7 +18,17 @@ $td = $vcTemplateData;
 
     </div>
 
-    <h2 class="search-result__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <h2 class="search-result__title">
+        <a href="<?php the_permalink(); ?>">
+            <?php
+            if (function_exists('relevanssi_didyoumean')) {
+                relevanssi_the_title();
+            } else {
+                the_title();
+            }
+            ?>
+        </a>
+    </h2>
 
     <?php if ($the_excerpt = get_the_excerpt() ) : ?>
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43ae305d4859cd61176fca332d59e3dd",
+    "content-hash": "6b486e208d827206e199ad2f1fe8d944",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -601,7 +601,7 @@
         },
         {
             "name": "wpackagist-plugin/kadence-blocks",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/kadence-blocks/",
@@ -609,7 +609,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1550623577",
+                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1550682263",
                 "reference": null,
                 "shasum": null
             },
