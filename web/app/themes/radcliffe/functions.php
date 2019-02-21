@@ -898,7 +898,7 @@ add_shortcode( 'latest_news', function ( $atts ) {
                 'title' => get_the_title(),
                 'date' => get_the_date($commonDateFormat),
                 'type-name' => $postTypeName,
-                'excerpt' => wp_trim_words(get_the_excerpt(), 10),
+                'excerpt' => wp_trim_words(get_the_excerpt(), 20),
 
             ], 'latest-news');
         }
