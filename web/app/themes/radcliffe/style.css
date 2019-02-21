@@ -2468,20 +2468,23 @@ h3.accordion-with-icons__item-title {
   border-radius: 2em;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+  color: #250e3d;
   display: flex;
+  font-size: 1.4em;
+  font-weight: 600;
   flex-grow: 1;
-  margin-bottom: 0;
+  margin-bottom: auto;
   margin-left: -1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding-left: 2em;
+  margin-top: auto;
+  padding: .5em;
+  padding-left: 1.7em;
   position: relative;
 }
 
 .accordion-with-icons__item-title:after {
   border-style: solid;
   border-width: 18px 13.5px 0 13.5px;
-  border-color: #a60f51 transparent transparent transparent;
+  border-color: #250e3d transparent transparent transparent;
   content: '';
   height: 0;
   right: 1.2em;
@@ -2493,7 +2496,7 @@ h3.accordion-with-icons__item-title {
 
 details[open] .accordion-with-icons__item-title:after {
   border-width: 0 13.5px 18px 13.5px;
-  border-color: transparent transparent #a60f51 transparent;
+  border-color: transparent transparent #250e3d transparent;
   top: 34%;
 }
 
