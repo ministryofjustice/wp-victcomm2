@@ -5,7 +5,7 @@
         {
             "key": "field_5c6d7dedc5f38",
             "label": "Summary",
-            "name": "meeting_notes_summary",
+            "name": "meeting_notes_archive_summary",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1550680538
+    "modified": 1550762592
 }
