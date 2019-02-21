@@ -20,7 +20,7 @@ $pageSummary = get_field('summary');
 
                         <?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 
-                        <?php if($pageSummary) : ?>
+                        <?php if( isset($td['summary']) && $td['summary'] )  : ?>
 
                             <p class="post-summary"><?= $pageSummary ?></p>
 
