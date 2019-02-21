@@ -5,9 +5,11 @@ $td = $vcTemplateData;
 
 $permaLink = get_permalink($td['post-id']);
 
+$number = 1;
+
 ?>
 
-<div class="accordion-with-icons accordion-with-icons--preview">
+<ol class="accordion-with-icons accordion-with-icons--preview">
 
     <?php foreach ($td['accordion-with-icon'] as $accordion) :
         $fullLink = $permaLink;
@@ -15,7 +17,7 @@ $permaLink = get_permalink($td['post-id']);
         $fullLink .= '#' . urlencode($accordion['title']);
         ?>
 
-        <div class="accordion-with-icons__item">
+        <li class="accordion-with-icons__item">
 
             <summary class="accordion-with-icons__item-summary">
 
@@ -23,14 +25,14 @@ $permaLink = get_permalink($td['post-id']);
 
                     <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon-small') ?></div>
 
-                    <h3 class="accordion-with-icons__item-title"><?= $accordion['title'] ?></h3>
+                    <h3 class="accordion-with-icons__item-title"><?= $number++ . '. ' . $accordion['title'] ?></h3>
 
                 </a>
 
             </summary>
 
-        </div>
+        </li>
 
     <?php endforeach; ?>
 
-</div>
+</ol>

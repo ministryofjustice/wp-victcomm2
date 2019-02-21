@@ -2505,22 +2505,31 @@ details[open] .accordion-with-icons__item-title:after {
   margin-left: 122px;
 }
 
-.accordion-with-icons--preview {
+ol.accordion-with-icons--preview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   position: relative;
+  height: 177px;
+  margin: 0;
 }
 
 .accordion-with-icons--preview .accordion-with-icons__item {
+  list-style-type: none;
   margin-bottom: 0.2em;
 }
 
 .accordion-with-icons--preview .accordion-with-icons__item:before {
   left: 23px;
+  display: none;
 }
 
 .accordion-with-icons--preview h3.accordion-with-icons__item-title {
+  border: 0;
+  color: #a60f51;
   font-size: .8em;
   margin: .5em;
-  margin-left: -1em;
+  margin-left: -.65em;
   padding-left: 1.35em;
   text-decoration: none;
 }
@@ -3337,8 +3346,40 @@ details[open] .accordion-with-icons__item-title:after {
   .latest-news-item__right {
     margin-left: 0;
   }
-}
 
+  /* accordion template */
+
+  h3.accordion-with-icons__item-title {
+    margin: auto;
+    margin-left: -1em;
+    padding: .25em;
+    padding-left: 1.6em;
+  }
+
+  .accordion-with-icons__item-icon {
+    min-width: 51px;
+    width: 51px;
+  }
+
+  .accordion-with-icons__item:before {
+    left: 22.5px;
+    width: 5px;
+  }
+
+  .accordion-with-icons__item-content {
+    margin-left: 52px;
+    margin-bottom: 1em;
+  }
+
+  details .accordion-with-icons__item-title:after {
+    border-width: 9px 7px 0 9px;
+  }
+
+  details[open] .accordion-with-icons__item-title:after {
+    border-width: 0 7px 9px 7px;
+    top: 38%;
+  }
+}
 
 @media (max-width: 500px) {
 
