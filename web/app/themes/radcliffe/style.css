@@ -77,6 +77,10 @@ p, ul, ol {
   margin-bottom: 0;
 }
 
+:focus {
+  outline: auto 2px blue;
+}
+
 table {
 	border-collapse:collapse;
 	border-spacing:0;
@@ -142,14 +146,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .wp-block-button > a.wp-block-button__link, .call-to-action {
   background-color: #a60f51;
+  border-radius: 2em;
   color: #fff;
   cursor: pointer;
-  border-radius: 2em;
+  display: inline-block;
   font-size: 1.1em;
   font-weight: 600;
   padding: .8em 1.4em;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 /* -------------------------------------------------------------------------------- */
