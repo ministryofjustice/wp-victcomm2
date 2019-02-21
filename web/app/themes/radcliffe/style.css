@@ -2474,7 +2474,8 @@ h3.accordion-with-icons__item-title {
   border-top-left-radius: 0;
   color: #250e3d;
   display: flex;
-  font-size: 1.4em;
+  font-family: Merriweather;
+  font-size: 1.2em;
   font-weight: 600;
   flex-grow: 1;
   margin-bottom: auto;
@@ -2495,7 +2496,7 @@ h3.accordion-with-icons__item-title {
   position: absolute;
   width: 0;
   z-index: 1;
-  top: 41%;
+  top: 36%;
 }
 
 details[open] .accordion-with-icons__item-title:after {
