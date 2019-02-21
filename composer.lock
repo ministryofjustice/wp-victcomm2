@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b486e208d827206e199ad2f1fe8d944",
+    "content-hash": "1e588afcd1bba127d0d3696082be96fe",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -618,6 +618,46 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/kadence-blocks/"
+        },
+        {
+            "name": "wpackagist-plugin/uk-cookie-consent",
+            "version": "2.3.14",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/uk-cookie-consent/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/uk-cookie-consent.zip?timestamp=1547651727",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/uk-cookie-consent/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-browser-update",
+            "version": "3.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-browser-update/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-browser-update.zip?timestamp=1550188698",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-browser-update/"
         }
     ],
     "packages-dev": [

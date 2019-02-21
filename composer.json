@@ -31,6 +31,8 @@
     "acf/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/atomic-blocks": "*",
     "wpackagist-plugin/kadence-blocks": "^1.3",
+    "wpackagist-plugin/uk-cookie-consent": "*",
+    "wpackagist-plugin/wp-browser-update": "*",
     "relevanssi/relevanssi-premium": "*"
   },
   "require-dev": {
