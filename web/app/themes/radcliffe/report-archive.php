@@ -40,7 +40,24 @@ $td = $vcTemplateData;
 
                         $postTypeName = $postType->labels->singular_name;
 
-                        $excerpt = wp_trim_words(get_the_excerpt(), getCommonExcerptLength());
+                        $excerpt = false;
+
+                        // default to content-excerpt
+                        $excerptType = (isset($td['excerpt-type'])) ? $td['excerpt-type'] : 'content-excerpt';
+
+                        switch ($excerptType) {
+
+                            case 'content-excerpt':
+
+                                $excerpt = wp_trim_words(get_the_excerpt(), getCommonExcerptLength());
+                                break;
+
+                            case 'summary':
+
+                                $excerpt = get_option('summary', get_the_id());
+                                break;
+
+                        }
 
                     ?>
 
