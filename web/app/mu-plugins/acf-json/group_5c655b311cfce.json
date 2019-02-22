@@ -74,28 +74,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "annual-reports"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "published-reviews"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
                 "value": "news"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "newsletters"
             }
         ]
     ],
@@ -105,7 +84,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 0,
+    "active": 1,
     "description": "",
-    "modified": 1550591093
+    "modified": 1550851077
 }

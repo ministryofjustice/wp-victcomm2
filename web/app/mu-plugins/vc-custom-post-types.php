@@ -38,7 +38,7 @@ add_action( 'init', function() {
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => ['title', 'thumbnail', 'editor'],
+            'supports' => ['title', 'thumbnail', 'editor', 'custom-fields'],
         )
     );
     // Register Newsletter custom post type

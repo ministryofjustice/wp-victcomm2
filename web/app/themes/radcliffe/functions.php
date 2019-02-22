@@ -16,6 +16,10 @@ function getPublicationPostTypesArray() {
     return ['annual-reports', 'published-reviews', 'newsletters', 'publications'];
 }
 
+function getPostTypesWithFeaturedImage() {
+    return ['post', 'news'];
+}
+
 
 /* ---------------------------------------------------------------------------------------------
    THEME SETUP
@@ -30,7 +34,7 @@ if ( ! function_exists( 'radcliffe_setup' ) ) {
 		add_theme_support( 'automatic-feed-links' );
 
 		// Post thumbnails
-		//add_theme_support( 'post-thumbnails', ['post', 'news'] );
+		add_theme_support( 'post-thumbnails', getPostTypesWithFeaturedImage() );
 		add_image_size( 'post-image', 1440, 9999 );
 
         add_image_size( 'accordion-icon', 102, 100);
