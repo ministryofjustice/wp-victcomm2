@@ -42,7 +42,11 @@ global $td;
                 <div class="report__text">
                     <h2 class="report__title">Overview</h2>
                     <?php the_content() ?>
-                    <p>Find more <a class="report__find-more-link" href="/<?= $td['postTypeName'] ?>"><?= $td['postType']->label ?></a>.</p>
+
+                    <p>
+                        <?= partial($td, 'find-more'); ?>
+                    </p>
+
                 </div>
 
             </div>
