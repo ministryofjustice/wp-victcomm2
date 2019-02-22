@@ -20,6 +20,8 @@ $pageSummary = get_field('summary');
 
                         <div class="post-header-inner section-inner thin">
 
+                            <p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
+
                             <?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 
                             <?php if( $pageSummary )  : ?>
@@ -27,8 +29,6 @@ $pageSummary = get_field('summary');
                                 <p class="post-summary"><?= $pageSummary ?></p>
 
                             <?php endif; ?>
-
-                            <p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
 
                         </div><!-- .post-header-inner section-inner -->
 
