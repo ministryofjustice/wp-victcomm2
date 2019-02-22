@@ -2780,6 +2780,10 @@ ol.accordion-with-icons--preview {
     margin-top: 2em;
   }
 
+  ol.accordion-with-icons--preview {
+    height: 300px;
+  }
+
 }
 
 
@@ -3022,6 +3026,10 @@ ol.accordion-with-icons--preview {
   details[open] .accordion-with-icons__item-title:after {
     border-width: 0 7px 9px 7px;
     top: 38%;
+  }
+
+  ol.accordion-with-icons--preview {
+    height: auto;
   }
 }
 
