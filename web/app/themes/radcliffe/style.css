@@ -760,7 +760,11 @@ a.post-header .post-meta-top .sep {
 }
 
 .post-date {
-  margin: 0 0 .5em;
+  margin: .5em 0;
+}
+
+.post-date:first-child {
+  margin-top: 0;
 }
 
 a.post-header .post-title {
