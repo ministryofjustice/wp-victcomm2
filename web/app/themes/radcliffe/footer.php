@@ -8,7 +8,7 @@
 
 			<?php if ( is_active_sidebar( 'footer-a' ) ) : ?>
 
-				<div class="column column-1 one-third">
+				<div class="column column-1 one-half">
 
 					<div class="widgets">
 
@@ -22,7 +22,7 @@
 
 			<?php if ( is_active_sidebar( 'footer-b' ) ) : ?>
 
-				<div class="column column-2 one-third">
+				<div class="column column-2 one-half">
 
 					<div class="widgets">
 
@@ -34,19 +34,19 @@
 
 			<?php endif; ?><!-- .footer-b -->
 
-			<?php if ( is_active_sidebar( 'footer-c' ) ) : ?>
+<!--			<?php /*if ( is_active_sidebar( 'footer-c' ) ) : */?>
 
 				<div class="column column-3 one-third">
 
 					<div class="widgets">
 
-						<?php dynamic_sidebar( 'footer-c' ); ?>
+						<?php /*dynamic_sidebar( 'footer-c' ); */?>
 
 					</div><!-- .widgets -->
 
 				</div>
 
-			<?php endif; ?><!-- .footer-c -->
+			<?php /*endif; */?><!-- .footer-c -->-->
 
 			<div class="clear"></div>
 

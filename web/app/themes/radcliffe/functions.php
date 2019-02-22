@@ -176,7 +176,7 @@ if ( ! function_exists( 'radcliffe_widget_areas_registration' ) ) {
 			'after_widget' 	=> '</div><div class="clear"></div></div>'
 		) );
 
-		register_sidebar( array(
+/*		register_sidebar( array(
 			'name' 			=> __( 'Footer C', 'radcliffe' ),
 			'id' 			=> 'footer-c',
 			'description' 	=> __( 'Widgets in this area will be shown in the right column in the footer.', 'radcliffe' ),
@@ -184,7 +184,7 @@ if ( ! function_exists( 'radcliffe_widget_areas_registration' ) ) {
 			'after_title' 	=> '</h3>',
 			'before_widget' => '<div class="widget %2$s"><div class="widget-content">',
 			'after_widget' 	=> '</div><div class="clear"></div></div>'
-		) );
+		) );*/
 
 	}
 	add_action( 'widgets_init', 'radcliffe_widget_areas_registration' );
