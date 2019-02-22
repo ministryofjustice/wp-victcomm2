@@ -29,19 +29,14 @@
 
 			<div class="header-inner section-inner">
 
-				<?php if ( get_theme_mod( 'radcliffe_logo' ) ) : ?>
-
-				        <a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
-				        	<img src='<?php echo esc_url( get_theme_mod( 'radcliffe_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
-				        </a>
-
-				<?php elseif ( get_bloginfo( 'description' ) || get_bloginfo( 'title' ) ) : ?>
-
-					<h1 class="blog-title">
-						<a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'title' ) ); ?></a>
-					</h1>
-
-				<?php endif; ?>
+                <h1 class="blog-title">
+                    <a href="<?php echo esc_url( home_url() ); ?>"
+                       title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>"
+                       rel="home">
+                        <img class='vc-logo' src='/app/themes/radcliffe/images/logo-white.svg'>
+                        <?php echo esc_attr( get_bloginfo( 'title' ) ); ?>
+                    </a>
+                </h1>
 
 				<div class="nav-toggle">
 
