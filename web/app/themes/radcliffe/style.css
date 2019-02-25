@@ -2978,6 +2978,12 @@ ol.accordion-with-icons--preview {
     margin-left: 0;
   }
 
+  /* homepage */
+  
+  .home-hero img {
+    max-width: 250px;
+  }
+
   /* latest news */
 
   .latest-news-item {
