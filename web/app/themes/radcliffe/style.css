@@ -59,14 +59,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Merriweather, serif;
   font-weight: 600;
   margin-bottom: .5em;
-  margin-top: .5em;
+  margin-top: 1.5em;
 }
 
 p, ul, ol {
   font-size: 24px;
   font-size: 1em;
   margin-bottom: 1em;
-  margin-top: 1em;
+  margin-top: .5em;
 }
 
 *:first-child {
@@ -909,12 +909,6 @@ a.post-header .post-title {
 .post-content > *:first-child { margin-top: 0; }
 .post-content > *:last-child { margin-bottom: 0; }
 
-.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
-	margin: 2em 0 .65em;
-	font-family: Barlow, sans-serif;
-	line-height: 120%;
-}
-
 .post-content h1 {
 	font-size: 1.6em;
 	font-weight: 700;
@@ -935,17 +929,6 @@ a.post-header .post-title {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 10px;
-}
-
-.post-content h1+h1, .post-content h1+h2, .post-content h1+h3, .post-content h1+h4, .post-content h1+h5, .post-content h1+h6,
-.post-content h2+h1, .post-content h2+h2, .post-content h2+h3, .post-content h2+h4, .post-content h2+h5, .post-content h2+h6,
-.post-content h3+h1, .post-content h3+h2, .post-content h3+h3, .post-content h3+h4, .post-content h3+h5, .post-content h3+h6,
-.post-content h4+h1, .post-content h4+h2, .post-content h4+h3, .post-content h4+h4, .post-content h4+h5, .post-content h4+h6,
-.post-content h5+h1, .post-content h5+h2, .post-content h5+h3, .post-content h5+h4, .post-content h5+h5, .post-content h5+h6,
-.post-content h6+h1, .post-content h6+h2, .post-content h6+h3, .post-content h6+h4, .post-content h6+h5, .post-content h6+h6 {
-	margin-top: 25px;
-  font-family: Merriweather, serif;
-  color: #a60f51;
 }
 
 .post-content blockquote p {
