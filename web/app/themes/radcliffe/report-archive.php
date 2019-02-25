@@ -54,7 +54,7 @@ $td = $vcTemplateData;
 
                             case 'summary':
 
-                                $excerpt = get_option('summary', get_the_id());
+                                $excerpt = get_field('summary', get_the_id());
                                 break;
 
                         }
