@@ -852,6 +852,10 @@ a.post-header .post-title {
   text-transform: initial;
 }
 
+.single .post-title:first-child {
+  margin-top: 0;
+}
+
 .home .single .post-title {
   color: #fff;
 }
