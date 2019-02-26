@@ -2804,6 +2804,10 @@ ol.accordion-with-icons--preview {
     margin: auto;
     max-width: 300px;
   }
+
+  .one-half {
+    width: 100%;
+  }
 }
 
 @media ( max-width: 766px ) {
