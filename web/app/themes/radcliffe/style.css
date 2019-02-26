@@ -1802,6 +1802,7 @@ ul.archive__list {
 
 .archive__list-element {
   border-top: 1px solid #999;
+  border-top: .5px solid #250e3d;
   line-height: 1.3;
   list-style: none;
   margin-bottom: 1em;
@@ -3055,7 +3056,7 @@ ol.accordion-with-icons--preview {
   }
 
   /* homepage */
-  
+
   .home-hero img {
     max-width: 250px;
   }
