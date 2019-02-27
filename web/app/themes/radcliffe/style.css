@@ -396,7 +396,6 @@ body {
 	float: left;
   font-family: Merriweather, serif;
 	font-size: 2em;
-  font-weight: bold;
 	line-height: 1;
 	text-transform: uppercase;
   margin-right: auto;
@@ -420,6 +419,7 @@ body {
   display: flex;
   font-size: 22px;
   text-transform: capitalize;
+  font-weight: 600;
   width: 12em;
 }
 .blog-title a:hover { color: #eee; }
