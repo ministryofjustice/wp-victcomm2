@@ -40,6 +40,26 @@
 /*	0. CSS Reset
 /* -------------------------------------------------------------------------------- */
 
+/* ------------------------------------------- */
+/* fix for Firefox fonts being too bold */
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 400;
+}
+
+/**
+ * Firefox specific rule
+ */
+
+@-moz-document url-prefix() {
+  body {
+    font-weight: lighter !important;
+  }
+}
+/* ------------------------------------------- */
+
 html, body { margin:0; padding:0;}
 
 h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
