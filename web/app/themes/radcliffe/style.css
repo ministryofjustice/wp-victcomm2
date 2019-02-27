@@ -2776,7 +2776,14 @@ ol.accordion-with-icons--preview {
   }
 
   /* mobile search form */
-  .search-results .mobile-menu-container .search-form { display: none; }
+
+  .mobile-menu-container .search-form {
+    border-top: 2px solid #f6f5f7;
+  }
+
+  .search-results .mobile-menu-container .search-form {
+    display: none;
+  }
 
   .search-results-page-form.search-form .search-button { right: 8%; }
 }
