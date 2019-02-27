@@ -385,14 +385,13 @@ body {
 }
 
 .vc-logo {
-  background-image: url('/app/themes/radcliffe/images/logo-white.svg');
   background-repeat: no-repeat;
   background-size: contain;
   content: '';
   display: block;
-  height: 46px;
+  /*height: 46px;*/
   margin-right: .5em;
-  width: 73px;
+  width: 62px;
 }
 
 .blog-title a {
@@ -3091,6 +3090,10 @@ ol.accordion-with-icons--preview {
 @media (max-width: 500px) {
 
 	body { font-size: 15px; }
+
+  .vc-logo {
+    width: 53px;
+  }
 
   .blog-title::before {
     height: 35px;
