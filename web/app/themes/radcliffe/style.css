@@ -369,7 +369,7 @@ body {
 .header .section-inner {
   align-items: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .blog-title {
