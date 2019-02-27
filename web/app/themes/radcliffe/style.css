@@ -2836,6 +2836,10 @@ ol.accordion-with-icons--preview {
     margin-top: 2em;
   }
 
+  .kt-has-1-columns.kt-mobile-layout-row > .wp-block-kadence-column.inner-column-1 {
+    flex: none;
+  }
+
   ol.accordion-with-icons--preview {
     height: 300px;
   }
