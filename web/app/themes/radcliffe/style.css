@@ -707,12 +707,15 @@ a.featured-media:hover { opacity: 0.75; }
 .post-header {
   background-color: #f6f5f7;
   display: block;
-  margin-bottom: 2em;
+  margin-bottom: 1.5em;
   padding: 2em 0;
   position: static;
 }
 
-.home .post-header { background-color: #a60f51; }
+.home .post-header {
+  background-color: #a60f51;
+  margin-bottom: 2em;
+}
 
 a.post-header { position: static; }
 a.featured-media + a.post-header { position: absolute; }
