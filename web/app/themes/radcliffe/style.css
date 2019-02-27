@@ -1688,6 +1688,7 @@ li.comment {
 
 .home-hero img {
   border-radius: 50%;
+  width: 300px; /* Prevents IE11 bug - whereby the image affects the parent layout. */
 }
 
 .home-hero figcaption {
