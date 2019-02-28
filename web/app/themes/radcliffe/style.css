@@ -1981,6 +1981,11 @@ ul.single-news__links {
 	-webkit-appearance: none;
 }
 
+.search-form #s::placeholder {
+  color: #250e3d;
+  filter: opacity(60%);
+}
+
 .search-form #s:focus { outline: none; }
 
 .search-form .search-button {
