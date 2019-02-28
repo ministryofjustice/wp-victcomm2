@@ -450,16 +450,24 @@ body {
   padding: 1.5em 1em;
 }
 
+.header-search-block form {
+  display: flex;
+}
+
+.header-search-block label {
+  color: #fff;
+  margin-right: .5em;
+}
+
 .header-search-block #s {
-	display: block;
-	width: 100%;
 	background: none;
 	border: none;
-	margin: 0;
+  color: #fff;
+  display: block;
 	font-family: Barlow, sans-serif;
 	font-size: 1.1em;
 	font-weight: 300;
-	color: #fff;
+  margin: 0;
 }
 
 .header-search-block #s::-webkit-input-placeholder { color: rgba(255,255,255,0.5); }

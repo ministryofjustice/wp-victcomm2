@@ -18,7 +18,8 @@
 			<div class="section-inner">
 
 				<form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-					<input type="search" placeholder="<?php _e( 'Type and press enter', 'radcliffe' ); ?>" name="s" id="s" />
+                    <label for="s">Search for: </label>
+					<input type="search" placeholder="" name="s" id="s" />
 				</form>
 
 			</div>
