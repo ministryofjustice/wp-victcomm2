@@ -1142,7 +1142,7 @@ figure {
 
 .post-content .alignleft,
 .post-content .alignright {
-	margin-bottom: 1.2em;
+	margin-bottom: 1em;
 	max-width: 400px;
 }
 
@@ -1157,14 +1157,14 @@ figure {
 
 .post-content .alignleft {
 	float: left;
-	margin-left: -100px;
-	margin-right: 1.5em;
+	margin-left: -4em;
+	margin-right: 1em;
 }
 
 .post-content .alignright {
 	float: right;
-	margin-right: -100px;
-	margin-left: 1.5em;
+	margin-right: -4em;
+	margin-left: 1em;
 }
 
 .post-content .alignnone,
@@ -1184,11 +1184,12 @@ figure {
 .post-content .gallery-caption {
 	color: #666;
 	font-family: Barlow, sans-serif;
-	font-size: 14px;
+	font-size: .8em;
 	font-weight: 600;
 	margin: 0;
-	padding-top: 15px;
+	padding-top: .5em;
 	text-align: center;
+  padding-bottom: .5em;
 }
 
 .post-content .gallery-caption {
