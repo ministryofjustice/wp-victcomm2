@@ -22,31 +22,38 @@ if ( $postTypeNameLowercase == 'news post') {
     $postTypeName = 'News';
 }
 
+// Show meta
+$showMeta = $showPostType || $showDate;
+
 ?>
 
 <div class="search-result section-inner">
 
-    <div class="list-item-meta">
+    <?php if ($showMeta): ?>
 
-        <?php if ( $showPostType )  : ?>
+        <div class="list-item-meta">
 
-            <div class="list-item-meta__type"><?= $postTypeName ?></div>
+            <?php if ( $showPostType )  : ?>
 
-        <?php endif; ?>
+                <div class="list-item-meta__type"><?= $postTypeName ?></div>
 
-        <?php if ( $showPostType && $showDate )  : ?>
+            <?php endif; ?>
 
-            <div class="list-item-meta__divider">|</div>
+            <?php if ( $showPostType && $showDate )  : ?>
 
-        <?php endif; ?>
+                <div class="list-item-meta__divider">|</div>
 
-        <?php if ( $showDate ) : ?>
+            <?php endif; ?>
 
-            <div class="list-item-meta__date"> <?= get_the_date($td['date-format']); ?></div>
+            <?php if ( $showDate ) : ?>
 
-        <?php endif; ?>
+                <div class="list-item-meta__date"> <?= get_the_date($td['date-format']); ?></div>
 
-    </div>
+            <?php endif; ?>
+
+        </div>
+
+    <?php endif; ?>
 
     <h2 class="search-result__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
