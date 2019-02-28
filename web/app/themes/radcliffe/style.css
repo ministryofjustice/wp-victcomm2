@@ -408,7 +408,7 @@ body {
   background-size: contain;
   content: '';
   display: block;
-  /*height: 46px;*/
+  height: 100%;
   margin-right: .5em;
   width: 62px;
 }
