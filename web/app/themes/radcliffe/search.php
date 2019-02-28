@@ -17,19 +17,20 @@
                 <?php
                 if (is_search()) {
 
-                    if (!function_exists('relevanssi_didyoumean')) {
-                        $allResults = new WP_Query("s=$s&showposts=-1");
+                    global $wp_query;
 
-                        $numberOfResults = $allResults->found_posts;
+                    $numberOfResults = $wp_query->found_posts;
 
-                        printf(__('%u search results for: "%s"', 'radcliffe'), $numberOfResults, get_search_query());
-                    } else {
-                        printf(__('Search results for: "%s"', 'radcliffe'), get_search_query());
+                    printf(__('%u search results for: "%s"', 'radcliffe'), $numberOfResults, get_search_query());
+
+                    if (function_exists('relevanssi_didyoumean')) {
+
                         relevanssi_didyoumean(
                             get_search_query(),
-                            '<p style="text-align:center">Did you mean: ',
-                            '</p>'
+                            '<p class="search-results-page-form__did-you-mean">Did you mean: ',
+                            '?</p>'
                         );
+
                     }
 
                 }

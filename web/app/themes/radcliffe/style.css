@@ -2059,6 +2059,11 @@ ul.single-news__links {
   text-align: center;
 }
 
+.search-results-page-form__did-you-mean {
+  margin-top: 1em;
+  text-align: center;
+}
+
 .search-results .archive-nav {
   background-color: #fff;
   margin: auto;
