@@ -2095,6 +2095,7 @@ ul.single-news__links {
 .search-results .post-nav-older,
 .search-results .post-nav-newer {
   font-family: Barlow, sans-serif;
+  font-size: 1.2em;
   font-weight: 600;
   letter-spacing: 0;
   text-transform: none;
