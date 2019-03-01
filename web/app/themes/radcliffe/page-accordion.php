@@ -66,7 +66,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
                         <div class="clear"></div>
 
                         <?php wp_link_pages('before=<p class="page-links">' . __( 'Pages:', 'radcliffe' ) . ' &after=</p>&seperator= <span class="sep">/</span> '); ?>
-    
+
                         <div class="accordion-with-icons">
 
                             <?php foreach ($accordions as $accordion) :
@@ -84,7 +84,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
                                             <div class="accordion-with-icons__item-summary-container">
 
-                                                <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon') ?></div>
+                                                <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon-medium') ?></div>
 
                                                 <h3 class="accordion-with-icons__item-title"><?= $accordion['title'] ?></h3>
 

@@ -38,8 +38,8 @@ if ( ! function_exists( 'radcliffe_setup' ) ) {
 		add_image_size( 'post-image', 1440, 9999 );
 
         add_image_size( 'accordion-icon', 102, 100);
+        add_image_size( 'accordion-icon-medium', 80, 79);
         add_image_size( 'accordion-icon-small', 51, 50);
-
 
 		// Add nav menu
 		register_nav_menu( 'primary', __( 'Primary Menu', 'radcliffe' ) );
