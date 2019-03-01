@@ -67,5 +67,29 @@ jQuery(document).ready(function($) {
 	$(window).resize(function() {
 		resizeVideo(vidSelector);
 	});
-	
+
+  $(".header-inner a").on('focus', function(event) {
+
+    // first deactivate any open sub menus
+    var subMenu = $('.main-menu .show-sub-menu');
+    subMenu.first().removeClass('show-sub-menu');
+
+    // change z-index of li elements in sub-menus
+    var li = $('.main-menu li.child-has-focus');
+    li.first().removeClass('child-has-focus');
+
+  });
+
+  $(".sub-menu a").on('focus', function(event) {
+
+    // activate the submenu of the current menu item
+    var subMenu = $(event.target).closest('.sub-menu');
+	  subMenu.first().addClass('show-sub-menu');
+
+    // increase the z-index of the current menu item
+    var li = $(event.target).closest('li');
+    li.first().addClass('child-has-focus');
+
+  });
+
 });

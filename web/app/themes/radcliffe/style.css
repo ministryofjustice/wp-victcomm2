@@ -592,7 +592,7 @@ a.search-toggle:hover {
 	position: absolute;
 	padding-top: 20px;
 	margin-left: -110px;
-	z-index: 150;
+	z-index: 1;
 	opacity: 0;
 	top: 45px;
 	left: -9999px;
@@ -613,10 +613,16 @@ a.search-toggle:hover {
 	top: 1px;
 }
 
-.main-menu > li:hover > ul {
+.main-menu a:focus + .sub-menu,
+.main-menu > li:hover > ul,
+ul.show-sub-menu {
 	opacity: 1;
 	top: 24px;
 	left: 50%;
+}
+
+.sub-menu li.child-has-focus {
+  z-index: 1;
 }
 
 .main-menu ul li {
