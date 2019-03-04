@@ -1761,6 +1761,7 @@ li.comment {
 
 .kt-row-column-wrap {
   padding: 0;
+  z-index: 0;
 }
 
 /* Home - latest news -------------------------------------- */
