@@ -34,7 +34,7 @@
                     <a href="<?php echo esc_url( home_url() ); ?>"
                        title="<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>"
                        rel="home">
-                        <img alt="VC Logo" class='vc-logo' src='/app/themes/radcliffe/images/logo-white.svg'>
+                        <div alt="VC Logo" class='vc-logo'></div>
                         <?php echo esc_attr( get_bloginfo( 'title' ) ); ?>
                     </a>
                 </h1>
