@@ -184,6 +184,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 600;
   padding: .5em 1.4em;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .column-divider {
