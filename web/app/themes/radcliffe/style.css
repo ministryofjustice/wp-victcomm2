@@ -2000,6 +2000,11 @@ ul.single-news__links {
   margin-top: 1em;
 }
 
+/* AB Accordion block */
+.ab-block-accordion .ab-accordion-title {
+  background-color: #f6f5f7;
+}
+
 
 /* Search --------------------------------------- */
 
@@ -2898,6 +2903,10 @@ ol.accordion-with-icons--preview {
 }
 
 @media ( max-width: 766px ) {
+  .home .post-title {
+    font-size: 2em;
+  }
+
   .home .kt-row-column-wrap.kt-mobile-layout-row.kt-m-colapse-right-to-left .wp-block-kadence-column:first-child h2:first-child {
     margin-top: 2em;
   }
