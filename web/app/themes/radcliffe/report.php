@@ -14,6 +14,12 @@ global $td;
 
             <div class="post-header-inner section-inner thin">
 
+                <?php if(isset($td['postDate']) && $td['postDate']) : ?>
+
+                    <p class="post-date"><?= $td['postDate'] ?></p>
+
+                <?php endif; ?>
+
                 <?php the_title( '<h2 class="post-title">', '</h2>' ); ?>
 
                 <?php if($td['pageSummary']) : ?>
