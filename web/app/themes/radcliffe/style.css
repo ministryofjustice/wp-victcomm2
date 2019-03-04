@@ -107,7 +107,7 @@ p, ul, ol {
 }
 
 :focus {
-  outline: auto 2px blue;
+  outline-color: orange;
 }
 
 table {
