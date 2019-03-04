@@ -173,7 +173,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-top: 2em;
 }
 
-.wp-block-button > a.wp-block-button__link, .post-content a.call-to-action {
+.wp-block-button > a.wp-block-button__link, .post-content a.call-to-action, .post-content a.call-to-action--external {
   background-color: #a60f51;
   border-radius: 2em;
   box-shadow: none;
@@ -185,6 +185,10 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: .5em 1.4em;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.post-content a.call-to-action--external {
+  background-color: #250e3d;
 }
 
 .column-divider {
