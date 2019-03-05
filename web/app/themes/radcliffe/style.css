@@ -2324,6 +2324,7 @@ h3.accordion-with-icons__item-title {
   font-size: 1.2em;
   font-weight: 600;
   flex-grow: 1;
+  line-height: 1;
   margin-bottom: auto;
   margin-left: -2em;
   margin-top: auto;
