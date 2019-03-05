@@ -1901,6 +1901,7 @@ a.archive__list-element-link {
   display: flex;
   font-size: 1em;
   font-weight: 400;
+  line-height: 1;
   margin-bottom: .5em;
 }
 
