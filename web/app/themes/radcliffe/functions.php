@@ -113,7 +113,11 @@ if ( ! function_exists( 'radcliffe_load_style' ) ) {
 
 			}
 
-			wp_enqueue_style( 'radcliffe_style', get_template_directory_uri() . '/style.css', $dependencies );
+			// Append date style.css was modified to stylesheet URI for cache-busting
+			$styleFilePath = get_template_directory() . '/style.css';
+			$styleFileModificationDate = filemtime($styleFilePath);
+
+			wp_enqueue_style( 'radcliffe_style', get_template_directory_uri() . '/style.css', $dependencies, $styleFileModificationDate );
 
 		}
 
