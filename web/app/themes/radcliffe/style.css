@@ -2267,6 +2267,7 @@ ul.single-news__links {
 }
 
 .accordion-with-icons__item-summary-container {
+  box-shadow: none;
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -2367,6 +2368,10 @@ ol.accordion-with-icons--preview {
 .accordion-with-icons--preview .accordion-with-icons__item:before {
   left: 23px;
   display: none;
+}
+
+.accordion-with-icons--preview .accordion-with-icons__item-summary-container {
+  box-shadow: none;
 }
 
 .accordion-with-icons--preview h3.accordion-with-icons__item-title {
