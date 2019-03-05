@@ -718,7 +718,7 @@ add_action( 'save_post', function($postId, $post, $update) {
 
 add_action('init', function() {
     add_image_size( 'report', 200);
-    add_image_size( 'archive-news', 600, 337, array( 'left', 'top' ));
+    add_image_size( 'archive-news', 200, 200, array( 'center', 'center' ));
 });
 
 function template($data, $slug, $name = '') {
