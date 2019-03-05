@@ -1803,11 +1803,11 @@ li.comment {
 }
 
 .latest-news-item h3.latest-news-item__title {
+  font-size: 22px;
   margin: .5em 0 0;
 }
 
 h3.latest-news-item__title a {
-  font-size: 1em;
   font-weight: 600;
 }
 
