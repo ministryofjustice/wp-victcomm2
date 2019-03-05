@@ -176,6 +176,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .wp-block-button > a.wp-block-button__link, .post-content a.call-to-action, .post-content a.call-to-action--external {
   background-color: #a60f51;
   border-radius: 2em;
+  -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   cursor: pointer;
@@ -317,6 +318,7 @@ body a,
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	color: #21759b;
@@ -984,7 +986,9 @@ a.post-header .post-title {
 .post-content a,
 .post-content p a,
 .footer a {
-  box-shadow: 0 -1px 0 inset rgba(37,14,61,.6);
+  -webkit-box-shadow: 0 1px 0 0 rgba(37,14,61,.6);
+  box-shadow: 0 1px 0 0 rgba(37,14,61,.6);
+  border-radius: 1px;
   padding-bottom: .1em;
   text-decoration: none;
 }
@@ -1782,6 +1786,7 @@ li.comment {
 }
 
 .latest-news-item a {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -1972,7 +1977,8 @@ a.archive-news__item-button:hover {
 /* Team page ----------------------------------------------- */
 
 .ab-block-profile .ab-profile-text a:hover {
-  box-shadow: 0 -1px 0 inset;
+  -webkit-box-shadow: 0 -1px 0 0;
+  box-shadow: 0 -1px 0 0;
 }
 
 /* Single attachment --------------------------------------- */
@@ -2237,6 +2243,7 @@ ul.single-news__links {
 
 .report__icon {
   border: 1px solid #eee;
+  -webkit-box-shadow: 0 0 5px 0 #eee;
   box-shadow: 0 0 5px 0 #eee;
   display: block;
   margin-bottom: 16px;
@@ -2267,6 +2274,7 @@ ul.single-news__links {
 }
 
 .accordion-with-icons__item-summary-container {
+  -webkit-box-shadow: none;
   box-shadow: none;
   display: flex;
   flex-direction: row;
@@ -2371,6 +2379,7 @@ ol.accordion-with-icons--preview {
 }
 
 .accordion-with-icons--preview .accordion-with-icons__item-summary-container {
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
