@@ -981,7 +981,9 @@ a.post-header .post-title {
 
 /*.post-content a:hover { text-decoration: underline; }*/
 
-.post-content p a {
+.post-content a,
+.post-content p a,
+.footer a {
   box-shadow: 0 -1px 0 inset rgba(37,14,61,.6);
   padding-bottom: .1em;
   text-decoration: none;
