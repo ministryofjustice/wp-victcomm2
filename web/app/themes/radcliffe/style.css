@@ -1779,6 +1779,10 @@ li.comment {
   text-decoration: none;
 }
 
+.latest-news-item a {
+  box-shadow: none;
+}
+
 .latest-news-item:hover * {
   text-decoration: none;
 }
