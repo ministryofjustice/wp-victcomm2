@@ -824,7 +824,6 @@ a.post-header .post-meta-top .sep {
   font-size: 1.6em;
   line-height: 1.2;
   padding: 0;
-	text-transform: uppercase;
 	text-align: center;
 	word-break: break-word;
 }
@@ -903,7 +902,6 @@ a.post-header .post-title {
   margin-bottom: 0;
   margin-top: .5em;
   text-align: left;
-  text-transform: initial;
 }
 
 .single .post-title:first-child {
@@ -1676,7 +1674,6 @@ li.comment {
 	font-size: 0.9em;
 	font-weight: 700;
 	color: #888;
-	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
 }
