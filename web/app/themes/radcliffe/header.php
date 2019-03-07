@@ -17,9 +17,9 @@
 
 			<div class="section-inner">
 
-				<form method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <label for="s">Search for: </label>
-					<input type="search" placeholder="" name="s" id="s" />
+				<form class="search-form" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <label class='search-term-input-label' for="s">Search for: </label>
+					<input type="search" placeholder="enter search term" name="s" id="s" class="search-term-input" />
 				</form>
 
 			</div>
@@ -107,8 +107,9 @@
 			 </ul>
 
 			 <form method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<input type="search" placeholder="<?php _e( 'Search form', 'radcliffe' ); ?>" name="s" id="s" />
-				<input type="submit" value="<?php _e( 'Search', 'radcliffe' ); ?>" class="search-button">
+                 <label class="search-term-input-label" for="s" >Search for: </label>
+                 <input type="search" placeholder="<?php _e( 'enter search term', 'radcliffe' ); ?>" name="s" id="s" class="search-term-input" />
+                 <input type="submit" value="<?php _e( 'Search', 'radcliffe' ); ?>" class="search-button">
 			</form>
 
 		</div><!-- .mobile-menu-container -->

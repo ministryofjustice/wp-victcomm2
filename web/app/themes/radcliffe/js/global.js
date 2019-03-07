@@ -1,22 +1,23 @@
 jQuery(document).ready(function($) {
-	
-	
+
+
 	// toggle blog-menu
-	$(".nav-toggle").on("click", function(){	
+	$(".nav-toggle").on("click", function(){
 		$(this).toggleClass("active");
 		$(".mobile-menu-container").slideToggle();
 	});
-	
-	
+
+
 	// Toggle search form
-	$(".search-toggle").on("click", function(){	
+	$(".search-toggle").on("click", function(){
 		$(this).toggleClass("active");
-		$(".header-search-block").slideToggle();
-		$(".header-search-block #s").focus();
+		$(".header-search-block").slideToggle(500, function() {
+      $(".header-search-block #s").focus();
+    });
 		return false;
 	});
-	
-	
+
+
 	// Hide mobile-menu > 1000
 	$(window).resize(function() {
 		if ($(window).width() > 1000) {
@@ -24,8 +25,8 @@ jQuery(document).ready(function($) {
 			$(".mobile-menu-container").hide();
 		}
 	});
-	
-	
+
+
 	// Hide header search block at < 1000
 	$(window).resize(function() {
 		if ($(window).width() < 1000) {
@@ -33,17 +34,17 @@ jQuery(document).ready(function($) {
 			$(".header-search-block").hide();
 		}
 	});
-	
-	
-	// Smooth scroll to the top	
+
+
+	// Smooth scroll to the top
     $('.tothetop').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 500);
         return false;
     });
-    
-    
+
+
     // resize videos after container
-	var vidSelector = ".post iframe, .post object, .post video, .widget-content iframe, .widget-content object, .widget-content iframe";	
+	var vidSelector = ".post iframe, .post object, .post video, .widget-content iframe, .widget-content object, .widget-content iframe";
 	var resizeVideo = function(sSel) {
 		$( sSel ).each(function() {
 			var $video = $(this),

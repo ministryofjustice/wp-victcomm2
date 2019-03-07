@@ -2,17 +2,20 @@
 
 <div class="content">
 
-    <form method="get" class="search-results-page-form search-form section-inner"
-          action="<?php echo esc_url(home_url('/')); ?>">
-        <input type="search" placeholder="<?php _e('Type and press enter', 'radcliffe'); ?>" name="s" id="s"/>
-        <input type="submit" value="<?php _e('Search', 'radcliffe'); ?>" class="search-button">
-    </form>
+    <div class="section-inner">
+        <form method="get" class="search-results-page-form search-form"
+              action="<?php echo esc_url(home_url('/')); ?>">
+            <label class="search-term-input-label" for="s" >Search for: </label>
+            <input type="search" placeholder="<?php _e('enter search term', 'radcliffe'); ?>" name="s" id="s" class="search-term-input" />
+            <input type="submit" value="<?php _e('Search', 'radcliffe'); ?>" class="search-button">
+        </form>
+    </div>
 
     <div class="page-title section light-padding">
 
         <div class="section-inner">
 
-            <p class="search-results-page-form__label">
+            <p class="search-results-page-form__info">
 
                 <?php
                 if (is_search()) {
@@ -21,7 +24,7 @@
 
                     $numberOfResults = $wp_query->found_posts;
 
-                    printf(__('%u search results for: "%s"', 'radcliffe'), $numberOfResults, get_search_query());
+                    printf(__('%u results for: %s', 'radcliffe'), $numberOfResults, get_search_query());
 
                     if (function_exists('relevanssi_didyoumean')) {
 
