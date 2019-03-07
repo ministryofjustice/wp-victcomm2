@@ -1925,6 +1925,7 @@ a.archive__list-element-link {
   margin-bottom: 1em;
   max-width: 33.33%;
   transition: all .25s;
+  width: 33.33%;
 }
 .archive-news__item:hover {
   background-color: #eee;
@@ -2686,6 +2687,7 @@ ol.accordion-with-icons--preview {
 
   .archive-news__item {
     max-width: 50%;
+    width: 50%;
   }
 
 }
@@ -2896,6 +2898,7 @@ ol.accordion-with-icons--preview {
   .archive-news__item {
     margin: 0 auto 1em;
     max-width: 600px;
+    width: 600px;
   }
 
   /* paginations */
