@@ -1146,10 +1146,6 @@ abbr, acronym { cursor: help; }
 	margin-bottom: 0;
 }
 
-.post-content li {
-	margin-bottom: 1.5em;
-}
-
 .post-content ol > li:last-child,
 .post-content ul > li:last-child {
 	margin-bottom: 0;
@@ -3112,8 +3108,6 @@ ol.accordion-with-icons--preview {
 	.post-content pre {
 		line-height: 150%;
 	}
-
-	.post-content li { margin-bottom: 1em; }
 
 	.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
 		/*margin: 35px 0 18px;*/
