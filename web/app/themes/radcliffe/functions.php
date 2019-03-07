@@ -901,14 +901,11 @@ add_shortcode( 'latest_news', function ( $atts ) {
         while ( $the_query->have_posts() ) {
 
             $the_query->the_post();
-            $postType = get_post_type_object(get_post_type());
-            $postTypeName = $postType->labels->singular_name;
 
             $output .= partial([
                 'permalink' => get_the_permalink(),
                 'title' => get_the_title(),
                 'date' => get_the_date($commonDateFormat),
-                'type-name' => $postTypeName,
                 'excerpt' => wp_trim_words(get_the_excerpt(), 20),
 
             ], 'latest-news');

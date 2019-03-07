@@ -16,7 +16,7 @@ $td = $vcTemplateData;
 
         <div class="list-item-meta">
 
-            <div class="list-item-meta__type"><?= $td['type-name'] ?></div>
+            <div class="list-item-meta__type">news</div>
 
             <?php if (isset($td['date'])) : ?>
 
