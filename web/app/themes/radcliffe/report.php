@@ -35,13 +35,16 @@ global $td;
         <article class="section-inner report thin">
 
             <div class="post-content report report--annual">
+                <div class="report__left">
+                    <div class="report__icon-section">
 
-                <div class="report__icon-section">
-                    <a href="<?= $td['downloadUrl'] ?>" class="report__icon"><?= $td['attachmentImage']; ?></a>
-                    <div class="report__meta">
-                        <p><a href="<?= $td['downloadUrl'] ?>"><?= $td['userFriendlyFileName']; ?></a></p>
-                        <p><?= $td['fileType'] ?>, <?= $td['fileSize'] ?>, <?= $td['numberOfPages'] ?> pages</p>
-                        <p><a href="/contact/">Contact us</a> if you need this publication in another format.</p>
+                        <a href="<?= $td['downloadUrl'] ?>" class="report__icon"><?= $td['attachmentImage']; ?></a>
+                        <div class="report__meta">
+                            <p><a href="<?= $td['downloadUrl'] ?>"><?= $td['userFriendlyFileName']; ?></a></p>
+                            <p><?= $td['fileType'] ?>, <?= $td['fileSize'] ?>, <?= $td['numberOfPages'] ?> pages</p>
+                            <p><a href="/contact/">Contact us</a> if you need this publication in another format.</p>
+                        </div>
+
                     </div>
                 </div>
 

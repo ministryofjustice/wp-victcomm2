@@ -2229,20 +2229,23 @@ ul.single-news__links {
 }
 
 .report__meta p {
-  line-height: 1.2;
+}
+
+.report__left {
+  box-sizing: border-box;
+  max-width: 200px;
 }
 
 .report__icon-section {
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  max-width: 200px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.report__icon {
+a.report__icon {
   border: 1px solid #eee;
-  -webkit-box-shadow: 0 0 5px 0 #eee;
-  box-shadow: 0 0 5px 0 #eee;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   display: block;
   margin-bottom: 16px;
   width: 200px
@@ -2253,7 +2256,9 @@ ul.single-news__links {
 }
 
 .report__text {
+  box-sizing: border-box;
   margin-left: 32px;
+  width: 100%;
 }
 
 .report__find-more-link {
@@ -3169,10 +3174,17 @@ ol.accordion-with-icons--preview {
     flex-direction: column;
   }
 
+  .report__left {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .report__icon-section {
     align-items: flex-start;
+    display: flex;
     flex-direction: row;
     max-width: 100%;
+    width: 100%;
   }
 
   .report__icon {
