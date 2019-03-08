@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e588afcd1bba127d0d3696082be96fe",
+    "content-hash": "94088d656bbe65577e158f82ec04a24d",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -581,15 +581,15 @@
         },
         {
             "name": "wpackagist-plugin/atomic-blocks",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/atomic-blocks/",
-                "reference": "tags/1.5.2"
+                "reference": "tags/1.5.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.1.5.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.1.5.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -601,7 +601,7 @@
         },
         {
             "name": "wpackagist-plugin/kadence-blocks",
-            "version": "1.3.5",
+            "version": "1.3.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/kadence-blocks/",
@@ -609,7 +609,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1551166865",
+                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1552037274",
                 "reference": null,
                 "shasum": null
             },
@@ -618,6 +618,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/kadence-blocks/"
+        },
+        {
+            "name": "wpackagist-plugin/simple-301-redirects",
+            "version": "1.07",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/simple-301-redirects/",
+                "reference": "tags/1.07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-301-redirects.1.07.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-301-redirects/"
         },
         {
             "name": "wpackagist-plugin/uk-cookie-consent",
