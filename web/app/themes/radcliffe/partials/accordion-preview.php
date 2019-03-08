@@ -25,7 +25,7 @@ $number = 1;
 
                     <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon-small') ?></div>
 
-                    <h3 class="accordion-with-icons__item-title"><?= $number++ . '. ' . $accordion['title'] ?></h3>
+                    <h3 class="accordion-with-icons__item-title"><span><?= $number++ . '. ' . $accordion['title'] ?></span></h3>
 
                 </a>
 

@@ -899,6 +899,8 @@ add_shortcode( 'latest_news', function ( $atts ) {
 
     if ( $the_query->have_posts() ) {
 
+        $archiveLink = get_post_type_archive_link('news');
+
         while ( $the_query->have_posts() ) {
 
             $the_query->the_post();
@@ -908,6 +910,7 @@ add_shortcode( 'latest_news', function ( $atts ) {
                 'title' => get_the_title(),
                 'date' => get_the_date($commonDateFormat),
                 'excerpt' => wp_trim_words(get_the_excerpt(), 20),
+                'archive-link' => $archiveLink,
 
             ], 'latest-news');
         }

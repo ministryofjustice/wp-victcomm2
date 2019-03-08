@@ -16,7 +16,7 @@ $td = $vcTemplateData;
 
         <div class="list-item-meta">
 
-            <div class="list-item-meta__type">news</div>
+            <div class="list-item-meta__type"><a class="list-item-meta__type-link" href="<?= $td['archive-link'] ?>">news</a></div>
 
             <?php if (isset($td['date'])) : ?>
 
