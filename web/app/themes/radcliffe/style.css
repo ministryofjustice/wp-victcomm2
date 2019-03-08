@@ -3151,8 +3151,14 @@ ol.accordion-with-icons--preview {
 		float: none;
 		margin: 2em auto;
 		max-width: 100%;
+    text-align: center;
 		width: 100%;
 	}
+
+  .post-content .alignleft img,
+  .post-content .alignright img {
+    max-width: 300px;
+  }
 
 	/* pagination */
 
