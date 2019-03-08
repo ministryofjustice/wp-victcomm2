@@ -49,9 +49,11 @@
         <?php
 
         while (have_posts()) : the_post();
+            $postType = get_post_type();
 
             $templateData = [
-                'post-type-name' => get_post_type_object(get_post_type())->labels->singular_name,
+                'post-type' => $postType,
+                'post-type-name' => get_post_type_object($postType)->labels->singular_name,
                 'date-format' => get_option('date-format'),
             ];
 

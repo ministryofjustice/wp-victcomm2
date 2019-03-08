@@ -12,6 +12,10 @@ $postTypeNameLowercase = strtolower( $td['post-type-name']);
 // Don't show post types for pages or posts
 $showPostType = ! in_array( $postTypeNameLowercase , ['page', 'post'] );
 
+if ($showPostType){
+    $archiveLink = get_post_type_archive_link($td['post-type']);
+}
+
 // Don't show dates for pages
 if ( in_array( $postTypeNameLowercase, ['page'] ) ) {
     $showDate = false;
@@ -25,6 +29,7 @@ if ( $postTypeNameLowercase == 'news post') {
 // Show meta
 $showMeta = $showPostType || $showDate;
 
+
 ?>
 
 <div class="search-result section-inner">
@@ -35,7 +40,9 @@ $showMeta = $showPostType || $showDate;
 
             <?php if ( $showPostType )  : ?>
 
-                <div class="list-item-meta__type"><?= $postTypeName ?></div>
+                <div class="list-item-meta__type">
+                    <a class="list-item-meta__type-link" href="<?= $archiveLink ?>"><?= $postTypeName ?></a>
+                </div>
 
             <?php endif; ?>
 
