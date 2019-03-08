@@ -2283,7 +2283,10 @@ a.report__icon {
 }
 
 .accordion-with-icons__item-summary {
+  background-color: rgba(0,0,0,0);
   cursor: pointer;
+  display: block;
+  width: 100%;
 }
 
 .accordion-with-icons__item-summary-container {
@@ -2358,15 +2361,20 @@ h3.accordion-with-icons__item-title {
   top: 36%;
 }
 
-details[open] .accordion-with-icons__item-title:after {
+.accordion-with-icons__item--expanded .accordion-with-icons__item-title:after {
   border-width: 0 13.5px 18px 13.5px;
   border-color: transparent transparent #250e3d transparent;
   top: 34%;
 }
 
 .accordion-with-icons__item-content {
+  display: none;
   flex-grow: 1;
   margin-left: 4em;
+}
+
+.accordion-with-icons__item--expanded .accordion-with-icons__item-content {
+  display: block;
 }
 
 .accordion-with-icons__item-content h2 { font-family: Barlow, sans-serif; }
@@ -3005,11 +3013,11 @@ ol.accordion-with-icons--preview {
     margin-bottom: 1em;
   }
 
-  details .accordion-with-icons__item-title:after {
+  .accordion-with-icons__item .accordion-with-icons__item-title:after {
     border-width: 9px 8px 0 9px;
   }
 
-  details[open] .accordion-with-icons__item-title:after {
+  .accordion-with-icons__item--expanded .accordion-with-icons__item-title:after {
     border-width: 0 8px 9px 8px;
     top: 38%;
   }

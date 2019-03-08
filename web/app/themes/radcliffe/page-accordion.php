@@ -73,14 +73,14 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
                                 $encodedTitle = urlencode($accordion['title']);
 
-                                $open = ($accordionSectionQuery == $encodedTitle) ? 'open' : '';
+                                $expanded = ($accordionSectionQuery == $encodedTitle) ? 'accordion-with-icons__item--expanded' : '';
 
                             ?>
 
-                                <div class="accordion-with-icons__item">
-                                    <details <?= $open ?>>
+                                <div class="accordion-with-icons__item <?= $expanded ?>">
+                                    <div>
 
-                                        <summary id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary">
+                                        <button id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary">
 
                                             <div class="accordion-with-icons__item-summary-container">
 
@@ -90,11 +90,11 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
                                             </div>
 
-                                        </summary>
+                                        </button>
 
                                         <div class="accordion-with-icons__item-content"><?= $accordion['content'] ?></div>
 
-                                    </details>
+                                    </div>
 
                                 </div>
 

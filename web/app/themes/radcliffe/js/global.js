@@ -93,4 +93,11 @@ jQuery(document).ready(function($) {
 
   });
 
+  // accordion
+  $(".accordion-with-icons__item-summary").click(function(el){
+    $(el.currentTarget)
+      .closest('.accordion-with-icons__item')
+      .toggleClass('accordion-with-icons__item--expanded');
+  });
+
 });
