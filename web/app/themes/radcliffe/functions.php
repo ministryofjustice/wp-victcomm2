@@ -35,7 +35,8 @@ if ( ! function_exists( 'radcliffe_setup' ) ) {
 
 		// Post thumbnails
 		add_theme_support( 'post-thumbnails', getPostTypesWithFeaturedImage() );
-		add_image_size( 'post-image', 1440, 9999 );
+
+		add_image_size( 'post-image', 1440, 810, array( 'center', 'center' ));
 
         add_image_size( 'accordion-icon', 102, 100);
         add_image_size( 'accordion-icon-medium', 80, 79);
