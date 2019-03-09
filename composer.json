@@ -35,7 +35,8 @@
     "wpackagist-plugin/simple-301-redirects":"*",
     "wpackagist-plugin/wp-browser-update": "*",
 
-    "relevanssi/relevanssi-premium": "*"
+    "relevanssi/relevanssi-premium": "*",
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
