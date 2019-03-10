@@ -41,6 +41,7 @@
 /* -------------------------------------------------------------------------------- */
 
 /* ------------------------------------------- */
+/* --- cross browser fixes ---
 /* fix for Firefox fonts being too bold */
 html {
   -moz-osx-font-smoothing: grayscale;
@@ -49,16 +50,25 @@ html {
   font-weight: 400;
 }
 
-/**
- * Firefox specific rule
- */
-
 @-moz-document url-prefix() {
   body {
     font-weight: lighter !important;
   }
 }
-/* ------------------------------------------- */
+/* --- fix for ie11 not recognising figure element */
+.wp-block-image figure {
+  display: block;
+}
+
+/* --- fix for ie11 not supporting outlines for focused elements */
+@media all and (-ms-high-contrast:none)
+{
+  a:focus,
+  input:focus,
+  button:focus {
+    outline: 1px solid orange;
+  }
+}
 
 html, body { margin:0; padding:0;}
 
