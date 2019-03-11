@@ -2024,8 +2024,8 @@ a.archive-news__item-button:hover {
 /* Team page ----------------------------------------------- */
 
 .ab-block-profile .ab-profile-text a:hover {
-  -webkit-box-shadow: 0 -1px 0 0;
-  box-shadow: 0 -1px 0 0;
+  -webkit-box-shadow: 0 -1px 0 inset;
+  box-shadow: 0 -1px 0 inset;
 }
 
 /* Single attachment --------------------------------------- */
