@@ -2982,7 +2982,7 @@ ol.accordion-with-icons--preview {
   .archive-news__item {
     margin: 0 auto 1em;
     max-width: 600px;
-    width: 600px;
+    width: auto;
   }
 
   /* paginations */
