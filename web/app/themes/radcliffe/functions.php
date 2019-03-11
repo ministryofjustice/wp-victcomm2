@@ -909,7 +909,7 @@ add_shortcode( 'latest_news', function ( $atts ) {
                 'permalink' => get_the_permalink(),
                 'title' => get_the_title(),
                 'date' => get_the_date($commonDateFormat),
-                'excerpt' => wp_trim_words(get_the_excerpt(), 20),
+                'excerpt' => ($excerpt = get_field('summary')) ? $excerpt : wp_trim_words(get_the_excerpt(), 20),
                 'archive-link' => $archiveLink,
 
             ], 'latest-news');
