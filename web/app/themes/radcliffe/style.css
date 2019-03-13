@@ -2708,6 +2708,34 @@ ol.accordion-with-icons--preview {
   content: '';
 }
 
+/* Catapult cookie bar ------------------------------------------------------*/
+
+#catapult-cookie-bar {
+  background-color: #0f0228;
+  border-top: 1px solid #333;
+  box-shadow: 0 -5px 5px 0 rgba(0,0,0,.3);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#catapult-cookie-bar a {
+  color: #fff;
+  -webkit-box-shadow: 0 -1px 0 #fff inset;
+  box-shadow: 0 -1px 0 #fff inset;
+  text-decoration: none;
+}
+
+#catapult-cookie-bar button#catapultCookie {
+  background-color: #fff;
+  border-radius: 2em;
+  padding: .25em 1em;
+}
+
+.ctcc-inner {
+  padding: 1em;
+}
+
 /* -------------------------------------------------------------------------------- */
 /*	12. Credits
 /* -------------------------------------------------------------------------------- */
