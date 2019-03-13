@@ -2028,6 +2028,12 @@ a.archive-news__item-button:hover {
   box-shadow: 0 -1px 0 inset;
 }
 
+.ab-block-profile .ab-profile-title {
+  opacity: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 /* Single attachment --------------------------------------- */
 
 
