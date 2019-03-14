@@ -1140,15 +1140,6 @@ abbr, acronym { cursor: help; }
 
 .post-content dl dt { font-weight: bold; }
 
-.post-content hr {
-	background: rgba(37,14,61,0.2);
-	border: none;
-	display: block;
-	height: 2px;
-	margin: 2em auto;
-	width: 100px;
-}
-
 .post-content hr.is-style-wide,
 .post-content hr.is-style-dots {
 	width: 100%;
