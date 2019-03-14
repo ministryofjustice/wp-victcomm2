@@ -2025,6 +2025,11 @@ a.archive-news__item-button:hover {
   font-weight: 600;
 }
 
+.ab-profile-image-wrap {
+  height: 0;
+  padding-bottom: 100%;
+}
+
 /* Single attachment --------------------------------------- */
 
 
