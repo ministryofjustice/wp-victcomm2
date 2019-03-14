@@ -2014,6 +2014,11 @@ a.archive-news__item-button:hover {
 
 /* Team page ----------------------------------------------- */
 
+.ab-block-profile {
+  color: rgb(37, 14, 61);
+  background-color: #f6f5f7;
+}
+
 .ab-block-profile .ab-profile-text a:hover {
   -webkit-box-shadow: 0 -1px 0 inset;
   box-shadow: 0 -1px 0 inset;
