@@ -36,7 +36,8 @@
     "wpackagist-plugin/wp-browser-update": "*",
 
     "relevanssi/relevanssi-premium": "*",
-    "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5.3"
+    "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5.3",
+    "ministryofjustice/wp-user-roles": "^0.1.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
