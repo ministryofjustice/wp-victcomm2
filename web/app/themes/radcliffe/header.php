@@ -26,7 +26,7 @@
 
 		</div>
 
-		<div class="header section light-padding">
+		<div class="header">
 
 			<div class="header-inner section-inner">
 
