@@ -67,15 +67,13 @@ $pageSummary = get_field('summary');
 
                     <?php wp_link_pages('before=<p class="page-links">' . __( 'Pages:', 'radcliffe' ) . ' &after=</p>&separator=<span class="sep">/</span>'); ?>
 
-
-                    <ul class="single-news__links">
-                        <li><a href="/news">More news</a></li>
-                        <li>|</li>
-                        <li><a href="/media-enquiries">Media enquiries</a></li>
-                    </ul>
-
-
                 </div>
+
+                <ul class="single-news__links section-inner thin">
+                    <li><a href="/news">More news</a></li>
+                    <li>|</li>
+                    <li><a href="/media-enquiries">Media enquiries</a></li>
+                </ul>
 
             </div><!-- .post -->
 
