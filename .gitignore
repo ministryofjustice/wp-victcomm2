@@ -5,10 +5,14 @@ web/app/mu-plugins/*/
 !web/app/mu-plugins/acf-json/
 web/app/upgrade
 web/app/languages
-web/app/themes/victcomm2/meta/
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 **/*.sql
+
+# Editor
+.idea
+
+*.log
 
 # WordPress
 web/wp

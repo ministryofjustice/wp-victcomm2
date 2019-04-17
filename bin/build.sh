@@ -10,10 +10,3 @@ set -e
 # Install PHP dependencies (WordPress, plugins, etc.)
 composer install
 
-# Build theme assets here
-cd web/app/themes/victcomm2
-composer install
-npm install
-npm run-script build:production
-
-cd ../../../../
