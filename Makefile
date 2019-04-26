@@ -21,6 +21,10 @@ run:
 bash:
 	docker-compose exec wordpress bash
 
+# from within docker; run a db import on the first .sql file found in the current directory
+db:
+	bin/local-db-import.sh
+
 # Run tests
 test:
 	composer test

@@ -317,23 +317,23 @@ if (!function_exists('radcliffe_admin_css')) {
 
 if (!function_exists('radcliffe_comment')) {
 
-    function radcliffe_comment($comment, $args, $depth)
-    {
-        switch ($comment->comment_type) :
-            case 'pingback':
-            case 'trackback':
-                ?>
+function radcliffe_comment($comment, $args, $depth)
+{
+    switch ($comment->comment_type) :
+    case 'pingback':
+    case 'trackback':
+        ?>
 
-                <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+        <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
 
-                    <?php __('Pingback:', 'radcliffe'); ?><?php comment_author_link(); ?><?php edit_comment_link(__('(Edit)',
-                        'radcliffe'), '<span class="edit-link">', '</span>'); ?>
+            <?php __('Pingback:', 'radcliffe'); ?><?php comment_author_link(); ?><?php edit_comment_link(__('(Edit)',
+                'radcliffe'), '<span class="edit-link">', '</span>'); ?>
 
-                </li>
-                <?php
-                break;
-            default :
-            global $post;
+        </li>
+        <?php
+        break;
+    default :
+    global $post;
 ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 
