@@ -11,6 +11,7 @@ web/app/uploads/*
 
 # Editor
 .idea
+.DS_*
 
 *.log
 
