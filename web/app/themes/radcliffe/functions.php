@@ -11,7 +11,7 @@ function getCommonExcerptLength()
 
 function getCustomPostTypesArray()
 {
-    return ['annual-reports', 'published-reviews', 'newsletters', 'publications', 'news', 'meeting-notes'];
+    return ['annual-reports', 'published-reviews', 'newsletters', 'publications', 'news', 'meeting-notes', 'policies'];
 }
 
 function getPublicationPostTypesArray()
@@ -845,6 +845,12 @@ function radcliffe_comment($comment, $args, $depth)
         acf_add_options_sub_page(array(
             'title' => 'Meeting Notes Settings',
             'parent' => 'edit.php?post_type=meeting-notes',
+            'capability' => 'manage_options'
+        ));
+
+        acf_add_options_sub_page(array(
+            'title' => 'Policy Settings',
+            'parent' => 'edit.php?post_type=policies',
             'capability' => 'manage_options'
         ));
     }
