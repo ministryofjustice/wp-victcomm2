@@ -1121,7 +1121,8 @@ a.post-header .post-title {
 }
 
 /*.post-content a:hover { text-decoration: underline; }*/
-
+.single-news__links a,
+.archive-news__nav a,
 .post-content a,
 .post-content p a,
 .footer a {
@@ -2226,8 +2227,8 @@ a.archive-news__item-button:hover {
 }
 
 .archive-news__nav {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .archive-news__nav .post-nav-older {
