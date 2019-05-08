@@ -68,7 +68,7 @@ if [[ "$IS_CREATE_USER_ACCOUNT" =~ "y" ]]; then
 
     echo "Great! Login here: $WP_HOME/wp-admin/"
 else
-    echo "The operation was aborted"
+    echo "The 'create user' operation was cancelled. The database has been updated."
     exit 0
 fi
 

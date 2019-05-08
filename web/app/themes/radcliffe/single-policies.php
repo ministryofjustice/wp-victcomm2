@@ -11,9 +11,7 @@ $pageSummary = get_field('summary');
 <div class="content">
 
     <?php if (have_posts()) :
-        while (have_posts()) : the_post();
-            ?>
-
+        while (have_posts()) : the_post(); ?>
             <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
                 <div class="post-header section">
