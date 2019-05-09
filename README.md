@@ -1,13 +1,3 @@
-# ! WORK IN PROGRESS
-**This project is currently pre-alpha.**
-
-TODO: The following is based on wp-template and will be updated.
-
-# Template WordPress project
-
-Use this template to bootstrap a new WordPress project for use in the MOJ docker hosting environment.
-
-It will provide you with a skeleton WordPress installation which runs locally in docker, and pre-configured with composer for dependency management.
 
 ## Features
 
