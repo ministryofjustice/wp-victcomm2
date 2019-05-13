@@ -1,0 +1,61 @@
+.share-page h2 {
+    font-family: Merriweather, serif;
+    line-height: 1.5;
+    color: #a60f51
+}
+
+.share-page ul {
+    list-style: none;
+    margin-left: 0
+}
+
+.share-page li {
+    position: relative;
+    display: inline-block;
+    min-height: 32px;
+    margin-bottom: 10px;
+    line-height: 32px;
+    margin-left: -40px
+}
+
+.share-page a {
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.1428571429;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 50px
+}
+
+.share-page a:link {
+    color: #a60f51
+}
+
+.share-page a:visited {
+    color: #a60f51
+}
+
+.share-page .link-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    vertical-align: top;
+    right: 0
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    border: 0 !important;
+    white-space: nowrap !important
+}

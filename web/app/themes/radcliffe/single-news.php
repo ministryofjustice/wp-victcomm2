@@ -67,6 +67,7 @@ $pageSummary = get_field('summary');
 
                     <?php wp_link_pages('before=<p class="page-links">' . __( 'Pages:', 'radcliffe' ) . ' &after=</p>&separator=<span class="sep">/</span>'); ?>
 
+                    <?php moj_share_page(); ?>
                 </div>
 
                 <ul class="single-news__links section-inner thin">
