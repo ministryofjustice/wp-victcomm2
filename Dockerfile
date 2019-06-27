@@ -1,4 +1,4 @@
-FROM mojdigital/wordpress-base:upgrade
+FROM mojdigital/wordpress-base:latest
 
 # Upgrade nodejs
 RUN curl -sL https://deb.nodesource.com/setup_11.x | bash - && \
