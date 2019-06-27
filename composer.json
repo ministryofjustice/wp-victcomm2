@@ -33,7 +33,6 @@
         "wpackagist-plugin/uk-cookie-consent": "*",
         "wpackagist-plugin/simple-301-redirects": "*",
         "wpackagist-plugin/wp-browser-update": "*",
-
         "relevanssi/relevanssi-premium": "*",
         "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5.3",
         "ministryofjustice/wp-user-roles": "^0.1.1",
