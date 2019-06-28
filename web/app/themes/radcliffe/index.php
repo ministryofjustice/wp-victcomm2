@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content">
+<main class="content">
 																	                    
 	<?php if ( have_posts() ) : ?>
 
@@ -108,6 +108,6 @@
 		
 	</div><!-- .posts -->
 		
-</div><!-- .content section-inner -->
+</main><!-- .content section-inner -->
 	              	        
 <?php get_footer(); ?>

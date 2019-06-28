@@ -8,7 +8,7 @@ $td = $vcTemplateData;
 
 ?>
 
-<div class="content">
+<main class="content">
 
     <div <?php post_class('post single'); ?>>
         <div class="post-header section">
@@ -87,6 +87,6 @@ $td = $vcTemplateData;
 
     </div>
 
-</div>
+</main>
 
 <?php get_footer(); ?>

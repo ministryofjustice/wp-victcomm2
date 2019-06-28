@@ -6,7 +6,7 @@ $pageSummary = get_field('summary');
 
 ?>
 
-<div class="content">
+<main class="content">
 
 	<?php if ( have_posts() ) :
 
@@ -73,6 +73,6 @@ $pageSummary = get_field('summary');
 
 	<div class="clear"></div>
 
-</div><!-- .content -->
+</main><!-- .content -->
 
 <?php get_footer(); ?>

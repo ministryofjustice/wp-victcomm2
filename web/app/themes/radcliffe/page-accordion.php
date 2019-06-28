@@ -13,7 +13,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
 ?>
 
-    <div class="content">
+    <main class="content">
 
         <?php if ( have_posts() ) :
 
@@ -112,6 +112,6 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
         endif; ?>
 
-    </div><!-- .content -->
+    </main><!-- .content -->
 
 <?php get_footer(); ?>

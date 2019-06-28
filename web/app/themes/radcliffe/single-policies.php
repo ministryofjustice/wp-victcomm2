@@ -8,7 +8,7 @@ $pageSummary = get_field('summary');
 
 ?>
 
-<div class="content">
+<main class="content">
 
     <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>
@@ -90,6 +90,6 @@ $pageSummary = get_field('summary');
 
     endif; ?>
 
-</div><!-- .content -->
+</main><!-- .content -->
 
 <?php get_footer(); ?>

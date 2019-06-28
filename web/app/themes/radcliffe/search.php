@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content">
+<main class="content">
 
     <div class="section-inner">
         <form method="get" class="search-results-page-form search-form"
@@ -77,6 +77,6 @@
 
     </div><!-- .posts -->
 
-</div><!-- .content section-inner -->
+</main><!-- .content section-inner -->
 
 <?php get_footer(); ?>

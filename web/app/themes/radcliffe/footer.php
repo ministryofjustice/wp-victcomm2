@@ -2,7 +2,7 @@
 
     <div class="footer-spacer"></div>
 
-	<div class="footer section bg-graphite">
+	<footer class="footer section bg-graphite">
 
 		<div class="section-inner row">
 
@@ -52,7 +52,7 @@
 
 		</div><!-- .footer-inner -->
 
-	</div><!-- .footer -->
+	</footer><!-- .footer -->
 
 <?php endif; ?>
 

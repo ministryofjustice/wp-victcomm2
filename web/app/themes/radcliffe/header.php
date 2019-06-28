@@ -13,6 +13,7 @@
 
 <body <?php body_class(); ?>>
 
+<a href="#maincontent" class="maincontent">Skip to main content</a>
 <div class="header-search-block section hidden">
 
     <div class="section-inner">
@@ -26,22 +27,22 @@
 
 </div>
 
-<div class="header">
+<header class="header">
 
     <div class="header-inner section-inner">
 
-        <h1 class="blog-title">
+        <div class="blog-title">
             <a href="<?php echo esc_url(home_url()); ?>"
-               title="<?php echo esc_attr(get_bloginfo('title')); ?> &mdash; <?php echo esc_attr(get_bloginfo('description')); ?>"
+               title="<?php echo esc_attr(get_bloginfo('description')); ?> -- Homepage"
                rel="home">
                 <div alt="VC Logo" class='vc-logo'></div>
                 <?php echo esc_attr(get_bloginfo('title')); ?>
             </a>
-        </h1>
+        </div>
 
-        <div class="nav-toggle">
+        <div role="button" class="nav-toggle">
 
-            <p><?php _e('Menu', 'radcliffe'); ?></p>
+            <nav aria-label="mobile-menu-extended"><?php _e('Menu', 'radcliffe'); ?></nav>
 
             <div class="bars">
 
@@ -54,42 +55,39 @@
             </div>
 
         </div>
+        <nav aria-label="main-menu">
+            <ul class="main-menu fright">
+                <?php if (has_nav_menu('primary')) {
+                    $menu_args = array(
+                        'container' => '',
+                        'items_wrap' => '%3$s',
+                        'theme_location' => 'primary'
+                    );
 
-        <ul class="main-menu fright">
+                    wp_nav_menu($menu_args);
 
-            <?php if (has_nav_menu('primary')) {
-                $menu_args = array(
-                    'container' => '',
-                    'items_wrap' => '%3$s',
-                    'theme_location' => 'primary'
-                );
+                } else {
+                    $list_pages_args = array(
+                        'container' => '',
+                        'title_li' => ''
+                    );
 
-                wp_nav_menu($menu_args);
+                    wp_list_pages($list_pages_args);
 
-            } else {
-                $list_pages_args = array(
-                    'container' => '',
-                    'title_li' => ''
-                );
-
-                wp_list_pages($list_pages_args);
-
-            } ?>
-
-
-        </ul>
-
-        <a href="#" class="search-toggle" title="<?php _e('Show the search field', 'radcliffe'); ?>"></a>
+                } ?>
+            </ul>
+        </nav>
+        <a href="#" role="button" class="search-toggle tooltip" data-tip="Search&nbsp;site"></a>
 
         <div class="clear"></div>
 
     </div><!-- .header -->
 
-</div><!-- .header.section -->
+</header><!-- .header.section -->
 
-<div class="mobile-menu-container hidden">
+<nav aria-label="mobile-navigation" class="mobile-menu-container hidden">
 
-    <ul class="mobile-menu">
+    <ul role="navigation" class="mobile-menu">
 
         <?php if (has_nav_menu('primary')) {
             wp_nav_menu($menu_args);
@@ -108,4 +106,5 @@
         <input type="submit" value="<?php _e('Search', 'radcliffe'); ?>" class="search-button">
     </form>
 
-</div><!-- .mobile-menu-container -->
+</nav><!-- .mobile-menu-container -->
+<main id="maincontent">

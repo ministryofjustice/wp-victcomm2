@@ -4,7 +4,7 @@ get_header();
 
 ?>
 
-<div class="content">
+<main class="content">
 
     <?php if ( have_posts() ) :
 
@@ -39,6 +39,6 @@ get_header();
     endif; ?>
 
 
-</div><!-- .content -->
+</main><!-- .content -->
 
 <?php get_footer(); ?>

@@ -6,7 +6,7 @@ Template Name: Archive Template
 
 <?php get_header(); ?>
 
-<div class="content">						
+<main class="content">						
 
 	<div <?php post_class( 'post single' ); ?>>
 	
@@ -64,6 +64,6 @@ Template Name: Archive Template
 
 	<div class="clear"></div>
 	
-</div><!-- .content -->
+</main><!-- .content -->
 								
 <?php get_footer(); ?>

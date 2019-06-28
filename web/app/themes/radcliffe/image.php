@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content">
+<main class="content">
 											        
 	<?php if ( have_posts() ) : 
 		
@@ -63,6 +63,6 @@
 			
 	</div><!-- .post -->
 
-</div><!-- .content -->
+</main><!-- .content -->
 		
 <?php get_footer(); ?>
