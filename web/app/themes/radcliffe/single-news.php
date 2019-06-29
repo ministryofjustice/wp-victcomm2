@@ -37,8 +37,6 @@ $pageSummary = get_field('summary');
                             the_post_thumbnail( 'post-image' );
 
                             ?>
-
-                        </figure><!-- .featured-media -->
                         <?php
                         $image_caption = getImageCaption( get_the_id(), get_post_thumbnail_id() );
 
@@ -51,6 +49,8 @@ $pageSummary = get_field('summary');
                         </figcaption>
 
                         <?php endif; ?>
+
+                        </figure><!-- .featured-media -->
 
                     </div>
                 <?php endif; ?>
@@ -71,7 +71,6 @@ $pageSummary = get_field('summary');
 
                 <ul class="single-news__links section-inner thin">
                     <li><a href="/news">More news</a></li>
-                    <li>|</li>
                     <li><a href="/media-enquiries">Media enquiries</a></li>
                 </ul>
 
