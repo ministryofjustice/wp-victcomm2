@@ -6,7 +6,7 @@ global $td;
 
 ?>
 
-<main class="content">
+<main class="content" id="maincontent">
 
     <div <?php post_class( 'post single' ); ?>>
 

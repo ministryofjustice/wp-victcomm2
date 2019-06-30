@@ -6,7 +6,7 @@ Template Name: Archive Template
 
 <?php get_header(); ?>
 
-<main class="content">						
+<main class="content" id="maincontent">						
 
 	<div <?php post_class( 'post single' ); ?>>
 	

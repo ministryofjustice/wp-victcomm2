@@ -8,7 +8,7 @@ $td = $vcTemplateData;
 
 ?>
 
-<main class="content">
+<main class="content" id="maincontent">
 
     <div <?php post_class('post single'); ?>>
         <div class="post-header section">

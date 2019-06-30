@@ -35,7 +35,7 @@
             <a href="<?php echo esc_url(home_url()); ?>"
                title="<?php echo esc_attr(get_bloginfo('description')); ?> -- Homepage"
                rel="home">
-                <div alt="VC Logo" class='vc-logo'></div>
+                <div class='vc-logo'></div>
                 <?php echo esc_attr(get_bloginfo('title')); ?>
             </a>
         </div>
@@ -87,7 +87,7 @@
 
 <nav aria-label="mobile-navigation" class="mobile-menu-container hidden">
 
-    <ul role="navigation" class="mobile-menu">
+    <ul class="mobile-menu">
 
         <?php if (has_nav_menu('primary')) {
             wp_nav_menu($menu_args);
@@ -107,4 +107,4 @@
     </form>
 
 </nav><!-- .mobile-menu-container -->
-<main id="maincontent">
+<!--  <main id="maincontent">  -->

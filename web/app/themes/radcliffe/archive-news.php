@@ -16,7 +16,7 @@ $placeholderCounter = 0;
 
 ?>
 
-    <main class="content">
+    <main class="content" id="maincontent">
 
         <div <?php post_class( 'post single' ); ?>>
 

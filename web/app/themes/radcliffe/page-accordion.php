@@ -13,7 +13,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
 ?>
 
-    <main class="content">
+    <main class="content" id="maincontent">
 
         <?php if ( have_posts() ) :
 

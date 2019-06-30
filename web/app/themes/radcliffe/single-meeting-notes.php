@@ -8,7 +8,7 @@ $pageSummary = get_field('summary');
 
 ?>
 
-<main class="content">
+<main class="content" id="maincontent">
 
     <?php if (have_posts()) :
         while (have_posts()) : the_post();

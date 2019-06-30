@@ -30,11 +30,11 @@
 
 					</div><!-- .widgets -->
 
-				</div>
+<!-- 				</div>  -->
 
 			<?php endif; ?><!-- .footer-b -->
 
-<!--			<?php /*if ( is_active_sidebar( 'footer-c' ) ) : */?>
+			<?php /*if ( is_active_sidebar( 'footer-c' ) ) : */?>
 
 				<div class="column column-3 one-third">
 
@@ -46,7 +46,7 @@
 
 				</div>
 
-			<?php /*endif; */?><!-- .footer-c -->-->
+			<?php /*endif; */?><!-- .footer-c -->
 
 			<div class="clear"></div>
 
