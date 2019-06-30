@@ -122,7 +122,7 @@ if (!function_exists('radcliffe_load_style')) {
             if ('off' !== $google_fonts) {
                 wp_enqueue_style(
                     'radcliffe_googlefonts',
-                    'https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i|Merriweather:300,300i,400,400i,700,700i,900,900i',
+                    'https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i%7CMerriweather:300,300i,400,400i,700,700i,900,900i',
                     false,
                     null
                 );
@@ -296,7 +296,7 @@ if (!function_exists('radcliffe_admin_css')) {
 
     function radcliffe_admin_css()
     { ?>
-        <style type="text/css">
+        <style>
             #postimagediv #set-post-thumbnail img {
                 max-width: 100%;
                 height: auto;
@@ -469,7 +469,7 @@ function radcliffe_comment($comment, $args, $depth)
         {
 
             echo '<!-- Customizer CSS --> ';
-            echo '<style type="text/css">';
+            echo '<style>';
 
             self::radcliffe_generate_css('body a', 'color', 'accent_color');
             self::radcliffe_generate_css('body a:hover', 'color', 'accent_color');
