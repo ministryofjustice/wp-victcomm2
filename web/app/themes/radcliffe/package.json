@@ -1,0 +1,37 @@
+{
+  "name": "victcomm2",
+  "version": "1.0.0",
+  "description": "Package manager for the Victims Commissioner website",
+  "author": "Damien Wilson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ministryofjustice/wp-victcomm2"
+  },
+  "bugs": {
+    "url": "https://github.com/ministryofjustice/wp-victcomm2/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "cross-env": "^5.2.0",
+    "details-element-polyfill": "^2.3.1",
+    "laravel-mix": "^4.0.16",
+    "resolve-url-loader": "^2.3.1",
+    "url-search-params-polyfill": "^4.0.0",
+    "vue-template-compiler": "^2.6.8",
+    "webpack": "^4.32.2"
+  }
+}

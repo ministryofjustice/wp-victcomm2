@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04e0e4e9f1780a1259d4138d7ff8abb5",
+    "content-hash": "fc4996b9b77d5c489c893fd5312f5260",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -393,17 +393,17 @@
         },
         {
             "name": "ministryofjustice/wp-user-roles",
-            "version": "0.2.31",
+            "version": "0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-user-roles.git",
-                "reference": "d157e21d275187f0be59e6fd1631082aad07472a"
+                "reference": "d4c48b705e5cb6fbebff61acb78b98fa7db295ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-user-roles/ministryofjustice-wp-user-roles-d157e21d275187f0be59e6fd1631082aad07472a-zip-f40dd0.zip",
-                "reference": "d157e21d275187f0be59e6fd1631082aad07472a",
-                "shasum": "8b39d01e22de2558f398164a0a1d38fae23f81d5"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-user-roles/ministryofjustice-wp-user-roles-d4c48b705e5cb6fbebff61acb78b98fa7db295ee-zip-49746c.zip",
+                "reference": "d4c48b705e5cb6fbebff61acb78b98fa7db295ee",
+                "shasum": "6c996440801f2a8526c8d7935751236f5d4fecf2"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -425,10 +425,10 @@
             ],
             "description": "A WordPress plugin to create user roles typically required by a MOJDigital WordPress site",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-user-roles/tree/0.2.31",
+                "source": "https://github.com/ministryofjustice/wp-user-roles/tree/0.2.4",
                 "issues": "https://github.com/ministryofjustice/wp-user-roles/issues"
             },
-            "time": "2019-06-28T11:41:09+00:00"
+            "time": "2019-07-01T17:37:43+00:00"
         },
         {
             "name": "oscarotero/env",

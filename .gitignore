@@ -21,7 +21,7 @@ web/.htaccess
 web/app/themes/*
 !web/app/themes/radcliffe/
 !web/app/themes/radcliffe-child/
-!web/app/themes/victcomm2/
+web/app/themes/radcliffe/node_modules/
 
 # Dotenv
 .env
