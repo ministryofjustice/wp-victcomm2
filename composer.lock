@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc4996b9b77d5c489c893fd5312f5260",
+    "content-hash": "1449426eb51900eea19f1577f6e6c12a",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -331,17 +331,17 @@
         },
         {
             "name": "ministryofjustice/wp-moj-social-share",
-            "version": "dev-master",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/wp-moj-social-share.git",
-                "reference": "3d8c5c3aebae87496f3eb18d21db3121978ee3cb"
+                "reference": "340044cf463cdb92c9fa7b503fde208d3359dfc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ministryofjustice/wp-moj-social-share/zipball/3d8c5c3aebae87496f3eb18d21db3121978ee3cb",
-                "reference": "3d8c5c3aebae87496f3eb18d21db3121978ee3cb",
-                "shasum": ""
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-social-share/ministryofjustice-wp-moj-social-share-340044cf463cdb92c9fa7b503fde208d3359dfc3-zip-a8e4a0.zip",
+                "reference": "340044cf463cdb92c9fa7b503fde208d3359dfc3",
+                "shasum": "d08bad6a78477e44434d48c8fdf73998402d95bf"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -355,10 +355,10 @@
             ],
             "description": "A WordPress plugin that will add share buttons to pages",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-moj-social-share/tree/master",
+                "source": "https://github.com/ministryofjustice/wp-moj-social-share/tree/1.1",
                 "issues": "https://github.com/ministryofjustice/wp-moj-social-share/issues"
             },
-            "time": "2019-06-21T09:52:52+00:00"
+            "time": "2019-07-02T08:39:14+00:00"
         },
         {
             "name": "ministryofjustice/wp-rewrite-media-to-s3",
@@ -846,9 +846,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "ministryofjustice/wp-moj-social-share": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
