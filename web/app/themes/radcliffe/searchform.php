@@ -1,4 +1,5 @@
-<form method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<input type="search" placeholder="<?php _e( 'Search form', 'radcliffe' ); ?>" name="s" id="s" /> 
-	<input type="submit" id="searchsubmit" value="<?php _e( 'Search', 'radcliffe' ); ?>" class="search-button">
+<form id="search2" class="search-form" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+  <label class="search-term-input-label no-label" for="s">Search this website for: </label>
+  <input type="search" name="s" id="s" class="search-term-input no-focus"/>
+  <input type="submit" value="Search" class="no-focus">
 </form>

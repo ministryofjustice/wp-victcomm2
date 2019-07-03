@@ -4,7 +4,7 @@
 
 <head>
 
-    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>">
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
     <?php wp_head(); ?>
@@ -19,8 +19,9 @@
     <div class="section-inner">
 
         <form class="search-form" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-            <label class='search-term-input-label' for="s">Search for: </label>
-            <input type="search" placeholder="enter search term" name="s" id="s" class="search-term-input"/>
+            <label class='search-term-input-label' for="s">Search this website for: </label>
+            <input type="search" name="s" id="s" class="search-term-input no-focus"/>
+            <input type="submit" role="button" value="Search" class="no-focus">
         </form>
 
     </div>
@@ -91,19 +92,16 @@
 
         <?php if (has_nav_menu('primary')) {
             wp_nav_menu($menu_args);
-
         } else {
             wp_list_pages($list_pages_args);
-
         } ?>
 
     </ul>
-
-    <form method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-        <label class="search-term-input-label" for="s">Search for: </label>
-        <input type="search" placeholder="<?php _e('enter search term', 'radcliffe'); ?>" name="s" id="s"
-               class="search-term-input"/>
-        <input type="submit" value="<?php _e('Search', 'radcliffe'); ?>" class="search-button">
+    
+    <form method="get" class="search-form search2" action="<?php echo esc_url(home_url('/')); ?>">
+        <label class="search-term-input-label no-focus" for="s">Search this website for: </label>
+        <input type="search" name="s" id="s" class="search-term-input no-focus"/>
+        <input type="submit" role="button" value="<?php _e('Search', 'radcliffe'); ?>" class="search-button no-focus">
     </form>
 
 </nav><!-- .mobile-menu-container -->
