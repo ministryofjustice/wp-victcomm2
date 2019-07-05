@@ -13,7 +13,8 @@
 
 <body <?php body_class(); ?>>
 
-<a href="#maincontent" class="maincontent">Skip to main content</a>
+<nav aria-label="Skip Links" class="off-screen"><a href="#maincontent" class="maincontent skip-link">Skip to main content</a></nav>
+
 <div class="header-search-block section hidden">
 
     <div class="section-inner">
@@ -34,14 +35,14 @@
 
         <div class="blog-title">
             <a href="<?php echo esc_url(home_url()); ?>"
-               title="<?php echo esc_attr(get_bloginfo('description')); ?> -- Homepage"
+               title="Homepage - <?php echo esc_attr(get_bloginfo('description')); ?>"
                rel="home">
                 <div class='vc-logo'></div>
                 <?php echo esc_attr(get_bloginfo('title')); ?>
             </a>
         </div>
 
-        <div role="button" class="nav-toggle">
+        <div role="button" class="nav-toggle" tabindex="0">
 
             <nav aria-label="mobile-menu-extended"><?php _e('Menu', 'radcliffe'); ?></nav>
 

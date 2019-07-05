@@ -1,12 +1,9 @@
 <?php
-
 get_header();
-
 global $td;
-
 ?>
 
-<main class="content" id="maincontent">
+<div class="content">
 
     <div <?php post_class( 'post single' ); ?>>
 
@@ -38,8 +35,9 @@ global $td;
                 <div class="report__left">
                     <div class="report__icon-section">
 
-                        <figure><a href="<?= $td['downloadUrl'] ?>" class="report__icon"><?= $td['attachmentImage']; ?></a></figure>
+                        <a href="<?= $td['downloadUrl'] ?>" class="report__icon"><?= $td['attachmentImage']; ?></a>
                         <div class="report__meta">
+                            <p><a href="<?= $td['downloadUrl'] ?>"><?= $td['userFriendlyFileName']; ?></a></p>
                             <p><?= $td['fileType'] ?>, <?= $td['fileSize'] ?>, <?= $td['numberOfPages'] ?> pages</p>
                             <p><a href="/contact/">Contact us</a> if you need this publication in another format.</p>
                         </div>
@@ -63,6 +61,6 @@ global $td;
 
     </div>
 
-</main>
+</div>
 
 <?php get_footer(); ?>

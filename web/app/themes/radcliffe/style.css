@@ -544,6 +544,28 @@ body {
     line-height: 3.5
 }
 
+.off-screen {
+    left: -100vw;
+    position: absolute;
+}
+
+.skip-link {
+    background: #000;
+    color: #fff;
+    left: 0;
+    padding: .75em;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    transform: translateY(-10em);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.skip-link:focus {
+    opacity: 1;
+    transform: translateY(0em);
+}
+
 .single.no-featured-image .header,
 .page.no-featured-image .header,
 .error404 .header {
@@ -1063,11 +1085,10 @@ a.post-header .post-meta-top .sep {
 }
 
 .post-summary {
-    font-size: 100%;
-    font-weight: 400;
+    font-size: 1.1em;
+    font-weight: 600;
     margin-bottom: 0;
     margin-top: .5em;
-    font-style: normal;
 }
 
 .post-date {
