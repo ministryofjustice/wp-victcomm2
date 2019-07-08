@@ -2846,11 +2846,11 @@ h3.accordion-with-icons__item-title {
 }
 
 .accordion-with-icons__item-content h3 {
-    font-family: Merriweather, serif;
+    font-family: Barlow, sans-serif;
     font-size: 1.1em;
 }
 
-.accordion-with-icons__item-content h4 {
+.accordion-with-icons__item-content h3 .advice {
     font-family: Barlow, sans-serif;
 }
 
