@@ -80,7 +80,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
                                 <div class="accordion-with-icons__item <?= $expanded ?>">
                                     <div>
 
-                                        <button id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary" onclick="itemExpand()" aria-expanded="false">
+                                        <button id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary" aria-expanded="false">
 
                                             <div class="accordion-with-icons__item-summary-container">
 
@@ -114,17 +114,5 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
     </main><!-- .content -->
 
-<script>
-  function itemExpand() {
-  var x = document.getElementById("<?= $encodedTitle ?>").getAttribute("aria-expanded"); 
-  if (x == "true") 
-  {
-  x = "false"
-  } else {
-  x = "true"
-  }
-  document.getElementById("<?= $encodedTitle ?>").setAttribute("aria-expanded", x);
-  }
-</script>
 
 <?php get_footer(); ?>
