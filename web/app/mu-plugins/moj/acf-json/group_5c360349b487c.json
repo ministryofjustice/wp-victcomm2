@@ -1,11 +1,11 @@
 {
-    "key": "group_5c6ae4ca3670b",
-    "title": "Newsletters Archive Settings",
+    "key": "group_5c360349b487c",
+    "title": "Annual Reports Archive Settings",
     "fields": [
         {
-            "key": "field_5c6ae4d4d004b",
+            "key": "field_5c502ae11e63c",
             "label": "Summary",
-            "name": "newsletters_archive_summary",
+            "name": "annual_reports_archive_summary",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,9 +22,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c6ae4e6d004c",
+            "key": "field_5c36035a3d452",
             "label": "Intro text",
-            "name": "newsletters_archive_text",
+            "name": "annual_reports_archive_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -37,13 +37,13 @@
             "default_value": "",
             "tabs": "all",
             "toolbar": "full",
-            "media_upload": 1,
+            "media_upload": 0,
             "delay": 0
         },
         {
-            "key": "field_5c6ae4fad004d",
+            "key": "field_5c66deb758ee0",
             "label": "Outro text",
-            "name": "newsletters_archive_outro_text",
+            "name": "annual_reports_archive_outro_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -65,7 +65,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-newletters-settings"
+                "value": "acf-options-annual-reports-settings"
             }
         ]
     ],
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1550511236
+    "modified": 1562578947
 }

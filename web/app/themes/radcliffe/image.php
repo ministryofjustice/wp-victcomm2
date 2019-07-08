@@ -52,8 +52,6 @@
 				</div><!-- .post -->
 				
 				<?php
-				
-				comments_template( '', true );
 																					
 			endwhile;
 

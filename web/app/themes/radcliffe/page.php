@@ -65,8 +65,6 @@ $pageSummary = get_field('summary');
 
 			<?php
 
-			comments_template( '', true );
-
 		endwhile;
 
 	endif; ?>

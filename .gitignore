@@ -2,7 +2,7 @@
 web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
-!web/app/mu-plugins/acf-json/
+!web/app/mu-plugins/moj/
 web/app/upgrade
 web/app/languages
 web/app/uploads/*

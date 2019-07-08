@@ -1,11 +1,11 @@
 {
-    "key": "group_5c6bd0cb2f5d9",
-    "title": "Publications Archive Settings",
+    "key": "group_5c3610564647e",
+    "title": "Published Reviews Archive Settings",
     "fields": [
         {
-            "key": "field_5c6bd0d63a3ef",
+            "key": "field_5c5031461b9e3",
             "label": "Summary",
-            "name": "publications_archive_summary",
+            "name": "published_reviews_archive_summary",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -22,9 +22,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c6bd0fe3a3f0",
+            "key": "field_5c361060626a5",
             "label": "Intro text",
-            "name": "publications_archive_text",
+            "name": "published_reviews_archive_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -41,9 +41,9 @@
             "delay": 0
         },
         {
-            "key": "field_5c6bd1153a3f1",
-            "label": "Outro text",
-            "name": "publications_archive_outro_text",
+            "key": "field_5c66dedbe14c7",
+            "label": "Outro Text",
+            "name": "published_reviews_archive_outro_text",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -65,7 +65,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-publications-settings"
+                "value": "acf-options-published-reviews-settings"
             }
         ]
     ],
@@ -77,5 +77,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1550681136
+    "modified": 1562578882
 }

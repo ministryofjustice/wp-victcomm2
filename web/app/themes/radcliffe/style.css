@@ -19,12 +19,13 @@ Theme Name: VC
   5.  Main Content
   6.  Single Post
   7.  Post Content
-  8.  Comments
-  9.  Pagination
-  10.  Page & Page Templates
-  11.  Footer
-  12.  Credits
-  13. Media Queries
+  8.  Pagination
+  9.  Page & Page Templates
+  10. Search
+  11. Report
+  12. Accordion
+  13. Footer
+  14. Media Queries
 
 ----------------------------------------------------------------------------------- */
 
@@ -542,7 +543,6 @@ body {
 
 .header-search-block {
   background: #222;
-  /*padding: 1.5em 1em;*/
   padding: 0;
 }
 
@@ -1436,14 +1436,6 @@ figure {
   width: 100vw;
 }
 
-/*.post-content .alignwide {
-	margin: 2.5em 0;
-	margin-left: -150px;
-	max-width: 1040px;
-	width: 1040px;
-}*/
-
-
 /* Tables --------------------------------------- */
 
 
@@ -1817,94 +1809,8 @@ input[type="button"] {
   width: 100%;
 }
 
-
 /* -------------------------------------------------------------------------------- */
-/*	8. Comments
-/* -------------------------------------------------------------------------------- */
-
-
-.comments-title-container {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 80px;
-}
-
-.comments-title,
-.comment-reply-title {
-  font-size: 1.6em;
-  font-weight: 800;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.add-comment-title {
-  margin-top: 12px;
-  font-size: 0.9em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.add-comment-title a:hover {
-  text-decoration: underline;
-}
-
-li.comment {
-  position: relative;
-  margin-top: 50px;
-}
-
-.commentlist > li.comment:first-child {
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
-.comments ul.children {
-  margin-left: 5%;
-}
-
-.comment .avatar {
-  max-width: 80px;
-  height: auto;
-  border-radius: 999px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.bypostauthor .by-post-author {
-  width: 32px;
-  height: 32px;
-  border-radius: 99px;
-  background: #a60f51 url(images/icons/1x/author-w.png) no-repeat center 7px;
-  background-size: 16px auto;
-  text-indent: -9999px;
-  position: absolute;
-  z-index: 10;
-  top: -2px;
-  left: -2px;
-}
-
-.comment-inner {
-  padding: 30px;
-  background: #fff;
-  border-radius: 6px;
-  margin-left: 110px;
-  position: relative;
-}
-
-.comment-inner:after {
-  content: "";
-  display: block;
-  border: 12px solid transparent;
-  border-right-color: #fff;
-  position: absolute;
-  top: 28px;
-  left: -24px;
-}
-
-/* -------------------------------------------------------------------------------- */
-/*	9. Pagination
+/*	8. Pagination
 /* -------------------------------------------------------------------------------- */
 
 
@@ -1954,7 +1860,7 @@ li.comment {
 
 
 /* -------------------------------------------------------------------------------- */
-/*	10. Page & Page Templates
+/*	9. Page & Page Templates
 /* -------------------------------------------------------------------------------- */
 
 
@@ -2310,7 +2216,9 @@ ul.single-news__links {
 }
 
 
-/* Search --------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/*	10. Search
+/* -------------------------------------------------------------------------------- */
 
 .search-term-input {
   flex-grow: 1;
@@ -2510,8 +2418,6 @@ label.search-term-input-label {
   width: 100%;
 }
 
-/*.search .search-term-input { padding: 25px 0; }*/
-
 .search-term-input:focus {
   outline: none;
 }
@@ -2538,7 +2444,9 @@ label.search-term-input-label {
   opacity: 1;
 }
 
-/* Report --------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/*	11. Report
+/* -------------------------------------------------------------------------------- */
 .report {
   display: flex;
   flex-direction: row;
@@ -2585,7 +2493,9 @@ a.report__icon {
   text-transform: lowercase;
 }
 
-/* Accordion --------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/*	12. Accordion
+/* -------------------------------------------------------------------------------- */
 
 .accordion-with-icons__item {
   margin-bottom: .5em;
@@ -2753,7 +2663,7 @@ ol.accordion-with-icons--preview {
 }
 
 /* -------------------------------------------------------------------------------- */
-/*	11. Footer
+/*	13. Footer
 /* -------------------------------------------------------------------------------- */
 
 .footer-spacer {
@@ -2973,47 +2883,6 @@ ol.accordion-with-icons--preview {
   color: #a60f51;
 }
 
-
-/* Widget search form --------------------------------------- */
-
-
-.widget .search-term-input {
-  font-size: 1rem;
-}
-
-
-/* Widget RSS --------------------------------------- */
-
-
-.widget_rss .widget-content li {
-  margin-top: 1em;
-}
-
-.widget_rss span.rss-date {
-  display: block;
-}
-
-.widget_rss span.rss-date:before {
-  content: none;
-}
-
-.widget_rss .rssSummary {
-  font-size: 0.9em;
-  margin-top: 5px;
-}
-
-.widget_rss cite {
-  display: block;
-  margin-top: 5px;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.widget_rss cite:before {
-  content: "— ";
-  color: #999;
-}
-
 /* Widget nav menu --------------------------------------- */
 .widget_nav_menu a {
   color: #fff;
@@ -3054,30 +2923,7 @@ ol.accordion-with-icons--preview {
 }
 
 /* -------------------------------------------------------------------------------- */
-/*	12. Credits
-/* -------------------------------------------------------------------------------- */
-
-.footer + .credits {
-  border-top: 1px solid #ddd;
-}
-
-.credits,
-.credits a {
-  color: #888;
-}
-
-.credits p {
-  font-size: 0.8em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.credits {
-  display: none;
-}
-
-/* -------------------------------------------------------------------------------- */
-/*	13. Media Queries
+/*	14. Media Queries
 /* -------------------------------------------------------------------------------- */
 
 
