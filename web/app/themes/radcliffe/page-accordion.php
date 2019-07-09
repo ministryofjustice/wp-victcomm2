@@ -13,7 +13,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
 ?>
 
-    <div class="content">
+    <main class="content" id="maincontent">
 
         <?php if ( have_posts() ) :
 
@@ -80,7 +80,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
                                 <div class="accordion-with-icons__item <?= $expanded ?>">
                                     <div>
 
-                                        <button id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary">
+                                        <button id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary" aria-expanded="false">
 
                                             <div class="accordion-with-icons__item-summary-container">
 
@@ -112,6 +112,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
         endif; ?>
 
-    </div><!-- .content -->
+    </main><!-- .content -->
+
 
 <?php get_footer(); ?>

@@ -17,8 +17,8 @@
             },
             "default_value": "",
             "placeholder": "",
-            "prepend": "",
-            "append": "",
+            "prepend": "<h3>",
+            "append": "<\/h3>",
             "maxlength": ""
         }
     ],
@@ -78,18 +78,11 @@
                 "operator": "==",
                 "value": "publications"
             }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "policies"
-            }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [

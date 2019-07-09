@@ -16,7 +16,7 @@ $placeholderCounter = 0;
 
 ?>
 
-    <div class="content">
+    <main class="content" id="maincontent">
 
         <div <?php post_class( 'post single' ); ?>>
 
@@ -107,6 +107,6 @@ $placeholderCounter = 0;
 
         </div>
 
-    </div>
+    </main>
 
 <?php get_footer(); ?>

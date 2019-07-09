@@ -2,43 +2,43 @@
 
     <div class="footer-spacer"></div>
 
-	<div class="footer section bg-graphite">
+    <div class="footer section bg-graphite">
 
-		<div class="section-inner row">
+        <div class="section-inner row">
 
-			<?php if ( is_active_sidebar( 'footer-a' ) ) : ?>
+            <?php if ( is_active_sidebar( 'footer-a' ) ) : ?>
 
-				<div class="column column-1 one-half">
+            <div class="column column-1 one-half">
 
-					<div class="widgets">
+                <div class="widgets">
 
-						<?php dynamic_sidebar( 'footer-a' ); ?>
+                    <?php dynamic_sidebar( 'footer-a' ); ?>
 
-					</div>
+                </div>
 
-				</div>
+            </div>
 
-			<?php endif; ?><!-- .footer-a -->
+            <?php endif; ?><!-- .footer-a -->
 
-			<?php if ( is_active_sidebar( 'footer-b' ) ) : ?>
+            <?php if ( is_active_sidebar( 'footer-b' ) ) : ?>
 
-				<div class="column column-2 one-half">
+            <div class="column column-2 one-half">
 
-					<div class="widgets">
+                <div class="widgets">
 
-						<?php dynamic_sidebar( 'footer-b' ); ?>
+                    <?php dynamic_sidebar( 'footer-b' ); ?>
 
-					</div><!-- .widgets -->
+                </div><!-- .widgets -->
 
-				</div>
+            </div>
 
-			<?php endif; ?><!-- .footer-b -->
+            <?php endif; ?><!-- .footer-b -->
 
-			<div class="clear"></div>
+            <div class="clear"></div>
 
-		</div><!-- .footer-inner -->
+        </div><!-- .footer-inner -->
 
-	</div><!-- .footer -->
+    </div><!-- .footer -->
 
 <?php endif; ?>
 

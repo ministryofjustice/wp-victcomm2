@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content">
+<main class="content" id="maincontent">
 
     <div class="post single">
 
@@ -50,6 +50,6 @@
 
     </div><!-- .post -->
 
-</div><!-- .content -->
+</main><!-- .content -->
 
 <?php get_footer(); ?>

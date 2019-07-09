@@ -1,12 +1,9 @@
 <?php
-
 get_header();
-
 global $td;
-
 ?>
 
-<div class="content">
+<main class="content">
 
     <div <?php post_class( 'post single' ); ?>>
 
@@ -64,6 +61,6 @@ global $td;
 
     </div>
 
-</div>
+</main>
 
 <?php get_footer(); ?>

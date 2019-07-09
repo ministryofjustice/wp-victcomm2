@@ -6,7 +6,7 @@ $pageSummary = get_field('summary');
 
 ?>
 
-<div class="content">
+<main class="content" id="maincontent">
 
     <?php if ( have_posts() ) :
 
@@ -37,8 +37,6 @@ $pageSummary = get_field('summary');
                             the_post_thumbnail( 'post-image' );
 
                             ?>
-
-                        </figure><!-- .featured-media -->
                         <?php
                         $image_caption = getImageCaption( get_the_id(), get_post_thumbnail_id() );
 
@@ -51,6 +49,8 @@ $pageSummary = get_field('summary');
                         </figcaption>
 
                         <?php endif; ?>
+
+                        </figure><!-- .featured-media -->
 
                     </div>
                 <?php endif; ?>
@@ -84,6 +84,6 @@ $pageSummary = get_field('summary');
     endif; ?>
 
 
-</div><!-- .content -->
+</main><!-- .content -->
 
 <?php get_footer(); ?>
