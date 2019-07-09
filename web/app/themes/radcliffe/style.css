@@ -544,11 +544,6 @@ body {
     line-height: 3.5
 }
 
-.off-screen {
-    left: -100vw;
-    position: absolute;
-}
-
 .skip-link {
     background: #000;
     color: #fff;
@@ -2434,19 +2429,6 @@ ul.single-news__links {
 .single-news__links li {
     list-style-type: none;
     padding: .5em;
-}
-
-.single-news__links li:first-child {
-    border-right: 1px solid #000;
-    padding-right: 12px;
-    padding-top: 0px;
-    padding-bottom: 0px
-}
-
-.single-news__links li:last-child {
-    padding-left: 12px;
-    padding-top: 0px;
-    padding-bottom: 0px
 }
 
 

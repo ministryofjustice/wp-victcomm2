@@ -2,7 +2,7 @@
 
 <html <?php language_attributes(); ?>>
 
-<head>
+<head profile="http://gmpg.org/xfn/11">
 
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
@@ -13,7 +13,7 @@
 
 <body <?php body_class(); ?>>
 
-<nav aria-label="Skip Links" class="off-screen"><a href="#maincontent" class="maincontent skip-link">Skip to main content</a></nav>
+<nav aria-label="Skip Links"><a href="#maincontent" class="maincontent skip-link">Skip to main content</a></nav>
 
 <div class="header-search-block section hidden">
 

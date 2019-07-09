@@ -122,7 +122,7 @@ if (!function_exists('radcliffe_load_style')) {
             if ('off' !== $google_fonts) {
                 wp_enqueue_style(
                     'radcliffe_googlefonts',
-                    'https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i%7CMerriweather:300,300i,400,400i,700,700i,900,900i',
+                    'https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700|Merriweather:300,300i,400,400i,700,700i,900,900i',
                     false,
                     null
                 );
