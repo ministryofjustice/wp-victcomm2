@@ -1,7 +1,7 @@
+# Victims Commissioner
 
 ## Features
 
-- Based on [roots/bedrock](https://roots.io/bedrock)
 - Dependency management with [Composer](https://getcomposer.org)
 - Enhanced password hashing using bcrypt
 - Builds into a docker image
@@ -18,7 +18,7 @@
 
 1. Clone this repo to your local machine. Since you'll be using this as a starter for your project, you'll want to delete the `.git` directory.
     ```bash
-    git clone git@github.com:ministryofjustice/wp-template.git .
+    git clone git@github.com:ministryofjustice/wp-victcomm2.git .
     rm -rf .git
     ```
 
@@ -27,7 +27,7 @@
     cp .env.example .env
     ```
 
-    Set the `SERVER_NAME` variable – it should be your project name, and must always end with `.docker`. This is the hostname that will be used for development on your local machine.
+    Set the `SERVER_NAME` variable to `victcomm2.docker`. This is the hostname that will be used for development on your local machine.
 
 3. Build the project locally. This will install composer dependencies on your local filesystem.
     ```bash
@@ -48,11 +48,11 @@
     make run
     ```
 
-6. Once the docker image has built and is running, you should be able to access the running container by going to the hostname you specified in `.env` using your web browser.
+6. Once the docker image has built and is running, you should be able to access the running container by going to `http://victcomm2.docker/` using your web browser.
 
     You will need to run through the WordPress installation wizard in your browser.
 
-    The WordPress admin area will be accessible at `/wp/wp-admin`.
+    The WordPress admin area will be accessible at `http://victcomm2.docker/wp/wp-admin`.
 
 ## Composer + WordPress plugins
 
@@ -93,12 +93,6 @@ The private composer repository [composer.wp.dsd.io](https://composer.wp.dsd.io)
 
 Access to this repository is restricted. Refer to internal documentation for further details.
 
-## Theme
-
-Put your theme files in `web/app/themes`.
-
-Public themes can be installed using wpackagist.
-
 ### Building theme assets
 
 Theme assets can be built as part of the docker image. Add required commands to `bin/build.sh`.
@@ -135,7 +129,7 @@ To use WP-CLI, your docker container must already be running. (This will probabl
 
 When running locally for development, emails sent by WordPress are not delivered. Instead they are captured by [mailcatcher](https://mailcatcher.me/).
 
-To see emails, go to http://mail.`SERVER_NAME` (i.e. the hostname set in your `.env` file) in your browser.
+To see emails, go to http://mail.victcomm2.docker/ in your browser.
 e.g. http://mail.example.docker
 
 This will load a webmail-like interface and display all emails that WordPress has sent.
@@ -152,8 +146,4 @@ There are several `make` commands configured in the `Makefile`. These are mostly
 | `make bash`  | Open a bash shell on the WordPress docker container. The [WP-CLI](https://wp-cli.org/) is accessible as `wp`. The application must already be running (e.g. via `make run`) before this can be used. |
 | `make test`  | Run tests on the application. Out of the box this will run PHP CodeSniffer (code linter).                                                                                                            |
 ```
-## Bedrock
 
-This project is based on Bedrock. Therefore, much of the Bedrock documentation will be applicable.
-
-Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
