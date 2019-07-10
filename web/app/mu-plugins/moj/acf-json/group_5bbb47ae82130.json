@@ -78,11 +78,18 @@
                 "operator": "==",
                 "value": "publications"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "policies"
+            }
         ]
     ],
     "menu_order": 0,
     "position": "normal",
-    "style": "seamless",
+    "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -91,5 +98,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1562578845
+    "modified": 1562769119
 }
