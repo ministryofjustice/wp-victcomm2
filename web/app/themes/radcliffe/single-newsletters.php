@@ -1,17 +1,23 @@
 <?php
+
 get_header();
 
-global $post;
-setup_postdata($post);
+?>
+<main class="content" id="maincontent">
 
-$pageSummary = get_field('summary');
+<?php
 
-$reportFile = get_field('report_file');
+  global $post;
+  setup_postdata($post);
 
-$postTypeName = $post->post_type;
+  $pageSummary = get_field('summary');
 
-// template data
-$td = [
+  $reportFile = get_field('report_file');
+
+  $postTypeName = $post->post_type;
+
+  // template data
+  $td = [
 
     'pageSummary' => $pageSummary,
 
@@ -31,8 +37,11 @@ $td = [
 
     'postType' => get_post_type_object($postTypeName),
 
-];
+  ];
 
-echo template($td, 'report');
-
+  echo template($td, 'report');
+?>
+</main>
+<?php
 get_footer();
+?>

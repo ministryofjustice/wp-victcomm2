@@ -1,5 +1,18 @@
 <?php
 
+get_header();
+
+$pageSummary = get_field('summary');
+
+?>
+
+<main class="content" id="maincontent">
+
+
+
+
+<?php
+
 $style_attr = '';
 
 if ( has_post_thumbnail() ) {
@@ -33,7 +46,7 @@ if ( has_post_thumbnail() ) {
 			
 		</div>
 		
-		<h2 class="post-title"><?php the_title(); ?></h2>
+		<h1 class="post-title"><?php the_title(); ?></h1>
 				
 	</a><!-- .post-header -->
 

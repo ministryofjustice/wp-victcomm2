@@ -31,7 +31,7 @@
 						
 						</div>
 					
-						<h2 class="post-title"><?php echo basename( get_attached_file( $post->ID ) ); ?></h2>
+						<h1 class="post-title"><?php echo basename( get_attached_file( $post->ID ) ); ?></h1>
 					
 					</div><!-- .post-header -->
 					

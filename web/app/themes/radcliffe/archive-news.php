@@ -24,7 +24,7 @@ $placeholderCounter = 0;
 
                 <div class="post-header-inner section-inner">
 
-                    <h2 class="post-title">Latest news</h2>
+                    <h1 class="post-title">Latest news</h1>
 
                     <?php if(isset($td['summary'])) : ?>
 
