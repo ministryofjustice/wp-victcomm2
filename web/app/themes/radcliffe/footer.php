@@ -1,18 +1,16 @@
-<?php if ( is_active_sidebar( 'footer-a' ) || is_active_sidebar( 'footer-b') || is_active_sidebar( 'footer-c' ) ) : ?>
-
+<?php if (is_active_sidebar('footer-a') || is_active_sidebar('footer-b') || is_active_sidebar('footer-c')) : ?>
     <div class="footer-spacer"></div>
 
     <div class="footer section bg-graphite">
 
         <div class="section-inner row">
 
-            <?php if ( is_active_sidebar( 'footer-a' ) ) : ?>
-
+            <?php if (is_active_sidebar('footer-a')) : ?>
             <div class="column column-1 one-half">
 
                 <div class="widgets">
 
-                    <?php dynamic_sidebar( 'footer-a' ); ?>
+                    <?php dynamic_sidebar('footer-a'); ?>
 
                 </div>
 
@@ -20,13 +18,12 @@
 
             <?php endif; ?><!-- .footer-a -->
 
-            <?php if ( is_active_sidebar( 'footer-b' ) ) : ?>
-
+            <?php if (is_active_sidebar('footer-b')) : ?>
             <div class="column column-2 one-half">
 
                 <div class="widgets">
 
-                    <?php dynamic_sidebar( 'footer-b' ); ?>
+                    <?php dynamic_sidebar('footer-b'); ?>
 
                 </div><!-- .widgets -->
 

@@ -4,6 +4,7 @@ get_header();
 
 global $post;
 global $vcTemplateData;
+global $wp_query;
 
 $td = [
     'archive-text' => ($archiveText    = get_field('news_archive_text',    'option')) ?  $archiveText    : '',
@@ -18,7 +19,7 @@ $placeholderCounter = 0;
 
     <main class="content" id="maincontent">
 
-        <div <?php post_class( 'post single' ); ?>>
+        <div <?php post_class('post single'); ?>>
 
             <div class="post-header section">
 
@@ -26,8 +27,7 @@ $placeholderCounter = 0;
 
                     <h2 class="post-title">Latest news</h2>
 
-                    <?php if(isset($td['summary'])) : ?>
-
+                    <?php if (isset($td['summary'])) : ?>
                         <p class="post-summary"><?= $td['summary'] ?></p>
 
                     <?php endif; ?>
@@ -36,8 +36,7 @@ $placeholderCounter = 0;
 
             </div>
 
-            <?php if(isset($td['archive-text'])) : ?>
-
+            <?php if (isset($td['archive-text'])) : ?>
                 <div class="post-content section-inner">
 
                     <div class="archive__content"><?= $td['archive-text'] ?></div>
@@ -50,7 +49,9 @@ $placeholderCounter = 0;
 
                 <ul class="archive-news__list">
 
-                    <?php while ( have_posts() ) : the_post(); ?>
+                    <?php while (have_posts()) :
+                        the_post();
+                        ?>
 
                         <li class="archive-news__item">
 
@@ -81,13 +82,12 @@ $placeholderCounter = 0;
 
                 </ul>
 
-                <?php if ( $wp_query->max_num_pages > 1 ) : ?>
-
+                <?php if ($wp_query->max_num_pages > 1) : ?>
                     <div class="archive-news__nav">
 
-                        <?php echo get_previous_posts_link( '&laquo; ' . __( 'Previous news', 'radcliffe')  ); ?>
+                        <?php echo get_previous_posts_link('&laquo; ' . __('Previous news', 'radcliffe')); ?>
 
-                        <?php echo get_next_posts_link(  __( 'More news', 'radcliffe' ) . ' &raquo;' ); ?>
+                        <?php echo get_next_posts_link(__('More news', 'radcliffe') . ' &raquo;'); ?>
 
                     </div>
 
@@ -95,8 +95,7 @@ $placeholderCounter = 0;
 
             </div>
 
-            <?php if(isset($td['archive-outro-text'])) : ?>
-
+            <?php if (isset($td['archive-outro-text'])) : ?>
                 <div class="post-content section-inner">
 
                     <div class="archive__content"><?= $td['archive-outro-text'] ?></div>
