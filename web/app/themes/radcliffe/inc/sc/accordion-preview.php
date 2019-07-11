@@ -5,5 +5,4 @@ add_shortcode('accordion-preview', function ($atts) {
         'post-id' => $atts['post-id'],
         'accordion-with-icon' => get_field('icon_accordion', $atts['post-id'])
     ], 'accordion-preview');
-
 });
