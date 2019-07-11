@@ -15,7 +15,7 @@ $number = 1;
         $fullLink = $permaLink;
         $fullLink .= "?accordion-section=" . urlencode($accordion['title']);
         $fullLink .= '#' . urlencode($accordion['title']);
-    ?>
+        ?>
     <li class="accordion-with-icons__item">
         <a href="<?= $fullLink ?>" class="accordion-with-icons__item-summary-container">
             <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon-small') ?></div>

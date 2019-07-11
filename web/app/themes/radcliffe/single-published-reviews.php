@@ -31,7 +31,7 @@ $td = [
 
     'postType' => get_post_type_object($postTypeName),
 
-    'postDate' => get_the_date(get_option( 'date_format' )),
+    'postDate' => get_the_date(get_option('date_format')),
 
 ];
 
