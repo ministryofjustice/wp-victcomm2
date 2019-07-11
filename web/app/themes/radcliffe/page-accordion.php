@@ -13,106 +13,101 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
 ?>
 
-    <main class="content" id="maincontent">
+<main class="content" id="maincontent">
 
-        <?php if ( have_posts() ) :
+    <?php if (have_posts()) :
+        while (have_posts()) :
+            the_post(); ?>
+            <div <?php post_class('post single'); ?>>
 
-            while ( have_posts() ) : the_post(); ?>
+                <?php if (has_post_thumbnail()) : ?>
+                    <div class="featured-media"
+                         style="background-image: url( <?php the_post_thumbnail_url($post->ID, 'post-image'); ?> );">
 
-                <div <?php post_class( 'post single' ); ?>>
+                        <?php
 
-                    <?php if ( has_post_thumbnail() ) : ?>
+                        the_post_thumbnail('post-image');
 
-                        <div class="featured-media" style="background-image: url( <?php the_post_thumbnail_url( $post->ID, 'post-image' ); ?> );">
+                        $image_caption = get_post(get_post_thumbnail_id())->post_excerpt;
 
-                            <?php
+                        if ($image_caption) : ?>
+                            <div class="media-caption-container">
 
-                            the_post_thumbnail( 'post-image' );
+                                <p class="media-caption"><?php echo $image_caption; ?></p>
 
-                            $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
+                            </div>
 
-                            if ( $image_caption ) : ?>
+                        <?php endif; ?>
 
-                                <div class="media-caption-container">
+                    </div><!-- .featured-media -->
 
-                                    <p class="media-caption"><?php echo $image_caption; ?></p>
+                <?php endif; ?>
 
-                                </div>
+                <div class="post-header section">
 
-                            <?php endif; ?>
+                    <div class="post-header-inner section-inner thin">
 
-                        </div><!-- .featured-media -->
+                        <?php the_title('<h1 class="post-title">', '</h1>'); ?>
 
-                    <?php endif; ?>
+                        <?php if ($pageSummary) : ?>
+                            <p class="post-summary"><?= $pageSummary ?></p>
+                        <?php endif; ?>
 
-                    <div class="post-header section">
+                    </div><!-- .post-header-inner section-inner -->
 
-                        <div class="post-header-inner section-inner thin">
+                </div><!-- .post-header section -->
 
-                            <?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
+                <div class="post-content section-inner thin">
 
-                            <?php if($pageSummary) : ?>
-                                <p class="post-summary"><?= $pageSummary ?></p>
-                            <?php endif; ?>
+                    <?php the_content(); ?>
 
-                        </div><!-- .post-header-inner section-inner -->
+                    <div class="clear"></div>
 
-                    </div><!-- .post-header section -->
+                    <?php wp_link_pages('before=<p class="page-links">' . __('Pages:', 'radcliffe') . ' &after=</p>&seperator= <span class="sep">/</span> '); ?>
 
-                    <div class="post-content section-inner thin">
+                    <div class="accordion-with-icons">
 
-                        <?php the_content(); ?>
+                        <?php foreach ($accordions as $accordion) :
+                            $encodedTitle = urlencode($accordion['title']);
 
-                        <div class="clear"></div>
-
-                        <?php wp_link_pages('before=<p class="page-links">' . __( 'Pages:', 'radcliffe' ) . ' &after=</p>&seperator= <span class="sep">/</span> '); ?>
-
-                        <div class="accordion-with-icons">
-
-                            <?php foreach ($accordions as $accordion) :
-
-                                $encodedTitle = urlencode($accordion['title']);
-
-                                $expanded = ($accordionSectionQuery == $encodedTitle) ? 'accordion-with-icons__item--expanded' : '';
+                            $expanded = ($accordionSectionQuery == $encodedTitle) ? 'accordion-with-icons__item--expanded' : '';
 
                             ?>
 
-                                <div class="accordion-with-icons__item <?= $expanded ?>">
-                                    <div>
+                            <div class="accordion-with-icons__item <?= $expanded ?>">
+                                <div>
 
-                                        <button id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary" aria-expanded="false">
+                                    <button id="<?= $encodedTitle ?>" class="accordion-with-icons__item-summary"
+                                            aria-expanded="false">
 
-                                            <div class="accordion-with-icons__item-summary-container">
+                                        <div class="accordion-with-icons__item-summary-container">
 
-                                                <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon-medium') ?></div>
+                                            <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon-medium') ?></div>
 
-                                                <h3 class="accordion-with-icons__item-title"><?= $accordion['title'] ?></h3>
+                                            <h3 class="accordion-with-icons__item-title"><?= $accordion['title'] ?></h3>
 
-                                            </div>
+                                        </div>
 
-                                        </button>
+                                    </button>
 
-                                        <div class="accordion-with-icons__item-content"><?= $accordion['content'] ?></div>
-
-                                    </div>
+                                    <div class="accordion-with-icons__item-content"><?= $accordion['content'] ?></div>
 
                                 </div>
 
-                            <?php endforeach; ?>
+                            </div>
 
-                        </div>
+                        <?php endforeach; ?>
 
                     </div>
 
-                </div><!-- .post -->
+                </div>
 
-                <?php
+            </div><!-- .post -->
 
-            endwhile;
+        <?php endwhile; ?>
+    <?php endif; ?>
 
-        endif; ?>
-
-    </main><!-- .content -->
+</main><!-- .content -->
 
 
 <?php get_footer(); ?>

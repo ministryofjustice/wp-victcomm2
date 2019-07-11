@@ -18,7 +18,6 @@
 
                 <?php
                 if (is_search()) {
-
                     global $wp_query;
 
                     $numberOfResults = $wp_query->found_posts;
@@ -26,7 +25,6 @@
                     printf(__('%u results for: %s', 'radcliffe'), $numberOfResults, get_search_query());
 
                     if (function_exists('relevanssi_didyoumean')) {
-
                         relevanssi_didyoumean(
                             get_search_query(),
                             '<p class="search-results-page-form__did-you-mean">Did you mean: ',

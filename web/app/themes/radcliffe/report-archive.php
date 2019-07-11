@@ -31,7 +31,8 @@ $td = $vcTemplateData;
             <div class="archive__content"><?= $td['archive-text'] ?></div>
 
             <ul class="archive__list">
-                <?php while (have_posts()) : the_post();
+                <?php while (have_posts()) :
+                    the_post();
                     $postType = get_post_type_object(get_post_type());
 
                     $postTypeName = $postType->labels->singular_name;
