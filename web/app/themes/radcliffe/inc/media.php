@@ -8,13 +8,11 @@
 add_action('admin_init', function () {
 
     wp_create_category('Placeholder');
-
 });
 
 add_action('init', function () {
 
     register_taxonomy_for_object_type('category', 'attachment');
-
 });
 
 // Ensure that the `archive-news` image size is available for PDF thumbnails as well
@@ -23,7 +21,6 @@ add_filter('fallback_intermediate_image_sizes', function ($fallback_sizes, $meta
     $fallback_sizes[] = 'archive-news';
 
     return $fallback_sizes;
-
 }, 10, 2);
 
 // Allow user to select only PDFs in the media library
@@ -70,7 +67,6 @@ function getImageCaption($postId, $imageId)
     $caption = '';
 
     switch (get_field('caption_text', $postId)) {
-
         case 'Image default':
             $caption = wp_get_attachment_caption($imageId);
             break;
