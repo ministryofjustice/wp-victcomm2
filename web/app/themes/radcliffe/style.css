@@ -2809,17 +2809,9 @@ h2.accordion-with-icons__item-title {
     display: block;
 }
 
-.accordion-with-icons__item-content h2 {
+.accordion-with-icons__item-content h4 {
     font-family: Barlow, sans-serif;
-}
-
-.accordion-with-icons__item-content h3 {
-    font-family: Barlow, sans-serif;
-    font-size: 1.1em;
-}
-
-.accordion-with-icons__item-content h3 .advice {
-    font-family: Barlow, sans-serif;
+    font-size: 1em;
 }
 
 ol.accordion-with-icons--preview {
@@ -2846,7 +2838,7 @@ ol.accordion-with-icons--preview {
     box-shadow: none;
 }
 
-.accordion-with-icons--preview h2.accordion-with-icons__item-title {
+.accordion-with-icons--preview h3.accordion-with-icons__item-title {
     border: 0;
     color: #a60f51;
     font-family: Barlow, sans-serif;
@@ -2859,7 +2851,7 @@ ol.accordion-with-icons--preview {
     text-decoration: none;
 }
 
-.accordion-with-icons--preview h2.accordion-with-icons__item-title span:hover {
+.accordion-with-icons--preview h3.accordion-with-icons__item-title span:hover {
     -webkit-box-shadow: 0 1px 0 0 #a60f51;
     box-shadow: 0 1px 0 0 #a60f51;
 }
@@ -3513,13 +3505,13 @@ ol.accordion-with-icons--preview {
         display: none;
     }
     /* accordion template */
-    .post-content h2.accordion-with-icons__item-title {
+    .post-content h3.accordion-with-icons__item-title {
         margin: auto;
         margin-left: -25px;
         padding: .25em;
         padding-left: 1.6em;
     }
-    .accordion-with-icons--preview h2.accordion-with-icons__item-title {
+    .accordion-with-icons--preview h3.accordion-with-icons__item-title {
         padding-left: 2em;
     }
     .accordion-with-icons__item-icon {
