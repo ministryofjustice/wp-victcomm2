@@ -84,8 +84,7 @@ $accordionSectionQuery = (isset($_GET['accordion-section'])) ? urlencode($_GET['
 
                                             <div class="accordion-with-icons__item-icon"><?= wp_get_attachment_image($accordion['icon']['id'], 'accordion-icon-medium') ?></div>
 
-                                            <h3 class="accordion-with-icons__item-title"><?= $accordion['title'] ?></h3>
-
+                                                <h2 class="accordion-with-icons__item-title"><?= $accordion['title'] ?></h2>
                                         </div>
 
                                     </button>

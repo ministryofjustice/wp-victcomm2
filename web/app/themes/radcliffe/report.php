@@ -3,7 +3,7 @@ get_header();
 global $td;
 ?>
 
-<main class="content">
+<main class="content" id="maincontent">
 
     <div <?php post_class('post single'); ?>>
 
@@ -16,7 +16,7 @@ global $td;
 
                 <?php endif; ?>
 
-                <?php the_title('<h2 class="post-title">', '</h2>'); ?>
+                <?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 
                 <?php if ($td['pageSummary']) : ?>
                     <p class="post-summary"><?= $td['pageSummary'] ?></p>

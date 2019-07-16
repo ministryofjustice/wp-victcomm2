@@ -260,7 +260,6 @@ input[type="search"]::-webkit-search-results-decoration {
     margin: 1em 0;
     padding: .5em 1.4em;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
 .post-content a.call-to-action--external {
@@ -582,7 +581,6 @@ body {
     font-family: Merriweather, serif;
     font-size: 2em;
     line-height: 1;
-    text-transform: uppercase;
     margin-right: auto;
     margin-bottom: 0;
     margin-top: 0;
@@ -695,12 +693,11 @@ body {
     color: #fff;
     display: block;
     font-family: Barlow, sans-serif;
-    font-size: 0.775em;
+    font-size: .9em;
     font-weight: 500;
     padding: 13px 15px;
     text-decoration: none;
     text-decoration-left: none;
-    text-transform: uppercase;
 }
 
 .main-menu>li>a {
@@ -1037,7 +1034,6 @@ a.post-header:hover .post-title {
 }
 
 .post-meta-top {
-    text-transform: uppercase;
     color: #FFF;
     font-size: 0.9em;
     letter-spacing: 1px;
@@ -1176,7 +1172,6 @@ a.post-header .post-title {
 .page-links {
     font-family: Barlow, sans-serif;
     font-size: 1rem;
-    text-transform: uppercase;
     font-weight: 700;
     color: #666;
 }
@@ -1217,7 +1212,6 @@ a.post-header .post-title {
 .meta-title {
     font-size: 13px;
     font-weight: 700;
-    text-transform: uppercase;
     margin-bottom: 30px;
     color: #767676;
 }
@@ -1316,7 +1310,6 @@ a.post-header .post-title {
 .post-content h6 {
     font-size: 16px;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
@@ -1342,7 +1335,6 @@ a.post-header .post-title {
     font-size: 0.65em;
     line-height: 140%;
     font-weight: 800;
-    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -1558,12 +1550,14 @@ figure {
     width: 100vw;
 }
 
+
 /*.post-content .alignwide {
 	margin: 2.5em 0;
 	margin-left: -150px;
 	max-width: 1040px;
 	width: 1040px;
 }*/
+
 
 /* Tables --------------------------------------- */
 
@@ -1628,7 +1622,6 @@ figure {
     font-size: 0.9rem;
     line-height: 1;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px 12px;
     background: #a60f51;
@@ -1933,7 +1926,10 @@ input[type="button"] {
     width: 100%;
 }
 
+
 /* -------------------------------------------------------------------------------- */
+
+
 /*	8. Comments
 /* -------------------------------------------------------------------------------- */
 
@@ -1947,7 +1943,6 @@ input[type="button"] {
 .comment-reply-title {
     font-size: 1.6em;
     font-weight: 800;
-    text-transform: uppercase;
     text-align: center;
 }
 
@@ -1955,7 +1950,6 @@ input[type="button"] {
     margin-top: 12px;
     font-size: 0.9em;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .add-comment-title a:hover {
@@ -2019,6 +2013,8 @@ li.comment {
 
 
 /* -------------------------------------------------------------------------------- */
+
+
 /*	9. Pagination
 /* -------------------------------------------------------------------------------- */
 
@@ -2057,7 +2053,6 @@ li.comment {
     text-align: center;
     padding: 75px 0;
     background: #EEE;
-    text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 1px;
     color: #250e3d;
@@ -2069,6 +2064,8 @@ li.comment {
 
 
 /* -------------------------------------------------------------------------------- */
+
+
 /*	10. Page & Page Templates
 /* -------------------------------------------------------------------------------- */
 
@@ -2080,7 +2077,6 @@ li.comment {
     font-family: Barlow, sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
-    text-transform: uppercase;
     font-size: 0.8em;
 }
 
@@ -2228,7 +2224,6 @@ h3.latest-news-item__title a {
     font-family: Barlow, sans-serif;
     font-size: 14px;
     line-height: 1;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
     position: absolute;
@@ -2276,10 +2271,6 @@ a.archive__list-element-link {
 
 .list-item-meta>* {
     margin-right: .5em;
-}
-
-.list-item-meta__type {
-    text-transform: uppercase;
 }
 
 .list-item-meta__type-link {
@@ -2391,7 +2382,6 @@ a.archive-news__item-button:hover {
 
 .ab-block-profile .ab-profile-title {
     opacity: 1;
-    text-transform: uppercase;
     font-weight: 600;
 }
 
@@ -2434,6 +2424,8 @@ ul.single-news__links {
 
 
 /* -------------------------------------------------------------------------------- */
+
+
 /*	10. Search
 /* -------------------------------------------------------------------------------- */
 
@@ -2664,6 +2656,7 @@ label.search-term-input-label {
     opacity: 1;
 }
 
+
 /* Report --------------------------------------- */
 
 .report {
@@ -2710,6 +2703,7 @@ a.report__icon {
 .report__find-more-link {
     text-transform: lowercase;
 }
+
 
 /* Accordion --------------------------------------- */
 
@@ -2765,12 +2759,13 @@ a.report__icon {
     display: none;
 }
 
-h3.accordion-with-icons__item-title {
+h2.accordion-with-icons__item-title {
     align-items: center;
     border: 1px solid rgb(200, 195, 207);
     border-radius: 2em;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+    font-family: Barlow, sans-serif;
     color: #250e3d;
     display: flex;
     font-size: 1.2em;
@@ -2814,17 +2809,9 @@ h3.accordion-with-icons__item-title {
     display: block;
 }
 
-.accordion-with-icons__item-content h2 {
+.accordion-with-icons__item-content h4 {
     font-family: Barlow, sans-serif;
-}
-
-.accordion-with-icons__item-content h3 {
-    font-family: Barlow, sans-serif;
-    font-size: 1.1em;
-}
-
-.accordion-with-icons__item-content h3 .advice {
-    font-family: Barlow, sans-serif;
+    font-size: 1em;
 }
 
 ol.accordion-with-icons--preview {
@@ -2922,7 +2909,6 @@ ol.accordion-with-icons--preview {
 .widget-title {
     font-family: Barlow, sans-serif;
     font-size: 0.9rem;
-    text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 20px;
     color: #222;
@@ -3060,7 +3046,6 @@ ol.accordion-with-icons--preview {
     font-size: 0.9em;
     line-height: normal;
     font-weight: 700;
-    text-transform: uppercase;
     padding: 3% 2% 1.75%;
     border-bottom: 1px solid #eee;
     border-top: 1px solid #eee;
@@ -3088,7 +3073,6 @@ ol.accordion-with-icons--preview {
     font-family: Barlow, sans-serif;
     font-size: 0.725em;
     font-weight: 700;
-    text-transform: uppercase;
     color: #666;
 }
 
@@ -3096,6 +3080,7 @@ ol.accordion-with-icons--preview {
     text-decoration: none;
     color: #a60f51;
 }
+
 
 /* Widget search form --------------------------------------- */
 
@@ -3141,7 +3126,6 @@ ol.accordion-with-icons--preview {
 .widget_nav_menu a {
     color: #fff;
     font-family: Barlow, sans-serif;
-    text-transform: uppercase;
 }
 
 .widget_nav_menu li:before {
@@ -3179,6 +3163,8 @@ ol.accordion-with-icons--preview {
 
 
 /* -------------------------------------------------------------------------------- */
+
+
 /*	12. Credits
 /* -------------------------------------------------------------------------------- */
 
@@ -3194,14 +3180,16 @@ ol.accordion-with-icons--preview {
 .credits p {
     font-size: 0.8em;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .credits {
     display: none;
 }
 
+
 /* -------------------------------------------------------------------------------- */
+
+
 /*	13. Is there anything wrong with this page?
 /* -------------------------------------------------------------------------------- */
 
@@ -3350,7 +3338,6 @@ ol.accordion-with-icons--preview {
         margin-right: 8px;
         position: relative;
         text-align: right;
-        text-transform: uppercase;
         top: -1px;
     }
     .nav-toggle .close {
@@ -3405,9 +3392,6 @@ ol.accordion-with-icons--preview {
         cursor: initial;
         background: initial;
         pointer-events: none;
-    }
-    .mobile-menu .menu-item {
-        text-transform: uppercase;
     }
     .mobile-menu .sub-menu {
         margin-top: 0;

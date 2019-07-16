@@ -15,7 +15,7 @@ $td = $vcTemplateData;
 
             <div class="post-header-inner section-inner thin">
 
-                <h2 class="post-title"><?= post_type_archive_title() ?></h2>
+                <h1 class="post-title"><?= post_type_archive_title() ?></h1>
 
                 <?php if (isset($td['summary']) && $td['summary']) : ?>
                     <p class="post-summary"><?= $td['summary'] ?></p>
