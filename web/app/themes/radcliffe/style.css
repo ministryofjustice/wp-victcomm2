@@ -849,7 +849,7 @@ ul.show-sub-menu {
     left: 50%;
     opacity: 1;
     top: 1.25em;
-    z-index: 2;
+    z-index: 110;
 }
 
 .main-menu .sub-menu {

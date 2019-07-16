@@ -5,22 +5,20 @@ global $td;
 
 <main class="content" id="maincontent">
 
-    <div <?php post_class( 'post single' ); ?>>
+    <div <?php post_class('post single'); ?>>
 
         <div class="post-header section">
 
             <div class="post-header-inner section-inner thin">
 
-                <?php if(isset($td['postDate']) && $td['postDate']) : ?>
-
+                <?php if (isset($td['postDate']) && $td['postDate']) : ?>
                     <p class="post-date"><?= $td['postDate'] ?></p>
 
                 <?php endif; ?>
 
                 <?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
 
-                <?php if($td['pageSummary']) : ?>
-
+                <?php if ($td['pageSummary']) : ?>
                     <p class="post-summary"><?= $td['pageSummary'] ?></p>
 
                 <?php endif; ?>

@@ -8,68 +8,64 @@ $pageSummary = get_field('summary');
 
 <main class="content" id="maincontent">
 
-	<?php if ( have_posts() ) :
+    <?php if (have_posts()) :
+        while (have_posts()) :
+            the_post(); ?>
+            <div <?php post_class('post single'); ?>>
 
-		while ( have_posts() ) : the_post(); ?>
+                <?php if (has_post_thumbnail()) : ?>
+                    <div class="featured-media"
+                         style="background-image: url( <?php the_post_thumbnail_url($post->ID, 'post-image'); ?> );">
 
-			<div <?php post_class( 'post single' ); ?>>
+                        <?php
 
-				<?php if ( has_post_thumbnail() ) : ?>
+                        the_post_thumbnail('post-image');
 
-					<div class="featured-media" style="background-image: url( <?php the_post_thumbnail_url( $post->ID, 'post-image' ); ?> );">
+                        $image_caption = get_post(get_post_thumbnail_id())->post_excerpt;
 
-						<?php
+                        if ($image_caption) :
+                            ?>
 
-						the_post_thumbnail( 'post-image' );
+                            <div class="media-caption-container">
+                                <p class="media-caption"><?php echo $image_caption; ?></p>
+                            </div>
 
-						$image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
+                        <?php endif; ?>
 
-						if ( $image_caption ) :
-							?>
+                    </div><!-- .featured-media -->
 
-							<div class="media-caption-container">
-								<p class="media-caption"><?php echo $image_caption; ?></p>
-							</div>
+                <?php endif; ?>
 
-						<?php endif; ?>
+                <div class="post-header section">
 
-					</div><!-- .featured-media -->
+                    <div class="post-header-inner section-inner thin">
 
-				<?php endif; ?>
+                        <?php the_title('<h1 class="post-title">', '</h1>'); ?>
 
-				<div class="post-header section">
-
-					<div class="post-header-inner section-inner thin">
-
-						<?php the_title( '<h1 class="post-title">', '</h1>' ); ?>
-
-                        <?php if($pageSummary) : ?>
+                        <?php if ($pageSummary) : ?>
                             <p class="post-summary"><?= $pageSummary ?></p>
                         <?php endif; ?>
 
-					</div><!-- .post-header-inner section-inner -->
+                    </div><!-- .post-header-inner section-inner -->
 
-				</div><!-- .post-header section -->
+                </div><!-- .post-header section -->
 
-				<div class="post-content section-inner thin">
+                <div class="post-content section-inner thin">
 
-					<?php the_content(); ?>
+                    <?php the_content(); ?>
 
-					<div class="clear"></div>
+                    <div class="clear"></div>
 
-					<?php wp_link_pages('before=<p class="page-links">' . __( 'Pages:', 'radcliffe' ) . ' &after=</p>&seperator= <span class="sep">/</span> '); ?>
+                    <?php wp_link_pages('before=<p class="page-links">' . __('Pages:', 'radcliffe') . ' &after=</p>&seperator= <span class="sep">/</span> '); ?>
 
-				</div>
+                </div>
 
-			</div><!-- .post -->
+            </div><!-- .post -->
 
-			<?php
+        <?php endwhile; ?>
+    <?php endif; ?>
 
-		endwhile;
-
-	endif; ?>
-
-	<div class="clear"></div>
+    <div class="clear"></div>
 
 </main><!-- .content -->
 

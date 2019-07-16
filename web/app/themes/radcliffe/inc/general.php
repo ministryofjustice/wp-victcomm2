@@ -74,7 +74,8 @@ if (!function_exists('radcliffe_body_post_classes')) {
 if (!function_exists('radcliffe_admin_css')) {
 
     function radcliffe_admin_css()
-    { ?>
+    {
+        ?>
         <style type="text/css">
             #postimagediv #set-post-thumbnail img {
                 max-width: 100%;
@@ -146,17 +147,17 @@ function isPublication($postId)
 add_action('save_post', function ($postId, $post, $update) {
 
     if (isPublication($postId)) {
-
         $image = new Imagick();
 
         if ($reportFile = get_field('report_file', $postId)) {
-
             if ($reportFilePath = get_attached_file($reportFile['id'])) {
-
                 $image->pingImage($reportFilePath);
 
-                update_post_meta($postId, 'report_file_size',
-                    convertByteSizeToHumanReadable($reportFile['filesize']));
+                update_post_meta(
+                    $postId,
+                    'report_file_size',
+                    convertByteSizeToHumanReadable($reportFile['filesize'])
+                );
 
                 $numberOfPages = $image->getNumberImages();
 
@@ -169,7 +170,6 @@ add_action('save_post', function ($postId, $post, $update) {
         }
 
     }
-
 }, 10, 3);
 
 function template($data, $slug, $name = '')
@@ -202,13 +202,11 @@ function partial($data, $slug, $name = '')
 add_action('pre_get_posts', function ($query) {
 
     if ($query->is_main_query() && is_post_type_archive(getPublicationPostTypesArray())) {
-
         $query->set('posts_per_page', '-1');
 
     }
 
     if ($query->is_main_query() && !is_admin() && is_post_type_archive('news')) {
-
         $query->set('order', 'DESC');
         $query->set('posts_per_page', '9');
 

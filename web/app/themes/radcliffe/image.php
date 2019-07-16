@@ -62,5 +62,5 @@
 	</div><!-- .post -->
 
 </main><!-- .content -->
-		
+
 <?php get_footer(); ?>

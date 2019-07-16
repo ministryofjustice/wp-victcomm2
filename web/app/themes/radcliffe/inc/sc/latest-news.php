@@ -10,11 +10,9 @@ add_shortcode('latest_news', function ($atts) {
     ]);
 
     if ($the_query->have_posts()) {
-
         $archiveLink = get_post_type_archive_link('news');
 
         while ($the_query->have_posts()) {
-
             $the_query->the_post();
 
             $output .= partial([
@@ -30,7 +28,6 @@ add_shortcode('latest_news', function ($atts) {
         wp_reset_postdata();
 
     } else {
-
         $output = '<p>No news posts found</p>';
 
     }
