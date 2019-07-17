@@ -33,9 +33,11 @@ global $td;
                 <div class="report__left">
                     <div class="report__icon-section">
 
-                        <a href="<?= $td['downloadUrl'] ?>" class="report__icon"><?= $td['attachmentImage']; ?></a>
+                        <a href="<?= $td['downloadUrl'] ?>" class="report__icon">
+                            <?= $td['attachmentImage']; ?>
+                            <span><?= $td['userFriendlyFileName']; ?></span>
+                        </a>
                         <div class="report__meta">
-                            <p><a href="<?= $td['downloadUrl'] ?>"><?= $td['userFriendlyFileName']; ?></a></p>
                             <p><?= $td['fileType'] ?>, <?= $td['fileSize'] ?>, <?= $td['numberOfPages'] ?> pages</p>
                             <p><a href="/contact/">Contact us</a> if you need this publication in another format.</p>
                         </div>

@@ -59,7 +59,7 @@ if (!function_exists('radcliffe_load_javascript_files')) {
         if (!is_admin()) {
             wp_enqueue_script(
                 'radcliffe_global',
-                get_template_directory_uri() . '/js/global.js',
+                moj_get_asset('js'),
                 array('jquery'),
                 '',
                 true
@@ -94,25 +94,11 @@ if (!function_exists('radcliffe_load_style')) {
             $google_fonts = _x('on', 'Google Fonts: on or off', 'radcliffe');
 
             if ('off' !== $google_fonts) {
-                wp_enqueue_style(
-                    'radcliffe_googlefonts',
-                    'https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i|Merriweather:300,300i,400,400i,700,700i,900,900i',
-                    false,
-                    null
-                );
+                wp_enqueue_style('radcliffe_googlefonts', moj_get_asset('g-fonts')); // Custom stylesheet
                 $dependencies[] = 'radcliffe_googlefonts';
             }
 
-// Append date style.css was modified to stylesheet URI for cache-busting
-            $styleFilePath = get_template_directory() . '/style.css';
-            $styleFileModificationDate = filemtime($styleFilePath);
-
-            wp_enqueue_style(
-                'radcliffe_style',
-                get_template_directory_uri() . '/style.css',
-                $dependencies,
-                $styleFileModificationDate
-            );
+            wp_enqueue_style('radcliffe_style', moj_get_asset('style'), $dependencies); // Custom stylesheet
         }
     }
 
@@ -147,6 +133,43 @@ if (!function_exists('radcliffe_add_editor_styles')) {
     add_action('init', 'radcliffe_add_editor_styles');
 }
 
+
+/* ---------------------------------------------------------------------------------------------
+RESOLVE ASSET PATHS
+--------------------------------------------------------------------------------------------- */
+
+/**
+ * This function uses Laravel Mix, in particular, the mix-manifest.json file.
+ * The manifest file is converted to an array and distributed using keys described as $handles
+ *
+ * @param $handle
+ * @return bool|string
+ */
+function moj_get_asset($handle)
+{
+    $get_assets = file_get_contents(get_template_directory() . '/dist/mix-manifest.json');
+    $manifest = json_decode($get_assets, true);
+
+    $assets = array(
+        'style' => '/dist' . $manifest['/css/style.min.css'],
+        'js' => '/dist' . $manifest['/js/main.min.js'],
+        'js-customizer' => '/dist' . $manifest['/js/theme-customizer.min.js'],
+        'g-fonts' => '//fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i|Merriweather:300,300i,400,400i,700,700i,900,900i'
+    );
+
+    if (strpos($assets[$handle], '//') === 0) {
+        return $assets[$handle];
+    }
+
+    // create the file system path for the file requested.
+    $file_system_path = get_template_directory() . strstr($assets[$handle], '?', true);
+
+    if (file_exists($file_system_path)) {
+        return get_template_directory_uri() . $assets[$handle];
+    }
+
+    return false;
+}
 
 /* ---------------------------------------------------------------------------------------------
 ADD FOOTER WIDGET AREAS

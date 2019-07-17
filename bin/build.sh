@@ -10,3 +10,13 @@ set -e
 # Install PHP dependencies (WordPress, plugins, etc.)
 composer install
 
+
+# Build theme assets
+# ~ enter theme path and uncomment the following commands:
+
+cd web/app/themes/radcliffe
+npm install
+npm run production
+rm -rf node_modules
+cd ../../../..
+

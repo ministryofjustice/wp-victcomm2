@@ -390,6 +390,7 @@ body a,
 .post-header,
 .post-title,
 .search-form #s,
+.search-form #s-mob,
 .archive-nav a {
     transition: all 0.3s ease-in-out;
 }
@@ -587,7 +588,7 @@ body {
 }
 
 .vc-logo {
-    background-image: url('/app/themes/radcliffe/images/logo-white.png');
+  background-image: url('../images/logo-white.png');
     background-repeat: no-repeat;
     background-size: contain;
     content: '';
@@ -754,7 +755,7 @@ body {
 
 a.search-toggle {
     display: block;
-    background: url(images/icons/1x/spyglass-white.png) no-repeat center;
+  background: url(../images/icons/1x/spyglass-white.png) no-repeat center;
     background-size: 20px auto;
     height: 39px;
     padding: 0;
@@ -763,7 +764,7 @@ a.search-toggle {
 }
 
 a.search-toggle:hover {
-    background: url(images/icons/1x/spyglass-white.png) no-repeat center;
+  background: url(../images/icons/1x/spyglass-white.png) no-repeat center;
     background-size: 20px auto;
 }
 
@@ -1234,7 +1235,8 @@ a.post-header .post-title {
 .archive-news__nav a,
 .post-content a,
 .post-content p a,
-.footer a {
+.footer a,
+a.report__icon span {
     -webkit-box-shadow: 0 1px 0 0 rgba(37, 14, 61, .6);
     box-shadow: 0 1px 0 0 rgba(37, 14, 61, .6);
     padding-bottom: .1em;
@@ -1984,7 +1986,7 @@ li.comment {
     width: 32px;
     height: 32px;
     border-radius: 99px;
-    background: #a60f51 url(images/icons/1x/author-w.png) no-repeat center 7px;
+  background: #a60f51 url(../images/icons/1x/author-w.png) no-repeat center 7px;
     background-size: 16px auto;
     text-indent: -9999px;
     position: absolute;
@@ -2682,7 +2684,6 @@ label.search-term-input-label {
 }
 
 a.report__icon {
-    border: 1px solid #eee;
     -webkit-box-shadow: none;
     box-shadow: none;
     display: block;
@@ -2691,6 +2692,7 @@ a.report__icon {
 }
 
 .report__icon img {
+    border: 1px solid #eee;
     width: 100%;
 }
 
@@ -3878,27 +3880,27 @@ ol.accordion-with-icons--preview {
         /*  background-image: url(images/icons/2x/spyglass-d.png);*/
     }
     .header a.search-toggle {
-        background-image: url(images/icons/2x/spyglass-white.png);
+      background-image: url(../images/icons/2x/spyglass-white.png);
     }
     p.post-categories {
-        background-image: url(images/icons/2x/folder-g.png);
+      background-image: url(../images/icons/2x/folder-g.png);
     }
     p.post-tags {
-        background-image: url(images/icons/2x/tag-g.png);
+      background-image: url(../images/icons/2x/tag-g.png);
     }
     p.post-nav-prev {
-        background-image: url(images/icons/2x/prev-g.png);
+      background-image: url(../images/icons/2x/prev-g.png);
     }
     p.post-nav-next {
-        background-image: url(images/icons/2x/next-g.png);
+      background-image: url(../images/icons/2x/next-g.png);
     }
     .author-links a.author-link-posts {
-        background-image: url(images/icons/2x/archive-w.png);
+      background-image: url(../images/icons/2x/archive-w.png);
     }
     .author-links a.author-link-website {
-        background-image: url(images/icons/2x/home-w.png);
+      background-image: url(../images/icons/2x/home-w.png);
     }
     .bypostauthor .by-post-author {
-        background-image: url(images/icons/2x/author-w.png);
+      background-image: url(../images/icons/2x/author-w.png);
     }
 }
