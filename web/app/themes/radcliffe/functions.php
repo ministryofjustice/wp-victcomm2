@@ -34,6 +34,22 @@ require get_template_directory() . '/inc/acf-options.php';
 
 require get_template_directory() . '/inc/media.php';
 
+add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+
+/* ---------------------------------------------------------------------------------------------
+   Custom Dashboard Widget - Contact Us
+   --------------------------------------------------------------------------------------------- */
+
+function my_custom_dashboard_widgets() {
+global $wp_meta_boxes;
+ 
+wp_add_dashboard_widget('custom_help_widget', 'Contact Us', 'custom_dashboard_help');
+}
+ 
+function custom_dashboard_help() {
+echo '<p>In collaboration with the content providers, the MOJ "WordPress Gang" technically maintains this website.</p>
+<p>Need help? Contact us by email: <a href="mailto:wordpress@digital.justice.gov.uk">wordpress@digital.justice.gov.uk</a> or on Slack: <a href="https://mojdt.slack.com/messages/CH5M67XQB/">wordpress-gang</a>.</p>';
+}
 
 /* ---------------------------------------------------------------------------------------------
    SHORTCODES
