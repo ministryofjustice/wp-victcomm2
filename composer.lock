@@ -331,17 +331,17 @@
         },
         {
             "name": "ministryofjustice/wp-moj-components",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ministryofjustice/wp-moj-components.git",
-                "reference": "68210fe77b5564b9abcc4cead639c155c7ec1497"
+                "url": "https://github.com/ministryofjustice/wp-moj-components.git",
+                "reference": "504831e9555978db0beceaabf27d508050e1ced1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-68210fe77b5564b9abcc4cead639c155c7ec1497-zip-0294ca.zip",
-                "reference": "68210fe77b5564b9abcc4cead639c155c7ec1497",
-                "shasum": "e9764390432a810af9903cf79ea1bce72d056195"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-504831e9555978db0beceaabf27d508050e1ced1-zip-91bdc4.zip",
+                "reference": "504831e9555978db0beceaabf27d508050e1ced1",
+                "shasum": "aecae2f5dbd5ccb74b27823c35c5d56306e46266"
             },
             "require": {
                 "composer/installers": "^1.0"
@@ -355,10 +355,10 @@
             ],
             "description": "A plugin to introduce global functions to a collection of WP sites",
             "support": {
-                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/1.1.0",
+                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/1.1.1",
                 "issues": "https://github.com/ministryofjustice/wp-moj-components/issues"
             },
-            "time": "2019-08-01T07:13:53+00:00"
+            "time": "2019-08-01T12:20:44+00:00"
         },
         {
             "name": "ministryofjustice/wp-moj-social-share",
