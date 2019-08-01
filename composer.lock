@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1449426eb51900eea19f1577f6e6c12a",
+    "content-hash": "e99dcfa974aa039a6bdd3b25bd4c2202",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -330,6 +330,37 @@
             "time": "2018-02-04T10:52:01+00:00"
         },
         {
+            "name": "ministryofjustice/wp-moj-components",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ministryofjustice/wp-moj-components.git",
+                "reference": "68210fe77b5564b9abcc4cead639c155c7ec1497"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/wp-moj-components/ministryofjustice-wp-moj-components-68210fe77b5564b9abcc4cead639c155c7ec1497-zip-0294ca.zip",
+                "reference": "68210fe77b5564b9abcc4cead639c155c7ec1497",
+                "shasum": "e9764390432a810af9903cf79ea1bce72d056195"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Damien Wilson",
+                    "email": "damien.wilson@digital.justice.gov.uk"
+                }
+            ],
+            "description": "A plugin to introduce global functions to a collection of WP sites",
+            "support": {
+                "source": "https://github.com/ministryofjustice/wp-moj-components/tree/1.1.0",
+                "issues": "https://github.com/ministryofjustice/wp-moj-components/issues"
+            },
+            "time": "2019-08-01T07:13:53+00:00"
+        },
+        {
             "name": "ministryofjustice/wp-moj-social-share",
             "version": "1.1",
             "source": {
@@ -652,15 +683,15 @@
         },
         {
             "name": "wpackagist-plugin/atomic-blocks",
-            "version": "2.0",
+            "version": "2.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/atomic-blocks/",
-                "reference": "tags/2.0"
+                "reference": "tags/2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.2.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.2.0.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -712,7 +743,7 @@
         },
         {
             "name": "wpackagist-plugin/kadence-blocks",
-            "version": "1.5.12",
+            "version": "1.6.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/kadence-blocks/",
@@ -720,7 +751,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1561571195",
+                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1564158582",
                 "reference": null,
                 "shasum": null
             },
