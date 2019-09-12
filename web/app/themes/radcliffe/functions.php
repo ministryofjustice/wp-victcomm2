@@ -34,15 +34,6 @@ require get_template_directory() . '/inc/acf-options.php';
 
 require get_template_directory() . '/inc/media.php';
 
-//Remove JS and CSS types
-add_action( 'template_redirect', function(){
-    ob_start( function( $buffer ){
-        $buffer = str_replace( array( 'type="text/javascript"', "type='text/javascript'", 'type="text/css"', "type='text/css'" ), '', $buffer );
-
-        return $buffer;
-    });
-});
-
 /* ---------------------------------------------------------------------------------------------
    SHORTCODES
    --------------------------------------------------------------------------------------------- */
