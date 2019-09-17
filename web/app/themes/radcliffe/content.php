@@ -42,9 +42,8 @@ if (has_post_thumbnail()) {
 			if ( is_sticky() ) echo '<span class="sep">/</span> ' . __( 'Sticky', 'radcliffe' ); ?>
 			
 		</div>
-		
-		<h1 class="post-title"><?php the_title(); ?></h1>
-				
-	</a><!-- .post-header -->
+    <a id="maincontent">
+    <h1 class="post-title"><?php the_title(); ?></h1>   
+    </a><!-- .post-header -->
 
 </div><!-- .post -->
