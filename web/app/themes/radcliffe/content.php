@@ -43,7 +43,7 @@ if (has_post_thumbnail()) {
 			
 		</div>
     <a id="maincontent">
-    <h1 class="post-title"><?php the_title(); ?></h1>   
+    <h1 class="post-title"><?php the_title(); ?></h1>
     </a><!-- .post-header -->
 
 </div><!-- .post -->
