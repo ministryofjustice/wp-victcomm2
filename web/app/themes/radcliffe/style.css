@@ -3482,6 +3482,9 @@ ol.accordion-with-icons--preview {
     .one-half {
         width: 100%;
     }
+    .hide-mobile {
+      display: none;
+    }
 }
 
 @media ( max-width: 766px) {
