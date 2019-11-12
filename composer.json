@@ -22,7 +22,7 @@
         "php": ">=7.1",
         "composer/installers": "^1.4",
         "vlucas/phpdotenv": "^2.0.1",
-        "johnpbloch/wordpress": "*",
+        "johnpbloch/wordpress": "5.2.4",
         "koodimonni-language/core-en_gb": "*",
         "oscarotero/env": "^1.1.0",
         "roots/wp-password-bcrypt": "*",
@@ -31,14 +31,14 @@
         "wpackagist-plugin/atomic-blocks": "*",
         "wpackagist-plugin/kadence-blocks": "^1.3",
         "wpackagist-plugin/simple-301-redirects": "*",
-      "wpackagist-plugin/fast-user-switching": "*",
+        "wpackagist-plugin/fast-user-switching": "*",
         "wpackagist-plugin/wp-browser-update": "*",
         "relevanssi/relevanssi-premium": "*",
         "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5.3",
-      "ministryofjustice/wp-user-roles": "*",
-      "ministryofjustice/wp-moj-social-share": "*",
-      "ministryofjustice/wp-moj-components": "*",
-      "ministryofjustice/cookie-compliance-for-wordpress": "*"
+        "ministryofjustice/wp-user-roles": "*",
+        "ministryofjustice/wp-moj-social-share": "*",
+        "ministryofjustice/wp-moj-components": "*",
+        "ministryofjustice/cookie-compliance-for-wordpress": "*"
     },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.0.2"
