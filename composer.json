@@ -34,7 +34,7 @@
         "wpackagist-plugin/fast-user-switching": "*",
         "wpackagist-plugin/wp-browser-update": "*",
         "relevanssi/relevanssi-premium": "*",
-        "wpackagist-plugin/google-analytics-dashboard-for-wp": "^5.3",
+        "wpackagist-plugin/google-analytics-dashboard-for-wp": "*",
         "ministryofjustice/wp-user-roles": "*",
         "ministryofjustice/wp-moj-social-share": "*",
         "ministryofjustice/wp-moj-components": "*",
