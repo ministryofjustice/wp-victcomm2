@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de0edd4ea9e4133cee802e0914816f1d",
+    "content-hash": "741dfdb4ff48fa2c33818dbdd3cf2f50",
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
@@ -745,16 +745,34 @@
             "time": "2019-01-29T11:11:52+00:00"
         },
         {
-            "name": "wpackagist-plugin/atomic-blocks",
-            "version": "2.5.1",
+            "name": "wpackagist-plugin/analytify-analytics-dashboard-widget",
+            "version": "1.1.2",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/atomic-blocks/",
-                "reference": "tags/2.5.1"
+                "url": "https://plugins.svn.wordpress.org/analytify-analytics-dashboard-widget/",
+                "reference": "tags/1.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.2.5.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/analytify-analytics-dashboard-widget.1.1.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/analytify-analytics-dashboard-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/atomic-blocks",
+            "version": "2.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/atomic-blocks/",
+                "reference": "tags/2.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/atomic-blocks.2.5.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -779,24 +797,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/fast-user-switching/"
-        },
-        {
-            "name": "wpackagist-plugin/google-analytics-dashboard-for-wp",
-            "version": "6.0.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/google-analytics-dashboard-for-wp/",
-                "reference": "tags/6.0.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.6.0.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/google-analytics-dashboard-for-wp/"
         },
         {
             "name": "wpackagist-plugin/kadence-blocks",
@@ -833,6 +833,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simple-301-redirects/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-analytify",
+            "version": "2.2.13",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-analytify/",
+                "reference": "tags/2.2.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-analytify.2.2.13.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-analytify/"
         },
         {
             "name": "wpackagist-plugin/wp-browser-update",
