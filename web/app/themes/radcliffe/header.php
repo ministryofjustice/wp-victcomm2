@@ -107,3 +107,31 @@
 
 </nav><!-- .mobile-menu-container -->
 <!--  <main id="maincontent">  -->
+<?php
+$banner_enabled = get_field('site_wide_banner_enabled', 'option');
+$banner_title = get_field('site_wide_banner_title', 'option');
+$banner_message = get_field('site_wide_banner_message', 'option');
+$banner_link = get_field('site_wide_banner_link', 'option');
+
+ if ($banner_enabled == true) { ?>
+<div class="site-wide-banner section">
+
+    <div class="section-inner">
+           <?php if(!empty($banner_title)){ ?>
+            <h2><?php echo $banner_title; ?></h2>
+        <?php } ?>
+
+        <?php if(!empty($banner_message)){ ?>
+            <div class="c-agency-wide-banner__content">
+                <?php echo $banner_message; ?>
+            </div>
+        <?php } ?>
+
+        <?php if(!empty($banner_link)){?>
+            <div class="banner-link">
+                <a href="<?php echo $banner_link['url']; ?>" target="<?php echo $banner_link['target']; ?>"><?php echo $banner_link['title']; ?></a>
+            </div>
+        <?php } ?>
+    </div>
+</div>
+<?php } ?>

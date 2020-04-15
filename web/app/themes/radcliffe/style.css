@@ -25,7 +25,8 @@ Theme Name: VC
   11.  Footer
   12.  Credits
   13.  Is there anything wrong with this page?
-  14.  Media Queries
+  14.  Site Wide Banner
+  15.  Media Queries
 
 ----------------------------------------------------------------------------------- */
 
@@ -3212,11 +3213,63 @@ ol.accordion-with-icons--preview {
     box-sizing: border-box;
 }
 
+/* -------------------------------------------------------------------------------- */
+
+
+/*	14. Site Wide Banner
+/* -------------------------------------------------------------------------------- */
+
+
+.site-wide-banner {
+    background: #a60f51;
+    color:white;
+}
+
+.site-wide-banner h2 {
+    color:white;
+}
+
+.site-wide-banner a {
+    color:white;
+
+    -webkit-box-shadow: 0 1px 0 0 rgba(255,255,255,1);
+    box-shadow: 0 1px 0 0 rgba(255,255,255,1);
+    padding-bottom: .1em;
+    text-decoration: none;
+}
+
+.site-wide-banner .banner-link {
+    margin-top: 1em;
+}
+
+.home .site-wide-banner {
+    background: #f6f5f7;
+    color: #250e3d;
+}
+
+.home .site-wide-banner h2 {
+    color: #a60f51;
+}
+
+.home .site-wide-banner a {
+    background: #f6f5f7;
+    color: #250e3d;
+
+    -webkit-box-shadow: 0 1px 0 0 rgba(37,14,61,1);
+    box-shadow: 0 1px 0 0 rgba(37,14,61,1);
+}
+
+.site-wide-banner.section {
+    padding: 50px 0;
+}
+
+
+
 
 /* -------------------------------------------------------------------------------- */
 
 
-/*	14. Media Queries
+/*	15. Media Queries
 /* -------------------------------------------------------------------------------- */
 
 @media (min-height: 1100px) {
