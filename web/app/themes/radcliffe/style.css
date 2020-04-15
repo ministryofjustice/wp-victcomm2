@@ -25,7 +25,8 @@ Theme Name: VC
   11.  Footer
   12.  Credits
   13.  Is there anything wrong with this page?
-  14.  Media Queries
+  14.  Site Wide Banner
+  15.  Media Queries
 
 ----------------------------------------------------------------------------------- */
 
@@ -3212,6 +3213,12 @@ ol.accordion-with-icons--preview {
     box-sizing: border-box;
 }
 
+/* -------------------------------------------------------------------------------- */
+
+
+/*	14. Site Wide Banner
+/* -------------------------------------------------------------------------------- */
+
 
 .site-wide-banner {
     background: #a60f51;
@@ -3262,7 +3269,7 @@ ol.accordion-with-icons--preview {
 /* -------------------------------------------------------------------------------- */
 
 
-/*	14. Media Queries
+/*	15. Media Queries
 /* -------------------------------------------------------------------------------- */
 
 @media (min-height: 1100px) {
