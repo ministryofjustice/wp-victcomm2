@@ -5,7 +5,7 @@ build:
 	bin/build.sh
 
 # Remove ignored git files – e.g. composer dependencies and built theme assets
-# But keep .env file, .idea directory (PhpStorm config), and uploaded media files
+# But keep .idea directory (PhpStorm config), and uploaded media files
 clean:
 	@if [ -d ".git" ]; then git clean -xdf --exclude ".env" --exclude ".idea" --exclude "web/app/uploads"; fi
 
@@ -13,17 +13,26 @@ clean:
 deep-clean:
 	@if [ -d ".git" ]; then git clean -xdf; fi
 
+# Clear the Docker cache
+docker-clean:
+	bin/clear-docker-cache.sh
+
 # Run the application
 run:
+	cp .env.example .env
 	docker-compose up
+
+# Stop the application
+down:
+	docker-compose down
+
+# Launch the application, open browser, no stdout
+launch:
+	bin/launch.sh
 
 # Open a bash shell on the running container
 bash:
 	docker-compose exec wordpress bash
-
-# from within docker; run a db import on the first .sql file found in the current directory and add an admin user
-db:
-	bin/local-db-import.sh
 
 # Run tests
 test:
