@@ -33,6 +33,7 @@
         "wpackagist-plugin/simple-301-redirects": "*",
         "wpackagist-plugin/wp-browser-update": "*",
         "relevanssi/relevanssi-premium": "*",
+        "wpackagist-plugin/wordpress-seo": "*",
         "wpackagist-plugin/wp-analytify":"*",
         "wpackagist-plugin/analytify-analytics-dashboard-widget":"*",
         "ministryofjustice/wp-user-roles": "*",
