@@ -20,7 +20,7 @@
     ],
     "require": {
         "php": ">=7.1",
-        "composer/installers": "*",
+        "composer/installers": "^1.4",
         "vlucas/phpdotenv": "^2.0.1",
         "johnpbloch/wordpress": "*",
         "koodimonni-language/core-en_gb": "*",
