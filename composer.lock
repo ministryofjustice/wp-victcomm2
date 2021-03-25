@@ -8,11 +8,11 @@
     "packages": [
         {
             "name": "acf/advanced-custom-fields-pro",
-            "version": "5.9.0",
+            "version": "5.9.5",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.9.0.zip",
-                "shasum": "6bb7818baa0e7cec664f774c106909a2483f9d3d"
+                "url": "https://composer.wp.dsd.io/dist/acf/advanced-custom-fields-pro/acf-advanced-custom-fields-pro-5.9.5.zip",
+                "shasum": "e7f66bba63e48092fa85a862425cb109158b5e47"
             },
             "type": "wordpress-plugin"
         },
@@ -144,10 +144,6 @@
                 "zend",
                 "zikula"
             ],
-            "support": {
-                "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v1.10.0"
-            },
             "funding": [
                 {
                     "url": "https://packagist.com",
@@ -166,20 +162,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.6.0",
+            "version": "5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "3055975734646c8d0b8caf7b5af168ced6ec4309"
+                "reference": "22ea3c6aa631e296c528f58a67371fb2a5e674f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/3055975734646c8d0b8caf7b5af168ced6ec4309",
-                "reference": "3055975734646c8d0b8caf7b5af168ced6ec4309",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/22ea3c6aa631e296c528f58a67371fb2a5e674f2",
+                "reference": "22ea3c6aa631e296c528f58a67371fb2a5e674f2",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.6.0",
+                "johnpbloch/wordpress-core": "5.7.0",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -201,27 +197,20 @@
                 "cms",
                 "wordpress"
             ],
-            "support": {
-                "forum": "http://wordpress.org/support/",
-                "irc": "irc://irc.freenode.net/wordpress",
-                "issues": "http://core.trac.wordpress.org/",
-                "source": "http://core.trac.wordpress.org/browser",
-                "wiki": "http://codex.wordpress.org/"
-            },
-            "time": "2020-12-08T22:34:35+00:00"
+            "time": "2021-03-09T20:32:28+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.6.0",
+            "version": "5.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "f074617dd69f466302836d1ae5de75c0bd7b6dfd"
+                "reference": "8b057056692ca196aaa7a7ddd915f29426922c6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/f074617dd69f466302836d1ae5de75c0bd7b6dfd",
-                "reference": "f074617dd69f466302836d1ae5de75c0bd7b6dfd",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/8b057056692ca196aaa7a7ddd915f29426922c6d",
+                "reference": "8b057056692ca196aaa7a7ddd915f29426922c6d",
                 "shasum": ""
             },
             "require": {
@@ -229,7 +218,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.6.0"
+                "wordpress/core-implementation": "5.7.0"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -249,14 +238,7 @@
                 "cms",
                 "wordpress"
             ],
-            "support": {
-                "forum": "https://wordpress.org/support/",
-                "irc": "irc://irc.freenode.net/wordpress",
-                "issues": "https://core.trac.wordpress.org/",
-                "source": "https://core.trac.wordpress.org/browser",
-                "wiki": "https://codex.wordpress.org/"
-            },
-            "time": "2020-12-08T22:34:23+00:00"
+            "time": "2021-03-09T20:32:23+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -306,18 +288,14 @@
             "keywords": [
                 "wordpress"
             ],
-            "support": {
-                "issues": "https://github.com/johnpbloch/wordpress-core-installer/issues",
-                "source": "https://github.com/johnpbloch/wordpress-core-installer/tree/master"
-            },
             "time": "2020-04-16T21:44:57+00:00"
         },
         {
             "name": "koodimonni-language/core-en_gb",
-            "version": "5.6",
+            "version": "5.7",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/5.6/en_GB.zip"
+                "url": "https://downloads.wordpress.org/translation/core/5.7/en_GB.zip"
             },
             "require": {
                 "koodimonni/composer-dropin-installer": ">=0.2.3"
@@ -373,25 +351,21 @@
                 }
             ],
             "description": "Install packages or a few files from packages into custom paths without overwriting existing stuff.",
-            "support": {
-                "issues": "https://github.com/Koodimonni/Composer-Dropin-Installer/issues",
-                "source": "https://github.com/Koodimonni/Composer-Dropin-Installer/tree/master"
-            },
             "time": "2020-08-17T07:41:05+00:00"
         },
         {
             "name": "ministryofjustice/cookie-compliance-for-wordpress",
-            "version": "2.0.2",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress.git",
-                "reference": "f680a40845c155cdd0b40db848cf7e92de854424"
+                "reference": "519e995e3204b18cfeafa79c20fd398a567d55bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/cookie-compliance-for-wordpress/ministryofjustice-cookie-compliance-for-wordpress-f680a40845c155cdd0b40db848cf7e92de854424-zip-c765e4.zip",
-                "reference": "f680a40845c155cdd0b40db848cf7e92de854424",
-                "shasum": "143feaa11c4b02dd664da114a55bd63bc7b315ab"
+                "url": "https://composer.wp.dsd.io/dist/ministryofjustice/cookie-compliance-for-wordpress/ministryofjustice-cookie-compliance-for-wordpress-519e995e3204b18cfeafa79c20fd398a567d55bf-zip-941da1.zip",
+                "reference": "519e995e3204b18cfeafa79c20fd398a567d55bf",
+                "shasum": "59feca2467ac7a67e7c74bb916cc98e8d3c534ff"
             },
             "require-dev": {
                 "composer/composer": "*",
@@ -414,10 +388,10 @@
             ],
             "description": "WP plugin that presents visitor with a cookie consent banner and opt-in setting page.",
             "support": {
-                "source": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/tree/2.0.2",
+                "source": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/tree/2.0.6",
                 "issues": "https://github.com/ministryofjustice/cookie-compliance-for-wordpress/issues"
             },
-            "time": "2021-01-22T14:48:09+00:00"
+            "time": "2021-03-24T11:20:24+00:00"
         },
         {
             "name": "ministryofjustice/wp-moj-components",
@@ -616,11 +590,6 @@
             "keywords": [
                 "env"
             ],
-            "support": {
-                "email": "oom@oscarotero.com",
-                "issues": "https://github.com/oscarotero/env/issues",
-                "source": "https://github.com/oscarotero/env/tree/v1.2.0"
-            },
             "time": "2019-04-03T18:28:43+00:00"
         },
         {
@@ -688,16 +657,11 @@
             "keywords": [
                 "wordpress wp bcrypt password"
             ],
-            "support": {
-                "forum": "https://discourse.roots.io/",
-                "issues": "https://github.com/roots/wp-password-bcrypt/issues",
-                "source": "https://github.com/roots/wp-password-bcrypt/tree/master"
-            },
             "time": "2016-03-01T16:27:06+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.22.0",
+            "version": "v1.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -755,9 +719,6 @@
                 "polyfill",
                 "portable"
             ],
-            "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
-            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -834,10 +795,6 @@
                 "env",
                 "environment"
             ],
-            "support": {
-                "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v2.6.7"
-            },
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -852,15 +809,15 @@
         },
         {
             "name": "wpackagist-plugin/analytify-analytics-dashboard-widget",
-            "version": "1.1.4",
+            "version": "2.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/analytify-analytics-dashboard-widget/",
-                "reference": "tags/1.1.4"
+                "reference": "tags/2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/analytify-analytics-dashboard-widget.1.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/analytify-analytics-dashboard-widget.2.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -888,7 +845,7 @@
         },
         {
             "name": "wpackagist-plugin/kadence-blocks",
-            "version": "1.9.14",
+            "version": "1.10.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/kadence-blocks/",
@@ -896,7 +853,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1611172976"
+                "url": "https://downloads.wordpress.org/plugin/kadence-blocks.zip?timestamp=1616540020"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -924,15 +881,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "15.6.2",
+            "version": "16.0.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/15.6.2"
+                "reference": "tags/16.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.15.6.2.zip"
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.16.0.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -942,15 +899,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-analytify",
-            "version": "3.1.5",
+            "version": "4.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-analytify/",
-                "reference": "tags/3.1.5"
+                "reference": "tags/4.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-analytify.3.1.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-analytify.4.0.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -960,7 +917,7 @@
         },
         {
             "name": "wpackagist-plugin/wp-browser-update",
-            "version": "4.2.3",
+            "version": "4.3.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-browser-update/",
@@ -968,7 +925,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-browser-update.zip?timestamp=1610295045"
+                "url": "https://downloads.wordpress.org/plugin/wp-browser-update.zip?timestamp=1614967458"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1027,11 +984,6 @@
                 "phpcs",
                 "standards"
             ],
-            "support": {
-                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
-                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
-                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
-            },
             "time": "2020-10-23T02:01:07+00:00"
         }
     ],
@@ -1044,5 +996,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "1.1.0"
 }
