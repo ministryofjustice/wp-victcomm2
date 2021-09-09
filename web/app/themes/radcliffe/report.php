@@ -38,7 +38,7 @@ global $td;
                             <span><?= $td['userFriendlyFileName']; ?></span>
                         </a>
                         <div class="report__meta">
-                            <p><?= $td['fileType'] ?>, <?= $td['fileSize'] ?>, <?= $td['numberOfPages'] ?> pages</p>
+                            <p><?= $td['fileType'] ?>, <?= $td['fileSize'] ?><?php if(!empty($td['numberOfPages'])) { echo  ', ' . $td['numberOfPages'] . ' pages'; } ?></p>
                             <p><a href="/contact/">Contact us</a> if you need this publication in another format.</p>
                         </div>
 
