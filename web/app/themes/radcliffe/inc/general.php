@@ -147,11 +147,11 @@ function isPublication($postId)
 add_action('save_post', function ($postId, $post, $update) {
 
     if (isPublication($postId)) {
-//        $image = new Imagick();
+       $image = new Imagick();
 
         if ($reportFile = get_field('report_file', $postId)) {
             if ($reportFilePath = get_attached_file($reportFile['id'])) {
-               // $image->pingImage($reportFilePath);
+               $image->pingImage($reportFilePath);
 
                 update_post_meta(
                     $postId,
@@ -159,9 +159,9 @@ add_action('save_post', function ($postId, $post, $update) {
                     convertByteSizeToHumanReadable($reportFile['filesize'])
                 );
 
-                //$numberOfPages = $image->getNumberImages();
+                $numberOfPages = $image->getNumberImages();
 
-              //  update_post_meta($postId, 'report_file_number_of_pages', $numberOfPages);
+                update_post_meta($postId, 'report_file_number_of_pages', $numberOfPages);
 
                 update_post_meta($postId, 'report_file_type', strtoupper($reportFile['subtype']));
 
